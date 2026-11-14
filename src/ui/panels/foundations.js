@@ -869,4 +869,4 @@ module.exports = [
   { id: 'irb', render: renderIRB },
   { id: 'stats', render: renderStats },
 ];
-module.exports.helpers = { parsePasted, withinTol, tolFor, makeDataset, fromRows, CONFOUNDS, TIMELINE, CODE_TEXT };
+module.exports.helpers = { parsePasted, withinTol, tolFor, makeDataset, fromRows, CONFOUNDS, TIMELINE, CODE_TEXT, safeRun, go, links, glossChips, factBlock, paras, fmt, apaHtml };

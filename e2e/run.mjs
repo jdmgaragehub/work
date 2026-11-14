@@ -122,10 +122,9 @@ log('paradigms', Object.values(parRes).filter((x) => x.ok).length, '/', pids.len
 // ---- dilemmas + IRB
 const dil = await page.evaluate(async () => {
   const d = window.__zehnTest.sim.services.director; if (!d) return { error: 'no director' };
-  const out = { dilemmas: 0, irb: 0 };
-  const click = async () => { await new Promise((r) => setTimeout(r, 40)); const b = document.querySelector('.modal-back:last-child .modal button'); if (b) b.click(); await new Promise((r) => setTimeout(r, 20)); };
-  for (const x of window.__zehnTest.sim.data.dilemmas) { const p = d.presentDilemma(x.id); for (let i = 0; i < 4 && document.querySelector('.modal-back'); i++) await click(); await p; out.dilemmas++; }
-  for (const x of window.__zehnTest.sim.data.irb) { const p = d.presentIRB(x.id); for (let i = 0; i < 4 && document.querySelector('.modal-back'); i++) await click(); await p; out.irb++; }
+  const out = {};
+  const r1 = await d.resolveAllDilemmas(); const r2 = await d.judgeAllIRB();
+  out.dilemmas = Array.isArray(r1) ? r1.length : r1; out.irb = Array.isArray(r2) ? r2.length : r2;
   out.resolvedEvents = window.__zehnTest.sim.bus.log.filter((e) => e.event === 'dilemma:resolved').length;
   out.irbEvents = window.__zehnTest.sim.bus.log.filter((e) => e.event === 'irb:decision').length;
   return out;

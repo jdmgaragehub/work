@@ -154,7 +154,7 @@ void crowdAnim(inout vec3 p, inout vec3 n) {
   float t = uCrowdTime * aGait.x + aGait.z;
   float A = aGait.y;
   bool visible = true;
-  if (aPart > 0.5 && aPart < 1.5) visible = aStyle.x < 0.5 && aStyle.y < 0.5 || (aStyle.x < 0.5 && aStyle.y > 0.5 && p.y < 1.72);
+  if (aPart > 0.5 && aPart < 1.5) visible = aStyle.x < 0.5 && (aStyle.y < 0.5 || p.y < 1.72);
   else if (aPart > 1.5 && aPart < 2.5) visible = aStyle.x > 0.5;
   else if (aPart > 2.5 && aPart < 3.5) visible = aStyle.y > 0.5;
   else if (aPart > 3.5 && aPart < 4.5) visible = aStyle.z > 0.5;
@@ -198,8 +198,7 @@ void crowdAnim(inout vec3 p, inout vec3 n) {
   }
   if (aLimb > 4.5 && aLimb < 6.5) {
     float ar = aLimb < 5.5 ? arL : arR;
-    float el = (pose > 1.5 && pose < 2.5) ? -0.0 : 0.0;
-    p = rotX(p, 1.42, 0.0, ar + el); n = rotXn(n, ar + el);
+    p = rotX(p, 1.42, 0.0, ar); n = rotXn(n, ar);
   }
   if (aLimb > 6.5) { p = rotX(p, 1.5, 0.0, headX); n = rotXn(n, headX); }
   if ((aLimb < 0.5 || aLimb > 4.5) && p.y > 0.95 && lean != 0.0) { p = rotX(p, 0.95, 0.0, lean); n = rotXn(n, lean); }
@@ -261,7 +260,7 @@ function createCrowd(THREE_, opts = {}) {
   mesh.frustumCulled = false;
   mesh.castShadow = tier !== 'low'; mesh.receiveShadow = true;
   mesh.instanceMatrix.setUsage(T.DynamicDrawUsage);
-  const mk = (size) => { const a = new T.InstancedBufferAttribute(new Float32Array(count * size), size); geo.setAttribute.bind(geo); return a; };
+  const mk = (size) => new T.InstancedBufferAttribute(new Float32Array(count * size), size);
   const A = { gait: mk(4), style: mk(4), colA: mk(3), colB: mk(3), colC: mk(3), colD: mk(4), mark: mk(4) };
   geo.setAttribute('aGait', A.gait); geo.setAttribute('aStyle', A.style); geo.setAttribute('aColA', A.colA); geo.setAttribute('aColB', A.colB);
   geo.setAttribute('aColC', A.colC); geo.setAttribute('aColD', A.colD); geo.setAttribute('aMark', A.mark);
