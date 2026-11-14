@@ -57,8 +57,9 @@ class ChatUI {
 
     this.onKey = (e) => {
       if (e.defaultPrevented) return;
-      if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey && !e.altKey && !isTyping(e.target) && !anyModalOpen()) {
-        e.preventDefault(); this.open();
+      if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey && !e.altKey && !isTyping(e.target) && !anyModalOpen() && !(sim.services.runner && sim.services.runner.active)) {
+        // T always OPENS (never toggles closed); stop the window-level key map from toggling it shut again.
+        e.preventDefault(); e.stopPropagation(); this.open();
       } else if (e.key === 'Escape' && !this.el.hidden && this.el.contains(document.activeElement) && !anyModalOpen()) {
         e.preventDefault(); this.close();
       }

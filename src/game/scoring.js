@@ -16,6 +16,7 @@ const L = require('./logic.js');
 const { h, btn, toast, modal, download } = require('../ui/dom.js');
 
 const LB_KEY = 'zehn.leaderboard.v1';
+const HOT = new Set(['trial:start', 'trial:end', 'face:au', 'neuron:spike', 'client:turn', 'quality:change', 'mission:progress', 'photo:toggle']);
 const GOAL_COLORS = ['#E69F00', '#56B4E9', '#009E73', '#CC79A7', '#0072B2'];
 
 function injectCSS(id, css) {
@@ -59,6 +60,7 @@ class Scoring {
   onEvent(event, payload) {
     if (L.SELF_EVENTS.has(event) && event !== 'mission:complete') return;
     L.tally(this.stats, event, payload);
+    if (HOT.has(event)) return; // high-frequency events never change the scorecard
     this.recompute();
     for (const id of L.evaluateBadges(this.stats, this.sim.state, this.sim.state.badges)) this.award(id);
   }
