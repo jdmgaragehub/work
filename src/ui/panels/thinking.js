@@ -761,3 +761,6 @@ const intelligence = {
 };
 
 module.exports = [learning, memory, eyewitness, cognition, intelligence];
+// Shared helpers reused by lifespan.js and practice_a.js (non-enumerable: index.js only iterates the panel array).
+Object.defineProperty(module.exports, 'kit', { value: kit });
+Object.defineProperty(module.exports, 'newRng', { value: newRng });
