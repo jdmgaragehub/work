@@ -1,0 +1,655 @@
+{
+ "title": "Introduction to Psychology + Experimental Lab (16 weeks)",
+ "note": "Default plan (§6.1). Override by supplying reference/COURSE_OUTLINE.txt and running tools/course_from_outline.mjs. APA outcome labels are short paraphrases; see the APA Guidelines v3.0 (2023) for exact wording.",
+ "apaGoals": {
+  "1": "Content Knowledge & Applications",
+  "2": "Scientific Inquiry & Critical Thinking",
+  "3": "Values in Psychological Science",
+  "4": "Communication, Psychological Literacy & Technology Skills",
+  "5": "Personal & Professional Development"
+ },
+ "apaOutcomes": {
+  "1.1": "Describe key concepts, principles and overarching themes",
+  "1.2": "Develop a working knowledge of psychology content domains",
+  "1.3": "Describe applications that employ discipline-based problem solving",
+  "1.4": "Apply psychological content to everyday life",
+  "1.5": "Apply psychological perspectives",
+  "2.1": "Use scientific reasoning to interpret behaviour",
+  "2.2": "Demonstrate psychology information literacy / research design",
+  "2.3": "Engage in innovative and integrative thinking and problem solving",
+  "2.4": "Interpret, design and evaluate psychological research (incl. statistics)",
+  "3.1": "Apply ethical standards to evaluate psychological science and practice",
+  "3.2": "Build and enhance interpersonal relationships / diversity",
+  "3.3": "Adopt values that build community at local, national and global levels",
+  "4.1": "Demonstrate effective writing / interpersonal communication",
+  "4.2": "Exhibit effective presentation skills",
+  "4.3": "Interact effectively with others",
+  "4.4": "Use technology effectively",
+  "5.1": "Apply psychological content and skills to career goals",
+  "5.2": "Exhibit self-efficacy and self-regulation",
+  "5.3": "Refine project-management skills",
+  "5.4": "Enhance teamwork capacity",
+  "5.5": "Develop meaningful professional direction",
+  "5.6": "Develop a lifelong-learning orientation"
+ },
+ "weeks": [
+  {
+   "week": 1,
+   "topic": "History, schools, perspectives",
+   "openstax": [
+    "Ch. 1 Introduction to Psychology"
+   ],
+   "panels": [
+    "history",
+    "perspectives"
+   ],
+   "mechanic": "Wundt Hall timeline walk",
+   "zone": "wundt",
+   "mission": "M01",
+   "missionTitle": "Curate the Museum",
+   "quizSet": "Q01",
+   "tourBeats": [
+    "T01",
+    "T02"
+   ],
+   "apa": [
+    "1.3",
+    "1.5"
+   ],
+   "domain": "CHI",
+   "hec": [
+    "S1 Introduction to Psychology",
+    "S1 Schools & Perspectives"
+   ],
+   "paradigms": [
+    "memory_palace"
+   ]
+  },
+  {
+   "week": 2,
+   "topic": "Research methods & ethics",
+   "openstax": [
+    "Ch. 2 Psychological Research"
+   ],
+   "panels": [
+    "methods",
+    "irb",
+    "builder"
+   ],
+   "mechanic": "IRB chamber hearings",
+   "zone": "library",
+   "mission": "M02",
+   "missionTitle": "Pass the Board",
+   "quizSet": "Q02",
+   "tourBeats": [
+    "T03",
+    "T04"
+   ],
+   "apa": [
+    "2.2",
+    "3.1"
+   ],
+   "domain": "Methods",
+   "hec": [
+    "S3 Ethics in Psychology",
+    "S6 Academic Writing & Research Methods"
+   ],
+   "paradigms": [
+    "stroop"
+   ]
+  },
+  {
+   "week": 3,
+   "topic": "Descriptive statistics, normal curve, correlation",
+   "openstax": [
+    "Ch. 2 Psychological Research"
+   ],
+   "panels": [
+    "stats"
+   ],
+   "mechanic": "Data-sculpture histograms in 3D",
+   "zone": "library",
+   "mission": "M03",
+   "missionTitle": "Describe the Class",
+   "quizSet": "Q03",
+   "tourBeats": [
+    "T05",
+    "T06"
+   ],
+   "apa": [
+    "2.4"
+   ],
+   "domain": "Methods",
+   "hec": [
+    "S5 Data Analysis"
+   ],
+   "paradigms": [
+    "ipip_big5"
+   ]
+  },
+  {
+   "week": 4,
+   "topic": "Neurons, action potential, synapse",
+   "openstax": [
+    "Ch. 3 Biopsychology"
+   ],
+   "panels": [
+    "bio"
+   ],
+   "mechanic": "Neuron bridge + synapse chamber",
+   "zone": "neuro",
+   "mission": "M04",
+   "missionTitle": "Fire the Neuron",
+   "quizSet": "Q04",
+   "tourBeats": [
+    "T07",
+    "T08"
+   ],
+   "apa": [
+    "1.1"
+   ],
+   "domain": "Bio",
+   "hec": [
+    "S2 Behavioral Neuroscience"
+   ],
+   "paradigms": [
+    "go_nogo"
+   ]
+  },
+  {
+   "week": 5,
+   "topic": "Brain, split-brain; consciousness & sleep",
+   "openstax": [
+    "Ch. 3 Biopsychology",
+    "Ch. 4 States of Consciousness"
+   ],
+   "panels": [
+    "brain",
+    "sleep"
+   ],
+   "mechanic": "Brain fly-through; sleep lab night",
+   "zone": "neuro",
+   "mission": "M05",
+   "missionTitle": "Map the Brain",
+   "quizSet": "Q05",
+   "tourBeats": [
+    "T09",
+    "T10"
+   ],
+   "apa": [
+    "1.1"
+   ],
+   "domain": "Bio",
+   "hec": [
+    "S2 Behavioral Neuroscience"
+   ],
+   "paradigms": [
+    "flanker"
+   ]
+  },
+  {
+   "week": 6,
+   "topic": "Sensation, perception, psychophysics, SDT",
+   "openstax": [
+    "Ch. 5 Sensation and Perception"
+   ],
+   "panels": [
+    "sensation",
+    "sdt",
+    "illusions"
+   ],
+   "mechanic": "Ames room, staircase booth",
+   "zone": "explab",
+   "mission": "M06",
+   "missionTitle": "Find Your JND",
+   "quizSet": "Q06",
+   "tourBeats": [
+    "T11",
+    "T12"
+   ],
+   "apa": [
+    "2.1",
+    "2.4"
+   ],
+   "domain": "Cog",
+   "hec": [
+    "S2 Experimental Psychology"
+   ],
+   "paradigms": [
+    "muller_lyer",
+    "ponzo",
+    "ames",
+    "jnd_staircase",
+    "magnitude_est",
+    "sdt_yesno",
+    "hick_hyman",
+    "fitts"
+   ]
+  },
+  {
+   "week": 7,
+   "topic": "Attention",
+   "openstax": [
+    "Ch. 5 Sensation and Perception"
+   ],
+   "panels": [
+    "attention"
+   ],
+   "mechanic": "Plaza inattentional-blindness event; search cubicles",
+   "zone": "explab",
+   "mission": "M07",
+   "missionTitle": "Spot the Gorilla",
+   "quizSet": "Q07",
+   "tourBeats": [
+    "T13",
+    "T14"
+   ],
+   "apa": [
+    "2.1"
+   ],
+   "domain": "Cog",
+   "hec": [
+    "S3 Cognitive Psychology"
+   ],
+   "paradigms": [
+    "stroop",
+    "visual_search",
+    "posner",
+    "attn_blink",
+    "dichotic",
+    "inattentional_blindness",
+    "change_blindness",
+    "flanker",
+    "go_nogo"
+   ]
+  },
+  {
+   "week": 8,
+   "topic": "Learning",
+   "openstax": [
+    "Ch. 6 Learning"
+   ],
+   "panels": [
+    "learning"
+   ],
+   "mechanic": "Skinner-box lab, cumulative recorder",
+   "zone": "learning",
+   "mission": "M08",
+   "missionTitle": "Shape the Agent",
+   "quizSet": "Q08",
+   "tourBeats": [
+    "T15",
+    "T16"
+   ],
+   "apa": [
+    "1.1"
+   ],
+   "domain": "Bio/Cog",
+   "hec": [
+    "S2 Experimental Psychology"
+   ],
+   "paradigms": [
+    "classical_cond",
+    "operant_schedules",
+    "shaping"
+   ]
+  },
+  {
+   "week": 9,
+   "topic": "Memory",
+   "openstax": [
+    "Ch. 8 Memory"
+   ],
+   "panels": [
+    "memory",
+    "eyewitness"
+   ],
+   "mechanic": "Memory palace; eyewitness street",
+   "zone": "library",
+   "mission": "M09",
+   "missionTitle": "Palace of Loci",
+   "quizSet": "Q09",
+   "tourBeats": [
+    "T17",
+    "T18"
+   ],
+   "apa": [
+    "2.1",
+    "1.4"
+   ],
+   "domain": "Cog",
+   "hec": [
+    "S3 Cognitive Psychology"
+   ],
+   "paradigms": [
+    "serial_position",
+    "brown_peterson",
+    "levels_processing",
+    "drm",
+    "misinformation",
+    "nback",
+    "memory_palace"
+   ]
+  },
+  {
+   "week": 10,
+   "topic": "Thinking, language, intelligence",
+   "openstax": [
+    "Ch. 7 Thinking and Intelligence"
+   ],
+   "panels": [
+    "cognition",
+    "intelligence"
+   ],
+   "mechanic": "3D mental-rotation bench; Tower of Hanoi",
+   "zone": "explab",
+   "mission": "M10",
+   "missionTitle": "Rotate & Reason",
+   "quizSet": "Q10",
+   "tourBeats": [
+    "T19",
+    "T20"
+   ],
+   "apa": [
+    "2.1"
+   ],
+   "domain": "Cog/IndDiff",
+   "hec": [
+    "S3 Cognitive Psychology"
+   ],
+   "paradigms": [
+    "mental_rotation",
+    "hanoi",
+    "wason",
+    "framing",
+    "anchoring"
+   ]
+  },
+  {
+   "week": 11,
+   "topic": "Lifespan development",
+   "openstax": [
+    "Ch. 9 Lifespan Development"
+   ],
+   "panels": [
+    "development"
+   ],
+   "mechanic": "One-way-mirror suite",
+   "zone": "childdev",
+   "mission": "M11",
+   "missionTitle": "Code the Strange Situation",
+   "quizSet": "Q11",
+   "tourBeats": [
+    "T21",
+    "T22"
+   ],
+   "apa": [
+    "1.2"
+   ],
+   "domain": "Dev",
+   "hec": [
+    "S4 Developmental Psychology"
+   ],
+   "paradigms": [
+    "conservation",
+    "false_belief"
+   ]
+  },
+  {
+   "week": 12,
+   "topic": "Motivation, emotion, stress & health",
+   "openstax": [
+    "Ch. 10 Motivation and Emotion",
+    "Ch. 14 Stress, Lifestyle, and Health"
+   ],
+   "panels": [
+    "emotion",
+    "health"
+   ],
+   "mechanic": "FACS face lab; HPA-axis simulator",
+   "zone": "clinic",
+   "mission": "M12",
+   "missionTitle": "Read the Face",
+   "quizSet": "Q12",
+   "tourBeats": [
+    "T23",
+    "T24"
+   ],
+   "apa": [
+    "1.1",
+    "3.3"
+   ],
+   "domain": "Bio/Social",
+   "hec": [
+    "S6 Positive Psychology"
+   ],
+   "paradigms": [
+    "face_recognition"
+   ]
+  },
+  {
+   "week": 13,
+   "topic": "Personality & testing",
+   "openstax": [
+    "Ch. 11 Personality"
+   ],
+   "panels": [
+    "personality",
+    "psychometrics"
+   ],
+   "mechanic": "Test-construction studio",
+   "zone": "library",
+   "mission": "M13",
+   "missionTitle": "Build a Reliable Scale",
+   "quizSet": "Q13",
+   "tourBeats": [
+    "T25",
+    "T26"
+   ],
+   "apa": [
+    "2.4",
+    "1.2"
+   ],
+   "domain": "IndDiff",
+   "hec": [
+    "S2 Theories of Personality",
+    "S4 Psychological Testing"
+   ],
+   "paradigms": [
+    "ipip_big5"
+   ]
+  },
+  {
+   "week": 14,
+   "topic": "Social & I-O psychology",
+   "openstax": [
+    "Ch. 12 Social Psychology",
+    "Ch. 13 Industrial-Organizational Psychology"
+   ],
+   "panels": [
+    "social",
+    "io"
+   ],
+   "mechanic": "Mohalla crowd simulation; Asch room",
+   "zone": "mohalla",
+   "mission": "M14",
+   "missionTitle": "The Silent Crowd",
+   "quizSet": "Q14",
+   "tourBeats": [
+    "T27",
+    "T28"
+   ],
+   "apa": [
+    "1.1",
+    "3.2"
+   ],
+   "domain": "Social",
+   "hec": [
+    "S3 Social Psychology",
+    "S3 I-O Psychology"
+   ],
+   "paradigms": [
+    "asch",
+    "prisoners_dilemma"
+   ]
+  },
+  {
+   "week": 15,
+   "topic": "Disorders, therapy, counselling, culture",
+   "openstax": [
+    "Ch. 15 Psychological Disorders",
+    "Ch. 16 Therapy and Treatment"
+   ],
+   "panels": [
+    "psychopathology",
+    "therapy",
+    "crosscultural",
+    "positive"
+   ],
+   "mechanic": "Clinic sessions with simulated clients",
+   "zone": "clinic",
+   "mission": "M15",
+   "missionTitle": "First Session",
+   "quizSet": "Q15",
+   "tourBeats": [
+    "T29",
+    "T30"
+   ],
+   "apa": [
+    "4.1",
+    "3.2"
+   ],
+   "domain": "IndDiff/Applied",
+   "hec": [
+    "S4 Psychopathology",
+    "S5 Clinical Psychology",
+    "S6 Counseling Psychology",
+    "S5 Cross-Cultural Psychology"
+   ],
+   "paradigms": []
+  },
+  {
+   "week": 16,
+   "topic": "Inferential statistics, replication, open science, capstone",
+   "openstax": [
+    "Ch. 2 Psychological Research"
+   ],
+   "panels": [
+    "stats",
+    "replication",
+    "report",
+    "aiethics",
+    "present"
+   ],
+   "mechanic": "Poster hall defence",
+   "zone": "library",
+   "mission": "M16",
+   "missionTitle": "Replicate or Retract",
+   "quizSet": "Q16",
+   "tourBeats": [
+    "T31",
+    "T32"
+   ],
+   "apa": [
+    "2.2",
+    "4.2",
+    "5.2"
+   ],
+   "domain": "Methods",
+   "hec": [
+    "S5 Data Analysis",
+    "S8 Psychology & Emerging Technologies",
+    "S8 Capstone"
+   ],
+   "paradigms": [
+    "stroop",
+    "misinformation"
+   ]
+  }
+ ],
+ "degree": [
+  {
+   "semester": 1,
+   "courses": [
+    "Introduction to Psychology",
+    "Schools & Perspectives"
+   ],
+   "coverage": "Wundt Hall, all intro panels"
+  },
+  {
+   "semester": 2,
+   "courses": [
+    "Behavioral Neuroscience",
+    "Experimental Psychology (2-1)",
+    "Theories of Personality"
+   ],
+   "coverage": "Neuro Atrium, Experimental Wing, Personality panel"
+  },
+  {
+   "semester": 3,
+   "courses": [
+    "Social Psychology",
+    "Cognitive Psychology",
+    "I-O Psychology",
+    "Ethics in Psychology"
+   ],
+   "coverage": "Mohalla, attention/memory/cognition labs, IRB"
+  },
+  {
+   "semester": 4,
+   "courses": [
+    "Psychological Testing",
+    "Developmental Psychology",
+    "Psychopathology",
+    "Environmental Psychology"
+   ],
+   "coverage": "Psychometrics studio, Child Suite, Clinic (simulated), campus-environment demos"
+  },
+  {
+   "semester": 5,
+   "courses": [
+    "Cross-Cultural Psychology",
+    "Psychology of Gender",
+    "Sports Psychology",
+    "Clinical Psychology (2-1)",
+    "Data Analysis"
+   ],
+   "coverage": "Cross-cultural panel, Yerkes–Dodson arousal demo (illustrative), Clinic, Workbench"
+  },
+  {
+   "semester": 6,
+   "courses": [
+    "Positive Psychology",
+    "Counseling Psychology (2-1)",
+    "Academic Writing & Research Methods"
+   ],
+   "coverage": "Positive panel, OARS/CBT sessions, APA Report Generator"
+  },
+  {
+   "semester": 7,
+   "courses": [
+    "Forensic Psychology",
+    "electives"
+   ],
+   "coverage": "Eyewitness Room, lineup fairness, interrogation-ethics dilemmas"
+  },
+  {
+   "semester": 8,
+   "courses": [
+    "Psychology & Emerging Technologies",
+    "electives",
+    "Capstone"
+   ],
+   "coverage": "AI-in-Psychology panel, capstone research programme"
+  }
+ ],
+ "specialisations": [
+  "Clinical",
+  "Cognitive Neuroscience",
+  "Developmental",
+  "Educational",
+  "Forensic",
+  "Health",
+  "I-O"
+ ]
+}

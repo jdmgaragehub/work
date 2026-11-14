@@ -1,0 +1,531 @@
+[
+ {
+  "id": "CS-MILGRAM",
+  "title": "Obedience to authority: Milgram and the 150-volt replication",
+  "years": "1963; 2009",
+  "summary": "In Milgram's best-known condition, men recruited by newspaper advert were told they were helping a study of punishment and learning. A confederate 'learner' sat in another room, and the participant pressed switches on a generator labelled up to 450 volts whenever the learner erred. The experimenter answered hesitation with scripted prods. In that single condition, 26 of 40 men (65%) continued to the last switch, and nobody stopped before 300 volts. Milgram went on to run many variations; pooled across 21 of them, obedience was far lower, at 43.6%, and it swung widely with proximity, setting and the experimenter's presence. Because full replications are now unethical, Burger built a '150-volt solution': sessions stopped at the learner's first protest, the point after which most of Milgram's continuers went on to the end. Burger screened out vulnerable volunteers, reminded people they could leave, and debriefed immediately. In his base condition 70% continued past 150 volts, not significantly different from the 82.5% in Milgram's comparable condition; seeing a peer refuse lowered the figure only to 63%. ZEHN presents this study as text and critique only: no shock-generator simulation is offered.",
+  "laterResearch": "Ethics: early critics such as Baumrind argued that deception and distress were not justified by the findings. Archival work by Perry and the meta-synthesis by Haslam and colleagues show that 'obedience' depended heavily on how the experimenter behaved and on the condition. Commentators in the same journal issue as Burger (for example Elms, 'Obedience lite') question whether stopping at 150 volts measures the same thing. Miller summarised Burger's result as 'a high base rate of obedience, comparable to that observed by Stanley Milgram'.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-MIL",
+   "F-MIL-META",
+   "F-BURGER",
+   "F-MILLER09",
+   "F-BAUMRIND"
+  ],
+  "sources": [
+   {
+    "cite": "Milgram, S. (1963). Behavioral study of obedience. Journal of Abnormal and Social Psychology, 67(4), 371-378.",
+    "doi_or_url": "https://doi.org/10.1037/h0040525"
+   },
+   {
+    "cite": "Haslam, N., Loughnan, S., & Perry, G. (2014). Meta-Milgram: An empirical synthesis of the obedience experiments. PLOS ONE, 9(4), e93927.",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0093927"
+   },
+   {
+    "cite": "Burger, J. M. (2009). Replicating Milgram: Would people still obey today? American Psychologist, 64(1), 1-11.",
+    "doi_or_url": "https://doi.org/10.1037/a0010932"
+   },
+   {
+    "cite": "Miller, A. G. (2009). Reflections on 'Replicating Milgram' (Burger, 2009). American Psychologist, 64(1), 20-27.",
+    "doi_or_url": "https://doi.org/10.1037/a0014407"
+   },
+   {
+    "cite": "Baumrind, D. (1964). Some thoughts on ethics of research: After reading Milgram's 'Behavioral Study of Obedience'. American Psychologist, 19(6), 421-423.",
+    "doi_or_url": "https://doi.org/10.1037/h0040128"
+   }
+  ],
+  "apa": "3.1",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "obedience/shock",
+   "deception",
+   "distress"
+  ]
+ },
+ {
+  "id": "CS-SPE",
+  "title": "The Stanford Prison Experiment and its archive",
+  "years": "1971; 2019",
+  "summary": "In August 1971 a group of male students was randomly assigned to be 'guards' or 'prisoners' in a mock prison in a university basement. The study was stopped early, and for decades textbooks presented it as proof that ordinary people quickly become abusive when handed a powerful role. That story depended largely on the researchers' own accounts and on a few dramatic film clips. In 2019 Thibault Le Texier published an analysis of the study's archives together with interviews with 15 of the participants. He documented that the guards had been briefed on how to treat prisoners, that the experimenters shaped what happened, that demand characteristics were strong, and that data collection was selective and incomplete. Some participants described performing the roles they believed the researchers wanted. Zimbardo and Haney published a reply defending the study's lessons about situational power. ZEHN uses the case to teach how to judge a famous claim: who collected the data, what instructions were given, what was left unrecorded, and whether anyone could run the study again.",
+  "laterResearch": "Le Texier (2019) appeared in American Psychologist after archival work and participant interviews. A reply defending the study followed in 2020. The SPE was never a controlled experiment with comparable conditions, so 'replication status' here means 'contested account' rather than a failed statistical replication.",
+  "replication": "contested",
+  "factRefs": [
+   "F-SPE"
+  ],
+  "sources": [
+   {
+    "cite": "Le Texier, T. (2019). Debunking the Stanford Prison Experiment. American Psychologist, 74(7), 823-839. PMID 31380664.",
+    "doi_or_url": "https://doi.org/10.1037/amp0000401"
+   }
+  ],
+  "apa": "2.1",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "prison simulation",
+   "abuse",
+   "humiliation"
+  ]
+ },
+ {
+  "id": "CS-ALBERT",
+  "title": "Little Albert: conditioning, ethics and a lost identity",
+  "years": "1920; 2009; 2014",
+  "summary": "Watson and Rayner reported that an infant, called 'Albert B.', showed no fear of a white rat at about 9 months of age. They then repeatedly paired the rat with a sudden loud noise made by striking a steel bar behind his head. Afterwards the infant reportedly cried and turned away when the rat appeared, and the authors claimed that the fear spread to other furry objects. The child left the hospital before any attempt was made to remove the fear, and the report gives too little data to judge how strong or lasting the conditioning really was. The study is a textbook example of classical conditioning and a sharper example of why research ethics now protect participants who cannot consent for themselves. Historians have also tried to identify the child: one team argued he was Douglas Merritte, who died young; another later argued he was Albert Barger, who lived into old age. The disagreement itself shows how thin the original record is.",
+  "laterResearch": "No adequate replication exists, and an attempt would be unethical today. Reviews note that later textbooks often overstate generalisation. The identity question is unresolved (Beck et al. 2009 vs Powell et al. 2014).",
+  "replication": "failed",
+  "factRefs": [
+   "F-LITTLEALBERT"
+  ],
+  "sources": [
+   {
+    "cite": "Watson, J. B., & Rayner, R. (1920). Conditioned emotional reactions. Journal of Experimental Psychology, 3(1), 1-14.",
+    "doi_or_url": "https://doi.org/10.1037/h0069608"
+   },
+   {
+    "cite": "Powell, R. A., Digdon, N., Harris, B., & Smithson, C. (2014). Correcting the record on Watson, Rayner, and Little Albert. American Psychologist, 69(6), 600-611.",
+    "doi_or_url": "https://doi.org/10.1037/a0036854"
+   }
+  ],
+  "apa": "3.1",
+  "domain": "CHI",
+  "week": 8,
+  "hec": "S3 Ethics in Psychology",
+  "contentWarning": [
+   "child distress",
+   "trauma"
+  ]
+ },
+ {
+  "id": "CS-GAGE",
+  "title": "Phineas Gage: myth versus record",
+  "years": "1848-1860",
+  "summary": "On 13 September 1848, near Cavendish, Vermont, a railway foreman named Phineas Gage was tamping blasting powder when the charge went off and drove an iron rod up through his left cheek and out of the top of his skull. The rod was about 3 ft 7 in long and weighed about 13.25 lb. Gage survived, was treated by the physician John Harlow, and lived until 21 May 1860. Popular retellings say he became a permanently feckless, impulsive drifter. The historical record is much thinner and points another way: Gage held jobs for about 11 years after the injury, including demanding work, which suggests substantial social recovery. Malcolm Macmillan's survey of published accounts found that most textbooks exaggerate or contradict the few documented facts. Gage still matters, because his case helped link the frontal lobes to personality and self-control, but he also shows how a good story can outrun its evidence.",
+  "laterResearch": "Macmillan (2000) and Macmillan & Kihlstrom (2019) compare textbook claims with primary documents. Reconstructions of the exact brain damage from the surviving skull vary between studies.",
+  "replication": "contested",
+  "factRefs": [
+   "F-GAGE"
+  ],
+  "sources": [
+   {
+    "cite": "Macmillan, M. (2000). An Odd Kind of Fame: Stories of Phineas Gage. MIT Press; Macmillan & Kihlstrom (2019).",
+    "doi_or_url": "https://ocf.berkeley.edu/~jfkihlstrom/PDFs/2010s/2019/MacmillanKihlstrom_Gage_EPID2019.pdf"
+   }
+  ],
+  "apa": "2.3",
+  "domain": "Bio",
+  "week": 5,
+  "hec": "S2 Behavioral Neuroscience",
+  "contentWarning": [
+   "graphic injury"
+  ]
+ },
+ {
+  "id": "CS-HM",
+  "title": "Henry Molaison (H.M.) and memory systems",
+  "years": "1953-2008",
+  "summary": "In 1953, aged 27, Henry Molaison had parts of the medial temporal lobes on both sides of his brain removed to control severe epilepsy. His seizures eased, but he could no longer form new long-term memories of events and facts. Brenda Milner's testing showed something remarkable: his intelligence and his short-term memory were largely intact, and when he practised a mirror-tracing task over three days his performance improved even though he did not remember having done the task before. These dissociations helped establish that memory is not a single system: declarative memory for facts and events depends on medial temporal structures, while skill learning can proceed without them. Henry was studied for decades, his identity was protected by the initials 'H.M.', and his full name was published only after his death on 2 December 2008, at the age of 82. Later imaging showed that his lesion was smaller than the surgeon had estimated.",
+  "laterResearch": "Corkin and colleagues' MRI work refined the lesion boundaries. The case remains foundational evidence for multiple memory systems, though single-case inferences are always checked against group studies.",
+  "replication": "robust",
+  "factRefs": [
+   "F-HM"
+  ],
+  "sources": [
+   {
+    "cite": "Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. J Neurol Neurosurg Psychiatry, 20(1), 11-21.",
+    "doi_or_url": "https://doi.org/10.1136/jnnp.20.1.11"
+   }
+  ],
+  "apa": "1.1",
+  "domain": "Bio/Cog",
+  "week": 9,
+  "hec": "S3 Cognitive Psychology",
+  "contentWarning": [
+   "neurosurgery",
+   "illness"
+  ]
+ },
+ {
+  "id": "CS-GENOVESE",
+  "title": "Kitty Genovese and the '38 witnesses'",
+  "years": "1964; 2007; 2016",
+  "summary": "In March 1964 Kitty Genovese was murdered near her home in Queens, New York. Two weeks later a newspaper report claimed that 38 respectable citizens had watched the attack and done nothing. The story became the standard opening example for teaching about bystander apathy, and it helped motivate the laboratory research of Darley and Latané. Later investigation of trial records and archives told a different story. Manning, Levine and Collins found no evidence that 38 people witnessed the murder, that they saw the attack as it happened, or that they all stayed inactive. The prosecutor later said only about half a dozen witnesses were usable, some neighbours heard rather than saw, and at least one person did call for help. In 2016 the newspaper itself described its original reporting as flawed. The case now teaches two lessons: the bystander effect is supported by experiments, not by this anecdote; and a powerful story can harden into 'fact' without anyone checking its sources.",
+  "laterResearch": "Manning et al. (2007) call the 38 witnesses a modern 'parable'. The experimental bystander literature stands separately (see the Darley & Latané card).",
+  "replication": "contested",
+  "factRefs": [
+   "F-GENOVESE"
+  ],
+  "sources": [
+   {
+    "cite": "Manning, R., Levine, M., & Collins, A. (2007). The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses. American Psychologist, 62(6), 555-562.",
+    "doi_or_url": "https://doi.org/10.1037/0003-066X.62.6.555"
+   }
+  ],
+  "apa": "2.3",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "violence",
+   "murder"
+  ]
+ },
+ {
+  "id": "CS-EGO",
+  "title": "Ego depletion and the 2016 multi-lab replication",
+  "years": "1998-2016",
+  "summary": "The ego-depletion idea proposed that self-control draws on a limited resource: after resisting a temptation or doing an effortful task, people should do worse on a second self-control task. Many small studies appeared to support it, and an early meta-analysis estimated a medium-to-large average effect of d = 0.62. To test the idea under strict conditions, Hagger and colleagues organised a Registered Replication Report. The protocol was agreed in advance and run in 23 laboratories with a combined 2,141 participants. The pooled effect was d = 0.04, with a 95% confidence interval from -0.07 to 0.15, which includes zero. The original authors argued that the chosen tasks were a weak test, and debate continues about other paradigms. In ZEHN, this case shows students how preregistration, many labs and large samples can change what the field believes, and why publication bias can make a small literature look stronger than it is.",
+  "laterResearch": "Later multisite work and reanalyses remain debated; the RRR result applies to the sequential-task paradigm it tested.",
+  "replication": "failed",
+  "factRefs": [
+   "F-EGO"
+  ],
+  "sources": [
+   {
+    "cite": "Hagger, M. S., Chatzisarantis, N. L. D., et al. (2016). A multilab preregistered replication of the ego-depletion effect. Perspectives on Psychological Science, 11(4), 546-573.",
+    "doi_or_url": "https://doi.org/10.1177/1745691616652873"
+   }
+  ],
+  "apa": "2.2",
+  "domain": "Methods",
+  "week": 16,
+  "hec": "S5 Data Analysis"
+ },
+ {
+  "id": "CS-POWERPOSE",
+  "title": "Power posing and a failed replication",
+  "years": "2010; 2015",
+  "summary": "A 2010 study with 42 participants reported that holding expansive 'power poses' for a short time raised testosterone, lowered cortisol and increased risk-taking, and the idea spread widely through talks and media. Ranehill and colleagues then tested the same claims with a larger and more gender-balanced sample of 200 people. They found no effect of posture on testosterone, cortisol or financial risk-taking. People who held expansive poses did report feeling more powerful, so a subjective effect remained, but the behavioural and hormonal claims did not hold up. A later direct replication also found no significant effects. ZEHN uses the case to show why small samples, flexible analyses and attention-grabbing outcomes should make readers cautious, and why the size of a study's sample and a preregistered plan matter more than its fame.",
+  "laterResearch": "Ranehill et al. (2015) N = 200; the self-reported feeling-of-power effect replicated, hormonal and behavioural effects did not.",
+  "replication": "failed",
+  "factRefs": [
+   "F-POWERPOSE"
+  ],
+  "sources": [
+   {
+    "cite": "Ranehill, E., et al. (2015). Assessing the robustness of power posing. Psychological Science, 26(5), 653-656.",
+    "doi_or_url": "https://doi.org/10.1177/0956797614553946"
+   }
+  ],
+  "apa": "2.2",
+  "domain": "Social",
+  "week": 16,
+  "hec": "S5 Data Analysis"
+ },
+ {
+  "id": "CS-BOBO",
+  "title": "Bandura's Bobo doll study",
+  "years": "1961",
+  "summary": "Bandura, Ross and Ross asked whether children would copy aggression they had simply watched. They studied 72 children (36 boys and 36 girls) from a university nursery, aged 37 to 69 months. Children were split into groups of 24: some watched an adult act aggressively toward a large inflatable doll, some watched an adult play quietly, and a control group saw no model. Afterwards each child was mildly frustrated and then observed alone in a room with toys, including the doll. Children who had seen the aggressive model produced more imitative aggression, often copying specific actions and words. The study became a cornerstone of social learning theory: learning can happen through observation without direct reinforcement. ZEHN's playroom uses an original cartoon toy and never shows a child being harmed.",
+  "laterResearch": "Critics note that hitting an inflatable toy may be play rather than aggression, that children may have responded to what they thought the adults wanted, and that the study measured short-term imitation in a lab, not lasting behaviour.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-BOBO"
+  ],
+  "sources": [
+   {
+    "cite": "Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. Journal of Abnormal and Social Psychology, 63(3), 575-582.",
+    "doi_or_url": "https://doi.org/10.1037/h0045925"
+   }
+  ],
+  "apa": "1.1",
+  "domain": "Social/Dev",
+  "week": 8,
+  "hec": "S2 Experimental Psychology",
+  "contentWarning": [
+   "aggression"
+  ]
+ },
+ {
+  "id": "CS-HARLOW",
+  "title": "Harlow's surrogate mothers",
+  "years": "1958",
+  "summary": "Harry Harlow raised infant rhesus monkeys apart from their mothers with two artificial 'surrogates': one made of bare wire and one covered in soft cloth. In some arrangements only the wire surrogate provided milk. If attachment simply followed feeding, the infants should have preferred whichever surrogate fed them. Instead they spent their time clinging to the cloth surrogate and, when frightened, ran to it for comfort whichever surrogate supplied milk. Harlow concluded that 'contact comfort' was far more important to the infant's attachment than lactation, a result that challenged feeding-based accounts and supported Bowlby's view of attachment. The research also caused lasting harm to the animals, and later work by Harlow's group on isolation was even more severe. ZEHN presents the findings alongside the animal-welfare debate they helped provoke.",
+  "laterResearch": "Core finding widely accepted as evidence for contact comfort; ethical criticism contributed to stronger animal-research regulation. The number of infants per condition is not displayed because it was not verified.",
+  "replication": "robust",
+  "factRefs": [
+   "F-HARLOW"
+  ],
+  "sources": [
+   {
+    "cite": "Harlow, H. F. (1958). The nature of love. American Psychologist, 13(12), 673-685.",
+    "doi_or_url": "https://doi.org/10.1037/h0047884"
+   }
+  ],
+  "apa": "3.1",
+  "domain": "Dev/Bio",
+  "week": 11,
+  "hec": "S4 Developmental Psychology",
+  "contentWarning": [
+   "animal distress",
+   "maternal separation"
+  ]
+ },
+ {
+  "id": "CS-STRANGE",
+  "title": "The Strange Situation and cross-cultural variation",
+  "years": "1978; 1988; 1990",
+  "summary": "Mary Ainsworth's Strange Situation is a short laboratory sequence in which an infant experiences a mother leaving and returning and a friendly stranger arriving. Observers code how the infant explores and, above all, how it behaves at reunion. Ainsworth's Baltimore work, which included detailed home observation of 26 mother-infant pairs, produced three patterns: secure, avoidant and resistant; Main and Solomon later added a disorganised category. Textbooks often quote a fixed split of US infants across the three patterns, but sources disagree on the exact figures, so ZEHN shows them only with a 'sources conflict' badge. Van IJzendoorn and Kroonenberg pooled 32 samples from 8 countries (N = 1,990). Secure attachment was the most common pattern everywhere, but the balance of insecure types differed by country, and the variation within countries was about 1.5 times larger than the variation between them. The case asks whether a procedure built in one culture measures the same thing in another, for example where infants are rarely left with strangers.",
+  "laterResearch": "Cross-cultural meta-analysis supports secure as the modal pattern, with culture-linked differences in insecure types; non-Western samples remain few.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-AIN",
+   "F-AIN-XC",
+   "F-AIN-MAIN"
+  ],
+  "sources": [
+   {
+    "cite": "Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). Patterns of Attachment. Erlbaum.",
+    "doi_or_url": "https://doi.org/10.4324/9780203758045"
+   },
+   {
+    "cite": "van IJzendoorn, M. H., & Kroonenberg, P. M. (1988). Cross-cultural patterns of attachment: A meta-analysis of the Strange Situation. Child Development, 59(1), 147-156.",
+    "doi_or_url": "https://doi.org/10.2307/1130396"
+   },
+   {
+    "cite": "Main, M., & Solomon, J. (1990). Procedures for identifying infants as disorganized/disoriented during the Ainsworth Strange Situation. In Attachment in the Preschool Years. University of Chicago Press.",
+    "doi_or_url": "https://press.uchicago.edu/"
+   }
+  ],
+  "apa": "3.2",
+  "domain": "Dev",
+  "week": 11,
+  "hec": "S4 Developmental Psychology",
+  "instructorField": {
+   "label": "US secure/avoidant/resistant split",
+   "value": "[instructor to add verified source]"
+  },
+  "instructorEditable": true
+ },
+ {
+  "id": "CS-LOFTUS",
+  "title": "Leading questions and eyewitness reform",
+  "years": "1974; 2020",
+  "summary": "Loftus and Palmer showed students films of traffic accidents and then asked how fast the cars were going when they 'smashed', 'collided', 'bumped', 'hit' or 'contacted' each other. The verb mattered: mean estimates ran from 40.8 mph for 'smashed' down to 31.8 mph for 'contacted'. In a second experiment, a week later, 16 of 50 people asked the 'smashed' question said they had seen broken glass, compared with 7 of 50 in the 'hit' group and 6 of 50 controls, although there was no broken glass in the film. The work helped show that memory is reconstructive and can absorb information supplied after an event. Decades of eyewitness research, combined with wrongful convictions overturned by DNA evidence, led to procedural reforms. A 2020 American Psychology-Law Society paper makes 9 recommendations, including double-blind lineups, fair fillers, recording a witness's confidence immediately and video-recording the whole procedure.",
+  "laterResearch": "Misinformation effects replicate widely. Reform recommendations: Wells et al. (2020) Law and Human Behavior; the 2014 US National Academies report is listed as must-verify.",
+  "replication": "robust",
+  "factRefs": [
+   "F-LP",
+   "F-WELLS",
+   "F-NAS2014"
+  ],
+  "sources": [
+   {
+    "cite": "Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction. Journal of Verbal Learning and Verbal Behavior, 13(5), 585-589.",
+    "doi_or_url": "https://doi.org/10.1016/S0022-5371(74)80011-3"
+   },
+   {
+    "cite": "Wells, G. L., Kovera, M. B., Douglass, A. B., Brewer, N., Meissner, C. A., & Wixted, J. T. (2020). Policy and procedure recommendations for the collection and preservation of eyewitness identification evidence. Law and Human Behavior, 44(1), 3-36.",
+    "doi_or_url": "https://doi.org/10.1037/lhb0000359"
+   },
+   {
+    "cite": "National Research Council (2014). Identifying the Culprit: Assessing Eyewitness Identification. National Academies Press.",
+    "doi_or_url": "https://doi.org/10.17226/18891"
+   }
+  ],
+  "apa": "1.4",
+  "domain": "Cog/Social",
+  "week": 9,
+  "hec": "S7 Forensic Psychology"
+ },
+ {
+  "id": "CS-OSC",
+  "title": "Estimating the reproducibility of psychological science",
+  "years": "2015",
+  "summary": "The Open Science Collaboration recruited teams to repeat 100 studies published in three psychology journals, working with original materials where possible and preregistering their plans. The headline results were sobering. Of the original studies, 97% had reported statistically significant results; only 36% of the replications did. In the paper's words, 'Replication effects were half the magnitude of original effects'. Only 47% of the original effect sizes fell inside the 95% confidence interval of the replication, and 39% of effects were subjectively rated as having replicated. The project did not show that the original studies were wrong one by one; a single replication can fail by chance, and some differences in samples or settings matter. It did show that the published literature, filtered by significance and small samples, overstated how reliable and how large many effects were. It became a turning point for preregistration, data sharing and Registered Reports.",
+  "laterResearch": "Critics argued about fidelity of some replications and about which criterion of 'replicated' to use; later many-labs projects found a similar mixed picture.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-OSC"
+  ],
+  "sources": [
+   {
+    "cite": "Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science, 349(6251), aac4716.",
+    "doi_or_url": "https://doi.org/10.1126/science.aac4716"
+   }
+  ],
+  "apa": "2.2",
+  "domain": "Methods",
+  "week": 16,
+  "hec": "S5 Data Analysis"
+ },
+ {
+  "id": "CS-ASCH",
+  "title": "Asch's line-judgement studies",
+  "years": "1951-1956; 1996",
+  "summary": "Solomon Asch seated one real participant among a group of confederates who had agreed in advance to give the same wrong answer on certain 'critical' trials of a simple task: saying which of three lines matched a standard line. Alone, people almost never erred. With a unanimous wrong majority, many participants sometimes went along. Textbooks usually report that about a third of critical-trial responses conformed, that about three quarters of participants conformed at least once, and that about a quarter never did; ZEHN shows these figures with a 'figure under verification' badge until they are checked against Asch's 1956 monograph. Just as important is what Asch stressed: most responses stayed independent, and a single dissenting partner sharply reduced conformity. Bond and Smith's meta-analysis of 133 studies from 17 countries found higher conformity in more collectivist cultures and a decline in US studies over time. ZEHN's Asch room uses agent confederates and always ends with a debrief.",
+  "laterResearch": "Conformity in the Asch paradigm replicates, but its size varies with culture, era and group make-up (Bond & Smith 1996).",
+  "replication": "mixed",
+  "factRefs": [
+   "F-ASCH",
+   "F-BOND"
+  ],
+  "sources": [
+   {
+    "cite": "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs, 70(9), 1-70.",
+    "doi_or_url": "https://doi.org/10.1037/h0093718"
+   },
+   {
+    "cite": "Bond, R., & Smith, P. B. (1996). Culture and conformity: A meta-analysis of studies using Asch's (1952b, 1956) line judgment task. Psychological Bulletin, 119(1), 111-137.",
+    "doi_or_url": "https://doi.org/10.1037/0033-2909.119.1.111"
+   }
+  ],
+  "apa": "1.1",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "deception"
+  ]
+ },
+ {
+  "id": "CS-SEIZURE",
+  "title": "Darley and Latané's seizure study",
+  "years": "1968",
+  "summary": "Darley and Latané asked why people fail to help when others are present. Students at New York University took part in what they thought was an intercom discussion about personal problems, each in a separate booth. In reality the other voices were recordings, and one 'participant' had a seizure partway through. The key manipulation was how many others the real participant believed could hear: none besides the victim, one other, or four others. Of those who believed they were alone with the victim, 85% reported the seizure before it ended; of those who believed four others were listening, only 31% did. A middle condition is usually reported at 62%, a figure ZEHN shows with a verification badge. The authors explained the result as diffusion of responsibility: when help could come from anyone, each person feels less obliged to act. The study, not the Genovese story, is the real evidence for the bystander effect.",
+  "laterResearch": "Bystander effects replicate in many lab and field settings, but group size effects shrink when danger is clear and bystanders can act together.",
+  "replication": "robust",
+  "factRefs": [
+   "F-BYS",
+   "F-BYS-MID"
+  ],
+  "sources": [
+   {
+    "cite": "Darley, J. M., & Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. Journal of Personality and Social Psychology, 8(4), 377-383.",
+    "doi_or_url": "https://doi.org/10.1037/h0025589"
+   },
+   {
+    "cite": "Darley & Latané (1968), as reported in secondary summaries.",
+    "doi_or_url": "https://doi.org/10.1037/h0025589"
+   }
+  ],
+  "apa": "2.1",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "medical emergency",
+   "deception"
+  ]
+ },
+ {
+  "id": "CS-DISSONANCE",
+  "title": "Festinger and Carlsmith: one dollar versus twenty",
+  "years": "1959",
+  "summary": "Participants spent an hour on deliberately dull tasks, such as turning pegs. Then the experimenter asked them to tell the next person, a confederate, that the tasks had been enjoyable. Some were paid $1 for this, others $20; a control group was not asked to lie. Later, everyone rated how enjoyable the tasks had been on a scale from -5 to +5. Those paid $1 rated the tasks at +1.35, compared with -0.05 for those paid $20 and -0.45 for controls. Festinger's explanation was cognitive dissonance: people paid only $1 lacked a good external reason for lying, so they reduced the discomfort by shifting their attitude. Those paid $20 could tell themselves they did it for the money. The study was a landmark because it predicted that a smaller reward would produce a larger attitude change, against simple reinforcement accounts.",
+  "laterResearch": "Dissonance effects are widely reproduced in modified paradigms, but rival explanations (self-perception, impression management) and procedural concerns remain discussed.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-FC"
+  ],
+  "sources": [
+   {
+    "cite": "Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. Journal of Abnormal and Social Psychology, 58(2), 203-210.",
+    "doi_or_url": "https://doi.org/10.1037/h0041593"
+   }
+  ],
+  "apa": "1.1",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "deception"
+  ]
+ },
+ {
+  "id": "CS-ROBBERS",
+  "title": "Robbers Cave and the Lost Boys",
+  "years": "1954; 2018",
+  "summary": "Muzafer Sherif's team brought two groups of boys of about eleven to a summer camp in Oklahoma. After each group formed an identity, the researchers staged competitions with prizes, and hostility grew between the groups. They then introduced 'superordinate goals', problems that needed both groups to cooperate, and reported that conflict decreased. The study became a classic demonstration of realistic conflict theory. Gina Perry's archival investigation complicated this picture. An earlier camp at Middle Grove, run the year before, had not produced the expected conflict, and that study was not reported in the classic account. Perry also documents ways staff steered events and argues the researchers formed a third group in the situation. ZEHN presents both accounts and asks students to judge how unreported studies and experimenter involvement change what the result can tell us.",
+  "laterResearch": "Perry (2018) is archival and interpretive; supporters argue the core idea of goal interdependence has independent support. Sample size is shown only after verification.",
+  "replication": "contested",
+  "factRefs": [
+   "F-SHERIF",
+   "F-PERRY"
+  ],
+  "sources": [
+   {
+    "cite": "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R., & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment.",
+    "doi_or_url": "https://psychclassics.yorku.ca/Sherif/"
+   },
+   {
+    "cite": "Perry, G. (2018). The Lost Boys: Inside Muzafer Sherif's Robbers Cave Experiment. Scribe.",
+    "doi_or_url": "https://bps.org.uk/psychologist/view-boys"
+   }
+  ],
+  "apa": "2.3",
+  "domain": "Social",
+  "week": 14,
+  "hec": "S3 Social Psychology",
+  "contentWarning": [
+   "deception",
+   "child participants"
+  ]
+ },
+ {
+  "id": "CS-FACEFB",
+  "title": "Facial feedback: from pen-in-mouth to Many Smiles",
+  "years": "1988; 2016; 2022",
+  "summary": "The facial-feedback hypothesis says that facial expressions can influence emotional experience. A famous 1988 study had people hold a pen in their teeth (forcing a smile-like shape) or lips (preventing it) while rating cartoons, and reported funnier ratings in the 'smile' condition. A Registered Replication Report coordinated by Wagenmakers ran the same protocol in 17 labs and found a pooled difference of 0.03 rating units, with a 95% confidence interval from -0.11 to 0.16, compared with 0.82 originally. The original author argued that the replications differed, for example because participants were video-recorded. The Many Smiles Collaboration then tested 3,878 people in 19 countries with several methods: deliberately smiling or mimicking a smile increased reported happiness, while the pen-in-mouth method gave inconclusive evidence. The case shows how a field can move from one striking study, through a failed replication, to a more precise claim.",
+  "laterResearch": "Current evidence: small effects from posed smiles and mimicry; the specific pen-in-mouth manipulation remains weak.",
+  "replication": "mixed",
+  "factRefs": [
+   "F-FACEFB",
+   "F-FACEFB2"
+  ],
+  "sources": [
+   {
+    "cite": "Wagenmakers, E.-J., et al. (2016). Registered Replication Report: Strack, Martin, & Stepper (1988). Perspectives on Psychological Science, 11(6), 917-928.",
+    "doi_or_url": "https://doi.org/10.1177/1745691616674458"
+   },
+   {
+    "cite": "Coles, N. A., et al. (2022). A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration. Nature Human Behaviour, 6, 1731-1742.",
+    "doi_or_url": "https://doi.org/10.1038/s41562-022-01458-9"
+   }
+  ],
+  "apa": "2.2",
+  "domain": "Bio/Social",
+  "week": 12,
+  "hec": "S6 Positive Psychology"
+ },
+ {
+  "id": "CS-PK-STIGMA",
+  "title": "Help-seeking and stigma in Pakistan (instructor-editable)",
+  "years": "2020-2021",
+  "summary": "This card introduces mental-health help-seeking in Pakistan using peer-reviewed reviews rather than anecdotes. A 2020 systematic review of mental-health literacy research screened 613 records and included 59 studies. It found that the studies used inconsistent, poorly validated measures, so the authors could not combine them in a meta-analysis and could not say with confidence how mental-health literacy varies across the country. A 2021 review of 13 studies on access to services listed barriers that many students will recognise: cost, stigma, limited knowledge about mental illness, bad experiences with earlier treatment, time and distance, low social support, and reliance on traditional or religious healers. It also identified what helps: trusting that services work and recognising that a problem is serious. In class, use this card to discuss how stigma, family decision-making, religious coping and service availability interact, and how a psychologist can respect faith while still offering referral. Local statistics below are deliberately left blank until an instructor adds a verified source.",
+  "laterResearch": "Evidence base is small and heterogeneous (Munawar et al. 2020). Any prevalence figure, treatment-gap estimate or faith-healer usage rate must come from a verified source added by the instructor.",
+  "replication": "n/a",
+  "factRefs": [
+   "F-MHL-PK",
+   "F-PK-ACCESS",
+   "F-PK-FAITH"
+  ],
+  "sources": [
+   {
+    "cite": "Munawar, K., Abdul Khaiyom, J. H., Bokharey, I. Z., Park, M. S.-A., & Choudhry, F. R. (2020). A systematic review of mental health literacy in Pakistan. Asia-Pacific Psychiatry, 12(4), e12408.",
+    "doi_or_url": "https://doi.org/10.1111/appy.12408"
+   },
+   {
+    "cite": "Review in International Journal of Mental Health (2021). Authors not confirmed.",
+    "doi_or_url": "https://doi.org/10.1080/00207411.2021.1941563"
+   }
+  ],
+  "apa": "3.2",
+  "domain": "Social/Applied",
+  "week": 15,
+  "hec": "S5 Cross-Cultural Psychology",
+  "contentWarning": [
+   "mental illness",
+   "stigma"
+  ],
+  "instructorEditable": true,
+  "instructorField": {
+   "label": "Local statistic (e.g., treatment gap, faith-healer consultation rate)",
+   "value": "[instructor to add verified source]"
+  }
+ }
+]

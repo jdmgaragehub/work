@@ -1,0 +1,5360 @@
+[
+ {
+  "term": "Psychology",
+  "def": "The scientific study of mind and behaviour, covering everything from nerve cells to whole societies.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "نفسیات"
+ },
+ {
+  "term": "Mind–body problem",
+  "def": "The long-standing philosophical question of how mental experience relates to the physical body and brain.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "ذہن و جسم کا مسئلہ"
+ },
+ {
+  "term": "Dualism",
+  "def": "The view, associated with René Descartes, that mind and body are fundamentally different kinds of substance that interact.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "ثنویت"
+ },
+ {
+  "term": "Empiricism",
+  "def": "The position that knowledge comes mainly from sensory experience and observation rather than from inborn ideas.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "تجربیت"
+ },
+ {
+  "term": "Nativism",
+  "def": "The view that some knowledge, abilities or mental structures are inborn rather than acquired through experience.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Nature–nurture debate",
+  "def": "The question of how much behaviour and mental traits arise from heredity versus environment; modern work stresses that the two constantly interact.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "فطرت بمقابلہ پرورش"
+ },
+ {
+  "term": "Structuralism",
+  "def": "An early school, linked to Wundt and Titchener, that tried to break conscious experience down into its basic elements using trained introspection.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "ساختیت"
+ },
+ {
+  "term": "Introspection",
+  "def": "A method in which trained observers carefully report on their own conscious experience in response to controlled stimuli.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "دروں بینی"
+ },
+ {
+  "term": "Voluntarism",
+  "def": "Wundt's approach stressing that the mind actively organises and directs its elements through will and attention.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Functionalism",
+  "def": "A school, associated with William James, that asked what mental processes are for and how they help organisms adapt to their environment.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Gestalt psychology",
+  "def": "A German school arguing that perception is organised into wholes that are more than the sum of their parts.",
+  "week": 1,
+  "domain": "CHI/Cog",
+  "ur": "گشتالٹ نفسیات"
+ },
+ {
+  "term": "Psychoanalysis",
+  "def": "Freud's theory and therapy holding that unconscious conflicts, often rooted in childhood, shape thoughts, feelings and behaviour.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "تحلیل نفسی"
+ },
+ {
+  "term": "Unconscious",
+  "def": "In psychodynamic theory, mental content and processes that influence behaviour but lie outside awareness.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "لاشعور"
+ },
+ {
+  "term": "Free association",
+  "def": "A psychoanalytic technique in which the client says whatever comes to mind without censoring it, to reveal hidden material.",
+  "week": 1,
+  "domain": "CHI/Applied"
+ },
+ {
+  "term": "Behaviorism",
+  "def": "An approach, championed by Watson and Skinner, that limited psychology to observable behaviour and its environmental causes.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "کرداریت"
+ },
+ {
+  "term": "Humanistic psychology",
+  "def": "A perspective, led by Maslow and Rogers, emphasising free will, personal growth and each person's potential for self-actualisation.",
+  "week": 1,
+  "domain": "CHI",
+  "ur": "انسانیت پسند نفسیات"
+ },
+ {
+  "term": "Cognitive revolution",
+  "def": "The mid-20th-century shift back toward studying internal mental processes such as memory and reasoning, helped by computing and linguistics.",
+  "week": 1,
+  "domain": "CHI/Cog"
+ },
+ {
+  "term": "Cognitive psychology",
+  "def": "The study of mental processes such as attention, memory, language, problem solving and decision making.",
+  "week": 1,
+  "domain": "Cog"
+ },
+ {
+  "term": "Biological perspective",
+  "def": "An approach that explains behaviour in terms of the brain, nervous system, hormones and genes.",
+  "week": 1,
+  "domain": "Bio/CHI"
+ },
+ {
+  "term": "Evolutionary psychology",
+  "def": "An approach that asks how natural selection may have shaped mental mechanisms and behaviour.",
+  "week": 1,
+  "domain": "Bio/CHI",
+  "ur": "ارتقائی نفسیات"
+ },
+ {
+  "term": "Sociocultural perspective",
+  "def": "An approach that explains behaviour in terms of social relationships, cultural norms and historical context.",
+  "week": 1,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Cross-cultural psychology",
+  "def": "The comparison of psychological processes across cultures to test which findings are universal and which are culture-specific.",
+  "week": 1,
+  "domain": "Social/CHI",
+  "ur": "بین الثقافتی نفسیات"
+ },
+ {
+  "term": "Indigenous psychology",
+  "def": "Psychology developed from within a particular culture, using its own concepts and values rather than imported Western frameworks.",
+  "week": 1,
+  "domain": "CHI/Social"
+ },
+ {
+  "term": "Positive psychology",
+  "def": "The scientific study of strengths, well-being and the conditions that help people and communities flourish.",
+  "week": 1,
+  "domain": "Applied/CHI",
+  "ur": "مثبت نفسیات"
+ },
+ {
+  "term": "WEIRD samples",
+  "def": "Research participants drawn mostly from Western, Educated, Industrialised, Rich and Democratic societies, which limits how far findings generalise.",
+  "week": 1,
+  "domain": "CHI/Methods"
+ },
+ {
+  "term": "Phrenology",
+  "def": "A discredited 19th-century practice, associated with Franz Gall, that tried to read character from bumps on the skull.",
+  "week": 1,
+  "domain": "CHI/Bio"
+ },
+ {
+  "term": "Zeitgeist",
+  "def": "The 'spirit of the times': the intellectual and cultural climate that makes certain ideas more likely to emerge and be accepted.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Eclectic approach",
+  "def": "Drawing on several theoretical perspectives together rather than relying on a single school of thought.",
+  "week": 1,
+  "domain": "CHI/Applied"
+ },
+ {
+  "term": "Wilhelm Wundt",
+  "def": "German scientist who opened an experimental psychology laboratory in Leipzig in 1879, often taken as the founding of psychology as a separate science.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "William James",
+  "def": "American philosopher-psychologist whose 1890 book The Principles of Psychology helped launch functionalism.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Sigmund Freud",
+  "def": "Austrian neurologist who founded psychoanalysis and emphasised unconscious motives and early experience.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Margaret Floy Washburn",
+  "def": "The first woman awarded a PhD in psychology (Cornell, 1894), known for work on animal cognition.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Mary Whiton Calkins",
+  "def": "Pioneering memory and self researcher who completed Harvard's PhD requirements but was denied the degree because she was a woman; she later became the first female APA president.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Ibn al-Haytham",
+  "def": "Arab scholar (c. 965–1040) whose Book of Optics argued that vision results from light entering the eye and used systematic experiments to study perception.",
+  "week": 1,
+  "domain": "CHI/Cog"
+ },
+ {
+  "term": "Associationism",
+  "def": "The idea that mental life is built from links between ideas or events that occur together.",
+  "week": 1,
+  "domain": "CHI"
+ },
+ {
+  "term": "Scientific method",
+  "def": "A systematic cycle of observing, forming hypotheses, testing them with data and revising ideas in light of the results.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "سائنسی طریقہ"
+ },
+ {
+  "term": "Theory",
+  "def": "A well-developed set of ideas that explains a range of observations and generates testable predictions.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "نظریہ"
+ },
+ {
+  "term": "Hypothesis",
+  "def": "A specific, testable prediction about the relationship between variables, usually derived from a theory.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "مفروضہ"
+ },
+ {
+  "term": "Falsifiability",
+  "def": "The property of a claim that could, in principle, be shown false by evidence; a key criterion for scientific statements.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Operational definition",
+  "def": "A precise statement of how a concept will be measured or manipulated in a particular study, such as 'anxiety = score on a given questionnaire'.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "عملیاتی تعریف"
+ },
+ {
+  "term": "Variable",
+  "def": "Any characteristic or condition that can take different values across people, times or situations.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "متغیر"
+ },
+ {
+  "term": "Independent variable",
+  "def": "The factor a researcher deliberately changes to see whether it causes an effect.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "آزاد متغیر"
+ },
+ {
+  "term": "Dependent variable",
+  "def": "The outcome a researcher measures to see whether it is affected by the independent variable.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "تابع متغیر"
+ },
+ {
+  "term": "Confounding variable",
+  "def": "An uncontrolled factor that varies along with the independent variable, offering an alternative explanation for the results.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Extraneous variable",
+  "def": "Any variable other than the independent variable that could influence the outcome and add noise if not controlled.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Experiment",
+  "def": "A study in which the researcher manipulates one or more variables and controls others, allowing conclusions about cause and effect.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "تجربہ"
+ },
+ {
+  "term": "Random assignment",
+  "def": "Placing participants into conditions by chance so that groups are equivalent on average before the manipulation.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Random sampling",
+  "def": "Selecting participants so that every member of a population has an equal chance of being included.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Population",
+  "def": "The entire group a researcher wants to draw conclusions about.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Sample",
+  "def": "The subset of a population that actually takes part in a study.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "نمونہ"
+ },
+ {
+  "term": "Control group",
+  "def": "Participants who do not receive the treatment of interest and serve as a baseline for comparison.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Experimental group",
+  "def": "Participants who receive the treatment or manipulation being tested.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "تجرباتی گروہ"
+ },
+ {
+  "term": "Placebo",
+  "def": "An inactive treatment made to look like the real one, used to separate genuine effects from expectations.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Placebo effect",
+  "def": "Improvement that results from a person's belief or expectation about a treatment rather than from the treatment itself.",
+  "week": 2,
+  "domain": "Methods/Applied"
+ },
+ {
+  "term": "Single-blind study",
+  "def": "A design in which participants do not know which condition they are in, but the researchers do.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Double-blind study",
+  "def": "A design in which neither participants nor the people collecting data know who is in which condition, reducing expectancy effects.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Experimenter expectancy effect",
+  "def": "Subtle, often unintended ways a researcher's expectations influence participants' behaviour or the recording of data.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Demand characteristics",
+  "def": "Cues in a study that hint at its purpose, leading participants to change their behaviour to fit what they think is expected.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Hawthorne effect",
+  "def": "A change in behaviour caused by the awareness of being observed; the original factory studies behind the name are now regarded as weak evidence.",
+  "week": 2,
+  "domain": "Methods/Applied"
+ },
+ {
+  "term": "Within-subjects design",
+  "def": "A design in which every participant experiences all conditions, so each person acts as their own comparison.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Between-subjects design",
+  "def": "A design in which each participant experiences only one condition, and groups are compared.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Counterbalancing",
+  "def": "Varying the order of conditions across participants so that order effects do not systematically favour any condition.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Latin square",
+  "def": "A counterbalancing scheme in which each condition appears once in every ordinal position across a set of orders, using fewer orders than full permutation.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Order effects",
+  "def": "Changes in performance caused by the position of a condition in a sequence, such as practice, fatigue or boredom.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Practice effect",
+  "def": "Improved performance on later trials or conditions simply because of familiarity with the task.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Carryover effect",
+  "def": "Lingering influence of an earlier condition on performance in a later one in a within-subjects design.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Factorial design",
+  "def": "An experiment that crosses two or more independent variables so every combination of levels is tested.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Main effect",
+  "def": "The overall effect of one independent variable averaged across the levels of the others.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Interaction effect",
+  "def": "A result in which the effect of one independent variable depends on the level of another.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Quasi-experiment",
+  "def": "A study comparing groups that were not formed by random assignment, such as existing classes or genders, which weakens causal claims.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Correlational research",
+  "def": "Research that measures how variables relate without manipulating them; it can show association but not establish cause.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Naturalistic observation",
+  "def": "Watching and recording behaviour in its everyday setting without intervening.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "فطری مشاہدہ"
+ },
+ {
+  "term": "Case study",
+  "def": "An in-depth investigation of a single person, group or event, often used for rare conditions.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Survey",
+  "def": "A method that collects self-reported information from many people using questionnaires or interviews.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "سروے"
+ },
+ {
+  "term": "Questionnaire",
+  "def": "A written set of questions used to gather self-reports about attitudes, behaviours or experiences.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "سوالنامہ"
+ },
+ {
+  "term": "Longitudinal design",
+  "def": "A design that follows the same participants over time to track change.",
+  "week": 2,
+  "domain": "Methods/Dev"
+ },
+ {
+  "term": "Cross-sectional design",
+  "def": "A design that compares different age groups or cohorts at a single point in time.",
+  "week": 2,
+  "domain": "Methods/Dev"
+ },
+ {
+  "term": "Internal validity",
+  "def": "The degree to which a study rules out alternative explanations so that changes in the outcome can be attributed to the manipulation.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "External validity",
+  "def": "The degree to which findings generalise to other people, settings and times.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Ecological validity",
+  "def": "How closely a study's tasks and setting resemble real-life situations.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Inter-rater reliability",
+  "def": "The extent to which independent observers give the same scores or codes to the same behaviour.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Pilot study",
+  "def": "A small preliminary run of a study used to check procedures, timing and materials before the main data collection.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Manipulation check",
+  "def": "A measure confirming that the independent variable had the intended psychological effect on participants.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Research ethics",
+  "def": "Principles and rules that protect the rights, dignity and welfare of participants and the integrity of research.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "تحقیقی اخلاقیات"
+ },
+ {
+  "term": "Belmont Report",
+  "def": "A 1979 U.S. report setting out three core principles for research with humans: respect for persons, beneficence and justice.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Respect for persons",
+  "def": "A Belmont principle requiring that people be treated as autonomous agents and that those with reduced autonomy receive extra protection.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Beneficence",
+  "def": "An ethical principle requiring researchers to maximise possible benefits and minimise possible harms.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Justice (research ethics)",
+  "def": "A Belmont principle requiring that the burdens and benefits of research be shared fairly across groups.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "انصاف"
+ },
+ {
+  "term": "Institutional Review Board (IRB)",
+  "def": "A committee that reviews proposed studies to make sure participants are protected and ethical standards are met.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Informed consent",
+  "def": "A participant's voluntary agreement to take part after being told the purpose, procedures, risks and their right to withdraw.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "باخبر رضامندی"
+ },
+ {
+  "term": "Consent",
+  "def": "Voluntary permission given by a person who understands what they are agreeing to.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "رضامندی"
+ },
+ {
+  "term": "Deception",
+  "def": "Deliberately withholding or misrepresenting information about a study; permitted only when justified, unlikely to cause harm and followed by debriefing.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "دھوکا دہی"
+ },
+ {
+  "term": "Debriefing",
+  "def": "Explaining a study's true purpose to participants after they take part, correcting any deception and addressing any distress.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Confidentiality",
+  "def": "The obligation to protect participants' information so it is not disclosed without permission.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "رازداری"
+ },
+ {
+  "term": "Anonymity",
+  "def": "Collecting data in a way that cannot be linked to any individual's identity.",
+  "week": 2,
+  "domain": "Methods",
+  "ur": "گمنامی"
+ },
+ {
+  "term": "Right to withdraw",
+  "def": "A participant's entitlement to stop taking part at any time without penalty.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Vulnerable populations",
+  "def": "Groups such as children, prisoners or people with impaired decision-making capacity who need additional safeguards in research.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Minimal risk",
+  "def": "Risk of harm no greater than that encountered in daily life or routine examinations.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "APA Ethics Code",
+  "def": "The American Psychological Association's Ethical Principles of Psychologists and Code of Conduct, which guides research, teaching and practice.",
+  "week": 2,
+  "domain": "Methods/Applied"
+ },
+ {
+  "term": "Three Rs (animal research)",
+  "def": "Guiding principles for animal research: Replace animals where possible, Reduce the numbers used and Refine procedures to lessen suffering.",
+  "week": 2,
+  "domain": "Methods/Bio"
+ },
+ {
+  "term": "Nuremberg Code",
+  "def": "A 1947 set of research ethics principles, written after trials of Nazi doctors, that made voluntary consent essential.",
+  "week": 2,
+  "domain": "Methods/CHI"
+ },
+ {
+  "term": "Declaration of Helsinki",
+  "def": "The World Medical Association's statement of ethical principles for medical research involving human participants, first adopted in 1964.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Tuskegee syphilis study",
+  "def": "A U.S. Public Health Service study (1932–1972) in which Black men with syphilis were deceived and left untreated, prompting major ethics reforms.",
+  "week": 2,
+  "domain": "Methods/CHI"
+ },
+ {
+  "term": "Peer review",
+  "def": "Evaluation of a manuscript or proposal by independent experts before it is published or funded.",
+  "week": 2,
+  "domain": "Methods"
+ },
+ {
+  "term": "Statistics",
+  "def": "Methods for collecting, organising, summarising and drawing conclusions from numerical data.",
+  "week": 3,
+  "domain": "Methods",
+  "ur": "شماریات"
+ },
+ {
+  "term": "Descriptive statistics",
+  "def": "Numbers and graphs that summarise the main features of a data set, such as averages and spread.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Data",
+  "def": "Recorded observations or measurements collected in a study.",
+  "week": 3,
+  "domain": "Methods",
+  "ur": "اعداد و شمار"
+ },
+ {
+  "term": "Frequency distribution",
+  "def": "A table or graph showing how often each value or range of values occurs in a data set.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Histogram",
+  "def": "A bar graph of a frequency distribution for a continuous variable, with adjacent bars for each score range.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Scales of measurement",
+  "def": "The four levels—nominal, ordinal, interval and ratio—that determine which mathematical operations are meaningful for a variable.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Nominal scale",
+  "def": "A measurement level that sorts cases into named categories with no order, such as blood type.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Ordinal scale",
+  "def": "A measurement level that ranks cases but does not guarantee equal distances between ranks, such as finishing position in a race.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Interval scale",
+  "def": "A measurement level with equal distances between values but no true zero, such as temperature in Celsius.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Ratio scale",
+  "def": "A measurement level with equal intervals and a true zero, allowing statements like 'twice as much', such as reaction time.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Mean",
+  "def": "The arithmetic average: the sum of scores divided by the number of scores.",
+  "week": 3,
+  "domain": "Methods",
+  "ur": "اوسط"
+ },
+ {
+  "term": "Median",
+  "def": "The middle score when data are ordered; it is less affected by extreme values than the mean.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Mode",
+  "def": "The most frequently occurring score in a data set.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Range",
+  "def": "The difference between the highest and lowest scores.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Variance",
+  "def": "The average of the squared deviations of scores from the mean, a measure of spread.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Standard deviation",
+  "def": "The square root of the variance; roughly, the typical distance of scores from the mean.",
+  "week": 3,
+  "domain": "Methods",
+  "ur": "معیاری انحراف"
+ },
+ {
+  "term": "Interquartile range",
+  "def": "The spread of the middle 50% of scores, from the 25th to the 75th percentile.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Box plot",
+  "def": "A graph showing the median, quartiles and extreme values of a distribution, useful for spotting skew and outliers.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Normal distribution",
+  "def": "A symmetric, bell-shaped distribution in which mean, median and mode coincide; about 68% of scores fall within one standard deviation of the mean.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Skewness",
+  "def": "The degree to which a distribution is asymmetric, with a longer tail on one side.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Positive skew",
+  "def": "A distribution with a long tail toward high values; the mean is usually pulled above the median.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Negative skew",
+  "def": "A distribution with a long tail toward low values; the mean is usually pulled below the median.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Bimodal distribution",
+  "def": "A distribution with two distinct peaks, often suggesting two subgroups in the data.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Kurtosis",
+  "def": "A description of how heavy the tails of a distribution are compared with a normal distribution.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Outlier",
+  "def": "A score that lies far from most of the other scores and may reflect error or a genuinely unusual case.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "z-score",
+  "def": "A standardised score showing how many standard deviations a value lies above or below the mean.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Percentile rank",
+  "def": "The percentage of scores in a distribution that fall at or below a given score.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Floor effect",
+  "def": "A measurement problem in which a task is so hard that most scores cluster at the bottom, hiding real differences.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Ceiling effect",
+  "def": "A measurement problem in which a task is so easy that most scores cluster at the top, hiding real differences.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Correlation",
+  "def": "A statistical relationship in which two variables tend to change together.",
+  "week": 3,
+  "domain": "Methods",
+  "ur": "باہمی تعلق"
+ },
+ {
+  "term": "Correlation coefficient",
+  "def": "A number from −1 to +1 indicating the direction and strength of the linear relationship between two variables.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Pearson's r",
+  "def": "The most common correlation coefficient, measuring linear association between two interval or ratio variables.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Spearman's rho",
+  "def": "A correlation coefficient computed on ranks, suitable for ordinal data or monotonic but non-linear relationships.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Scatterplot",
+  "def": "A graph plotting pairs of scores as points, used to see the form and strength of a relationship.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Coefficient of determination",
+  "def": "The square of the correlation (r²), indicating the proportion of variance in one variable shared with another.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Third-variable problem",
+  "def": "The possibility that a correlation between two variables is produced by a separate variable that influences both.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Directionality problem",
+  "def": "The difficulty, in correlational data, of knowing whether A causes B or B causes A.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Illusory correlation",
+  "def": "Perceiving a relationship between variables when none exists, often because of memorable co-occurrences.",
+  "week": 3,
+  "domain": "Methods/Social"
+ },
+ {
+  "term": "Regression line",
+  "def": "The straight line that best predicts one variable from another by minimising squared prediction errors.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Regression to the mean",
+  "def": "The tendency for extreme scores on one measurement to be followed by less extreme scores on the next, purely because of measurement noise.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Restriction of range",
+  "def": "A narrowed spread of scores in a sample that weakens the observed correlation compared with the full population.",
+  "week": 3,
+  "domain": "Methods"
+ },
+ {
+  "term": "Reaction time",
+  "def": "The time between the onset of a stimulus and a participant's response, a core measure in cognitive experiments.",
+  "week": 3,
+  "domain": "Methods/Cog",
+  "ur": "ردِعمل کا وقت"
+ },
+ {
+  "term": "Nervous system",
+  "def": "The body's network of nerve cells that carries and processes information.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "اعصابی نظام"
+ },
+ {
+  "term": "Neuron",
+  "def": "A nerve cell specialised for receiving, integrating and transmitting electrical and chemical signals.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "عصبی خلیہ"
+ },
+ {
+  "term": "Glial cell",
+  "def": "A non-neuronal cell that supports, insulates, nourishes and protects neurons and helps regulate their signalling.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Dendrite",
+  "def": "A branching extension of a neuron that receives signals from other neurons.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Soma",
+  "def": "The cell body of a neuron, containing the nucleus and integrating incoming signals.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Axon",
+  "def": "The long fibre that carries an action potential away from the cell body toward other cells.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Axon hillock",
+  "def": "The region where the axon joins the cell body and where action potentials are usually triggered.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Myelin sheath",
+  "def": "A fatty insulating layer formed by glial cells around many axons, which speeds signal conduction.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Node of Ranvier",
+  "def": "A small gap in the myelin sheath where the axon membrane is exposed and the signal is regenerated.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Saltatory conduction",
+  "def": "The rapid, jumping transmission of an action potential from one node of Ranvier to the next along a myelinated axon.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Axon terminal",
+  "def": "The end of an axon branch that releases neurotransmitter into the synapse.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Synapse",
+  "def": "The junction where one neuron communicates with another cell, usually across a tiny gap.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Synaptic cleft",
+  "def": "The narrow space between the sending and receiving neuron at a chemical synapse.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Neurotransmitter",
+  "def": "A chemical messenger released by a neuron that crosses the synapse and binds to receptors on another cell.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Receptor",
+  "def": "A protein on a cell membrane that responds when a particular chemical, such as a neurotransmitter, binds to it.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Resting potential",
+  "def": "The stable voltage difference across a neuron's membrane when it is not firing, typically around −70 millivolts.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Action potential",
+  "def": "A brief, self-propagating reversal of membrane voltage that travels down the axon.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Threshold of excitation",
+  "def": "The membrane voltage that must be reached at the axon hillock for an action potential to fire.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Depolarization",
+  "def": "A shift of the membrane potential in the positive direction, making firing more likely.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hyperpolarization",
+  "def": "A shift of the membrane potential to more negative values, making firing less likely.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Repolarization",
+  "def": "The return of the membrane potential toward its resting value after depolarization, mainly through potassium outflow.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Refractory period",
+  "def": "A short interval after an action potential during which the neuron cannot fire, or needs stronger stimulation to fire.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "All-or-none principle",
+  "def": "The rule that an action potential either fires fully or not at all; stimulus strength is coded by firing rate, not spike size.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Sodium–potassium pump",
+  "def": "A membrane protein that uses energy to move sodium ions out of and potassium ions into the cell, maintaining the resting potential.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Ion channel",
+  "def": "A pore in the cell membrane that opens or closes to let specific ions pass, shaping electrical signals.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Excitatory postsynaptic potential",
+  "def": "A small depolarization in the receiving neuron that makes it more likely to fire.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Inhibitory postsynaptic potential",
+  "def": "A small hyperpolarization in the receiving neuron that makes it less likely to fire.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Reuptake",
+  "def": "The reabsorption of a neurotransmitter by the sending neuron, ending its action in the synapse.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Agonist",
+  "def": "A drug or chemical that mimics or enhances the action of a neurotransmitter.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Antagonist",
+  "def": "A drug or chemical that blocks or reduces the action of a neurotransmitter.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Acetylcholine",
+  "def": "A neurotransmitter involved in muscle activation, attention and memory.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Dopamine",
+  "def": "A neurotransmitter involved in movement, motivation and reward-related learning.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Serotonin",
+  "def": "A neurotransmitter involved in mood, sleep, appetite and many other functions.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "GABA",
+  "def": "Gamma-aminobutyric acid, the main inhibitory neurotransmitter in the brain.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Glutamate",
+  "def": "The main excitatory neurotransmitter in the brain, important for learning and memory.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Norepinephrine",
+  "def": "A neurotransmitter and hormone involved in arousal, alertness and the stress response.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Endorphins",
+  "def": "Natural opioid-like chemicals in the body that reduce pain and can produce feelings of well-being.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hodgkin–Huxley model",
+  "def": "A 1952 mathematical model, based on squid giant-axon experiments, describing how voltage-gated sodium and potassium currents generate action potentials.",
+  "week": 4,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Leaky integrate-and-fire model",
+  "def": "A simplified neuron model in which input charges the membrane, charge slowly leaks away, and a spike is emitted and the voltage reset when a threshold is crossed.",
+  "week": 4,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Rate coding",
+  "def": "The idea that neurons convey stimulus intensity through how often they fire per second.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Central nervous system",
+  "def": "The brain and spinal cord.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "مرکزی اعصابی نظام"
+ },
+ {
+  "term": "Spinal cord",
+  "def": "The bundle of nerve tissue running through the spine that links the brain to the body and controls simple reflexes.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "حرام مغز"
+ },
+ {
+  "term": "Reflex",
+  "def": "A fast, automatic response to a stimulus, often handled by the spinal cord without brain involvement.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "اضطراری عمل"
+ },
+ {
+  "term": "Peripheral nervous system",
+  "def": "All the nerves outside the brain and spinal cord, connecting them to the rest of the body.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Somatic nervous system",
+  "def": "The part of the peripheral nervous system that controls voluntary movements and carries sensory information.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Autonomic nervous system",
+  "def": "The part of the peripheral nervous system that controls involuntary functions such as heart rate and digestion.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Sympathetic nervous system",
+  "def": "The branch of the autonomic system that prepares the body for action and stress.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Parasympathetic nervous system",
+  "def": "The branch of the autonomic system that calms the body and supports rest and digestion.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Endocrine system",
+  "def": "A network of glands that release hormones into the bloodstream to regulate body functions.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hormone",
+  "def": "A chemical messenger released into the bloodstream that affects target tissues elsewhere in the body.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "ہارمون"
+ },
+ {
+  "term": "Pituitary gland",
+  "def": "A small gland at the base of the brain, controlled by the hypothalamus, that regulates many other endocrine glands.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Adrenal glands",
+  "def": "Glands above the kidneys that release hormones such as cortisol and adrenaline, especially during stress.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Neuroplasticity",
+  "def": "The nervous system's ability to change its structure and function in response to experience or injury.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Gene",
+  "def": "A segment of DNA that carries instructions for building proteins and influences traits.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "جین"
+ },
+ {
+  "term": "Heredity",
+  "def": "The passing of genetic characteristics from parents to offspring.",
+  "week": 4,
+  "domain": "Bio",
+  "ur": "وراثت"
+ },
+ {
+  "term": "Epigenetics",
+  "def": "The study of changes in gene activity that do not alter the DNA sequence, often triggered by environmental factors.",
+  "week": 4,
+  "domain": "Bio"
+ },
+ {
+  "term": "Brain",
+  "def": "The organ inside the skull that controls behaviour, thought, emotion and bodily functions.",
+  "week": 5,
+  "domain": "Bio",
+  "ur": "دماغ"
+ },
+ {
+  "term": "Cerebral cortex",
+  "def": "The thin, folded outer layer of the brain's hemispheres, involved in perception, thought, language and voluntary action.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Frontal lobe",
+  "def": "The front region of each hemisphere, involved in planning, decision making, movement control and speech production.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Prefrontal cortex",
+  "def": "The front-most part of the frontal lobe, central to working memory, self-control and goal-directed behaviour.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Motor cortex",
+  "def": "A strip at the back of the frontal lobe that sends commands for voluntary movement.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Parietal lobe",
+  "def": "The upper-rear region of each hemisphere, involved in touch, body position and spatial attention.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Somatosensory cortex",
+  "def": "A strip at the front of the parietal lobe that processes touch, temperature and pain from body regions.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Temporal lobe",
+  "def": "The region on each side of the brain involved in hearing, language comprehension and memory.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Occipital lobe",
+  "def": "The rear region of the brain, specialised for processing vision.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Broca's area",
+  "def": "A region usually in the left frontal lobe whose damage impairs speech production while comprehension is relatively spared.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Wernicke's area",
+  "def": "A region usually in the left temporal lobe whose damage impairs language comprehension, producing fluent but meaningless speech.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Corpus callosum",
+  "def": "The thick band of nerve fibres connecting the left and right cerebral hemispheres.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Split-brain",
+  "def": "A condition in which the corpus callosum has been cut, usually to treat severe epilepsy, so the hemispheres can be tested separately.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Lateralization",
+  "def": "The tendency for certain functions, such as language, to rely more on one hemisphere than the other.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Limbic system",
+  "def": "A set of interconnected structures, including the hippocampus and amygdala, linked to emotion, motivation and memory.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hippocampus",
+  "def": "A curved structure in the temporal lobe that is crucial for forming new long-term explicit memories and for spatial navigation.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Amygdala",
+  "def": "An almond-shaped structure in the temporal lobe involved in detecting threats and in emotional learning, especially fear.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hypothalamus",
+  "def": "A small structure below the thalamus that regulates hunger, thirst, body temperature, hormones and daily rhythms.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Thalamus",
+  "def": "A central relay station that routes most incoming sensory information to the cortex.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Cerebellum",
+  "def": "The 'little brain' at the back of the skull that coordinates movement, balance and timing, and contributes to some learning.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Brainstem",
+  "def": "The lower part of the brain, connecting to the spinal cord and controlling basic life functions such as breathing.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Medulla",
+  "def": "The lowest part of the brainstem, controlling heartbeat and breathing.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Pons",
+  "def": "A brainstem structure that relays signals and contributes to sleep and arousal regulation.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Reticular formation",
+  "def": "A network of neurons in the brainstem that helps regulate arousal, alertness and sleep–wake transitions.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Basal ganglia",
+  "def": "A group of deep brain structures involved in initiating movement and in habit and reward learning.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Phineas Gage",
+  "def": "A 19th-century railway worker whose personality reportedly changed after an iron rod damaged his frontal lobe, an early clue to frontal-lobe functions.",
+  "week": 5,
+  "domain": "Bio/CHI"
+ },
+ {
+  "term": "Lesion study",
+  "def": "Research that infers a brain area's function from the deficits that follow its damage.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Electroencephalography (EEG)",
+  "def": "Recording the brain's electrical activity through electrodes on the scalp, giving excellent timing but coarse location.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Event-related potential (ERP)",
+  "def": "An EEG waveform time-locked to a specific stimulus or response, obtained by averaging many trials.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Functional MRI (fMRI)",
+  "def": "A brain-imaging method that tracks changes in blood oxygenation as an indirect measure of neural activity.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Positron emission tomography (PET)",
+  "def": "An imaging technique that tracks a radioactive tracer to measure brain metabolism or neurotransmitter activity.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Transcranial magnetic stimulation (TMS)",
+  "def": "A technique that uses magnetic pulses through the scalp to briefly excite or disrupt activity in a cortical area.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Consciousness",
+  "def": "Awareness of oneself and one's surroundings, including thoughts, sensations and feelings.",
+  "week": 5,
+  "domain": "Cog/Bio",
+  "ur": "شعور"
+ },
+ {
+  "term": "Circadian rhythm",
+  "def": "A roughly 24-hour cycle in physiology and behaviour, such as the sleep–wake cycle.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Suprachiasmatic nucleus",
+  "def": "A cluster of cells in the hypothalamus that acts as the body's master clock, synchronised mainly by light.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Melatonin",
+  "def": "A hormone released by the pineal gland, mainly in darkness, that signals night-time to the body and promotes sleep.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Sleep",
+  "def": "A naturally recurring, reversible state of reduced awareness and responsiveness with characteristic brain-wave stages.",
+  "week": 5,
+  "domain": "Bio",
+  "ur": "نیند"
+ },
+ {
+  "term": "NREM sleep",
+  "def": "Non-rapid eye movement sleep, made up of stages N1 to N3 and progressing from light to deep sleep.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "REM sleep",
+  "def": "A sleep stage with rapid eye movements, vivid dreaming, a wake-like EEG and near-paralysis of skeletal muscles.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Slow-wave sleep",
+  "def": "The deepest NREM stage (N3), dominated by large, slow delta waves.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Delta waves",
+  "def": "High-amplitude, low-frequency brain waves (below about 4 Hz) typical of deep sleep.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Alpha waves",
+  "def": "Brain waves of roughly 8–12 Hz seen when a person is awake but relaxed, often with eyes closed.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Sleep spindle",
+  "def": "A brief burst of rhythmic brain activity at about 11–16 Hz, characteristic of stage N2 sleep and linked to memory consolidation.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "K-complex",
+  "def": "A single large, sharp negative-then-positive EEG wave that appears during stage N2 sleep, sometimes in response to sounds.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hypnogram",
+  "def": "A graph that plots the sequence of sleep stages across a night, showing cycles of NREM and REM sleep.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Polysomnography",
+  "def": "A sleep study that records brain waves, eye movements, muscle tone, breathing and heart rate overnight.",
+  "week": 5,
+  "domain": "Bio/Methods"
+ },
+ {
+  "term": "Insomnia",
+  "def": "Persistent difficulty falling asleep or staying asleep, causing daytime impairment.",
+  "week": 5,
+  "domain": "Bio/Applied",
+  "ur": "بے خوابی"
+ },
+ {
+  "term": "Sleep apnea",
+  "def": "A disorder in which breathing repeatedly stops or becomes very shallow during sleep, fragmenting rest.",
+  "week": 5,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Narcolepsy",
+  "def": "A neurological disorder marked by overwhelming daytime sleepiness and sudden intrusions of REM sleep, sometimes with loss of muscle tone.",
+  "week": 5,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Sleep deprivation",
+  "def": "A state of insufficient sleep that impairs attention, mood, memory and health.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Dream",
+  "def": "A sequence of images, feelings and thoughts experienced during sleep, most vivid in REM sleep.",
+  "week": 5,
+  "domain": "Bio/Cog",
+  "ur": "خواب"
+ },
+ {
+  "term": "Activation-synthesis hypothesis",
+  "def": "The proposal that dreams arise when the brain tries to make sense of random brainstem activity during REM sleep.",
+  "week": 5,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Hypnosis",
+  "def": "A state of focused attention and heightened suggestibility induced by a set of instructions.",
+  "week": 5,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Meditation",
+  "def": "Practices that train attention and awareness, often to achieve calm or mental clarity.",
+  "week": 5,
+  "domain": "Applied",
+  "ur": "مراقبہ"
+ },
+ {
+  "term": "Psychoactive drug",
+  "def": "A substance that alters perception, mood, thought or consciousness by acting on the nervous system.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Tolerance",
+  "def": "The need for increasing amounts of a drug to achieve the same effect after repeated use.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Withdrawal",
+  "def": "Unpleasant physical and psychological symptoms that occur when a person stops using a drug they depend on.",
+  "week": 5,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Stimulant",
+  "def": "A drug, such as caffeine or amphetamine, that increases nervous-system activity and alertness.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Depressant",
+  "def": "A drug, such as alcohol, that slows nervous-system activity.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Hallucinogen",
+  "def": "A drug that distorts perception and can cause sensory experiences without external stimuli.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Opioid",
+  "def": "A class of drugs, including morphine and heroin, that act on opioid receptors to relieve pain and can produce dependence.",
+  "week": 5,
+  "domain": "Bio"
+ },
+ {
+  "term": "Sensation",
+  "def": "The detection of physical energy by sense organs and its conversion into neural signals.",
+  "week": 6,
+  "domain": "Cog/Bio",
+  "ur": "حس"
+ },
+ {
+  "term": "Perception",
+  "def": "The brain's organisation and interpretation of sensory information into meaningful experience.",
+  "week": 6,
+  "domain": "Cog",
+  "ur": "ادراک"
+ },
+ {
+  "term": "Transduction",
+  "def": "The conversion of physical energy, such as light or sound, into neural signals by sensory receptors.",
+  "week": 6,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Psychophysics",
+  "def": "The study of quantitative relationships between physical stimuli and the sensations they produce.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Absolute threshold",
+  "def": "The weakest stimulus intensity a person can detect on a set proportion of trials, conventionally half.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Difference threshold",
+  "def": "The smallest change in a stimulus that a person can detect on a set proportion of trials; also called the just-noticeable difference.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Just-noticeable difference (JND)",
+  "def": "The minimum change in stimulus intensity needed for a person to notice a difference.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Weber's law",
+  "def": "The principle that the just-noticeable difference is a constant proportion of the original stimulus intensity.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Weber fraction",
+  "def": "The constant ratio ΔI/I in Weber's law, which differs across senses and indicates how sensitive a sense is to change.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Fechner's law",
+  "def": "The proposal that perceived magnitude grows with the logarithm of physical intensity.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Stevens' power law",
+  "def": "The finding that perceived magnitude equals physical intensity raised to a power, with the exponent varying by sense.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Method of constant stimuli",
+  "def": "A psychophysical method in which a fixed set of intensities is presented many times in random order to estimate a threshold.",
+  "week": 6,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Method of limits",
+  "def": "A psychophysical method in which intensity is raised or lowered in steps until the participant's response changes.",
+  "week": 6,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Method of adjustment",
+  "def": "A psychophysical method in which the participant adjusts a stimulus until it just becomes detectable or matches a standard.",
+  "week": 6,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Staircase procedure",
+  "def": "An adaptive method that makes the stimulus harder after correct responses and easier after errors, homing in on a threshold.",
+  "week": 6,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Psychometric function",
+  "def": "A curve relating stimulus intensity to the proportion of 'detected' or correct responses.",
+  "week": 6,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Signal detection theory",
+  "def": "A framework that separates a person's sensitivity to a signal from their bias toward saying 'yes' or 'no'.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Hit",
+  "def": "In signal detection, correctly reporting a signal that was present.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "False alarm",
+  "def": "In signal detection, reporting a signal when none was present.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Miss",
+  "def": "In signal detection, failing to report a signal that was present.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Correct rejection",
+  "def": "In signal detection, correctly reporting that no signal was present.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "d prime (d′)",
+  "def": "A signal detection measure of sensitivity, computed as the z-score of the hit rate minus the z-score of the false-alarm rate.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Criterion (c)",
+  "def": "A signal detection measure of response bias; a positive value means a conservative tendency to say 'no', a negative value a liberal tendency to say 'yes'.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "ROC curve",
+  "def": "A receiver operating characteristic plot of hit rate against false-alarm rate across criteria; curves bowing further toward the top-left show greater sensitivity.",
+  "week": 6,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Sensory adaptation",
+  "def": "A decrease in sensitivity to an unchanging stimulus over time.",
+  "week": 6,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Bottom-up processing",
+  "def": "Perception driven by the features of incoming sensory data.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Top-down processing",
+  "def": "Perception guided by expectations, knowledge and context.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Perceptual set",
+  "def": "A readiness to perceive something in a particular way because of expectations or recent experience.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Retina",
+  "def": "The light-sensitive layer at the back of the eye containing rods and cones.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Rods",
+  "def": "Retinal receptors that work in dim light and support black-and-white and peripheral vision.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Cones",
+  "def": "Retinal receptors concentrated in the fovea that work in bright light and support colour and fine detail.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Fovea",
+  "def": "The small central pit of the retina packed with cones, giving the sharpest vision.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Blind spot",
+  "def": "The place where the optic nerve leaves the eye; it has no receptors, so light falling there is not detected.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Vision",
+  "def": "The sense of sight, based on detecting light with the eyes.",
+  "week": 6,
+  "domain": "Bio/Cog",
+  "ur": "بصارت"
+ },
+ {
+  "term": "Hearing",
+  "def": "The sense that detects sound waves, transduced by hair cells in the cochlea.",
+  "week": 6,
+  "domain": "Bio/Cog",
+  "ur": "سماعت"
+ },
+ {
+  "term": "Trichromatic theory",
+  "def": "The theory that colour vision depends on three types of cones most sensitive to short, medium and long wavelengths.",
+  "week": 6,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Opponent-process theory (colour)",
+  "def": "The theory that colour is coded in opposing pairs—red–green, blue–yellow and black–white—explaining afterimages.",
+  "week": 6,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Feature detectors",
+  "def": "Neurons in the visual cortex that respond selectively to specific features such as edges, angles or motion.",
+  "week": 6,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Cochlea",
+  "def": "The fluid-filled, coiled structure in the inner ear where sound vibrations are converted into neural signals.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Place theory",
+  "def": "The theory that pitch is coded by where along the cochlea's basilar membrane vibration is greatest.",
+  "week": 6,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Frequency theory",
+  "def": "The theory that pitch is coded by the rate at which auditory neurons fire.",
+  "week": 6,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Gate-control theory",
+  "def": "The theory that signals in the spinal cord can open or close a 'gate' that modulates how much pain reaches the brain.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Pain",
+  "def": "An unpleasant sensory and emotional experience associated with actual or possible tissue damage.",
+  "week": 6,
+  "domain": "Bio",
+  "ur": "درد"
+ },
+ {
+  "term": "Proprioception",
+  "def": "The sense of the position and movement of one's own body parts.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Vestibular sense",
+  "def": "The sense of balance and head movement, based in the inner ear.",
+  "week": 6,
+  "domain": "Bio"
+ },
+ {
+  "term": "Olfaction",
+  "def": "The sense of smell.",
+  "week": 6,
+  "domain": "Bio",
+  "ur": "سونگھنے کی حس"
+ },
+ {
+  "term": "Gustation",
+  "def": "The sense of taste.",
+  "week": 6,
+  "domain": "Bio",
+  "ur": "ذائقہ"
+ },
+ {
+  "term": "Touch",
+  "def": "The skin sense that detects pressure, vibration and texture.",
+  "week": 6,
+  "domain": "Bio",
+  "ur": "لمس"
+ },
+ {
+  "term": "Gestalt principles",
+  "def": "Rules describing how the visual system groups elements into wholes, such as proximity, similarity, closure and continuity.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Figure–ground",
+  "def": "The perceptual separation of a scene into an object (figure) that stands out from its surroundings (ground).",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Law of proximity",
+  "def": "The Gestalt tendency to group elements that are close together.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Law of similarity",
+  "def": "The Gestalt tendency to group elements that look alike.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Law of closure",
+  "def": "The Gestalt tendency to fill in gaps and see incomplete figures as whole.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Depth perception",
+  "def": "The ability to see the world in three dimensions and judge distance.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Binocular disparity",
+  "def": "The slight difference between the images in the two eyes, used by the brain to judge depth.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Monocular cues",
+  "def": "Depth cues available to a single eye, such as relative size, interposition, texture gradient and linear perspective.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Linear perspective",
+  "def": "A depth cue in which parallel lines appear to converge with distance.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Perceptual constancy",
+  "def": "Perceiving objects as stable in size, shape and colour despite changes in the image on the retina.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Size constancy",
+  "def": "Perceiving an object as the same size even when its retinal image shrinks or grows with distance.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Optical illusion",
+  "def": "A visual stimulus that is systematically perceived differently from its physical properties.",
+  "week": 6,
+  "domain": "Cog",
+  "ur": "فریبِ نظر"
+ },
+ {
+  "term": "Ames room",
+  "def": "A distorted, trapezoidal room that looks rectangular from one viewpoint, so people in different corners appear to differ dramatically in size.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Ponzo illusion",
+  "def": "An illusion in which two identical horizontal lines placed between converging lines look different in length, the one nearer the convergence appearing longer.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Müller-Lyer illusion",
+  "def": "An illusion in which a line ending in outward-pointing fins looks longer than an identical line ending in inward-pointing arrowheads.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "McGurk effect",
+  "def": "An illusion in which seeing lips form one syllable while hearing another produces the perception of a third, blended syllable.",
+  "week": 6,
+  "domain": "Cog"
+ },
+ {
+  "term": "Viseme",
+  "def": "A visually distinguishable mouth shape associated with one or more speech sounds; several phonemes can share the same viseme.",
+  "week": 6,
+  "domain": "Cog/CHI"
+ },
+ {
+  "term": "Multisensory integration",
+  "def": "The brain's combination of information from different senses into a single, coherent percept.",
+  "week": 6,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Attention",
+  "def": "The set of processes that select some information for further processing while other information is ignored.",
+  "week": 7,
+  "domain": "Cog",
+  "ur": "توجہ"
+ },
+ {
+  "term": "Selective attention",
+  "def": "Focusing on one source of information while filtering out others.",
+  "week": 7,
+  "domain": "Cog",
+  "ur": "انتخابی توجہ"
+ },
+ {
+  "term": "Divided attention",
+  "def": "Attempting to attend to two or more tasks or sources at the same time.",
+  "week": 7,
+  "domain": "Cog",
+  "ur": "منقسم توجہ"
+ },
+ {
+  "term": "Sustained attention",
+  "def": "Maintaining focus on a task over an extended period; also called vigilance.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Vigilance decrement",
+  "def": "The decline in detection performance that occurs over time in long, monotonous monitoring tasks.",
+  "week": 7,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Dichotic listening",
+  "def": "A procedure in which different messages are played to each ear and the participant attends to one of them.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Shadowing",
+  "def": "Repeating aloud an attended message as it is heard, used in dichotic listening to keep attention on one ear.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Cocktail party effect",
+  "def": "The ability to focus on one conversation in a noisy setting while still noticing personally significant information, such as one's own name, elsewhere.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Filter model",
+  "def": "Broadbent's early-selection model, in which unattended inputs are blocked on the basis of physical features before their meaning is analysed.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Attenuation theory",
+  "def": "Treisman's model in which unattended messages are weakened rather than fully blocked, so important words can still break through.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Late-selection theory",
+  "def": "The view that all inputs are analysed for meaning and selection happens only before responding or entering awareness.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Load theory",
+  "def": "Lavie's theory that distractors are processed less when the main task demands heavy perceptual load.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Inattentional blindness",
+  "def": "Failing to notice a fully visible but unexpected object or event because attention is engaged elsewhere, as in the 'invisible gorilla' study.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Change blindness",
+  "def": "Failing to notice large changes in a scene, especially when the change coincides with a brief interruption.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Attentional blink",
+  "def": "A brief period, roughly 200–500 ms after spotting a first target in a rapid stream, during which a second target is often missed.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Rapid serial visual presentation (RSVP)",
+  "def": "A method in which items are flashed one after another at the same location at high speed.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Visual search",
+  "def": "A task in which a person looks for a target among distractors; response time is measured as the number of items changes.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Feature search",
+  "def": "A visual search in which the target differs by a single feature and 'pops out', so search time barely depends on the number of items.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Conjunction search",
+  "def": "A visual search in which the target is defined by a combination of features, so search time typically rises with the number of items.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Feature integration theory",
+  "def": "Treisman's theory that basic features are registered in parallel but attention is needed to bind them into objects.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Illusory conjunction",
+  "def": "A mistaken combination of features from different objects, such as seeing a red X when a red O and a blue X were shown.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Posner cueing task",
+  "def": "A paradigm in which a cue directs attention to a location; responses are faster for targets at cued (valid) than uncued (invalid) locations.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Exogenous attention",
+  "def": "Attention captured automatically by a sudden or salient external event.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Endogenous attention",
+  "def": "Attention directed voluntarily according to goals or instructions.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Inhibition of return",
+  "def": "Slower responses to a location that was cued a few hundred milliseconds earlier, which may encourage search of new locations.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Attentional capture",
+  "def": "The involuntary drawing of attention by a stimulus that is not relevant to the current goal.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Stroop effect",
+  "def": "Slower and more error-prone naming of an ink colour when the printed word names a different colour.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Flanker task",
+  "def": "A task in which people respond to a central target while ignoring flanking items; incongruent flankers slow responses.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Simon effect",
+  "def": "Faster responses when the response side matches the stimulus location, even when location is irrelevant to the task.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Task switching",
+  "def": "Alternating between tasks; responses are usually slower on switch trials than on repeat trials, a difference called the switch cost.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Dual-task interference",
+  "def": "A drop in performance when two tasks are done at the same time, compared with doing each alone.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Psychological refractory period",
+  "def": "The delay in responding to a second stimulus when it follows closely after a first stimulus that also requires a response.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Automaticity",
+  "def": "Processing that occurs quickly, effortlessly and without conscious control, often after extensive practice.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Speed–accuracy trade-off",
+  "def": "The tendency for faster responses to be less accurate, and more accurate responses to be slower.",
+  "week": 7,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Hick–Hyman law",
+  "def": "The finding that choice reaction time increases linearly with the information in the stimulus set, i.e. with the logarithm of the number of equally likely alternatives.",
+  "week": 7,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Fitts's law",
+  "def": "A model predicting that the time to move to a target increases with the logarithm of the ratio of distance to target width.",
+  "week": 7,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Ex-Gaussian distribution",
+  "def": "A model of reaction-time distributions formed by combining a normal and an exponential component, with parameters μ, σ and τ, where τ captures the slow tail.",
+  "week": 7,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Mind wandering",
+  "def": "Shifts of attention away from the current task toward unrelated thoughts.",
+  "week": 7,
+  "domain": "Cog"
+ },
+ {
+  "term": "Learning",
+  "def": "A relatively lasting change in behaviour or knowledge that results from experience.",
+  "week": 8,
+  "domain": "Cog/Bio",
+  "ur": "سیکھنا"
+ },
+ {
+  "term": "Habituation",
+  "def": "A decrease in response to a stimulus that is repeated without consequence.",
+  "week": 8,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Sensitization",
+  "def": "An increase in response to a stimulus after exposure to a strong or noxious stimulus.",
+  "week": 8,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Classical conditioning",
+  "def": "Learning in which a neutral stimulus comes to trigger a response after being paired with a stimulus that naturally produces that response.",
+  "week": 8,
+  "domain": "Cog/Bio",
+  "ur": "کلاسیکی مشروطیت"
+ },
+ {
+  "term": "Unconditioned stimulus (US)",
+  "def": "A stimulus that naturally triggers a response without prior learning, such as food producing salivation.",
+  "week": 8,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Unconditioned response (UR)",
+  "def": "An unlearned, automatic response to an unconditioned stimulus.",
+  "week": 8,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Conditioned stimulus (CS)",
+  "def": "A formerly neutral stimulus that triggers a response after being paired with an unconditioned stimulus.",
+  "week": 8,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Conditioned response (CR)",
+  "def": "A learned response to a conditioned stimulus.",
+  "week": 8,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Acquisition",
+  "def": "The initial stage of learning, when a response is being established.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Extinction",
+  "def": "The weakening of a learned response when the conditioned stimulus is no longer followed by the unconditioned stimulus, or a behaviour is no longer reinforced.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Spontaneous recovery",
+  "def": "The reappearance of an extinguished response after a rest period.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Stimulus generalization",
+  "def": "Responding to stimuli that are similar to the conditioned stimulus.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Stimulus discrimination",
+  "def": "Learning to respond to one stimulus but not to similar ones.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Higher-order conditioning",
+  "def": "Using an established conditioned stimulus to condition a new neutral stimulus.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Conditioned taste aversion",
+  "def": "A learned avoidance of a food after it is followed by illness, which can form after a single pairing and a long delay.",
+  "week": 8,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Biological preparedness",
+  "def": "An inborn readiness to learn certain associations, such as fear of snakes or taste–illness links, more easily than others.",
+  "week": 8,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Rescorla–Wagner model",
+  "def": "A 1972 model in which the change in associative strength on each trial is proportional to the prediction error: the difference between the outcome obtained and the outcome predicted by all present cues.",
+  "week": 8,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Prediction error",
+  "def": "The difference between what was expected and what actually happened, a signal that drives learning.",
+  "week": 8,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Blocking",
+  "def": "A conditioning effect in which a previously learned cue prevents learning about a new cue presented alongside it, because the outcome is already predicted.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Operant conditioning",
+  "def": "Learning in which the likelihood of a behaviour changes depending on its consequences.",
+  "week": 8,
+  "domain": "Cog",
+  "ur": "عاملی مشروطیت"
+ },
+ {
+  "term": "Law of effect",
+  "def": "Thorndike's principle that behaviours followed by satisfying outcomes become more likely and those followed by unpleasant outcomes less likely.",
+  "week": 8,
+  "domain": "Cog/CHI"
+ },
+ {
+  "term": "Operant chamber",
+  "def": "An enclosure, often called a Skinner box, in which an animal can make a response such as a lever press that is recorded and reinforced.",
+  "week": 8,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Cumulative recorder",
+  "def": "A device that plots the running total of responses over time, so the slope of the line shows response rate.",
+  "week": 8,
+  "domain": "Methods/Cog"
+ },
+ {
+  "term": "Reinforcement",
+  "def": "Any consequence that increases the likelihood of the behaviour it follows.",
+  "week": 8,
+  "domain": "Cog",
+  "ur": "تقویت"
+ },
+ {
+  "term": "Positive reinforcement",
+  "def": "Increasing a behaviour by adding a pleasant stimulus after it.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Negative reinforcement",
+  "def": "Increasing a behaviour by removing an unpleasant stimulus after it.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Punishment",
+  "def": "Any consequence that decreases the likelihood of the behaviour it follows.",
+  "week": 8,
+  "domain": "Cog",
+  "ur": "سزا"
+ },
+ {
+  "term": "Positive punishment",
+  "def": "Decreasing a behaviour by adding an unpleasant stimulus after it.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Negative punishment",
+  "def": "Decreasing a behaviour by removing a pleasant stimulus after it.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Primary reinforcer",
+  "def": "A consequence that is naturally rewarding, such as food or water.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Secondary reinforcer",
+  "def": "A consequence that becomes rewarding through association with primary reinforcers, such as money or praise.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Shaping",
+  "def": "Training a new behaviour by reinforcing successive approximations that come closer and closer to the target.",
+  "week": 8,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Continuous reinforcement",
+  "def": "Reinforcing every instance of a behaviour; it produces fast learning but fast extinction.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Partial reinforcement",
+  "def": "Reinforcing only some instances of a behaviour, which usually makes it more resistant to extinction.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Fixed-ratio schedule",
+  "def": "Reinforcement delivered after a set number of responses.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Variable-ratio schedule",
+  "def": "Reinforcement delivered after an unpredictable number of responses, producing high, steady response rates.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Fixed-interval schedule",
+  "def": "Reinforcement for the first response after a set amount of time, often producing a scalloped response pattern.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Variable-interval schedule",
+  "def": "Reinforcement for the first response after unpredictable time intervals, producing slow, steady responding.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Observational learning",
+  "def": "Learning by watching others and the consequences of their actions.",
+  "week": 8,
+  "domain": "Cog/Social"
+ },
+ {
+  "term": "Bobo doll study",
+  "def": "Bandura's 1960s experiments in which children who watched an adult hit an inflatable doll were more likely to imitate the aggression.",
+  "week": 8,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Latent learning",
+  "def": "Learning that occurs without obvious reinforcement and is not shown until there is a reason to use it.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Cognitive map",
+  "def": "A mental representation of the layout of an environment.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Insight learning",
+  "def": "Sudden understanding of a problem's solution, rather than gradual trial-and-error.",
+  "week": 8,
+  "domain": "Cog"
+ },
+ {
+  "term": "Learned helplessness",
+  "def": "Passive acceptance of unpleasant events after earlier experience that one's actions could not control them.",
+  "week": 8,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Instinctive drift",
+  "def": "The tendency of trained animals to revert to species-typical behaviours that interfere with conditioned responses.",
+  "week": 8,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Applied behavior analysis",
+  "def": "The use of learning principles to change socially important behaviours in real-world settings.",
+  "week": 8,
+  "domain": "Applied"
+ },
+ {
+  "term": "Token economy",
+  "def": "A behaviour-change system in which people earn tokens for desired behaviours and exchange them for rewards.",
+  "week": 8,
+  "domain": "Applied"
+ },
+ {
+  "term": "Memory",
+  "def": "The ability to encode, store and later retrieve information.",
+  "week": 9,
+  "domain": "Cog",
+  "ur": "یادداشت"
+ },
+ {
+  "term": "Encoding",
+  "def": "The process of transforming information into a form that can be stored in memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Storage",
+  "def": "The retention of encoded information over time.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Retrieval",
+  "def": "The process of accessing stored information when it is needed.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Sensory memory",
+  "def": "A very brief store that holds raw sensory input for a fraction of a second to a few seconds.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Iconic memory",
+  "def": "Visual sensory memory, lasting well under a second.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Echoic memory",
+  "def": "Auditory sensory memory, lasting a few seconds.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Short-term memory",
+  "def": "A limited-capacity store that holds a small amount of information for a short time without rehearsal.",
+  "week": 9,
+  "domain": "Cog",
+  "ur": "قلیل مدتی یادداشت"
+ },
+ {
+  "term": "Working memory",
+  "def": "A system for temporarily holding and manipulating information while performing tasks such as reasoning or mental arithmetic.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Phonological loop",
+  "def": "The working-memory component that holds speech-based information and keeps it active through inner rehearsal.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Visuospatial sketchpad",
+  "def": "The working-memory component that holds and manipulates visual and spatial information.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Central executive",
+  "def": "The working-memory component that controls attention and coordinates the other components.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Episodic buffer",
+  "def": "A working-memory component added by Baddeley in 2000 that links information across components and with long-term memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Memory span",
+  "def": "The longest list of items a person can repeat back correctly in order.",
+  "week": 9,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Chunking",
+  "def": "Grouping separate items into larger meaningful units so more information fits in short-term memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Long-term memory",
+  "def": "A relatively permanent store with very large capacity.",
+  "week": 9,
+  "domain": "Cog",
+  "ur": "طویل مدتی یادداشت"
+ },
+ {
+  "term": "Explicit memory",
+  "def": "Memory that can be consciously recalled and described; also called declarative memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Implicit memory",
+  "def": "Memory that influences behaviour without conscious awareness, such as skills and priming.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Episodic memory",
+  "def": "Memory for personally experienced events tied to a specific time and place.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Semantic memory",
+  "def": "Memory for general facts and knowledge not tied to when they were learned.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Procedural memory",
+  "def": "Memory for how to perform skills and actions, such as riding a bicycle.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Priming",
+  "def": "Faster or biased processing of a stimulus because of earlier exposure to it or a related stimulus.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Levels of processing",
+  "def": "The idea that deeper, meaning-based processing produces more durable memories than shallow processing of appearance or sound.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Self-reference effect",
+  "def": "Better memory for information related to oneself.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Serial position effect",
+  "def": "The tendency to recall items at the beginning and end of a list better than those in the middle.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Primacy effect",
+  "def": "Better recall of the first items in a list, thought to reflect extra rehearsal into long-term memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Recency effect",
+  "def": "Better recall of the last items in a list, thought to reflect items still held in short-term memory.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Spacing effect",
+  "def": "Better long-term retention when study sessions are spread out rather than massed together.",
+  "week": 9,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Testing effect",
+  "def": "Better long-term retention after practising retrieval than after re-studying the same material.",
+  "week": 9,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Mnemonic",
+  "def": "A memory aid that organises or links information to make it easier to remember.",
+  "week": 9,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Method of loci",
+  "def": "A mnemonic in which items are mentally placed at locations along a familiar route and later recalled by mentally walking the route.",
+  "week": 9,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "Encoding specificity principle",
+  "def": "The idea that retrieval works best when cues at recall match those present during encoding.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Context-dependent memory",
+  "def": "Better recall when the physical environment at retrieval matches the one at learning.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "State-dependent memory",
+  "def": "Better recall when one's internal state, such as mood, matches the state at learning.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Recall",
+  "def": "Retrieving information without the item itself being presented, as in fill-in-the-blank questions.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Recognition",
+  "def": "Identifying previously learned information when it is presented again, as in multiple-choice questions.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Relearning",
+  "def": "Learning material again that was previously learned; faster relearning (savings) shows some memory remained.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Forgetting curve",
+  "def": "Ebbinghaus's finding that forgetting is rapid soon after learning and then levels off.",
+  "week": 9,
+  "domain": "Cog/CHI"
+ },
+ {
+  "term": "Forgetting",
+  "def": "The loss or inaccessibility of previously stored information.",
+  "week": 9,
+  "domain": "Cog",
+  "ur": "بھول جانا"
+ },
+ {
+  "term": "Proactive interference",
+  "def": "Disruption of new learning by older memories.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Retroactive interference",
+  "def": "Disruption of older memories by new learning.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Decay",
+  "def": "Forgetting attributed to the fading of memory traces over time.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Amnesia",
+  "def": "Serious memory loss caused by brain injury, disease or psychological trauma.",
+  "week": 9,
+  "domain": "Bio/Cog",
+  "ur": "نسیان"
+ },
+ {
+  "term": "Retrograde amnesia",
+  "def": "Loss of memory for events that occurred before the onset of amnesia.",
+  "week": 9,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Anterograde amnesia",
+  "def": "Inability to form new long-term memories after the onset of amnesia.",
+  "week": 9,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Patient H.M.",
+  "def": "Henry Molaison, whose 1953 surgery removing parts of both medial temporal lobes left him unable to form new explicit memories, transforming memory research.",
+  "week": 9,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Consolidation",
+  "def": "The process by which new memories become stabilised over time.",
+  "week": 9,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Reconsolidation",
+  "def": "The re-stabilisation of a memory after it has been retrieved, during which it may be modified.",
+  "week": 9,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Long-term potentiation",
+  "def": "A lasting increase in synaptic strength after repeated stimulation, considered a cellular basis of learning.",
+  "week": 9,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Reconstructive memory",
+  "def": "The view that remembering involves rebuilding events from fragments and knowledge, which makes errors possible.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Schema",
+  "def": "An organised mental framework of knowledge that guides how information is interpreted and remembered.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Misinformation effect",
+  "def": "Distortion of memory for an event after exposure to misleading information about it.",
+  "week": 9,
+  "domain": "Cog/Applied"
+ },
+ {
+  "term": "DRM paradigm",
+  "def": "The Deese–Roediger–McDermott procedure, in which studying related words such as bed, rest and tired leads many people to falsely recall an unpresented theme word such as sleep.",
+  "week": 9,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "False memory",
+  "def": "A recollection of an event, or of details, that did not actually occur.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Source monitoring error",
+  "def": "Remembering information but misattributing where it came from.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Flashbulb memory",
+  "def": "A vivid, confident memory of the circumstances of an emotionally significant event, which can nonetheless be inaccurate.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Tip-of-the-tongue state",
+  "def": "The feeling of being about to retrieve a word without being able to produce it.",
+  "week": 9,
+  "domain": "Cog"
+ },
+ {
+  "term": "Eyewitness testimony",
+  "def": "An account given by a person who saw an event, which can be affected by stress, suggestion and memory reconstruction.",
+  "week": 9,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Weapon focus",
+  "def": "The tendency for a visible weapon to draw an eyewitness's attention, reducing memory for other details such as the face.",
+  "week": 9,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Lineup",
+  "def": "A procedure in which an eyewitness views a set of people or photos to try to identify a suspect.",
+  "week": 9,
+  "domain": "Applied"
+ },
+ {
+  "term": "Double-blind lineup",
+  "def": "A lineup run by an administrator who does not know which member is the suspect, preventing unintentional cues.",
+  "week": 9,
+  "domain": "Applied/Methods"
+ },
+ {
+  "term": "Sequential lineup",
+  "def": "A lineup in which faces are shown one at a time rather than all together.",
+  "week": 9,
+  "domain": "Applied"
+ },
+ {
+  "term": "Cognition",
+  "def": "Mental activities involved in acquiring, storing, transforming and using knowledge.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Thinking",
+  "def": "Mentally manipulating information to form concepts, solve problems, reason and decide.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "سوچ"
+ },
+ {
+  "term": "Concept",
+  "def": "A mental category grouping objects, events or ideas that share common features.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "تصور"
+ },
+ {
+  "term": "Prototype",
+  "def": "The most typical example of a concept, used as a reference point for categorisation.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Mental imagery",
+  "def": "Representing sensory experiences in the mind without the corresponding stimulus.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Mental rotation",
+  "def": "Imagining an object turning in space; in Shepard and Metzler's 1971 study, decision time increased roughly linearly with the angle of rotation.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Problem solving",
+  "def": "Working out how to move from a current state to a goal when the path is not obvious.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "مسئلہ حل کرنا"
+ },
+ {
+  "term": "Algorithm",
+  "def": "A step-by-step procedure that guarantees a solution if followed correctly.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Heuristic",
+  "def": "A mental shortcut that often leads to a good answer quickly but can produce errors.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Means–ends analysis",
+  "def": "A problem-solving heuristic that reduces the difference between the current state and the goal by setting sub-goals.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Tower of Hanoi",
+  "def": "A puzzle in which discs must be moved between pegs under rules, used to study planning and problem solving.",
+  "week": 10,
+  "domain": "Cog/Methods"
+ },
+ {
+  "term": "Insight",
+  "def": "A sudden realisation of a problem's solution, often after a period of being stuck.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Functional fixedness",
+  "def": "Difficulty seeing an object as useful for anything other than its usual function.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Mental set",
+  "def": "A tendency to keep using a strategy that worked before, even when a better one is available.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Confirmation bias",
+  "def": "The tendency to seek, notice and remember information that supports existing beliefs.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Availability heuristic",
+  "def": "Judging how common or likely something is by how easily examples come to mind.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Representativeness heuristic",
+  "def": "Judging the probability that something belongs to a category by how closely it resembles a typical member, often ignoring base rates.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Anchoring effect",
+  "def": "The tendency for an initial number or piece of information to pull later estimates toward it.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Framing effect",
+  "def": "Making different choices depending on whether the same options are described in terms of gains or losses.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Hindsight bias",
+  "def": "The tendency, after an outcome is known, to believe one could have predicted it.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Overconfidence",
+  "def": "Being more confident in one's judgments than their accuracy warrants.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Base-rate neglect",
+  "def": "Ignoring how common something is in the population when estimating probability.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Dual-process theory",
+  "def": "The view that thinking involves fast, intuitive processing (System 1) and slower, deliberate reasoning (System 2).",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Decision making",
+  "def": "Choosing among alternatives by evaluating their likely outcomes.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "فیصلہ سازی"
+ },
+ {
+  "term": "Executive functions",
+  "def": "Higher-level control processes, such as inhibition, updating and shifting, that regulate thought and action.",
+  "week": 10,
+  "domain": "Cog/Bio"
+ },
+ {
+  "term": "Language",
+  "def": "A system of symbols and rules for combining them that allows communication of unlimited meanings.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "زبان"
+ },
+ {
+  "term": "Phoneme",
+  "def": "The smallest unit of sound that distinguishes meaning in a language.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Morpheme",
+  "def": "The smallest unit of meaning in a language, such as a word or a prefix.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Syntax",
+  "def": "The rules for combining words into grammatical sentences.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Semantics",
+  "def": "The study of meaning in language.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Pragmatics",
+  "def": "How context and social conventions shape the meaning of what is said.",
+  "week": 10,
+  "domain": "Cog/Social"
+ },
+ {
+  "term": "Linguistic relativity",
+  "def": "The hypothesis, associated with Sapir and Whorf, that the language one speaks influences how one thinks; evidence supports modest rather than strong forms.",
+  "week": 10,
+  "domain": "Cog/Social"
+ },
+ {
+  "term": "Bilingualism",
+  "def": "The ability to use two languages.",
+  "week": 10,
+  "domain": "Cog",
+  "ur": "دو لسانیت"
+ },
+ {
+  "term": "Intelligence",
+  "def": "The ability to learn from experience, solve problems and adapt to new situations.",
+  "week": 10,
+  "domain": "IndDiff",
+  "ur": "ذہانت"
+ },
+ {
+  "term": "General intelligence (g)",
+  "def": "Spearman's proposed common factor underlying performance across different mental tests.",
+  "week": 10,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Fluid intelligence",
+  "def": "The ability to reason and solve novel problems, which tends to decline from early adulthood.",
+  "week": 10,
+  "domain": "IndDiff/Cog"
+ },
+ {
+  "term": "Crystallized intelligence",
+  "def": "Accumulated knowledge and verbal skills, which tends to remain stable or grow with age.",
+  "week": 10,
+  "domain": "IndDiff/Cog"
+ },
+ {
+  "term": "Multiple intelligences",
+  "def": "Gardner's theory that people have several relatively independent kinds of intelligence, such as musical and interpersonal.",
+  "week": 10,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Triarchic theory",
+  "def": "Sternberg's theory describing analytical, creative and practical aspects of intelligence.",
+  "week": 10,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Emotional intelligence",
+  "def": "The ability to perceive, understand, use and manage emotions in oneself and others.",
+  "week": 10,
+  "domain": "IndDiff/Social"
+ },
+ {
+  "term": "Intelligence quotient (IQ)",
+  "def": "A score from a standardised intelligence test, scaled so the population mean is 100 and the standard deviation usually 15.",
+  "week": 10,
+  "domain": "IndDiff/Methods"
+ },
+ {
+  "term": "Standardization",
+  "def": "Giving and scoring a test in a uniform way and establishing norms from a representative sample.",
+  "week": 10,
+  "domain": "Methods/IndDiff"
+ },
+ {
+  "term": "Flynn effect",
+  "def": "The rise in average raw scores on intelligence tests across generations in many countries during the 20th century.",
+  "week": 10,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Intellectual disability",
+  "def": "A condition marked by significant limits in intellectual functioning and adaptive behaviour, beginning in the developmental period.",
+  "week": 10,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Heritability",
+  "def": "The proportion of variation in a trait within a particular population that is associated with genetic differences; it says nothing about an individual.",
+  "week": 10,
+  "domain": "IndDiff/Bio"
+ },
+ {
+  "term": "Twin study",
+  "def": "Research comparing identical and fraternal twins to estimate genetic and environmental influences on traits.",
+  "week": 10,
+  "domain": "IndDiff/Methods"
+ },
+ {
+  "term": "Creativity",
+  "def": "The ability to produce ideas that are both novel and useful.",
+  "week": 10,
+  "domain": "Cog/IndDiff",
+  "ur": "تخلیقی صلاحیت"
+ },
+ {
+  "term": "Divergent thinking",
+  "def": "Generating many different possible answers to an open-ended problem.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Convergent thinking",
+  "def": "Narrowing down possibilities to find the single best answer.",
+  "week": 10,
+  "domain": "Cog"
+ },
+ {
+  "term": "Stereotype threat",
+  "def": "Concern about confirming a negative stereotype about one's group, which may impair performance; replication evidence on its size is mixed.",
+  "week": 10,
+  "domain": "Social/IndDiff"
+ },
+ {
+  "term": "Development",
+  "def": "Patterns of physical, cognitive and social change across the lifespan.",
+  "week": 11,
+  "domain": "Dev",
+  "ur": "نشوونما"
+ },
+ {
+  "term": "Developmental psychology",
+  "def": "The study of how people change and remain stable from conception to death.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Lifespan perspective",
+  "def": "The view that development continues throughout life and is shaped by many interacting influences.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Maturation",
+  "def": "Biological growth processes that unfold in a largely predictable sequence.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Critical period",
+  "def": "A window early in life when certain experiences must occur for normal development.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Sensitive period",
+  "def": "A time when an organism is especially responsive to particular experiences, though later learning remains possible.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Zygote",
+  "def": "The fertilised egg in the first two weeks after conception.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Embryo",
+  "def": "The developing human from about two weeks to eight weeks after conception.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Fetus",
+  "def": "The developing human from about nine weeks after conception until birth.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Teratogen",
+  "def": "An agent, such as alcohol or certain infections, that can harm prenatal development.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Fetal alcohol spectrum disorder",
+  "def": "A range of physical and cognitive problems caused by prenatal exposure to alcohol.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Rooting reflex",
+  "def": "A newborn's tendency to turn toward a touch on the cheek and open the mouth.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Preferential looking",
+  "def": "A method for testing infants by measuring which of two displays they look at longer.",
+  "week": 11,
+  "domain": "Dev/Methods"
+ },
+ {
+  "term": "Habituation paradigm",
+  "def": "A method in which infants are shown a stimulus until looking declines, then a new stimulus; renewed looking shows they detect the difference.",
+  "week": 11,
+  "domain": "Dev/Methods"
+ },
+ {
+  "term": "Assimilation",
+  "def": "In Piaget's theory, fitting new experiences into existing schemas.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Accommodation",
+  "def": "In Piaget's theory, changing existing schemas to fit new experiences.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Sensorimotor stage",
+  "def": "Piaget's first stage (birth to about age 2), when infants understand the world through senses and actions.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Object permanence",
+  "def": "The understanding that objects continue to exist when they cannot be seen.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Preoperational stage",
+  "def": "Piaget's stage from about 2 to 7 years, marked by symbolic thinking but limited logic.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Egocentrism",
+  "def": "In Piaget's theory, a young child's difficulty taking another person's point of view.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Conservation",
+  "def": "Understanding that quantity stays the same despite changes in shape or appearance.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Concrete operational stage",
+  "def": "Piaget's stage from about 7 to 11 years, when children reason logically about concrete events.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Formal operational stage",
+  "def": "Piaget's final stage, beginning around adolescence, when abstract and hypothetical reasoning becomes possible.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Zone of proximal development",
+  "def": "Vygotsky's term for the range of tasks a learner can do with guidance but not yet alone.",
+  "week": 11,
+  "domain": "Dev/Applied"
+ },
+ {
+  "term": "Scaffolding",
+  "def": "Temporary support from a more skilled person that is gradually withdrawn as the learner gains competence.",
+  "week": 11,
+  "domain": "Dev/Applied"
+ },
+ {
+  "term": "Theory of mind",
+  "def": "Understanding that other people have beliefs, desires and knowledge that may differ from one's own.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "False-belief task",
+  "def": "A test, such as the Sally–Anne task, of whether a child understands that someone can hold a belief that is mistaken.",
+  "week": 11,
+  "domain": "Dev/Methods"
+ },
+ {
+  "term": "Babbling",
+  "def": "The repetitive consonant–vowel sounds infants produce at around six months, before first words.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Telegraphic speech",
+  "def": "Early two-word utterances that contain mainly content words, such as 'want milk'.",
+  "week": 11,
+  "domain": "Dev/Cog"
+ },
+ {
+  "term": "Attachment",
+  "def": "A deep, enduring emotional bond between a child and a caregiver.",
+  "week": 11,
+  "domain": "Dev",
+  "ur": "وابستگی"
+ },
+ {
+  "term": "Strange Situation",
+  "def": "Ainsworth's laboratory procedure that observes infants' reactions to separations from and reunions with a caregiver to classify attachment.",
+  "week": 11,
+  "domain": "Dev/Methods"
+ },
+ {
+  "term": "Secure attachment",
+  "def": "An attachment pattern in which a child uses the caregiver as a safe base, is upset at separation and is easily comforted on reunion.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Insecure-avoidant attachment",
+  "def": "An attachment pattern in which a child shows little distress at separation and avoids the caregiver on reunion.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Insecure-resistant attachment",
+  "def": "An attachment pattern in which a child is very upset at separation and both seeks and resists contact on reunion; also called ambivalent.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Disorganized attachment",
+  "def": "An attachment pattern marked by confused or contradictory behaviour toward the caregiver.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Stranger anxiety",
+  "def": "Fear of unfamiliar people that commonly appears in the second half of the first year.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Temperament",
+  "def": "A person's characteristic emotional reactivity and intensity, visible from infancy.",
+  "week": 11,
+  "domain": "Dev/IndDiff",
+  "ur": "مزاج"
+ },
+ {
+  "term": "Authoritative parenting",
+  "def": "A parenting style combining warmth and responsiveness with clear expectations and reasons.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Authoritarian parenting",
+  "def": "A parenting style that is demanding and strict but low in warmth, stressing obedience.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Permissive parenting",
+  "def": "A parenting style that is warm but makes few demands or rules.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Uninvolved parenting",
+  "def": "A parenting style that is low in both warmth and demands.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Psychosocial development",
+  "def": "Erikson's theory that each of eight life stages poses a characteristic social challenge, such as trust versus mistrust.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Identity",
+  "def": "A person's sense of who they are, including their values, roles and group memberships.",
+  "week": 11,
+  "domain": "Dev/Social",
+  "ur": "شناخت"
+ },
+ {
+  "term": "Moral development",
+  "def": "Changes in reasoning about right and wrong; Kohlberg described preconventional, conventional and postconventional levels.",
+  "week": 11,
+  "domain": "Dev/Social"
+ },
+ {
+  "term": "Childhood",
+  "def": "The period of life between infancy and adolescence.",
+  "week": 11,
+  "domain": "Dev",
+  "ur": "بچپن"
+ },
+ {
+  "term": "Adolescence",
+  "def": "The transition period from childhood to adulthood.",
+  "week": 11,
+  "domain": "Dev",
+  "ur": "نوجوانی"
+ },
+ {
+  "term": "Puberty",
+  "def": "The period of sexual maturation during which a person becomes capable of reproduction.",
+  "week": 11,
+  "domain": "Dev/Bio",
+  "ur": "بلوغت"
+ },
+ {
+  "term": "Emerging adulthood",
+  "def": "A proposed stage, roughly ages 18 to the mid-twenties, between adolescence and full adulthood in many societies.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Aging",
+  "def": "The gradual physical and psychological changes that occur in later adulthood.",
+  "week": 11,
+  "domain": "Dev",
+  "ur": "بڑھاپا"
+ },
+ {
+  "term": "Socioemotional selectivity theory",
+  "def": "Carstensen's theory that as people perceive less time ahead, they focus more on emotionally meaningful relationships.",
+  "week": 11,
+  "domain": "Dev"
+ },
+ {
+  "term": "Dementia",
+  "def": "A decline in memory and other thinking abilities severe enough to interfere with daily life.",
+  "week": 11,
+  "domain": "Dev/Bio"
+ },
+ {
+  "term": "Alzheimer's disease",
+  "def": "A progressive brain disease and the most common cause of dementia, involving plaques, tangles and neuron loss.",
+  "week": 11,
+  "domain": "Bio/Dev"
+ },
+ {
+  "term": "Motivation",
+  "def": "Processes that energise, direct and sustain behaviour.",
+  "week": 12,
+  "domain": "Bio/Social",
+  "ur": "تحریک"
+ },
+ {
+  "term": "Intrinsic motivation",
+  "def": "The desire to do something because it is interesting or satisfying in itself.",
+  "week": 12,
+  "domain": "Social/IndDiff"
+ },
+ {
+  "term": "Extrinsic motivation",
+  "def": "The desire to do something to gain external rewards or avoid punishment.",
+  "week": 12,
+  "domain": "Social/IndDiff"
+ },
+ {
+  "term": "Instinct",
+  "def": "A complex, unlearned behaviour pattern found throughout a species.",
+  "week": 12,
+  "domain": "Bio",
+  "ur": "جبلت"
+ },
+ {
+  "term": "Drive-reduction theory",
+  "def": "The idea that physiological needs create tense drives that motivate behaviour to reduce them.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Homeostasis",
+  "def": "The tendency to keep internal bodily conditions stable around a set point.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Arousal theory",
+  "def": "The idea that people are motivated to maintain an optimal level of physiological arousal.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Yerkes–Dodson law",
+  "def": "The principle that performance improves with arousal up to a point and then declines, with the best level lower for difficult tasks.",
+  "week": 12,
+  "domain": "Bio/Cog"
+ },
+ {
+  "term": "Hierarchy of needs",
+  "def": "Maslow's model in which basic physiological and safety needs must be satisfied before higher needs such as esteem and self-actualisation.",
+  "week": 12,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Self-actualization",
+  "def": "In humanistic theory, the realisation of one's full potential.",
+  "week": 12,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Self-determination theory",
+  "def": "A theory that well-being and motivation depend on satisfying needs for autonomy, competence and relatedness.",
+  "week": 12,
+  "domain": "Social/IndDiff"
+ },
+ {
+  "term": "Hunger",
+  "def": "The motivation to eat, regulated by hormonal and neural signals.",
+  "week": 12,
+  "domain": "Bio",
+  "ur": "بھوک"
+ },
+ {
+  "term": "Ghrelin",
+  "def": "A hormone released mainly by the stomach that increases hunger.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Leptin",
+  "def": "A hormone released by fat cells that signals energy stores and reduces appetite.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Set point",
+  "def": "A weight or other level that the body's regulatory systems tend to defend.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Achievement motivation",
+  "def": "The desire to accomplish challenging goals and meet standards of excellence.",
+  "week": 12,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Emotion",
+  "def": "A response involving physiological arousal, expressive behaviour and conscious experience.",
+  "week": 12,
+  "domain": "Bio/Social",
+  "ur": "جذبات"
+ },
+ {
+  "term": "James–Lange theory",
+  "def": "The theory that emotion results from perceiving one's own bodily reactions to a stimulus.",
+  "week": 12,
+  "domain": "Bio/CHI"
+ },
+ {
+  "term": "Cannon–Bard theory",
+  "def": "The theory that an emotion-arousing stimulus triggers bodily responses and emotional experience at the same time.",
+  "week": 12,
+  "domain": "Bio/CHI"
+ },
+ {
+  "term": "Two-factor theory of emotion",
+  "def": "Schachter and Singer's theory that emotion requires both physiological arousal and a cognitive label for it.",
+  "week": 12,
+  "domain": "Social/Bio"
+ },
+ {
+  "term": "Cognitive appraisal",
+  "def": "Evaluating the meaning of a situation, which shapes the emotion and stress one experiences.",
+  "week": 12,
+  "domain": "Cog/Social"
+ },
+ {
+  "term": "Primary appraisal",
+  "def": "Judging whether a situation is irrelevant, positive or threatening to one's well-being.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Secondary appraisal",
+  "def": "Judging whether one has the resources to cope with a threatening situation.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Facial feedback hypothesis",
+  "def": "The idea that facial expressions can influence emotional experience; replication evidence is mixed and effects appear small.",
+  "week": 12,
+  "domain": "Social/Bio"
+ },
+ {
+  "term": "Basic emotions",
+  "def": "A proposed set of emotions, often listed as happiness, sadness, fear, anger, surprise and disgust, thought to be recognised widely across cultures.",
+  "week": 12,
+  "domain": "Social/Bio"
+ },
+ {
+  "term": "Fear",
+  "def": "An emotion triggered by perceived threat that prepares the body to escape or defend.",
+  "week": 12,
+  "domain": "Bio",
+  "ur": "خوف"
+ },
+ {
+  "term": "Anger",
+  "def": "An emotion arising from perceived wrongs or blocked goals.",
+  "week": 12,
+  "domain": "Social",
+  "ur": "غصہ"
+ },
+ {
+  "term": "Happiness",
+  "def": "A positive emotional state of pleasure or contentment.",
+  "week": 12,
+  "domain": "Social",
+  "ur": "خوشی"
+ },
+ {
+  "term": "Sadness",
+  "def": "An emotion associated with loss or disappointment.",
+  "week": 12,
+  "domain": "Social",
+  "ur": "اداسی"
+ },
+ {
+  "term": "Disgust",
+  "def": "An emotion of revulsion that helps avoid contamination and is extended to moral violations.",
+  "week": 12,
+  "domain": "Bio/Social",
+  "ur": "کراہت"
+ },
+ {
+  "term": "Surprise",
+  "def": "A brief emotion triggered by unexpected events.",
+  "week": 12,
+  "domain": "Social",
+  "ur": "حیرت"
+ },
+ {
+  "term": "Facial Action Coding System (FACS)",
+  "def": "Ekman and Friesen's system for describing facial expressions in terms of visible movements of individual facial muscles.",
+  "week": 12,
+  "domain": "Social/Methods"
+ },
+ {
+  "term": "Action unit",
+  "def": "In FACS, a numbered code for the visible movement produced by a specific facial muscle or muscle group, such as AU12 for the lip-corner puller.",
+  "week": 12,
+  "domain": "Social/Methods"
+ },
+ {
+  "term": "Duchenne smile",
+  "def": "A smile that involves both the lip corners (AU12) and the muscles around the eyes (AU6), often taken as a sign of felt enjoyment.",
+  "week": 12,
+  "domain": "Social"
+ },
+ {
+  "term": "Display rules",
+  "def": "Cultural norms about when, where and how strongly emotions should be expressed.",
+  "week": 12,
+  "domain": "Social"
+ },
+ {
+  "term": "Polygraph",
+  "def": "A device that records physiological arousal, such as heart rate and sweating, sometimes used in attempts to detect lies; its accuracy is disputed.",
+  "week": 12,
+  "domain": "Applied/Bio"
+ },
+ {
+  "term": "Stress",
+  "def": "The process by which a person perceives and responds to events judged as threatening or challenging.",
+  "week": 12,
+  "domain": "Bio/Applied",
+  "ur": "ذہنی دباؤ"
+ },
+ {
+  "term": "Stressor",
+  "def": "An event or condition that triggers a stress response.",
+  "week": 12,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Fight-or-flight response",
+  "def": "A rapid sympathetic-nervous-system reaction that prepares the body to confront or flee a threat.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "General adaptation syndrome",
+  "def": "Selye's three-stage model of the stress response: alarm, resistance and exhaustion.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "HPA axis",
+  "def": "The hypothalamic–pituitary–adrenal axis, a hormonal chain in which the hypothalamus signals the pituitary, which signals the adrenal glands to release cortisol.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Cortisol",
+  "def": "A steroid hormone released by the adrenal glands during stress that mobilises energy and affects immune function.",
+  "week": 12,
+  "domain": "Bio"
+ },
+ {
+  "term": "Allostatic load",
+  "def": "The cumulative wear and tear on the body from repeated or chronic stress responses.",
+  "week": 12,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Psychoneuroimmunology",
+  "def": "The study of how psychological processes, the nervous system and the immune system interact.",
+  "week": 12,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Coping",
+  "def": "Efforts to manage stressful demands and the emotions they produce.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Problem-focused coping",
+  "def": "Coping by acting directly on the source of stress.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Emotion-focused coping",
+  "def": "Coping by managing one's emotional reaction to stress.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Social support",
+  "def": "Help, comfort and resources provided by other people.",
+  "week": 12,
+  "domain": "Social/Applied"
+ },
+ {
+  "term": "Type A behavior pattern",
+  "def": "A style marked by competitiveness, time urgency and hostility; hostility appears to be the component most linked to heart disease.",
+  "week": 12,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Health psychology",
+  "def": "The study of psychological and behavioural factors in health, illness and health care.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Resilience",
+  "def": "The ability to adapt well and recover in the face of adversity.",
+  "week": 12,
+  "domain": "Applied",
+  "ur": "لچک"
+ },
+ {
+  "term": "Subjective well-being",
+  "def": "A person's own evaluation of their life satisfaction and their balance of positive and negative emotions.",
+  "week": 12,
+  "domain": "Applied/IndDiff",
+  "ur": "بہبود"
+ },
+ {
+  "term": "Flow",
+  "def": "A state of deep, effortless absorption in a challenging activity that matches one's skills.",
+  "week": 12,
+  "domain": "Applied"
+ },
+ {
+  "term": "Biofeedback",
+  "def": "A technique that gives people real-time information about a bodily process so they can learn to control it.",
+  "week": 12,
+  "domain": "Applied/Bio"
+ },
+ {
+  "term": "Personality",
+  "def": "A person's characteristic and relatively enduring patterns of thinking, feeling and behaving.",
+  "week": 13,
+  "domain": "IndDiff",
+  "ur": "شخصیت"
+ },
+ {
+  "term": "Trait",
+  "def": "A stable tendency to behave, think or feel in a particular way across situations.",
+  "week": 13,
+  "domain": "IndDiff",
+  "ur": "خصلت"
+ },
+ {
+  "term": "Five-factor model",
+  "def": "The 'Big Five' model describing personality in terms of openness, conscientiousness, extraversion, agreeableness and neuroticism.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Openness to experience",
+  "def": "A Big Five trait reflecting curiosity, imagination and interest in new ideas and experiences.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Conscientiousness",
+  "def": "A Big Five trait reflecting organisation, dependability and self-discipline.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Extraversion",
+  "def": "A Big Five trait reflecting sociability, assertiveness and a tendency to seek stimulation.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Agreeableness",
+  "def": "A Big Five trait reflecting warmth, cooperation and trust toward others.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Neuroticism",
+  "def": "A Big Five trait reflecting a tendency to experience negative emotions such as anxiety and moodiness.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "HEXACO model",
+  "def": "A six-factor personality model that adds Honesty–Humility to dimensions similar to the Big Five.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Lexical hypothesis",
+  "def": "The idea that important personality differences become encoded as words in a language, so studying trait words reveals key dimensions.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "International Personality Item Pool (IPIP)",
+  "def": "A free, public-domain collection of personality items and scales, including markers of the Big Five, for research use.",
+  "week": 13,
+  "domain": "IndDiff/Methods"
+ },
+ {
+  "term": "Person–situation debate",
+  "def": "The argument, sparked by Mischel in 1968, over whether behaviour is better predicted by stable traits or by situations; most now accept both matter.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "Id",
+  "def": "In Freud's theory, the unconscious part of personality driven by basic urges and the pleasure principle.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "Ego",
+  "def": "In Freud's theory, the part of personality that mediates between the id's demands, the superego and reality.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "Superego",
+  "def": "In Freud's theory, the part of personality that represents internalised moral standards.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "Defense mechanism",
+  "def": "In psychodynamic theory, an unconscious strategy that protects the ego from anxiety by distorting reality.",
+  "week": 13,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Repression",
+  "def": "A defense mechanism that pushes threatening thoughts and memories out of awareness.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Projection",
+  "def": "A defense mechanism in which a person attributes their own unacceptable feelings to others.",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Collective unconscious",
+  "def": "Jung's proposed shared, inherited layer of the unconscious containing universal images called archetypes.",
+  "week": 13,
+  "domain": "IndDiff/CHI"
+ },
+ {
+  "term": "Self-efficacy",
+  "def": "A person's belief in their ability to succeed at a specific task.",
+  "week": 13,
+  "domain": "IndDiff/Social"
+ },
+ {
+  "term": "Locus of control",
+  "def": "Rotter's concept of whether people believe outcomes are controlled mainly by their own actions (internal) or by outside forces (external).",
+  "week": 13,
+  "domain": "IndDiff"
+ },
+ {
+  "term": "Reciprocal determinism",
+  "def": "Bandura's idea that behaviour, personal factors and the environment all influence one another.",
+  "week": 13,
+  "domain": "IndDiff/Social"
+ },
+ {
+  "term": "Self-concept",
+  "def": "A person's overall set of beliefs about who they are.",
+  "week": 13,
+  "domain": "IndDiff/Social",
+  "ur": "تصورِ ذات"
+ },
+ {
+  "term": "Self-esteem",
+  "def": "A person's overall evaluation of their own worth.",
+  "week": 13,
+  "domain": "IndDiff/Social",
+  "ur": "عزتِ نفس"
+ },
+ {
+  "term": "Psychological test",
+  "def": "A standardised procedure for sampling behaviour to measure a psychological characteristic.",
+  "week": 13,
+  "domain": "Methods/IndDiff"
+ },
+ {
+  "term": "Psychometrics",
+  "def": "The science of designing and evaluating psychological tests and measurements.",
+  "week": 13,
+  "domain": "Methods/IndDiff"
+ },
+ {
+  "term": "Self-report inventory",
+  "def": "A questionnaire on which people describe their own traits, feelings or behaviours.",
+  "week": 13,
+  "domain": "Methods/IndDiff"
+ },
+ {
+  "term": "Projective test",
+  "def": "A test presenting ambiguous stimuli on the assumption that people project their inner feelings onto their responses.",
+  "week": 13,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Rorschach inkblot test",
+  "def": "A projective test in which people describe what they see in a series of inkblots; its validity is debated.",
+  "week": 13,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Thematic Apperception Test (TAT)",
+  "def": "A projective test in which people tell stories about ambiguous pictures.",
+  "week": 13,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "MMPI",
+  "def": "The Minnesota Multiphasic Personality Inventory, a widely used self-report test for assessing psychological problems, with built-in validity scales.",
+  "week": 13,
+  "domain": "IndDiff/Applied"
+ },
+ {
+  "term": "Barnum effect",
+  "def": "The tendency to accept vague, general personality descriptions as highly accurate for oneself.",
+  "week": 13,
+  "domain": "IndDiff/Social"
+ },
+ {
+  "term": "Likert scale",
+  "def": "A rating format in which respondents indicate agreement with statements on an ordered scale, such as 1 (strongly disagree) to 5 (strongly agree).",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Reverse-scored item",
+  "def": "A questionnaire item worded in the opposite direction of the trait, whose score is flipped before totalling.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Social desirability bias",
+  "def": "The tendency to answer questions in a way that makes one look good rather than truthfully.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Acquiescence bias",
+  "def": "The tendency to agree with statements regardless of their content.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Reliability",
+  "def": "The consistency of a measure across time, items or raters.",
+  "week": 13,
+  "domain": "Methods",
+  "ur": "اعتباریت"
+ },
+ {
+  "term": "Test–retest reliability",
+  "def": "The consistency of scores when the same test is given to the same people on two occasions.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Internal consistency",
+  "def": "The degree to which items on a scale measure the same underlying construct.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Split-half reliability",
+  "def": "The correlation between scores on two halves of a test, adjusted to estimate full-length reliability.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Cronbach's alpha",
+  "def": "A common index of internal consistency based on the number of items and their average inter-correlation; higher values indicate more consistent items.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Spearman–Brown prophecy formula",
+  "def": "A formula that predicts how a test's reliability will change if it is lengthened or shortened with comparable items.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Classical test theory",
+  "def": "The model in which each observed score is the sum of a true score and random measurement error.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Standard error of measurement",
+  "def": "An estimate of how much observed scores vary around a person's true score, calculated as the test's standard deviation times the square root of one minus its reliability.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Item response theory",
+  "def": "A family of models linking the probability of a particular item response to a person's level on an underlying trait and to item properties such as difficulty.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Factor analysis",
+  "def": "A statistical technique that identifies clusters of correlated variables reflecting underlying dimensions.",
+  "week": 13,
+  "domain": "Methods/IndDiff"
+ },
+ {
+  "term": "Validity",
+  "def": "The extent to which a test measures what it claims to measure and supports the intended interpretations.",
+  "week": 13,
+  "domain": "Methods",
+  "ur": "صداقت"
+ },
+ {
+  "term": "Content validity",
+  "def": "How well a test's items represent the full range of the construct being measured.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Construct validity",
+  "def": "The degree to which a test truly measures the theoretical construct it targets.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Criterion validity",
+  "def": "How well test scores relate to an external outcome they should predict or coincide with.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Convergent validity",
+  "def": "Evidence that a test correlates strongly with other measures of the same construct.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Discriminant validity",
+  "def": "Evidence that a test correlates weakly with measures of different constructs.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Face validity",
+  "def": "Whether a test appears, on the surface, to measure what it claims to.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Norms",
+  "def": "Reference scores from a representative group that allow an individual's score to be interpreted.",
+  "week": 13,
+  "domain": "Methods"
+ },
+ {
+  "term": "Social psychology",
+  "def": "The study of how people think about, influence and relate to one another.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "سماجی نفسیات"
+ },
+ {
+  "term": "Behavior",
+  "def": "Any observable action or reaction of a person or animal.",
+  "week": 14,
+  "domain": "Social/Cog",
+  "ur": "طرزِ عمل"
+ },
+ {
+  "term": "Attribution",
+  "def": "An explanation of the cause of one's own or another person's behaviour.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Fundamental attribution error",
+  "def": "The tendency to overemphasise personality and underestimate situational causes when explaining other people's behaviour.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Actor–observer bias",
+  "def": "The tendency to explain one's own actions by the situation but others' actions by their dispositions.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Self-serving bias",
+  "def": "Taking credit for successes while blaming failures on external factors.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Just-world hypothesis",
+  "def": "The belief that people get what they deserve, which can lead to blaming victims.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Attitude",
+  "def": "A learned evaluation of a person, object or idea that can influence behaviour.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "رویہ"
+ },
+ {
+  "term": "Cognitive dissonance",
+  "def": "Discomfort felt when holding inconsistent beliefs or acting against one's beliefs, which motivates attitude change.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Elaboration likelihood model",
+  "def": "A persuasion model distinguishing a central route based on careful thought from a peripheral route based on superficial cues.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Foot-in-the-door technique",
+  "def": "Gaining compliance with a large request by first getting agreement to a small one.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Door-in-the-face technique",
+  "def": "Gaining compliance with a moderate request after a larger one has been refused.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Conformity",
+  "def": "Changing one's behaviour or beliefs to match those of a group.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "ہم نوائی"
+ },
+ {
+  "term": "Asch conformity experiment",
+  "def": "Asch's 1950s line-judgment studies in which many participants sometimes agreed with a group's obviously wrong answers.",
+  "week": 14,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Normative social influence",
+  "def": "Conforming to be liked or accepted by a group.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Informational social influence",
+  "def": "Conforming because one believes the group has accurate information.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Obedience",
+  "def": "Following the orders of an authority figure.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "اطاعت"
+ },
+ {
+  "term": "Milgram obedience studies",
+  "def": "1960s experiments in which many participants obeyed instructions to give what they believed were increasingly dangerous electric shocks to another person.",
+  "week": 14,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Stanford prison experiment",
+  "def": "A 1971 role-play study of guards and prisoners whose dramatic findings have been heavily criticised for demand characteristics and experimenter influence.",
+  "week": 14,
+  "domain": "Social/CHI"
+ },
+ {
+  "term": "Groupthink",
+  "def": "A mode of group decision making in which the desire for harmony overrides realistic evaluation of alternatives.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Group polarization",
+  "def": "The tendency for group discussion to strengthen members' initial leanings.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Social facilitation",
+  "def": "Improved performance on simple or well-learned tasks, and often worse performance on difficult tasks, in the presence of others.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Social loafing",
+  "def": "The tendency to put in less effort when working in a group than when working alone.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Deindividuation",
+  "def": "A loss of self-awareness and restraint in group situations that offer anonymity and arousal.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Bystander effect",
+  "def": "The tendency for any one person to be less likely to help in an emergency when other people are present.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Diffusion of responsibility",
+  "def": "A reduced sense of personal responsibility to act when others are present.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Pluralistic ignorance",
+  "def": "A situation in which group members privately disagree with a norm but wrongly assume others accept it.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Prejudice",
+  "def": "A negative attitude toward a group and its members.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "تعصب"
+ },
+ {
+  "term": "Stereotype",
+  "def": "A generalised belief about the characteristics of members of a group.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "دقیانوسی تصور"
+ },
+ {
+  "term": "Discrimination",
+  "def": "Unjustified negative behaviour toward members of a group.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "امتیازی سلوک"
+ },
+ {
+  "term": "Ingroup bias",
+  "def": "The tendency to favour one's own group.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Outgroup homogeneity effect",
+  "def": "Seeing members of other groups as more similar to one another than members of one's own group.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Social identity theory",
+  "def": "Tajfel and Turner's theory that part of self-esteem comes from group memberships, encouraging ingroup favouritism.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Realistic conflict theory",
+  "def": "The idea that competition for limited resources produces hostility between groups.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Contact hypothesis",
+  "def": "The proposal that positive contact between groups under certain conditions, such as equal status and shared goals, reduces prejudice.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Implicit Association Test (IAT)",
+  "def": "A reaction-time task that measures how quickly people link concepts; its reliability and power to predict individual behaviour are debated.",
+  "week": 14,
+  "domain": "Social/Methods"
+ },
+ {
+  "term": "Aggression",
+  "def": "Behaviour intended to harm another person.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "جارحیت"
+ },
+ {
+  "term": "Frustration–aggression hypothesis",
+  "def": "The idea that blocking a goal creates frustration that can lead to aggression.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Altruism",
+  "def": "Helping others with no expectation of reward, sometimes at a cost to oneself.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "ایثار"
+ },
+ {
+  "term": "Prosocial behavior",
+  "def": "Voluntary actions that benefit others, such as helping, sharing and cooperating.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Reciprocity norm",
+  "def": "The social expectation that people will return favours and help those who have helped them.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Mere-exposure effect",
+  "def": "The tendency to like things more after repeated exposure to them.",
+  "week": 14,
+  "domain": "Social"
+ },
+ {
+  "term": "Culture",
+  "def": "The shared beliefs, values, practices and artefacts of a group, passed across generations.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "ثقافت"
+ },
+ {
+  "term": "Individualism",
+  "def": "A cultural orientation that prioritises personal goals and independence.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "انفرادیت پسندی"
+ },
+ {
+  "term": "Collectivism",
+  "def": "A cultural orientation that prioritises group goals, harmony and interdependence.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "اجتماعیت پسندی"
+ },
+ {
+  "term": "Group",
+  "def": "Two or more people who interact and share a sense of belonging.",
+  "week": 14,
+  "domain": "Social",
+  "ur": "گروہ"
+ },
+ {
+  "term": "Industrial-organizational psychology",
+  "def": "The application of psychology to the workplace, including selection, training, motivation and organisational culture.",
+  "week": 14,
+  "domain": "Applied/Social"
+ },
+ {
+  "term": "Job analysis",
+  "def": "A systematic study of the tasks, skills and conditions involved in a job.",
+  "week": 14,
+  "domain": "Applied"
+ },
+ {
+  "term": "Structured interview",
+  "def": "An interview in which all candidates are asked the same job-relevant questions and rated on consistent criteria.",
+  "week": 14,
+  "domain": "Applied/Methods"
+ },
+ {
+  "term": "Performance appraisal",
+  "def": "Evaluating an employee's work performance against defined standards.",
+  "week": 14,
+  "domain": "Applied"
+ },
+ {
+  "term": "Job satisfaction",
+  "def": "The degree to which people feel positive about their job.",
+  "week": 14,
+  "domain": "Applied",
+  "ur": "ملازمت سے اطمینان"
+ },
+ {
+  "term": "Leadership",
+  "def": "The process of influencing and guiding others toward shared goals.",
+  "week": 14,
+  "domain": "Applied/Social",
+  "ur": "قیادت"
+ },
+ {
+  "term": "Transformational leadership",
+  "def": "Leadership that inspires followers through vision, enthusiasm and attention to their development.",
+  "week": 14,
+  "domain": "Applied/Social"
+ },
+ {
+  "term": "Burnout",
+  "def": "A state of exhaustion, cynicism and reduced effectiveness resulting from chronic work stress.",
+  "week": 14,
+  "domain": "Applied"
+ },
+ {
+  "term": "Human factors",
+  "def": "The field that designs systems, devices and environments to fit human abilities and limitations; also called ergonomics.",
+  "week": 14,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Mental health",
+  "def": "A state of well-being in which a person can cope with normal stresses, work productively and contribute to their community.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "ذہنی صحت"
+ },
+ {
+  "term": "Psychological disorder",
+  "def": "A pattern of thoughts, feelings or behaviours that causes significant distress or impairment and departs from cultural norms.",
+  "week": 15,
+  "domain": "Applied/IndDiff",
+  "ur": "نفسیاتی عارضہ"
+ },
+ {
+  "term": "DSM-5-TR",
+  "def": "The 2022 text revision of the American Psychiatric Association's Diagnostic and Statistical Manual of Mental Disorders.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "ICD-11",
+  "def": "The World Health Organization's International Classification of Diseases, eleventh revision, which includes mental disorders.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Comorbidity",
+  "def": "The presence of two or more disorders in the same person.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Prevalence",
+  "def": "The proportion of a population that has a condition during a given period.",
+  "week": 15,
+  "domain": "Applied/Methods"
+ },
+ {
+  "term": "Diathesis–stress model",
+  "def": "The view that disorders develop when an underlying vulnerability interacts with stressful life events.",
+  "week": 15,
+  "domain": "Applied/Bio"
+ },
+ {
+  "term": "Biopsychosocial model",
+  "def": "An approach that explains health and illness through interacting biological, psychological and social factors.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Stigma",
+  "def": "Negative attitudes and discrimination directed at people because of a characteristic such as a mental illness.",
+  "week": 15,
+  "domain": "Social/Applied",
+  "ur": "بدنامی"
+ },
+ {
+  "term": "Anxiety",
+  "def": "A state of worry, tension and physiological arousal about possible future threats.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "اضطراب"
+ },
+ {
+  "term": "Generalized anxiety disorder",
+  "def": "A disorder marked by persistent, excessive worry about many areas of life that is hard to control.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Panic disorder",
+  "def": "A disorder involving repeated unexpected panic attacks and worry about having more.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Specific phobia",
+  "def": "An intense, irrational fear of a particular object or situation that leads to avoidance.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "فوبیا"
+ },
+ {
+  "term": "Social anxiety disorder",
+  "def": "Intense fear of social situations in which one might be judged or embarrassed.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Obsessive-compulsive disorder",
+  "def": "A disorder involving intrusive, unwanted thoughts (obsessions) and repetitive behaviours performed to reduce distress (compulsions).",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Post-traumatic stress disorder",
+  "def": "A disorder following a traumatic event, involving intrusive memories, avoidance, negative mood changes and heightened arousal.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Trauma",
+  "def": "Exposure to an event involving actual or threatened death, serious injury or violence, or the psychological impact of such events.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "صدمہ"
+ },
+ {
+  "term": "Depression",
+  "def": "A persistent state of low mood, loss of interest and related symptoms; in clinical form, major depressive disorder.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "افسردگی"
+ },
+ {
+  "term": "Major depressive disorder",
+  "def": "A disorder marked by at least two weeks of depressed mood or loss of interest along with other symptoms such as sleep and appetite changes.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Bipolar disorder",
+  "def": "A mood disorder in which periods of mania or hypomania alternate with, or occur alongside, episodes of depression.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Schizophrenia",
+  "def": "A serious disorder involving disturbed thinking, perception and behaviour, such as hallucinations, delusions and reduced motivation.",
+  "week": 15,
+  "domain": "Applied/Bio",
+  "ur": "شیزوفرینیا"
+ },
+ {
+  "term": "Hallucination",
+  "def": "A perception-like experience, such as hearing a voice, that occurs without an external stimulus.",
+  "week": 15,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Delusion",
+  "def": "A firmly held false belief that persists despite clear evidence against it.",
+  "week": 15,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Positive symptoms",
+  "def": "Symptoms of psychosis that add something to experience, such as hallucinations and delusions.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Negative symptoms",
+  "def": "Symptoms of psychosis that reflect a loss of normal functions, such as flat affect or reduced motivation.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Dissociative identity disorder",
+  "def": "A rare and controversial diagnosis in which a person shows two or more distinct identity states.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Personality disorder",
+  "def": "An enduring, inflexible pattern of inner experience and behaviour that deviates from cultural expectations and causes distress or impairment.",
+  "week": 15,
+  "domain": "Applied/IndDiff"
+ },
+ {
+  "term": "Borderline personality disorder",
+  "def": "A disorder marked by unstable relationships, self-image and emotions, along with impulsivity.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Antisocial personality disorder",
+  "def": "A disorder involving a persistent disregard for and violation of the rights of others.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Autism spectrum disorder",
+  "def": "A neurodevelopmental condition involving differences in social communication and restricted or repetitive behaviours and interests.",
+  "week": 15,
+  "domain": "Applied/Dev"
+ },
+ {
+  "term": "ADHD",
+  "def": "Attention-deficit/hyperactivity disorder, a neurodevelopmental condition marked by persistent inattention and/or hyperactivity–impulsivity.",
+  "week": 15,
+  "domain": "Applied/Dev"
+ },
+ {
+  "term": "Anorexia nervosa",
+  "def": "An eating disorder involving severe restriction of food intake, intense fear of weight gain and a distorted body image.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Bulimia nervosa",
+  "def": "An eating disorder involving recurrent binge eating followed by compensatory behaviours such as vomiting.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Substance use disorder",
+  "def": "A pattern of substance use leading to significant impairment, such as loss of control and continued use despite harm.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "نشے کی لت"
+ },
+ {
+  "term": "Suicide",
+  "def": "Death caused by intentionally injuring oneself; risk should always be taken seriously and referred to crisis services.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "خودکشی"
+ },
+ {
+  "term": "Safety plan",
+  "def": "A written, collaborative list of warning signs, coping steps and contacts a person can use during a suicidal crisis.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Psychological first aid",
+  "def": "An evidence-informed approach to supporting people in the immediate aftermath of a crisis by promoting safety, calm and connection.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Psychotherapy",
+  "def": "Treatment of psychological problems through a structured relationship between a trained therapist and a client.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "نفسیاتی علاج"
+ },
+ {
+  "term": "Therapy",
+  "def": "Treatment intended to relieve or heal a disorder or problem.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "علاج"
+ },
+ {
+  "term": "Counseling",
+  "def": "A professional helping relationship focused on supporting people with personal, educational or vocational concerns.",
+  "week": 15,
+  "domain": "Applied",
+  "ur": "مشاورت"
+ },
+ {
+  "term": "Psychodynamic therapy",
+  "def": "Therapy that explores unconscious conflicts and past relationships to increase insight.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Cognitive-behavioral therapy (CBT)",
+  "def": "A structured therapy that helps people identify and change unhelpful thoughts and behaviours.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "ABC model (CBT)",
+  "def": "A framework, from Ellis, in which an Activating event leads to Beliefs about it, which in turn produce emotional and behavioural Consequences.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Cognitive distortion",
+  "def": "A habitual error in thinking, such as catastrophising or all-or-nothing thinking, that fuels negative emotions.",
+  "week": 15,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Automatic thoughts",
+  "def": "Quick, spontaneous thoughts that pop up in response to situations and can shape mood.",
+  "week": 15,
+  "domain": "Applied/Cog"
+ },
+ {
+  "term": "Exposure therapy",
+  "def": "Treatment that reduces fear by having a person repeatedly and safely confront feared stimuli.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Systematic desensitization",
+  "def": "Wolpe's technique pairing relaxation with gradual imagined or real exposure to a hierarchy of feared situations.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Behavioral activation",
+  "def": "A therapy for depression that increases engagement in rewarding and meaningful activities.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Client-centered therapy",
+  "def": "Carl Rogers's humanistic therapy, in which the therapist provides empathy, acceptance and genuineness to support the client's growth.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Unconditional positive regard",
+  "def": "Acceptance and valuing of a person without conditions, a core ingredient of client-centred therapy.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Empathy",
+  "def": "Understanding and sharing another person's feelings from their point of view.",
+  "week": 15,
+  "domain": "Applied/Social",
+  "ur": "ہم احساسی"
+ },
+ {
+  "term": "Genuineness",
+  "def": "A therapist's openness and consistency between inner experience and outward behaviour; also called congruence.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Motivational interviewing",
+  "def": "A collaborative counselling style that strengthens a person's own motivation and commitment to change.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "OARS",
+  "def": "Core motivational-interviewing skills: Open questions, Affirmations, Reflections and Summaries.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Open-ended question",
+  "def": "A question that invites an extended answer rather than 'yes' or 'no'.",
+  "week": 15,
+  "domain": "Applied/Methods"
+ },
+ {
+  "term": "Reflective listening",
+  "def": "Restating or paraphrasing what a speaker has said to show understanding and invite further exploration.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Therapeutic alliance",
+  "def": "The collaborative bond between therapist and client, which consistently predicts treatment outcome.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Common factors",
+  "def": "Features shared across therapies, such as the alliance, empathy and expectations, that contribute to improvement.",
+  "week": 15,
+  "domain": "Applied"
+ },
+ {
+  "term": "Evidence-based practice",
+  "def": "Integrating the best available research with clinical expertise and client characteristics, culture and preferences.",
+  "week": 15,
+  "domain": "Applied/Methods"
+ },
+ {
+  "term": "Psychopharmacology",
+  "def": "The study of how drugs affect mood, thinking and behaviour, and their use in treatment.",
+  "week": 15,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "SSRIs",
+  "def": "Selective serotonin reuptake inhibitors, antidepressant drugs that block the reuptake of serotonin.",
+  "week": 15,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Antipsychotic",
+  "def": "A medication used mainly to reduce psychotic symptoms, many of which block dopamine receptors.",
+  "week": 15,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Lithium",
+  "def": "A mood-stabilising medication used to treat bipolar disorder.",
+  "week": 15,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Electroconvulsive therapy",
+  "def": "A treatment for severe depression in which a brief electrical current induces a controlled seizure under anaesthesia.",
+  "week": 15,
+  "domain": "Bio/Applied"
+ },
+ {
+  "term": "Deinstitutionalization",
+  "def": "The movement of people with serious mental illness out of large psychiatric hospitals into community care.",
+  "week": 15,
+  "domain": "Applied/CHI"
+ },
+ {
+  "term": "Cultural concepts of distress",
+  "def": "Ways that cultural groups experience, understand and communicate suffering or problematic behaviour.",
+  "week": 15,
+  "domain": "Applied/Social"
+ },
+ {
+  "term": "Cultural competence",
+  "def": "A practitioner's awareness, knowledge and skills for working effectively with clients from diverse backgrounds.",
+  "week": 15,
+  "domain": "Applied/Social"
+ },
+ {
+  "term": "Inferential statistics",
+  "def": "Methods for drawing conclusions about populations from sample data while quantifying uncertainty.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "استنباطی شماریات"
+ },
+ {
+  "term": "Null hypothesis",
+  "def": "The default assumption that there is no effect or no difference in the population.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "صفری مفروضہ"
+ },
+ {
+  "term": "Alternative hypothesis",
+  "def": "The hypothesis that there is an effect or difference in the population.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "p-value",
+  "def": "The probability of obtaining results at least as extreme as those observed if the null hypothesis were true.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Statistical significance",
+  "def": "A result whose p-value falls below a chosen alpha level, conventionally .05.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Alpha level",
+  "def": "The threshold probability chosen in advance for rejecting the null hypothesis; it equals the Type I error rate when the null is true.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Type I error",
+  "def": "Rejecting a null hypothesis that is actually true; a false positive.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Type II error",
+  "def": "Failing to reject a null hypothesis that is actually false; a false negative.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Statistical power",
+  "def": "The probability that a test will detect an effect of a given size if it truly exists; equal to one minus the Type II error rate.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Power analysis",
+  "def": "A calculation used to determine the sample size needed to detect an expected effect with a desired level of power.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Effect size",
+  "def": "A measure of the magnitude of an effect, independent of sample size.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Cohen's d",
+  "def": "An effect size equal to the difference between two means divided by their pooled standard deviation; Cohen suggested 0.2, 0.5 and 0.8 as rough benchmarks for small, medium and large.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Partial eta squared",
+  "def": "An ANOVA effect size showing the proportion of variance associated with a factor after excluding other factors.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Confidence interval",
+  "def": "A range of values, computed from sample data by a procedure that captures the true population value in a stated proportion (such as 95%) of repeated samples.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Standard error",
+  "def": "The standard deviation of a sampling distribution; it shows how much a statistic such as the mean would vary across samples.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Sampling distribution",
+  "def": "The distribution of a statistic across many possible samples of the same size.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Central limit theorem",
+  "def": "The principle that the sampling distribution of the mean approaches a normal distribution as sample size grows, whatever the population's shape.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Degrees of freedom",
+  "def": "The number of values free to vary when estimating a statistic, used to choose the correct reference distribution.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "t-test",
+  "def": "A test comparing two means, such as two groups or two conditions, relative to their variability.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Paired-samples t-test",
+  "def": "A t-test comparing two measurements from the same participants.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Analysis of variance (ANOVA)",
+  "def": "A test comparing means across three or more groups or conditions by partitioning variance.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "F ratio",
+  "def": "In ANOVA, the ratio of variance between groups to variance within groups.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Chi-square test",
+  "def": "A test of whether observed category frequencies differ from expected frequencies.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Multiple regression",
+  "def": "A technique that predicts an outcome from several predictor variables at once.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Mixed-effects model",
+  "def": "A regression model that includes both fixed effects and random effects, such as variation across participants and items.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Multiple comparisons problem",
+  "def": "The rise in the chance of at least one false positive when many statistical tests are run.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Bonferroni correction",
+  "def": "An adjustment that divides the alpha level by the number of tests to control the overall false-positive rate.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Equivalence testing",
+  "def": "A procedure for testing whether an effect is small enough to be considered practically zero.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Bayesian inference",
+  "def": "An approach that updates the probability of hypotheses in light of data, combining prior beliefs with evidence.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Bayes factor",
+  "def": "The ratio of how well two competing hypotheses predict the observed data.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Meta-analysis",
+  "def": "A statistical method combining the results of many studies to estimate an overall effect size.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Publication bias",
+  "def": "The tendency for studies with significant or striking results to be published more often than those with null results.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "File-drawer problem",
+  "def": "The concern that unpublished null results sitting in researchers' files distort the published literature.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Funnel plot",
+  "def": "A scatterplot of study effect sizes against their precision, used to look for signs of publication bias.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Replication",
+  "def": "Repeating a study to see whether its findings hold.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "تکرار"
+ },
+ {
+  "term": "Direct replication",
+  "def": "Repeating a study as closely as possible to the original methods.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Conceptual replication",
+  "def": "Testing the same hypothesis with different methods or measures.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Replication crisis",
+  "def": "The realisation, especially in the 2010s, that many published findings in psychology and other fields did not hold up when repeated.",
+  "week": 16,
+  "domain": "Methods/CHI"
+ },
+ {
+  "term": "Reproducibility Project: Psychology",
+  "def": "A 2015 collaborative effort that repeated 100 published psychology studies and found that fewer than half produced statistically significant results again.",
+  "week": 16,
+  "domain": "Methods/CHI"
+ },
+ {
+  "term": "Many Labs",
+  "def": "A series of large collaborative projects in which many laboratories run the same studies to test replicability and variation across sites.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Ego depletion",
+  "def": "The claim that self-control draws on a limited resource that is used up by effort; a large multi-lab replication found an effect close to zero.",
+  "week": 16,
+  "domain": "Social/Methods"
+ },
+ {
+  "term": "Questionable research practices",
+  "def": "Methods choices, such as selective reporting or flexible stopping rules, that inflate false-positive findings without being outright fraud.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Researcher degrees of freedom",
+  "def": "The many analytic decisions researchers can make, which can be exploited, knowingly or not, to produce significant results.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "p-hacking",
+  "def": "Trying different analyses, exclusions or stopping points until a significant p-value appears, then reporting only that result.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "HARKing",
+  "def": "Hypothesising After the Results are Known: presenting an explanation formed after seeing data as if it had been predicted in advance.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Preregistration",
+  "def": "Recording hypotheses, methods and analysis plans in a time-stamped public registry before collecting or analysing data.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Registered report",
+  "def": "A publication format in which the introduction and methods are peer-reviewed before data collection, and the journal commits to publish regardless of the results.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Open science",
+  "def": "Practices that make research transparent and accessible, such as sharing data, materials, code and preprints.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Open data",
+  "def": "Making a study's raw data publicly available so others can check and reuse it.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Open Science Framework",
+  "def": "A free online platform for preregistering studies and sharing project materials, data and code.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Preprint",
+  "def": "A version of a research paper shared publicly before formal peer review.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Reproducibility",
+  "def": "Obtaining the same results when the original data are reanalysed with the same methods.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Research misconduct",
+  "def": "Fabrication, falsification or plagiarism in proposing, performing or reporting research.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "APA style",
+  "def": "The writing and formatting conventions of the American Psychological Association for scientific reports.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Abstract",
+  "def": "A brief summary at the start of a research report describing its purpose, method, results and conclusions.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "خلاصہ"
+ },
+ {
+  "term": "Literature review",
+  "def": "A summary and synthesis of existing research on a topic.",
+  "week": 16,
+  "domain": "Methods"
+ },
+ {
+  "term": "Research",
+  "def": "Systematic investigation aimed at producing reliable knowledge.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "تحقیق"
+ },
+ {
+  "term": "Probability",
+  "def": "A number from 0 to 1 expressing how likely an event is.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "احتمال"
+ },
+ {
+  "term": "Observation",
+  "def": "Systematically watching and recording behaviour or events.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "مشاہدہ"
+ },
+ {
+  "term": "Interview",
+  "def": "A method of gathering information through direct conversation with a participant.",
+  "week": 16,
+  "domain": "Methods",
+  "ur": "انٹرویو"
+ }
+]

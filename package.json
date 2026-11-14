@@ -1,0 +1,15 @@
+{
+  "name": "zehn-psychology-lab-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZEHN (ذہن) — 3D Psychology Lab Simulator: single-file offline Three.js teaching game (simulated institution).",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build/bundle.mjs",
+    "test": "node --test test/*.test.js",
+    "e2e": "node e2e/run.mjs",
+    "count": "node tools/count.mjs",
+    "verify": "npm test && npm run build && npm run e2e"
+  },
+  "engines": { "node": ">=20" }
+}

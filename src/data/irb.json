@@ -1,0 +1,432 @@
+[
+  {
+    "id": "IRB01",
+    "title": "Big Five traits and study habits (IPIP survey)",
+    "summary": "A second-year IIBS (simulated) student team will survey about 150 adult undergraduates online using the public-domain IPIP 50-item Big Five markers and a short study-habits questionnaire. Participation is anonymous: no names, emails or IP addresses are stored. The information sheet states the purpose, the 15-minute duration and the right to stop at any time, and notes that results are \"for learning only, not a diagnosis\". Participants can see their own trait profile on screen at the end.",
+    "design": "Correlational, anonymous online survey",
+    "risks": [
+      "Minimal: possible mild discomfort reflecting on one's personality",
+      "Over-interpretation of a personal trait profile"
+    ],
+    "correct": "approve",
+    "reasons": [
+      "Minimal-risk anonymous survey using public-domain items",
+      "Consent information is complete, including withdrawal and duration",
+      "The \"not a diagnosis\" disclaimer addresses over-interpretation",
+      "No identifiers are collected, so confidentiality is protected by design"
+    ],
+    "codes": [
+      "APA 8.02",
+      "APA 8.05",
+      "APA 4.01",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB02",
+    "title": "Theory of mind in Hyderabad primary schools",
+    "summary": "Researchers will test 80 children aged 4–6 on two false-belief stories (original characters) in three primary schools in Hyderabad (simulated). Head teachers have agreed, and an opt-out letter will go home, so parents who do not reply are assumed to consent. Sessions will be video-recorded for coding. Children are not asked whether they want to take part.",
+    "design": "Cross-sectional developmental experiment with video coding",
+    "risks": [
+      "Children may feel tested or upset by \"wrong\" answers",
+      "Identifiable video of minors",
+      "Passive (opt-out) parental consent",
+      "No child assent"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Replace opt-out letters with active, written parental permission in Urdu, Sindhi and English",
+      "Add age-appropriate verbal assent, and stop if a child shows reluctance",
+      "Obtain specific consent for video recording, with secure storage and a deletion date",
+      "Tell children afterwards that there are no wrong answers"
+    ],
+    "codes": [
+      "APA 3.10",
+      "APA 8.02",
+      "APA 8.03",
+      "APA 4.01",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB03",
+    "title": "Leading questions and eyewitness memory",
+    "summary": "Adult students will watch a short animated traffic clip (original), then answer a questionnaire in which one item uses a stronger or weaker verb. The information sheet describes the study as \"memory for events\", without revealing the verb manipulation. Immediately afterwards, each participant receives a full spoken and written debrief explaining the manipulation and its purpose, and is offered the chance to withdraw their data. The clip contains no injuries.",
+    "design": "Between-subjects experiment with mild deception",
+    "risks": [
+      "Mild deception about the study's aim",
+      "Brief annoyance at being misled"
+    ],
+    "correct": "approve",
+    "reasons": [
+      "Deception is mild, scientifically justified and could not be replaced by full disclosure without changing the result",
+      "No pain or severe distress is expected",
+      "Debriefing is prompt and includes the option to withdraw data",
+      "The stimulus is non-graphic"
+    ],
+    "codes": [
+      "APA 8.07",
+      "APA 8.08",
+      "APA 8.02",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB04",
+    "title": "Conformity disguised as a perception study",
+    "summary": "Participants will be told they are taking part in a \"visual perception\" study, while confederates give unanimous wrong answers on line-length judgements. To stop word spreading across the department, the team plans no debrief until the end of the academic year, and only by email. Data will be kept even if participants later object.",
+    "design": "Laboratory experiment with confederates (deception)",
+    "risks": [
+      "Embarrassment or self-doubt after conforming",
+      "Long period holding a false belief about the study",
+      "No real opportunity to withdraw data"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Debrief each participant in person immediately after the session (or as soon as feasible), explaining the deception and its purpose",
+      "Offer the option to withdraw data after the debrief, and honour it",
+      "Manage contamination by asking for discretion, not by delaying the debrief",
+      "Prepare a debrief script that normalises conformity"
+    ],
+    "codes": [
+      "APA 8.07",
+      "APA 8.08",
+      "APA 8.02",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB05",
+    "title": "Full-intensity obedience replication",
+    "summary": "A student team proposes an exact replication of a classic obedience paradigm. Participants act as \"teacher\" and press switches on a mock generator labelled up to the maximum level, while a confederate \"learner\" protests from another room. The experimenter uses escalating prods, including one stating that the participant has no choice but to continue. There is no screening for anxiety or heart conditions, and the debrief is a short handout.",
+    "design": "Laboratory experiment with deception and high stress",
+    "risks": [
+      "Severe and sustained stress",
+      "Prods that deny the right to withdraw",
+      "No screening of vulnerable participants",
+      "Inadequate debrief for a distressing deception"
+    ],
+    "correct": "reject",
+    "reasons": [
+      "Expected severe distress is incompatible with permissible deception",
+      "Prods that deny the right to withdraw violate informed consent",
+      "No screening, monitoring or clinical support",
+      "A redesign could cap the procedure at an early decision point, add two-step screening, repeat the right to withdraw, and debrief immediately, then resubmit as a new proposal"
+    ],
+    "codes": [
+      "APA 3.04",
+      "APA 8.02",
+      "APA 8.07",
+      "APA 8.08",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB06",
+    "title": "Acute stress and working memory",
+    "summary": "Forty healthy adults will give a short speech to a panel and do mental arithmetic aloud, a standard laboratory stress induction, before an n-back task. Saliva samples will measure cortisol. The protocol has no exclusion criteria for heart conditions, pregnancy or current anxiety treatment, no recovery period and no plan for participants who become very distressed. The panel is instructed to stay neutral and not to reassure.",
+    "design": "Within-subjects experiment with physiological measures",
+    "risks": [
+      "Acute psychological stress",
+      "Health risk for people with cardiac or other conditions",
+      "Distress lasting beyond the session",
+      "Biological samples need secure handling"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Add health screening and exclusion criteria",
+      "Add a stop rule, a relaxation and recovery period, and a debrief explaining the panel's neutral behaviour",
+      "State the right to stop at any time without penalty, including during the speech",
+      "Describe how samples will be stored, anonymised and destroyed"
+    ],
+    "codes": [
+      "APA 3.04",
+      "APA 8.02",
+      "APA 8.08",
+      "APA 4.01",
+      "Belmont: Beneficence",
+      "Belmont: Respect for persons"
+    ]
+  },
+  {
+    "id": "IRB07",
+    "title": "CBT group versus waiting list at the student clinic",
+    "summary": "The IIBS student clinic (simulated) plans to randomise 60 students with low mood to an 8-week CBT group or a 12-week waiting list. All applicants, including those reporting thoughts of self-harm on intake, are eligible. Wait-listed students receive no contact until their turn. Outcomes are measured with the PHQ-9 at weeks 0, 8 and 12.",
+    "design": "Randomised controlled trial with wait-list control",
+    "risks": [
+      "Deterioration while waiting",
+      "Unmonitored risk among high-risk students",
+      "Withholding treatment from people who need it now"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Exclude high-risk applicants from randomisation and give them immediate care",
+      "Monitor wait-listed students with regular check-ins and a crisis plan",
+      "Define a clear rule to move deteriorating participants into treatment",
+      "Explain the waiting-list condition and its risks in the consent form"
+    ],
+    "codes": [
+      "APA 3.04",
+      "APA 8.02",
+      "APA 4.05",
+      "Belmont: Beneficence",
+      "Belmont: Justice"
+    ]
+  },
+  {
+    "id": "IRB08",
+    "title": "Scraping student posts to detect depression",
+    "summary": "Researchers will create fake student profiles to join private university Facebook and WhatsApp groups and scrape posts, usernames and profile photos. A language model will flag \"depressed\" users, and the team plans to message them with study invitations. No consent will be sought, because \"the data is online anyway\". Raw data, including names, will be stored on a personal cloud drive.",
+    "design": "Covert observational data mining",
+    "risks": [
+      "Covert entry into private spaces",
+      "Collection of identifiable sensitive data without consent",
+      "Unvalidated mental-health labelling of real people",
+      "Insecure storage of identifiable data",
+      "Unsolicited contact based on inferred mental state"
+    ],
+    "correct": "reject",
+    "reasons": [
+      "Private groups are not public spaces, so the conditions for dispensing with consent do not apply",
+      "Fake profiles are deception without justification or debrief",
+      "Labelling individuals as \"depressed\" is harmful and outside competence",
+      "Storing identifiable data on a personal drive breaches confidentiality"
+    ],
+    "codes": [
+      "APA 8.05",
+      "APA 8.07",
+      "APA 4.01",
+      "APA 4.04",
+      "APA 3.04",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB09",
+    "title": "An AI chatbot as a first-line counsellor",
+    "summary": "A team proposes deploying a general-purpose AI chatbot as the only support for students on the counselling waiting list. Students would chat with it unsupervised, and it would be described to them as \"your counsellor\". There is no crisis-detection or human escalation, and conversation logs would be sent to a third-party server abroad. Effectiveness will be judged by satisfaction ratings.",
+    "design": "Uncontrolled field pilot",
+    "risks": [
+      "Unsafe responses to disclosures of self-harm or abuse",
+      "Users misled into believing the chatbot is a qualified counsellor",
+      "Transfer of sensitive data to third parties",
+      "Replacing human care for people already waiting"
+    ],
+    "correct": "reject",
+    "reasons": [
+      "There is no clinical oversight and no crisis escalation for a population at risk",
+      "Calling the chatbot a counsellor is deceptive",
+      "The privacy and data-transfer risks are not addressed",
+      "A safer design would test the chatbot as a supervised adjunct, with clear \"AI, not a therapist\" labelling, crisis routing and local data handling"
+    ],
+    "codes": [
+      "APA 3.04",
+      "APA 8.07",
+      "APA 4.01",
+      "APA 2.01",
+      "Belmont: Beneficence",
+      "Belmont: Respect for persons"
+    ]
+  },
+  {
+    "id": "IRB10",
+    "title": "Compulsory participation for course credit",
+    "summary": "An instructor plans to require all first-year students to take part in her memory study, worth 10% of the course grade. There is no alternative activity. She will record attendance herself and knows which students have not yet taken part.",
+    "design": "Laboratory experiment with student participants",
+    "risks": [
+      "Coercion of students by their own instructor",
+      "Grade penalty for declining",
+      "Loss of anonymity for non-participants"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Offer an equitable alternative activity of similar effort",
+      "Have a third party record participation, so the instructor does not know who declined",
+      "State that declining or withdrawing has no effect on grades beyond the credit scheme",
+      "Consider capping research credit at a smaller share of the grade"
+    ],
+    "codes": [
+      "APA 8.04",
+      "APA 8.06",
+      "APA 8.02",
+      "Belmont: Respect for persons",
+      "Belmont: Justice"
+    ]
+  },
+  {
+    "id": "IRB11",
+    "title": "Online survey of sexual-health attitudes",
+    "summary": "A team will run an online survey of young adults' attitudes to sexual health in Pakistan (simulated scenario). The form collects email addresses and IP addresses, and responses are saved in a spreadsheet on a team member's personal account. The consent page does not say who can see the data or how long it will be kept.",
+    "design": "Cross-sectional online survey on a sensitive topic",
+    "risks": [
+      "Disclosure of identifiable sensitive attitudes",
+      "Social and legal harm if data leaks",
+      "Inadequate consent information"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Remove email and IP collection, or store any contact details separately",
+      "Use institution-managed, encrypted storage with restricted access",
+      "State the data retention period, who has access and the limits of confidentiality in the consent text",
+      "Give links to support services at the end of the survey"
+    ],
+    "codes": [
+      "APA 4.01",
+      "APA 4.04",
+      "APA 8.02",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB12",
+    "title": "Memory training for care-home residents with dementia",
+    "summary": "Researchers will test a memory-training game with 30 residents of a care home for older adults, many with moderate dementia. Care-home staff will sign consent forms on behalf of all residents. Families will not be contacted, and residents will not be asked themselves.",
+    "design": "Pre-post intervention study",
+    "risks": [
+      "Participants who cannot fully consent",
+      "Frustration or distress from difficult tasks",
+      "Staff consent may reflect institutional convenience"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Obtain permission from each resident's legally authorised representative, usually family",
+      "Seek assent from each resident and respect signs of refusal",
+      "Add a protocol for stopping when a participant shows distress",
+      "Make sure the care home cannot benefit from enrolling residents"
+    ],
+    "codes": [
+      "APA 3.10",
+      "APA 8.02",
+      "APA 3.04",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence",
+      "Belmont: Justice"
+    ]
+  },
+  {
+    "id": "IRB13",
+    "title": "Stroop interference and sleep quality",
+    "summary": "Adult volunteers will complete a 10-minute colour-word Stroop task in the Experimental Lab Wing and a brief sleep-quality questionnaire. Before the task, a consent screen explains the purpose, the duration, the right to withdraw by pressing Esc, and that data is stored under a code. Block order is counterbalanced, and a short debrief explains the hypothesis. Participants receive no payment.",
+    "design": "Correlational and within-subjects lab study",
+    "risks": [
+      "Minimal: mild frustration on incongruent trials"
+    ],
+    "correct": "approve",
+    "reasons": [
+      "Minimal-risk task with full informed consent",
+      "Withdrawal is easy and explained",
+      "Coded data protects confidentiality",
+      "Debrief provided"
+    ],
+    "codes": [
+      "APA 8.02",
+      "APA 8.08",
+      "APA 4.01",
+      "Belmont: Respect for persons",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB14",
+    "title": "Helping behaviour at a campus bus stop",
+    "summary": "Observers will record whether passers-by help pick up books \"accidentally\" dropped by a trained student at a busy campus bus stop. No names, photos or video are recorded, only tallies of help or no help, and estimated gender and age band. The staged event is low-key and lasts seconds. Because people are not identifiable and the situation is everyday, the team asks to waive consent and individual debriefing.",
+    "design": "Field experiment with naturalistic observation",
+    "risks": [
+      "Minor inconvenience to passers-by",
+      "Mild deception (the drop is staged)"
+    ],
+    "correct": "approve",
+    "reasons": [
+      "Observation in a public place, with no identifiable data recorded",
+      "The staged event involves trivial, everyday helping, with no distress expected",
+      "Consent waiver is justified because the research is unlikely to cause harm and individual debriefing would be impractical and more intrusive than the event",
+      "A summary of findings will be posted publicly"
+    ],
+    "codes": [
+      "APA 8.05",
+      "APA 8.03",
+      "APA 8.07",
+      "Belmont: Beneficence",
+      "Belmont: Respect for persons"
+    ]
+  },
+  {
+    "id": "IRB15",
+    "title": "Prison inmates and decision-making",
+    "summary": "Researchers propose a gambling-style decision task with men held in a local jail (simulated scenario). Prison authorities will tell inmates that participation \"will be looked on favourably\" at parole hearings. Testing will take place in the presence of guards, and results will be shared with the prison administration by name.",
+    "design": "Laboratory-style task in a custodial setting",
+    "risks": [
+      "Undue inducement and coercion of a captive population",
+      "Lack of privacy and confidentiality",
+      "Possible use of data against participants"
+    ],
+    "correct": "reject",
+    "reasons": [
+      "Linking participation to parole is coercive and an excessive inducement",
+      "Sharing named results with the authorities breaches confidentiality and could cause harm",
+      "Testing in front of guards prevents voluntary and private participation",
+      "Prisoners are a vulnerable population, so research must not exploit their circumstances"
+    ],
+    "codes": [
+      "APA 8.06",
+      "APA 8.02",
+      "APA 4.01",
+      "APA 3.04",
+      "Belmont: Justice",
+      "Belmont: Respect for persons"
+    ]
+  },
+  {
+    "id": "IRB16",
+    "title": "Anonymised archive of past exam scores",
+    "summary": "A lecturer wants to analyse five years of fully anonymised Introduction to Psychology exam scores to see whether online quizzes predict final grades. The registrar will strip all identifiers before release, and cell sizes under five will be suppressed. No new data will be collected from students, and the department has given written permission.",
+    "design": "Archival correlational analysis",
+    "risks": [
+      "Minimal: small chance of re-identification in small groups"
+    ],
+    "correct": "approve",
+    "reasons": [
+      "Archival research on de-identified data qualifies for dispensing with consent",
+      "Suppressing small cells reduces re-identification risk",
+      "Institutional permission obtained"
+    ],
+    "codes": [
+      "APA 8.05",
+      "APA 4.01",
+      "APA 8.01",
+      "Belmont: Beneficence"
+    ]
+  },
+  {
+    "id": "IRB17",
+    "title": "Testing my own therapy clients",
+    "summary": "A part-time lecturer who also runs a private practice wants to recruit her current therapy clients into a study of a new relaxation technique. She will invite them herself during sessions and run the study sessions herself. Clients who decline will \"of course\" continue therapy.",
+    "design": "Uncontrolled pre-post intervention with clients as participants",
+    "risks": [
+      "Clients may feel unable to refuse their therapist",
+      "Conflict between the therapist and researcher roles",
+      "Confidential clinical information mixed with research data"
+    ],
+    "correct": "revise",
+    "reasons": [
+      "Have a third party invite clients and obtain consent",
+      "State in writing that declining or withdrawing will not affect their care",
+      "Keep research data separate from clinical records",
+      "Consider an independent researcher for the study sessions to avoid a multiple relationship"
+    ],
+    "codes": [
+      "APA 8.04",
+      "APA 3.05",
+      "APA 8.02",
+      "APA 4.01",
+      "Belmont: Respect for persons"
+    ]
+  }
+]

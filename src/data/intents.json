@@ -1,0 +1,4479 @@
+[
+  {
+    "id": "i_wundt",
+    "category": "concept",
+    "patterns": [
+      "\\bwundt\\b",
+      "\\bfirst (psych(ology)?|experimental) lab"
+    ],
+    "answer": "Wilhelm Wundt opened the Leipzig laboratory in 1879, usually treated as the start of experimental psychology. He trained observers to report their conscious experience under controlled conditions. The Wundt Hall timeline starts there.",
+    "action": {
+      "type": "goZone",
+      "arg": "wundt"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_structuralism",
+    "category": "concept",
+    "patterns": [
+      "\\bstructuralis[mt]",
+      "\\btitchener\\b",
+      "\\bintrospection\\b"
+    ],
+    "answer": "Structuralism (Titchener) tried to break conscious experience into basic elements such as sensations and feelings, using trained introspection. It faded because introspective reports were hard to verify between labs, but it pushed psychology toward controlled observation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_functionalism",
+    "category": "concept",
+    "patterns": [
+      "\\bfunctionalis[mt]",
+      "\\bwilliam james\\b",
+      "\\bstream of consciousness\\b"
+    ],
+    "answer": "Functionalism, linked to William James, asked what the mind is for rather than what it is made of. It focused on how mental processes help organisms adapt, and it opened the door to applied and educational psychology.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_behaviourism",
+    "category": "concept",
+    "patterns": [
+      "\\bbehaviou?ris[mt]",
+      "\\bwatson\\b",
+      "\\bradical behaviou?r"
+    ],
+    "answer": "Behaviourism (Watson, later Skinner) argued that psychology should study only observable behaviour and its environmental causes. It gave us rigorous learning experiments but set aside thoughts and feelings. Compare it with other schools in the History & Schools panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_psychoanalysis",
+    "category": "concept",
+    "patterns": [
+      "\\bpsycho-?analy(sis|tic)\\b",
+      "\\bfreud(ian)?\\b",
+      "\\bpsychodynamic\\b"
+    ],
+    "answer": "The psychodynamic approach (Freud and successors) holds that unconscious conflicts and early experience shape behaviour. It was hugely influential in therapy and culture, but many of its claims are hard to falsify, which limits it as science.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_gestalt",
+    "category": "concept",
+    "patterns": [
+      "\\bgestalt\\b",
+      "\\bwhole is (greater|different)\\b",
+      "\\b(wertheimer|koffka|k(o|oe|ö)hler)\\b"
+    ],
+    "answer": "Gestalt psychologists (Wertheimer, Koffka, Köhler) argued that we perceive organised wholes, not piles of sensations: the whole is different from the sum of its parts. Their grouping principles still shape perception research and design.",
+    "action": {
+      "type": "openPanel",
+      "arg": "illusions"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_humanistic",
+    "category": "concept",
+    "patterns": [
+      "\\bhumanis(m|tic)\\b",
+      "\\bmaslow\\b",
+      "\\bcarl rogers\\b",
+      "\\bself-?actuali[sz]"
+    ],
+    "answer": "Humanistic psychology (Rogers, Maslow) emphasised free will, personal growth and self-actualisation. Its biggest legacy is in counselling: empathy, genuineness and unconditional positive regard.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_cognitive_rev",
+    "category": "concept",
+    "patterns": [
+      "\\bcognitive revolution\\b",
+      "\\binformation[- ]processing (model|approach|view)\\b"
+    ],
+    "answer": "The cognitive revolution brought the mind back into psychology by treating thinking as information processing: input, storage, transformation and output. It drew on computing, linguistics and neuroscience.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "week": 1,
+    "apa": "1.3"
+  },
+  {
+    "id": "i_perspectives",
+    "category": "concept",
+    "patterns": [
+      "\\bperspectives?\\b.{0,20}\\b(psych|lens|approach)",
+      "\\b(seven|7) perspectives\\b",
+      "\\bevolutionary psych"
+    ],
+    "answer": "One behaviour can be explained from several perspectives: biological, cognitive, behavioural, psychodynamic, humanistic, sociocultural and evolutionary. The Perspectives Lens shows the same scenario through each one so you can compare what each explains well.",
+    "action": {
+      "type": "openPanel",
+      "arg": "perspectives"
+    },
+    "week": 1,
+    "apa": "1.5"
+  },
+  {
+    "id": "i_hypothesis",
+    "category": "concept",
+    "patterns": [
+      "\\bhypothes[ie]s\\b",
+      "\\bfalsifi(able|ability|cation)\\b",
+      "\\btheory vs\\.? hypothesis\\b"
+    ],
+    "answer": "A theory is a broad explanation; a hypothesis is a specific, testable prediction derived from it. A good hypothesis is falsifiable: some possible result would show it is wrong.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_operational",
+    "category": "concept",
+    "patterns": [
+      "\\boperational(ly)? defin",
+      "\\boperationali[sz](e|ed|ing|ation)\\b"
+    ],
+    "answer": "An operational definition states exactly how you will measure or manipulate a variable, for example \"anxiety = score on a 7-item scale\" or \"attention = Stroop interference in ms\". Without it, others cannot replicate your study.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_iv_dv",
+    "category": "concept",
+    "patterns": [
+      "\\bindependent variable\\b",
+      "\\bdependent variable\\b",
+      "\\bwhat (is|are) (an? |the )?(iv|dv)s?\\b"
+    ],
+    "answer": "The independent variable (IV) is what you manipulate; the dependent variable (DV) is what you measure. In a Stroop study the IV is congruent vs incongruent trials and the DV is reaction time or accuracy.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_causation",
+    "category": "concept",
+    "patterns": [
+      "\\bcorrelation\\b.{0,25}\\bcaus",
+      "\\bcaus(e|ation)\\b.{0,25}\\bcorrelat",
+      "\\bthird variable\\b"
+    ],
+    "answer": "Correlation does not prove causation: two variables can move together because of a third variable or because the direction runs the other way. Only a true experiment with random assignment lets you infer cause and effect.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_sampling",
+    "category": "concept",
+    "patterns": [
+      "\\b(random|convenience|stratified|snowball) sampl",
+      "\\bsampling (method|bias)\\b",
+      "\\brepresentative sample\\b"
+    ],
+    "answer": "Random sampling decides who gets into your study and supports generalising to the population. Convenience samples, like students in one class at IIBS, are easier but may not represent the population.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_case_study",
+    "category": "concept",
+    "patterns": [
+      "\\bcase stud(y|ies)\\b.{0,20}\\b(method|strength|weakness|what)",
+      "\\bwhat is a case study\\b"
+    ],
+    "answer": "A case study examines one person or group in depth. It is great for rare conditions and generating hypotheses, but it cannot establish cause and may not generalise. See the Case Studies panel for cited examples.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cases"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_observation",
+    "category": "concept",
+    "patterns": [
+      "\\bnaturalistic observation\\b",
+      "\\bobservational (method|study)\\b",
+      "\\binter-?rater\\b"
+    ],
+    "answer": "Naturalistic observation records behaviour in its normal setting without intervening. It has high ecological validity, but observers need clear coding schemes and inter-rater checks to stay reliable.",
+    "action": {
+      "type": "goZone",
+      "arg": "childdev"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_survey",
+    "category": "concept",
+    "patterns": [
+      "\\bsurvey (method|research|design)\\b",
+      "\\bquestionnaire design\\b",
+      "\\bself-?report bias\\b"
+    ],
+    "answer": "Surveys collect self-reports from many people quickly. Watch for leading wording, social-desirability bias and low response rates, and pilot your items first.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_longitudinal",
+    "category": "concept",
+    "patterns": [
+      "\\blongitudinal\\b",
+      "\\bcross-?sectional\\b",
+      "\\bcohort effect"
+    ],
+    "answer": "A longitudinal study follows the same people over time; a cross-sectional study compares different age groups at one time. Cross-sectional is faster but confounds age with cohort; longitudinal suffers attrition.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_validity_types",
+    "category": "concept",
+    "patterns": [
+      "\\binternal validity\\b",
+      "\\bexternal validity\\b",
+      "\\becological validity\\b"
+    ],
+    "answer": "Internal validity asks whether the IV really caused the change in the DV; external validity asks whether results generalise to other people, places and times. Tight lab control usually raises internal validity at some cost to external validity.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "week": 2,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_central_tendency",
+    "category": "concept",
+    "patterns": [
+      "\\b(mean|median|mode)\\b.{0,20}\\b(differ|vs|or|which|when)\\b",
+      "\\bcentral tendency\\b",
+      "\\baverage\\b.{0,15}\\bwhich\\b"
+    ],
+    "answer": "Mean is the arithmetic average, median the middle score, mode the most frequent score. Use the median when data are skewed or have outliers, such as reaction times.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_sd",
+    "category": "concept",
+    "patterns": [
+      "\\bstandard deviation\\b",
+      "\\b(what is|compute|calculate|find)\\b.{0,10}\\bvariance\\b",
+      "\\bspread of (the )?(data|scores)\\b"
+    ],
+    "answer": "Variance is the average squared distance from the mean; the standard deviation (SD) is its square root, in the original units. For a sample, divide the sum of squares by n − 1.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_normal",
+    "category": "concept",
+    "patterns": [
+      "\\bnormal (curve|distribution)\\b",
+      "\\bbell curve\\b",
+      "\\bgaussian\\b"
+    ],
+    "answer": "The normal distribution is symmetric and bell-shaped, fully described by its mean and SD. Many statistics assume it; check your histogram before trusting a parametric test.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_zscore",
+    "category": "concept",
+    "patterns": [
+      "\\bz-?scores?\\b",
+      "\\bstandard(i[sz]ed)? scores?\\b"
+    ],
+    "answer": "A z-score is z = (x − mean) / SD: how many standard deviations a score sits from the mean. It lets you compare scores measured on different scales.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_skew",
+    "category": "concept",
+    "patterns": [
+      "\\bskew(ed|ness)?\\b",
+      "\\bkurtosis\\b",
+      "\\boutliers?\\b.{0,15}\\b(what|mean|detect)"
+    ],
+    "answer": "Skew means one tail is longer: RTs are usually positively skewed. Outliers can pull the mean, so decide your outlier rule before you look at the results and report it.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_scatter",
+    "category": "concept",
+    "patterns": [
+      "\\bscatter ?plots?\\b",
+      "\\bscattergram\\b"
+    ],
+    "answer": "A scatterplot shows each participant as a point with one variable on each axis. Always plot before computing r: curved or clustered patterns can make a correlation misleading.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_histogram",
+    "category": "concept",
+    "patterns": [
+      "\\bhistogram\\b",
+      "\\bfrequency (distribution|table|polygon)\\b",
+      "\\bbar chart\\b.{0,20}\\bhistogram\\b"
+    ],
+    "answer": "A histogram groups continuous scores into bins and shows how many fall in each. A bar chart compares categories. The Workbench turns your dataset into a 3D data-sculpture histogram.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_sem",
+    "category": "concept",
+    "patterns": [
+      "\\bstandard error\\b",
+      "\\bsampling (distribution|error)\\b"
+    ],
+    "answer": "The standard error of the mean is SD / √n: how much sample means would vary across repeated samples. Larger samples give smaller standard errors and more precise estimates.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_levels_measurement",
+    "category": "concept",
+    "patterns": [
+      "\\b(nominal|ordinal|interval|ratio) (scale|data|level)\\b",
+      "\\blevels? of measurement\\b",
+      "\\bscales? of measurement\\b"
+    ],
+    "answer": "Nominal data are categories, ordinal data are ranks, interval data have equal steps, and ratio data also have a true zero. The level of measurement limits which statistics make sense.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 3,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_neuron",
+    "category": "concept",
+    "patterns": [
+      "\\bneurons?\\b.{0,20}\\b(parts?|structure|what)\\b",
+      "\\bdendrites?\\b",
+      "\\baxons?\\b",
+      "\\bsoma\\b"
+    ],
+    "answer": "A neuron receives signals on its dendrites, integrates them in the cell body (soma) and sends an action potential down the axon to the terminal buttons. Walk the Neuron Bridge in the Neuro Atrium to see it.",
+    "action": {
+      "type": "goZone",
+      "arg": "neuro"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_action_potential",
+    "category": "concept",
+    "patterns": [
+      "\\baction potentials?\\b",
+      "\\ball-?or-?none\\b",
+      "\\bdepolari[sz]",
+      "\\bthreshold of excitation\\b"
+    ],
+    "answer": "When the membrane is depolarised past threshold, sodium channels open and the neuron fires an all-or-none action potential, then potassium outflow repolarises it. Stronger stimuli raise firing rate, not spike size.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_resting",
+    "category": "concept",
+    "patterns": [
+      "\\bresting (membrane )?potential\\b",
+      "\\bsodium[- ]potassium pump\\b",
+      "\\bion channels?\\b"
+    ],
+    "answer": "At rest the inside of a neuron is negatively charged relative to the outside. The sodium-potassium pump and selective ion channels maintain this gradient, which powers the action potential.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_myelin",
+    "category": "concept",
+    "patterns": [
+      "\\bmyelin",
+      "\\bnodes? of ranvier\\b",
+      "\\bsaltatory\\b",
+      "\\bmultiple sclerosis\\b"
+    ],
+    "answer": "Myelin is a fatty insulating sheath around many axons. The signal jumps between gaps called nodes of Ranvier (saltatory conduction), which makes transmission much faster. Damage to myelin slows signals.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_synapse",
+    "category": "concept",
+    "patterns": [
+      "\\bsynap(se|tic)\\b",
+      "\\bneurotransmitters?\\b.{0,15}\\b(what|how|release)",
+      "\\breuptake\\b"
+    ],
+    "answer": "At the synapse, an action potential releases neurotransmitter into the gap; it binds to receptors on the next neuron and can excite or inhibit it. Reuptake and enzymes then clear the gap. Try the synapse chamber.",
+    "action": {
+      "type": "goZone",
+      "arg": "neuro"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_neurotransmitters",
+    "category": "concept",
+    "patterns": [
+      "\\bdopamine\\b",
+      "\\bserotonin\\b",
+      "\\bgaba\\b",
+      "\\bglutamate\\b",
+      "\\bacetylcholine\\b"
+    ],
+    "answer": "Key neurotransmitters include glutamate (main excitatory), GABA (main inhibitory), dopamine (movement, reward learning), serotonin (mood, sleep) and acetylcholine (muscle action, memory). Avoid \"one chemical = one feeling\" stories: systems interact.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_agonist",
+    "category": "concept",
+    "patterns": [
+      "\\bagonists?\\b",
+      "\\bantagonists?\\b",
+      "\\bpsychoactive drugs?\\b.{0,15}\\b(work|synapse)"
+    ],
+    "answer": "An agonist mimics or boosts a neurotransmitter's effect; an antagonist blocks it. Many medications and drugs work at the synapse this way, for example by blocking reuptake.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_nervous_system",
+    "category": "concept",
+    "patterns": [
+      "\\b(central|peripheral|autonomic|somatic) nervous system\\b",
+      "\\b(sympathetic|parasympathetic)\\b",
+      "\\bfight[- ]or[- ]flight\\b"
+    ],
+    "answer": "The CNS is brain and spinal cord; the PNS links it to the body. The autonomic PNS has a sympathetic branch (arousal, fight-or-flight) and a parasympathetic branch (rest and digest).",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_endocrine",
+    "category": "concept",
+    "patterns": [
+      "\\bendocrine\\b",
+      "\\bhormones?\\b",
+      "\\bpituitary\\b",
+      "\\badrenal glands?\\b"
+    ],
+    "answer": "The endocrine system sends slower chemical messages through hormones in the blood. The pituitary, steered by the hypothalamus, regulates other glands such as the adrenals.",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_glia",
+    "category": "concept",
+    "patterns": [
+      "\\bglia(l)?( cells?)?\\b",
+      "\\bastrocytes?\\b",
+      "\\boligodendrocytes?\\b"
+    ],
+    "answer": "Glial cells support neurons: they form myelin, supply nutrients, clear debris and help regulate synapses. They are not just \"glue\".",
+    "action": {
+      "type": "openPanel",
+      "arg": "bio"
+    },
+    "week": 4,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_lobes",
+    "category": "concept",
+    "patterns": [
+      "\\b(frontal|parietal|temporal|occipital) lobes?\\b",
+      "\\blobes of the (brain|cortex)\\b",
+      "\\bcerebral cortex\\b"
+    ],
+    "answer": "The frontal lobe supports planning and movement, the parietal lobe touch and spatial processing, the temporal lobe hearing and memory, and the occipital lobe vision. Functions are distributed, so treat these as main roles, not exclusive ones.",
+    "action": {
+      "type": "setMode",
+      "arg": "neuro"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_limbic",
+    "category": "concept",
+    "patterns": [
+      "\\blimbic\\b",
+      "\\bamygdala\\b",
+      "\\bhippocampus\\b",
+      "\\bhypothalamus\\b",
+      "\\bthalamus\\b"
+    ],
+    "answer": "The amygdala is involved in threat and emotional learning, the hippocampus in forming new memories, the hypothalamus in drives and hormones, and the thalamus in relaying sensory input. Fly through them in Neuro Explorer.",
+    "action": {
+      "type": "setMode",
+      "arg": "neuro"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_split_brain",
+    "category": "concept",
+    "patterns": [
+      "\\bsplit[- ]brain\\b",
+      "\\bcorpus callosum\\b",
+      "\\b(sperry|gazzaniga)\\b"
+    ],
+    "answer": "Split-brain patients had the corpus callosum cut to control epilepsy. Showing an image to one visual field reveals that each hemisphere can process it separately, for example the left hemisphere names it while the right hand picks it. Try the split-brain table.",
+    "action": {
+      "type": "openPanel",
+      "arg": "brain"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_lateral",
+    "category": "concept",
+    "patterns": [
+      "\\bbroca\\b",
+      "\\bwernicke\\b",
+      "\\blateral(i[sz]ation|ity)\\b",
+      "\\bleft brain\\b|\\bright brain\\b"
+    ],
+    "answer": "Language production (Broca's area) and comprehension (Wernicke's area) are usually left-lateralised. \"Left-brained vs right-brained people\" is a myth: both hemispheres work together.",
+    "action": {
+      "type": "openPanel",
+      "arg": "brain"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_plasticity",
+    "category": "concept",
+    "patterns": [
+      "\\bneuro-?plasticity\\b",
+      "\\bbrain plasticity\\b",
+      "\\bneurogenesis\\b"
+    ],
+    "answer": "Neuroplasticity is the brain's ability to change its connections with experience and after injury. It is strongest in childhood but continues through life.",
+    "action": {
+      "type": "openPanel",
+      "arg": "brain"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_imaging",
+    "category": "concept",
+    "patterns": [
+      "\\bfmri\\b",
+      "\\b(eeg|pet|ct|mri) scan",
+      "\\bbrain imaging\\b",
+      "\\bneuroimaging\\b"
+    ],
+    "answer": "EEG records electrical activity with excellent timing but poor spatial detail; fMRI tracks blood-oxygen changes with good spatial but slower timing. Imaging shows correlation with activity, not proof that a region \"does\" a function.",
+    "action": {
+      "type": "openPanel",
+      "arg": "brain"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_sleep_stages",
+    "category": "concept",
+    "patterns": [
+      "\\bsleep (stages?|cycles?)\\b",
+      "\\b(n?rem) sleep\\b",
+      "\\bhypnogram\\b",
+      "\\bslow[- ]wave sleep\\b"
+    ],
+    "answer": "Sleep cycles through NREM stages (N1, N2, N3 slow-wave) and REM, when vivid dreams and rapid eye movements occur. The Sleep Lab shows a live procedural EEG and hypnogram (simulated data).",
+    "action": {
+      "type": "goZone",
+      "arg": "sleep"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_circadian",
+    "category": "concept",
+    "patterns": [
+      "\\bcircadian\\b",
+      "\\bmelatonin\\b",
+      "\\bsuprachiasmatic\\b",
+      "\\bjet lag\\b"
+    ],
+    "answer": "Circadian rhythms are roughly daily cycles set by an internal clock in the suprachiasmatic nucleus and reset by light. Melatonin rises in darkness and promotes sleep.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sleep"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_dreams",
+    "category": "concept",
+    "patterns": [
+      "\\bdreams?\\b.{0,20}\\b(why|theory|mean)",
+      "\\bactivation[- ]synthesis\\b"
+    ],
+    "answer": "Theories of dreaming include Freud's wish fulfilment, activation-synthesis (the brain making sense of random activity) and memory-consolidation accounts. None is fully settled.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sleep"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_consciousness",
+    "category": "concept",
+    "patterns": [
+      "\\bconsciousness\\b",
+      "\\bhypnosis\\b",
+      "\\baltered states?\\b",
+      "\\bmeditation\\b"
+    ],
+    "answer": "Consciousness is our awareness of ourselves and the environment. Psychologists study its variations: sleep, hypnosis, meditation and drug-altered states, using both behaviour and brain measures.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sleep"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_famous_cases",
+    "category": "concept",
+    "patterns": [
+      "\\bphineas gage\\b",
+      "\\b(patient )?h\\.?\\s?m\\.?\\b.{0,15}\\b(case|patient|memory)\\b",
+      "\\bmolaison\\b"
+    ],
+    "answer": "Phineas Gage and H.M. (Henry Molaison) are classic cases linking brain damage to personality and memory. Many popular details are exaggerated, so ZEHN shows only facts our checker has verified in the Brain & Cases panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "brain"
+    },
+    "week": 5,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_abs_threshold",
+    "category": "concept",
+    "patterns": [
+      "\\babsolute threshold\\b",
+      "\\bpsychophysics\\b",
+      "\\bmethod of (limits|constant stimuli|adjustment)\\b"
+    ],
+    "answer": "The absolute threshold is the weakest stimulus detected on half of trials. Psychophysics measures it with the method of limits, constant stimuli or adjustment, or with adaptive staircases.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sensation"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_weber",
+    "category": "concept",
+    "patterns": [
+      "\\bweber\\b",
+      "\\bjnd\\b",
+      "\\bjust[- ]noticeable\\b",
+      "\\bdifference threshold\\b"
+    ],
+    "answer": "The just-noticeable difference grows with stimulus size. Weber's law states ΔI / I = k, a constant fraction for each sense. Find your own JND with the staircase task.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "jnd_staircase"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_stevens",
+    "category": "concept",
+    "patterns": [
+      "\\bstevens\\b",
+      "\\bpower law\\b",
+      "\\bmagnitude estimation\\b",
+      "\\bfechner\\b"
+    ],
+    "answer": "Fechner proposed sensation grows with the log of intensity; Stevens' power law says S = k·I^n, with an exponent that differs by sense. Run the magnitude estimation task and fit your own exponent.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "magnitude_est"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_sdt_concept",
+    "category": "concept",
+    "patterns": [
+      "\\bsignal detection\\b",
+      "\\b(hits?|false alarms?)\\b.{0,20}\\b(miss|correct reject)",
+      "\\bresponse (bias|criterion)\\b"
+    ],
+    "answer": "Signal detection theory separates sensitivity (d′) from response bias (c). Payoffs can shift your criterion without changing what you can actually detect. Try the yes/no task with payoffs.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "sdt_yesno"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_transduction",
+    "category": "concept",
+    "patterns": [
+      "\\btransduction\\b",
+      "\\bsensory adaptation\\b",
+      "\\bsensation vs\\.? perception\\b"
+    ],
+    "answer": "Sensation is the detection of physical energy by receptors (transduction into neural signals); perception is the brain's organisation and interpretation of those signals. Constant stimuli fade through sensory adaptation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sensation"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_muller_lyer",
+    "category": "concept",
+    "patterns": [
+      "\\bm(u|ue|ü)ller[- ]?lyer\\b",
+      "\\barrow(head)? illusion\\b"
+    ],
+    "answer": "In the Müller-Lyer illusion, lines with outward fins look longer than lines with inward fins, though they are equal. You can measure the size of the effect yourself with the method of adjustment.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "muller_lyer"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_ponzo",
+    "category": "concept",
+    "patterns": [
+      "\\bponzo\\b",
+      "\\brailway (track )?illusion\\b"
+    ],
+    "answer": "In the Ponzo illusion, two equal bars between converging lines look different because the brain reads the lines as depth. Walk the Ponzo corridor in the Experimental Lab Wing.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "ponzo"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_ames",
+    "category": "concept",
+    "patterns": [
+      "\\bames room\\b",
+      "\\bsize constancy\\b",
+      "\\bforced perspective\\b"
+    ],
+    "answer": "The Ames room is a distorted room that looks rectangular from one peephole, so people in the far corner look tiny. It shows how assumptions about room shape override size constancy.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "ames"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_depth",
+    "category": "concept",
+    "patterns": [
+      "\\bdepth (cues?|perception)\\b",
+      "\\bbinocular (disparity|cues?)\\b",
+      "\\bmonocular cues?\\b",
+      "\\b(proximity|similarity|closure|continuity) principle\\b"
+    ],
+    "answer": "Depth cues include binocular disparity and convergence plus monocular cues such as linear perspective, relative size, occlusion and texture gradient. Gestalt grouping (proximity, similarity, closure) organises scenes into objects.",
+    "action": {
+      "type": "openPanel",
+      "arg": "illusions"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_topdown",
+    "category": "concept",
+    "patterns": [
+      "\\btop[- ]down\\b",
+      "\\bbottom[- ]up\\b",
+      "\\bperceptual set\\b"
+    ],
+    "answer": "Bottom-up processing builds perception from sensory input; top-down processing uses expectations and knowledge. Illusions are useful because they expose the top-down assumptions the visual system normally gets right.",
+    "action": {
+      "type": "openPanel",
+      "arg": "illusions"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_hick",
+    "category": "concept",
+    "patterns": [
+      "\\bhick\\b",
+      "\\bchoice reaction time\\b",
+      "\\bhick[- ]hyman\\b"
+    ],
+    "answer": "The Hick–Hyman law says choice RT rises with the information in the choice: RT = a + b·log2(n) for n equally likely options (some versions use n + 1). Run the choice-RT task to fit a and b.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "hick_hyman"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_fitts",
+    "category": "concept",
+    "patterns": [
+      "\\bfitts\\b",
+      "\\bpointing task\\b",
+      "\\bindex of difficulty\\b"
+    ],
+    "answer": "Fitts' law predicts movement time from distance D and target width W: MT = a + b·log2(2D / W). It is used in interface design, for example making important buttons big and close.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "fitts"
+    },
+    "week": 6,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_stroop",
+    "category": "concept",
+    "patterns": [
+      "\\bstroop\\b",
+      "\\bcolou?r[- .]?word\\b"
+    ],
+    "answer": "In the Stroop task you name the ink colour of colour words; incongruent trials (RED in blue ink) are slower because word reading is automatic. Interference = incongruent RT − congruent RT. Remember to counterbalance and get consent before recording your RTs.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "stroop"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_visual_search",
+    "category": "concept",
+    "patterns": [
+      "\\bvisual search\\b",
+      "\\bfeature integration\\b",
+      "\\bconjunction search\\b",
+      "\\bpop[- ]?out\\b"
+    ],
+    "answer": "In feature search the target pops out, so RT barely grows with set size; in conjunction search RT rises roughly linearly with set size. Treisman's feature integration theory explains this with attention binding features.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "visual_search"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_posner",
+    "category": "concept",
+    "patterns": [
+      "\\bposner\\b",
+      "\\bspatial cue(ing)?\\b",
+      "\\b(valid|invalid) cues?\\b"
+    ],
+    "answer": "In Posner cueing, a cue directs attention to a location; responses are faster on valid trials and slower on invalid ones. The difference estimates the cost and benefit of covert attention.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "posner"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_attn_blink",
+    "category": "concept",
+    "patterns": [
+      "\\battentional blink\\b",
+      "\\brsvp\\b",
+      "\\brapid serial\\b"
+    ],
+    "answer": "In the attentional blink, a second target in a rapid stream is often missed if it appears shortly after the first. It shows that attention needs time to consolidate one item before the next.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "attn_blink"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_dichotic",
+    "category": "concept",
+    "patterns": [
+      "\\bdichotic\\b",
+      "\\bcocktail[- ]party\\b",
+      "\\bshadowing\\b",
+      "\\bbroadbent\\b",
+      "\\bfilter (model|theory)\\b"
+    ],
+    "answer": "In dichotic listening, different messages go to each ear and you shadow one. People notice little of the unattended message, yet salient items such as their own name can break through, which challenged Broadbent's early-filter model.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "dichotic"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_inattentional",
+    "category": "concept",
+    "patterns": [
+      "\\binattentional blindness\\b",
+      "\\binvisible gorilla\\b",
+      "\\bgorilla\\b.{0,20}\\b(video|study|basketball)\\b",
+      "\\bsimons\\b.{0,10}\\bchabris\\b"
+    ],
+    "answer": "Simons and Chabris (1999) found that 46% of 192 observers failed to notice an unexpected event while counting passes. You can experience a version in the Mohalla plaza; a debrief explains the deception afterwards.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "inattentional_blindness"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_change_blindness",
+    "category": "concept",
+    "patterns": [
+      "\\bchange blindness\\b",
+      "\\bflicker paradigm\\b"
+    ],
+    "answer": "Change blindness is failing to notice large changes between views when the change coincides with a brief interruption. ZEHN's version is photosafe and has a static alternative.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "change_blindness"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_flanker",
+    "category": "concept",
+    "patterns": [
+      "\\bflanker\\b",
+      "\\beriksen\\b"
+    ],
+    "answer": "In the Eriksen flanker task you respond to a central arrow while ignoring flanking arrows. Incongruent flankers slow responses, showing that attention cannot fully filter nearby distractors.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "flanker"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_gonogo",
+    "category": "concept",
+    "patterns": [
+      "\\bgo[ \\/-]?no[ -]?go\\b",
+      "\\bresponse inhibition\\b",
+      "\\binhibitory control\\b"
+    ],
+    "answer": "In Go/No-Go you respond to frequent \"go\" stimuli and withhold on rare \"no-go\" stimuli. Commission errors on no-go trials index response inhibition.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "go_nogo"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_attention_general",
+    "category": "concept",
+    "patterns": [
+      "\\bselective attention\\b",
+      "\\bdivided attention\\b",
+      "\\bmulti-?tasking\\b"
+    ],
+    "answer": "Selective attention focuses processing on some inputs and suppresses others; divided attention spreads limited capacity across tasks, so performance usually drops. The Attention Lab gathers all the attention tasks.",
+    "action": {
+      "type": "openPanel",
+      "arg": "attention"
+    },
+    "week": 7,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_classical",
+    "category": "concept",
+    "patterns": [
+      "\\bclassical conditioning\\b",
+      "\\bpavlov",
+      "\\b(un)?conditioned (stimulus|response)\\b"
+    ],
+    "answer": "In classical conditioning a neutral stimulus (bell) repeatedly paired with an unconditioned stimulus (food) becomes a conditioned stimulus that triggers a conditioned response (salivation). Visit the Pavlov station in the Learning Lab.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "classical_cond"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_extinction",
+    "category": "concept",
+    "patterns": [
+      "\\bextinction\\b",
+      "\\bspontaneous recovery\\b",
+      "\\bacquisition curve\\b"
+    ],
+    "answer": "Extinction happens when the CS is presented without the US and the response weakens. After a rest, the response can reappear (spontaneous recovery), showing extinction is new learning, not erasure.",
+    "action": {
+      "type": "openPanel",
+      "arg": "learning"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_generalisation",
+    "category": "concept",
+    "patterns": [
+      "\\bstimulus generali[sz]ation\\b",
+      "\\bstimulus discrimination\\b",
+      "\\blittle albert\\b"
+    ],
+    "answer": "Generalisation is responding to stimuli similar to the CS; discrimination is learning to respond only to the trained CS. Watson's \"Little Albert\" case is often cited for fear generalisation and is also a classic ethics problem.",
+    "action": {
+      "type": "openPanel",
+      "arg": "learning"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_rescorla",
+    "category": "concept",
+    "patterns": [
+      "\\brescorla\\b",
+      "\\bprediction error\\b",
+      "\\bblocking (effect)?\\b"
+    ],
+    "answer": "The Rescorla–Wagner model updates associative strength by prediction error: ΔV = αβ(λ − ΣV). Learning is fast when the outcome is surprising and stops when it is fully predicted, which also explains blocking.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "classical_cond"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_operant",
+    "category": "concept",
+    "patterns": [
+      "\\boperant\\b",
+      "\\bskinner\\b",
+      "\\b(positive|negative) (reinforce|punish)",
+      "\\breinforce(ment|r)\\b"
+    ],
+    "answer": "In operant conditioning, consequences change behaviour. Reinforcement (positive = add something good, negative = remove something bad) increases a behaviour; punishment decreases it. \"Negative\" means removal, not \"bad\".",
+    "action": {
+      "type": "openPanel",
+      "arg": "learning"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_schedules",
+    "category": "concept",
+    "patterns": [
+      "\\bschedules? of reinforcement\\b",
+      "\\b(fixed|variable)[- ](ratio|interval)\\b",
+      "\\b(fr|vr|fi|vi) schedule\\b",
+      "\\bcumulative record"
+    ],
+    "answer": "Ratio schedules reinforce after a number of responses, interval schedules after time passes; each can be fixed or variable. Variable-ratio produces high, steady responding that resists extinction. Watch the cumulative recorder.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "operant_schedules"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_shaping",
+    "category": "concept",
+    "patterns": [
+      "\\bshaping\\b",
+      "\\bsuccessive approximations?\\b"
+    ],
+    "answer": "Shaping reinforces successive approximations to a target behaviour, step by step. Try shaping the simulated agent in a Skinner box: reinforce too late and the agent learns the wrong thing.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "shaping"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_observational",
+    "category": "concept",
+    "patterns": [
+      "\\bobservational learning\\b",
+      "\\bbandura\\b",
+      "\\bbobo\\b",
+      "\\bmodel(l)?ing\\b.{0,15}\\b(behaviou?r|learning)\\b"
+    ],
+    "answer": "Observational learning means learning by watching models and the consequences they receive. Bandura's Bobo-doll studies are the classic example; ZEHN shows their exact design and sample only after our fact checker verifies them.",
+    "action": {
+      "type": "goZone",
+      "arg": "learning"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_latent",
+    "category": "concept",
+    "patterns": [
+      "\\blatent learning\\b",
+      "\\btolman\\b",
+      "\\bcognitive maps?\\b",
+      "\\binsight learning\\b"
+    ],
+    "answer": "Tolman showed rats could learn a maze without reward and display it once reward appeared: latent learning via a cognitive map. It showed that learning and performance are not the same.",
+    "action": {
+      "type": "openPanel",
+      "arg": "learning"
+    },
+    "week": 8,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_multistore",
+    "category": "concept",
+    "patterns": [
+      "\\bmulti-?store\\b",
+      "\\batkinson\\b",
+      "\\bsensory (memory|register)\\b",
+      "\\bshort[- ]term memory\\b"
+    ],
+    "answer": "The multi-store model (Atkinson & Shiffrin) passes information from sensory memory to short-term memory and, with rehearsal, to long-term memory. It is a useful simplification; working-memory models refined the short-term store.",
+    "action": {
+      "type": "openPanel",
+      "arg": "memory"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_working_memory",
+    "category": "concept",
+    "patterns": [
+      "\\bworking memory\\b",
+      "\\bbaddeley\\b",
+      "\\bphonological loop\\b",
+      "\\bvisuo-?spatial sketch",
+      "\\bcentral executive\\b"
+    ],
+    "answer": "Baddeley's working-memory model has a central executive, a phonological loop, a visuospatial sketchpad and an episodic buffer. Try the n-back task to load your working memory.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "nback"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_capacity",
+    "category": "concept",
+    "patterns": [
+      "\\bmagical number\\b",
+      "\\bseven plus or minus\\b",
+      "\\bmemory (span|capacity)\\b",
+      "\\bchunk(ing|s)?\\b"
+    ],
+    "answer": "Miller (1956) described a span of \"about seven chunks\", while Cowan (2001) argued for a central capacity limit \"averaging about four chunks\" (3–5). Chunking lets you pack more information into each slot.",
+    "action": {
+      "type": "openPanel",
+      "arg": "memory"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_serial_position",
+    "category": "concept",
+    "patterns": [
+      "\\bserial position\\b",
+      "\\bprimacy\\b",
+      "\\brecency\\b"
+    ],
+    "answer": "In free recall, early items (primacy) and last items (recency) are remembered best. Primacy is linked to rehearsal into long-term memory; recency to items still in short-term memory, and a delay removes it.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "serial_position"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_brown_peterson",
+    "category": "concept",
+    "patterns": [
+      "\\bbrown[- ]peterson\\b",
+      "\\bcounting backwards?\\b",
+      "\\bdistractor task\\b"
+    ],
+    "answer": "In the Brown–Peterson task you hold a trigram while counting backwards, which blocks rehearsal; recall falls quickly as the delay grows. Debate continues over decay versus interference.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "brown_peterson"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_levels",
+    "category": "concept",
+    "patterns": [
+      "\\blevels of processing\\b",
+      "\\bdeep (vs|or) shallow\\b",
+      "\\bcraik\\b"
+    ],
+    "answer": "Craik and Lockhart proposed that deeper, meaning-based processing produces better memory than shallow processing of appearance or sound. Run the task: judge words by case, rhyme or meaning, then try a surprise recall.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "levels_processing"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_drm",
+    "category": "concept",
+    "patterns": [
+      "\\bdrm\\b",
+      "\\bfalse memor(y|ies)\\b",
+      "\\b(deese|roediger)\\b"
+    ],
+    "answer": "In the DRM paradigm you study related words (bed, rest, tired...) and often \"remember\" a critical lure that was never shown (sleep). It shows memory is reconstructive.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "drm"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_misinformation",
+    "category": "concept",
+    "patterns": [
+      "\\bmisinformation\\b",
+      "\\bloftus\\b",
+      "\\beyewitness\\b",
+      "\\bsmashed\\b"
+    ],
+    "answer": "Loftus and Palmer (1974) found that verb wording changed speed estimates: \"smashed\" averaged 40.8 mph versus 31.8 mph for \"contacted\", and more \"smashed\" participants falsely recalled broken glass. Try the Eyewitness Room, followed by a debrief.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "misinformation"
+    },
+    "week": 9,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_loci",
+    "category": "concept",
+    "patterns": [
+      "\\bmethod of loci\\b",
+      "\\bmemory palace\\b",
+      "\\bmnemonics?\\b"
+    ],
+    "answer": "The method of loci places items along a familiar route and recalls them by walking it mentally. ZEHN lets you build a memory palace inside Wundt Hall.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "memory_palace"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_forgetting",
+    "category": "concept",
+    "patterns": [
+      "\\bforgetting curve\\b",
+      "\\bebbinghaus\\b",
+      "\\bspacing effect\\b",
+      "\\btesting effect\\b"
+    ],
+    "answer": "Ebbinghaus measured his own forgetting with nonsense syllables and the savings method; forgetting is fast at first and then levels off. Spaced practice and self-testing are well-supported ways to slow it. Exact original data points await verification.",
+    "action": {
+      "type": "openPanel",
+      "arg": "memory"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_encoding_specificity",
+    "category": "concept",
+    "patterns": [
+      "\\bencoding specificity\\b",
+      "\\bcontext[- ]dependent\\b",
+      "\\bstate[- ]dependent\\b",
+      "\\bretrieval cues?\\b"
+    ],
+    "answer": "Encoding specificity says recall is best when retrieval cues match the context at encoding. Context-dependent and state-dependent memory are examples.",
+    "action": {
+      "type": "openPanel",
+      "arg": "memory"
+    },
+    "week": 9,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_lineup",
+    "category": "concept",
+    "patterns": [
+      "\\blineups?\\b",
+      "\\bline-?up fairness\\b",
+      "\\bdouble-?blind lineup\\b"
+    ],
+    "answer": "Fair lineups use fillers who match the description, unbiased instructions (\"the culprit may not be present\") and a double-blind administrator. Test lineup fairness in the Eyewitness Room.",
+    "action": {
+      "type": "openPanel",
+      "arg": "eyewitness"
+    },
+    "week": 9,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_mental_rotation",
+    "category": "concept",
+    "patterns": [
+      "\\bmental rotation\\b",
+      "\\bshepard\\b",
+      "\\bmetzler\\b"
+    ],
+    "answer": "In mental rotation, the time to judge whether two shapes match grows roughly linearly with the angle between them, as if people rotate an image in mind. Fit your own slope on the 3D rotation bench.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "mental_rotation"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_hanoi",
+    "category": "concept",
+    "patterns": [
+      "\\btower of hanoi\\b",
+      "\\bhanoi\\b",
+      "\\bproblem[- ]solving\\b",
+      "\\bmeans[- ]end\\b"
+    ],
+    "answer": "The Tower of Hanoi is a classic problem-solving task; the minimum number of moves for n discs is 2^n − 1. It shows planning, subgoals and means-ends analysis.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "hanoi"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_wason",
+    "category": "concept",
+    "patterns": [
+      "\\bwason\\b",
+      "\\bselection task\\b",
+      "\\bconfirmation bias\\b"
+    ],
+    "answer": "In the Wason selection task most people check cards that could confirm a rule rather than the ones that could falsify it. This is a classic demonstration of confirmation bias.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "wason"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_framing",
+    "category": "concept",
+    "patterns": [
+      "\\bframing\\b",
+      "\\bgain (vs|or) loss frame\\b",
+      "\\bprospect theory\\b"
+    ],
+    "answer": "Framing effects occur when logically equivalent options described as gains or losses lead to different choices. ZEHN uses original wording for its framing task.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "framing"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_anchoring",
+    "category": "concept",
+    "patterns": [
+      "\\banchoring\\b",
+      "\\banchor(ed)? (effect|bias)\\b"
+    ],
+    "answer": "Anchoring is the pull of an initial number on later estimates, even when the anchor is obviously irrelevant. Run the anchoring task and compare high and low anchor groups.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "anchoring"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_heuristics",
+    "category": "concept",
+    "patterns": [
+      "\\bheuristics?\\b",
+      "\\bavailability\\b.{0,10}\\b(heuristic|bias)\\b",
+      "\\brepresentativeness\\b",
+      "\\bcognitive bias(es)?\\b"
+    ],
+    "answer": "Heuristics are mental shortcuts: availability judges frequency by ease of recall; representativeness judges probability by similarity to a prototype. They are usually useful but produce predictable biases.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cognition"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_language",
+    "category": "concept",
+    "patterns": [
+      "\\blanguage acquisition\\b",
+      "\\b(sapir|whorf|linguistic relativity)\\b",
+      "\\bchomsky\\b",
+      "\\b(phonemes?|morphemes?)\\b"
+    ],
+    "answer": "Language has phonemes, morphemes, syntax and semantics. Children acquire it quickly through both innate predispositions and rich input. Linguistic relativity (Sapir–Whorf) in its weak form says language can influence thought.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cognition"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_intelligence",
+    "category": "concept",
+    "patterns": [
+      "\\bintelligence\\b.{0,15}\\b(theor|what|define|g factor)",
+      "\\bg factor\\b",
+      "\\bgeneral intelligence\\b",
+      "\\bmultiple intelligences\\b",
+      "\\b(gardner|sternberg)\\b",
+      "\\bspearman\\b(?![- ]brown|'?s? rho)"
+    ],
+    "answer": "Spearman proposed a general factor (g); Gardner proposed multiple intelligences and Sternberg a triarchic theory. Researchers debate how many abilities there are, but g-based tests predict school performance reasonably well.",
+    "action": {
+      "type": "openPanel",
+      "arg": "intelligence"
+    },
+    "week": 10,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_iq",
+    "category": "concept",
+    "patterns": [
+      "\\biq\\b",
+      "\\bintelligence quotient\\b",
+      "\\bflynn effect\\b",
+      "\\btest bias\\b"
+    ],
+    "answer": "Modern IQ scores are deviation scores: your performance compared with a norm group of the same age. Tests can be culturally biased, so norms must fit the population. ZEHN uses only original puzzles, never real IQ test items.",
+    "action": {
+      "type": "openPanel",
+      "arg": "intelligence"
+    },
+    "week": 10,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_creativity",
+    "category": "concept",
+    "patterns": [
+      "\\bcreativity\\b",
+      "\\bdivergent thinking\\b",
+      "\\bfunctional fixedness\\b",
+      "\\bmental set\\b"
+    ],
+    "answer": "Divergent thinking generates many possible solutions; convergent thinking narrows to one. Functional fixedness and mental set are obstacles that make us reuse old approaches.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cognition"
+    },
+    "week": 10,
+    "apa": "2.1"
+  },
+  {
+    "id": "i_piaget",
+    "category": "concept",
+    "patterns": [
+      "\\bpiaget",
+      "\\bsensorimotor\\b",
+      "\\bpre-?operational\\b",
+      "\\bconcrete operational\\b",
+      "\\bformal operational\\b"
+    ],
+    "answer": "Piaget proposed four stages: sensorimotor, preoperational, concrete operational and formal operational. Later research suggests children are often more capable earlier than he thought, and that progress is less stage-like.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_conservation",
+    "category": "concept",
+    "patterns": [
+      "\\bconservation\\b.{0,20}\\b(task|liquid|number|piaget)\\b",
+      "\\bconservation task\\b",
+      "\\bcentration\\b"
+    ],
+    "answer": "Conservation is understanding that quantity stays the same when appearance changes, such as liquid poured into a taller glass. In ZEHN you observe and code simulated children's answers behind the one-way mirror.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "conservation"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_object_perm",
+    "category": "concept",
+    "patterns": [
+      "\\bobject permanence\\b",
+      "\\ba-?not-?b\\b"
+    ],
+    "answer": "Object permanence is knowing that objects exist when out of sight. In the A-not-B error, an infant keeps searching at the old location A even after seeing the toy hidden at B.",
+    "action": {
+      "type": "goZone",
+      "arg": "childdev"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_false_belief",
+    "category": "concept",
+    "patterns": [
+      "\\bfalse[- ]belief\\b",
+      "\\btheory of mind\\b",
+      "\\bsally[- ]anne\\b"
+    ],
+    "answer": "Theory of mind is understanding that others have beliefs that can differ from reality. False-belief tasks test whether a child predicts where a character will look based on the character's outdated belief. ZEHN uses original characters.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "false_belief"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_vygotsky",
+    "category": "concept",
+    "patterns": [
+      "\\bvygotsky\\b",
+      "\\bzone of proximal development\\b",
+      "\\bzpd\\b",
+      "\\bscaffolding\\b"
+    ],
+    "answer": "Vygotsky stressed social learning: the zone of proximal development is what a child can do with help but not yet alone. Scaffolding is support that is withdrawn as competence grows.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_attachment",
+    "category": "concept",
+    "patterns": [
+      "\\battachment\\b",
+      "\\bstrange situation\\b",
+      "\\bainsworth\\b",
+      "\\bbowlby\\b"
+    ],
+    "answer": "Bowlby saw attachment as an evolved bond; Ainsworth's Strange Situation codes infant reactions to separation and reunion. ZEHN shows the classic category percentages only after verification, because sources quote them differently.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_harlow",
+    "category": "concept",
+    "patterns": [
+      "\\bharlow\\b",
+      "\\bcontact comfort\\b",
+      "\\b(wire|cloth) mother\\b"
+    ],
+    "answer": "Harlow's monkey studies suggested that contact comfort mattered more than feeding for attachment. They also raise serious animal-welfare questions. Procedure details are shown only after verification.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_erikson",
+    "category": "concept",
+    "patterns": [
+      "\\berikson\\b",
+      "\\bpsychosocial stages?\\b",
+      "\\bidentity (vs|versus) role confusion\\b"
+    ],
+    "answer": "Erikson described eight psychosocial stages, each with a central conflict, from trust vs mistrust in infancy to integrity vs despair in old age. Adolescence centres on identity vs role confusion.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_kohlberg",
+    "category": "concept",
+    "patterns": [
+      "\\bkohlberg\\b",
+      "\\bmoral (development|reasoning)\\b",
+      "\\bheinz\\b",
+      "\\bgilligan\\b"
+    ],
+    "answer": "Kohlberg described pre-conventional, conventional and post-conventional moral reasoning, assessed with dilemmas. Critics such as Gilligan argued it under-weights care-based reasoning and is culturally narrow.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_parenting",
+    "category": "concept",
+    "patterns": [
+      "\\bparenting styles?\\b",
+      "\\bbaumrind\\b",
+      "\\bauthoritative\\b",
+      "\\bauthoritarian\\b"
+    ],
+    "answer": "Baumrind described authoritative (warm and firm), authoritarian (strict, less warm) and permissive (warm, few rules) styles; a neglectful style was added later. How each style relates to outcomes can vary across cultures, including joint-family settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "development"
+    },
+    "week": 11,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_emotion_theories",
+    "category": "concept",
+    "patterns": [
+      "\\bjames[- ]lange\\b",
+      "\\bcannon[- ]bard\\b",
+      "\\bschachter\\b",
+      "\\btwo[- ]factor theory\\b",
+      "\\btheor(y|ies) of emotion\\b"
+    ],
+    "answer": "James–Lange: bodily arousal comes first and we feel the emotion from it. Cannon–Bard: arousal and feeling occur together. Schachter–Singer: arousal plus a cognitive label creates the emotion. Compare them in the emotion theories comparator.",
+    "action": {
+      "type": "openPanel",
+      "arg": "emotion"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_facs",
+    "category": "concept",
+    "patterns": [
+      "\\bfacs\\b",
+      "\\baction units?\\b",
+      "\\bfacial (action|expressions?)\\b",
+      "\\bmicro-?expressions?\\b"
+    ],
+    "answer": "The Facial Action Coding System describes expressions as combinations of action units (AUs), such as AU6 cheek raiser plus AU12 lip-corner puller in a genuine smile. Move AU sliders on the face in the Clinic.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "face_recognition"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_basic_emotions",
+    "category": "concept",
+    "patterns": [
+      "\\bbasic emotions\\b",
+      "\\bekman\\b",
+      "\\buniversal (emotions?|expressions?)\\b",
+      "\\bdisplay rules\\b"
+    ],
+    "answer": "Ekman proposed a small set of basic emotions with recognisable expressions across cultures. Critics point to cultural display rules and context effects, so recognition is far from perfect.",
+    "action": {
+      "type": "openPanel",
+      "arg": "emotion"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_facial_feedback",
+    "category": "concept",
+    "patterns": [
+      "\\bfacial[- ]feedback\\b",
+      "\\bpen in (the )?mouth\\b",
+      "\\bpower pos(e|ing)\\b"
+    ],
+    "answer": "The facial-feedback and power-posing ideas suggest the body shapes feelings. Both have contested replication records; ZEHN shows their status only from verified facts, so treat headline claims cautiously.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_motivation",
+    "category": "concept",
+    "patterns": [
+      "\\bmaslow'?s? hierarch",
+      "\\bhierarchy of needs\\b",
+      "\\bdrive[- ]reduction\\b",
+      "\\bhomeostasis\\b",
+      "\\bincentive theory\\b"
+    ],
+    "answer": "Drive-reduction theory says we act to restore homeostasis; incentive theory says external goals pull us. Maslow's hierarchy places physiological needs first and self-actualisation at the top, though evidence for a strict order is weak.",
+    "action": {
+      "type": "openPanel",
+      "arg": "emotion"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_yerkes",
+    "category": "concept",
+    "patterns": [
+      "\\byerkes\\b",
+      "\\binverted[- ]u\\b",
+      "\\boptimal arousal\\b"
+    ],
+    "answer": "The original Yerkes–Dodson work studied mice and discrimination difficulty; the familiar inverted-U between arousal and performance is a later generalisation. ZEHN's sports-arousal demo is illustrative only.",
+    "action": {
+      "type": "openPanel",
+      "arg": "emotion"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_stress_hpa",
+    "category": "concept",
+    "patterns": [
+      "\\bhpa\\b",
+      "\\bcortisol\\b",
+      "\\bstress (response|hormones?)\\b",
+      "\\bhypothalamic[- ]pituitary\\b"
+    ],
+    "answer": "In stress, the hypothalamus signals the pituitary, which signals the adrenal glands to release cortisol (the HPA axis), while the sympathetic system triggers fast arousal. Chronic activation can harm health. Run the HPA simulator.",
+    "action": {
+      "type": "openPanel",
+      "arg": "health"
+    },
+    "week": 12,
+    "apa": "3.3"
+  },
+  {
+    "id": "i_gas",
+    "category": "concept",
+    "patterns": [
+      "\\bgeneral adaptation\\b",
+      "\\bselye\\b",
+      "\\balarm,? resistance\\b"
+    ],
+    "answer": "Selye's general adaptation syndrome has three phases: alarm, resistance and exhaustion. It frames stress as a general bodily response to many demands.",
+    "action": {
+      "type": "openPanel",
+      "arg": "health"
+    },
+    "week": 12,
+    "apa": "3.3"
+  },
+  {
+    "id": "i_coping",
+    "category": "concept",
+    "patterns": [
+      "\\bcoping\\b",
+      "\\bproblem[- ]focused\\b",
+      "\\bemotion[- ]focused\\b",
+      "\\bappraisal\\b"
+    ],
+    "answer": "Lazarus described stress as depending on appraisal of the threat and of your resources. Problem-focused coping tackles the cause; emotion-focused coping manages the feeling. Flexible use of both tends to work best.",
+    "action": {
+      "type": "openPanel",
+      "arg": "health"
+    },
+    "week": 12,
+    "apa": "3.3"
+  },
+  {
+    "id": "i_intrinsic",
+    "category": "concept",
+    "patterns": [
+      "\\bintrinsic motivation\\b",
+      "\\bextrinsic motivation\\b",
+      "\\bself-?determination\\b",
+      "\\boverjustification\\b"
+    ],
+    "answer": "Intrinsic motivation comes from interest in the task; extrinsic from rewards or pressure. Self-determination theory links intrinsic motivation to autonomy, competence and relatedness.",
+    "action": {
+      "type": "openPanel",
+      "arg": "emotion"
+    },
+    "week": 12,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_big5",
+    "category": "concept",
+    "patterns": [
+      "\\bbig[- ]?(5|five)\\b",
+      "\\bocean\\b.{0,15}\\bpersonality\\b",
+      "\\bfive[- ]factor\\b",
+      "\\b(conscientiousness|agreeableness|neuroticism)\\b"
+    ],
+    "answer": "The Big Five traits are Openness, Conscientiousness, Extraversion, Agreeableness and Neuroticism. Take the IPIP version in ZEHN: it is for learning only, not a diagnosis, and your answers stay on your device.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "ipip_big5"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_ipip",
+    "category": "concept",
+    "patterns": [
+      "\\bipip\\b",
+      "\\binternational personality item pool\\b",
+      "\\bpublic[- ]domain (test|items|scale)"
+    ],
+    "answer": "The International Personality Item Pool has more than 3,000 items and more than 250 scales, all public domain and free to copy, edit and translate. That is why ZEHN can use its items legally.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_trait_theory",
+    "category": "concept",
+    "patterns": [
+      "\\btrait theor",
+      "\\ballport\\b",
+      "\\beysenck\\b",
+      "\\bcattell\\b",
+      "\\b16pf\\b"
+    ],
+    "answer": "Trait theories describe stable dimensions of personality. Allport listed traits, Cattell used factor analysis, and Eysenck proposed a few broad dimensions; the Big Five is the current consensus framework.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_freud_structure",
+    "category": "concept",
+    "patterns": [
+      "\\b(id|ego|superego)\\b.{0,15}\\b(ego|superego|id)\\b",
+      "\\bdefen[cs]e mechanisms?\\b",
+      "\\brepression\\b"
+    ],
+    "answer": "Freud described the id (impulses), ego (reality) and superego (conscience), with defence mechanisms such as repression and projection protecting the ego. Important historically, but hard to test empirically.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_social_cognitive",
+    "category": "concept",
+    "patterns": [
+      "\\breciprocal determinism\\b",
+      "\\bself-?efficacy\\b",
+      "\\blocus of control\\b",
+      "\\bsocial[- ]cognitive\\b"
+    ],
+    "answer": "Social-cognitive theories see personality as an interaction of person, behaviour and environment (Bandura's reciprocal determinism). Self-efficacy and locus of control are key constructs.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_reliability",
+    "category": "concept",
+    "patterns": [
+      "\\breliab(le|ility)\\b",
+      "\\btest[- ]retest\\b",
+      "\\bsplit[- ]half\\b",
+      "\\bspearman[- ]brown\\b",
+      "\\binternal consistency\\b"
+    ],
+    "answer": "Reliability is consistency of measurement: test-retest over time, internal consistency across items (Cronbach's α, split-half with Spearman–Brown), and inter-rater (κ). Build a reliable scale in the Psychometrics studio.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "week": 13,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_validity_test",
+    "category": "concept",
+    "patterns": [
+      "\\b(construct|content|criterion|predictive|concurrent|face) validity\\b",
+      "\\bvalidity of (a|the) test\\b"
+    ],
+    "answer": "Validity asks whether a test measures what it claims: content validity (covers the domain), criterion validity (predicts an outcome) and construct validity (behaves as theory predicts). A test can be reliable but not valid.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "week": 13,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_norms",
+    "category": "concept",
+    "patterns": [
+      "\\bstandardi[sz]ation\\b",
+      "\\bnorms?\\b.{0,10}\\b(group|sample|test)\\b",
+      "\\bnorm-?referenced\\b",
+      "\\bpercentile rank\\b"
+    ],
+    "answer": "Standardisation means giving and scoring a test the same way every time and comparing results with a norm group. Norms from another country may not suit Pakistani test-takers, so local norming matters.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "week": 13,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_projective",
+    "category": "concept",
+    "patterns": [
+      "\\bprojective tests?\\b",
+      "\\binkblots?\\b",
+      "\\bthematic apperception\\b"
+    ],
+    "answer": "Projective tests present ambiguous stimuli and interpret responses. Their reliability and validity are debated. ZEHN only shows original procedural \"inkblot-style\" images, clearly labelled as not Rorschach plates.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_barnum",
+    "category": "concept",
+    "patterns": [
+      "\\bbarnum\\b",
+      "\\bforer\\b",
+      "\\bhoroscopes?\\b"
+    ],
+    "answer": "The Barnum (Forer) effect is accepting vague, general descriptions as accurate about yourself. It explains why horoscopes and some online \"personality tests\" feel convincing.",
+    "action": {
+      "type": "openPanel",
+      "arg": "personality"
+    },
+    "week": 13,
+    "apa": "1.2"
+  },
+  {
+    "id": "i_sem_measure",
+    "category": "concept",
+    "patterns": [
+      "\\bstandard error of measurement\\b",
+      "\\btrue score\\b",
+      "\\bclassical test theory\\b"
+    ],
+    "answer": "Classical test theory says an observed score = true score + error. The standard error of measurement is SD × √(1 − reliability), so more reliable tests give tighter score bands.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "week": 13,
+    "apa": "2.4"
+  },
+  {
+    "id": "i_conformity",
+    "category": "concept",
+    "patterns": [
+      "\\bconformity\\b",
+      "\\basch\\b",
+      "\\bline judg(e)?ment\\b",
+      "\\bnormative influence\\b"
+    ],
+    "answer": "In Asch-style studies, participants judge line lengths after confederates give a wrong answer, and many go along on some trials. The commonly quoted percentages are still being verified, so ZEHN shows them only with a verification badge. A debrief follows the demo.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "asch"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_obedience",
+    "category": "concept",
+    "patterns": [
+      "\\bmilgram\\b",
+      "\\bobedience\\b",
+      "\\b450 ?v(olts?)?\\b"
+    ],
+    "answer": "In Milgram's 1963 baseline condition, 26 of 40 participants (65%) went to the maximum 450 V, and none stopped before 300 V. That figure is from one condition only. The studies are now a key case for research ethics.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_bystander",
+    "category": "concept",
+    "patterns": [
+      "\\bbystander\\b",
+      "\\bdiffusion of responsibility\\b",
+      "\\bdarley\\b",
+      "\\blatan[eé]\\b",
+      "\\bgenovese\\b"
+    ],
+    "answer": "Darley and Latané (1968): 85% of participants who believed they were alone reported a seizure before it ended, compared with 31% who believed four others were present. Diffusion of responsibility explains this. Popular Genovese retellings contain inaccuracies.",
+    "action": {
+      "type": "goZone",
+      "arg": "mohalla"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_dissonance",
+    "category": "concept",
+    "patterns": [
+      "\\bcognitive dissonance\\b",
+      "\\bfestinger\\b",
+      "\\$1 (vs|or) \\$20\\b"
+    ],
+    "answer": "Festinger and Carlsmith (1959) paid people $1 or $20 to call a boring task fun. The $1 group later rated it most enjoyable (+1.35, versus −0.05 for $20 and −0.45 for controls): with too little external justification, attitudes shifted to match behaviour.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_attribution",
+    "category": "concept",
+    "patterns": [
+      "\\bfundamental attribution\\b",
+      "\\battribution (error|theory)\\b",
+      "\\bactor[- ]observer\\b",
+      "\\bself-?serving bias\\b"
+    ],
+    "answer": "The fundamental attribution error is over-explaining others' behaviour by personality and under-weighting the situation. The bias tends to be weaker in more collectivist cultures.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_spe",
+    "category": "concept",
+    "patterns": [
+      "\\bstanford prison\\b",
+      "\\bzimbardo\\b",
+      "\\bprison experiment\\b"
+    ],
+    "answer": "The Stanford Prison Experiment is now contested. Le Texier (2019) used archives and interviews with 15 participants to report that guards received instructions, with demand characteristics and biased data collection. Zimbardo and Haney replied in 2020. Treat it as an ethics and critique case.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_prisoners",
+    "category": "concept",
+    "patterns": [
+      "\\bprisoner'?s'? dilemma\\b",
+      "\\bgame theory\\b",
+      "\\btit[- ]for[- ]tat\\b",
+      "\\bcooperation\\b"
+    ],
+    "answer": "In the prisoner's dilemma each player gains by defecting, yet both do better if both cooperate. Repeated play favours strategies like tit-for-tat. Join the tournament in the Mohalla.",
+    "action": {
+      "type": "startParadigm",
+      "arg": "prisoners_dilemma"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_groups",
+    "category": "concept",
+    "patterns": [
+      "\\bsocial (facilitation|loafing)\\b",
+      "\\bgroupthink\\b",
+      "\\bgroup polari[sz]ation\\b",
+      "\\bdeindividuation\\b"
+    ],
+    "answer": "Social facilitation: others' presence helps easy tasks and hurts hard ones. Social loafing: people put in less effort in groups. Groupthink: cohesive groups suppress dissent and make poor decisions.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_prejudice",
+    "category": "concept",
+    "patterns": [
+      "\\bprejudice\\b",
+      "\\bstereotyp(e|es|ing)\\b",
+      "\\bcontact hypothesis\\b",
+      "\\bin-?group\\b"
+    ],
+    "answer": "Stereotypes are beliefs about groups, prejudice is an attitude, and discrimination is behaviour. Intergroup contact under equal status, shared goals and institutional support can reduce prejudice.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_io_selection",
+    "category": "concept",
+    "patterns": [
+      "\\bi-?o psych",
+      "\\bindustrial[- ]organi[sz]ational\\b",
+      "\\bjob analysis\\b",
+      "\\b(personnel )?selection\\b.{0,15}\\b(valid|interview|test)",
+      "\\bstructured interviews?\\b"
+    ],
+    "answer": "I-O psychology studies people at work. Selection starts with a job analysis; structured interviews and work samples usually predict job performance better than unstructured chats. Explore the I-O panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "io"
+    },
+    "week": 14,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_io_motivation",
+    "category": "concept",
+    "patterns": [
+      "\\bhawthorne\\b",
+      "\\bjob satisfaction\\b",
+      "\\bgoal[- ]setting\\b",
+      "\\bsafety culture\\b",
+      "\\bwork motivation\\b"
+    ],
+    "answer": "At work, specific and challenging goals with feedback tend to boost performance (goal-setting theory). The famous Hawthorne effect is debated: the original studies had many confounds.",
+    "action": {
+      "type": "openPanel",
+      "arg": "io"
+    },
+    "week": 14,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_persuasion",
+    "category": "concept",
+    "patterns": [
+      "\\bpersuasion\\b",
+      "\\belaboration likelihood\\b",
+      "\\b(central|peripheral) route\\b",
+      "\\bfoot[- ]in[- ](the[- ])?door\\b"
+    ],
+    "answer": "The elaboration likelihood model has a central route (careful evaluation of arguments) and a peripheral route (cues like attractiveness). Central-route attitude change tends to last longer.",
+    "action": {
+      "type": "openPanel",
+      "arg": "social"
+    },
+    "week": 14,
+    "apa": "1.1"
+  },
+  {
+    "id": "i_abnormality",
+    "category": "concept",
+    "patterns": [
+      "\\babnormal(ity)?\\b.{0,15}\\b(define|definition|what)\\b",
+      "\\bwhat counts as (a )?(mental )?disorder\\b",
+      "\\bpsychopathology\\b"
+    ],
+    "answer": "Definitions of abnormality combine distress, dysfunction in daily life, deviance from cultural norms and sometimes danger; no single criterion is enough. Everything in ZEHN's Psychopathology panel uses simulated cases only.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychopathology"
+    },
+    "week": 15,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_dsm",
+    "category": "concept",
+    "patterns": [
+      "\\bdsm(-?5|-?5-?tr)?\\b",
+      "\\bicd-?1[01]\\b",
+      "\\bdiagnostic manual\\b",
+      "\\bclassification of (mental )?disorders\\b"
+    ],
+    "answer": "DSM-5-TR and ICD-11 are the main classification systems. ZEHN explains their structure in original words but never reproduces copyrighted criteria text; see the manuals for official criteria.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychopathology"
+    },
+    "week": 15,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_diathesis",
+    "category": "concept",
+    "patterns": [
+      "\\bdiathesis\\b",
+      "\\bbiopsychosocial\\b",
+      "\\bvulnerability[- ]stress\\b"
+    ],
+    "answer": "The diathesis-stress model says a disorder emerges when a vulnerability (genetic, biological or psychological) meets enough stress. The biopsychosocial model combines biological, psychological and social causes.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychopathology"
+    },
+    "week": 15,
+    "apa": "1.4"
+  },
+  {
+    "id": "i_cbt",
+    "category": "concept",
+    "patterns": [
+      "\\bcbt\\b",
+      "\\bcognitive[- ]behaviou?ral\\b",
+      "\\babc model\\b",
+      "\\bthought records?\\b",
+      "\\bcognitive distortions?\\b"
+    ],
+    "answer": "CBT links Activating events, Beliefs and Consequences (ABC): changing unhelpful beliefs and behaviours changes feelings. Practise thought records with simulated clients in the Clinic.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_person_centred",
+    "category": "concept",
+    "patterns": [
+      "\\bperson[- ]cent(red|ered)\\b",
+      "\\bclient[- ]cent(red|ered)\\b",
+      "\\bunconditional positive regard\\b",
+      "\\bcore conditions\\b",
+      "\\bempathy\\b.{0,15}\\bcongruence\\b"
+    ],
+    "answer": "Rogers' core conditions are empathy, congruence (genuineness) and unconditional positive regard. The Clinic scores how well your replies show them.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_oars",
+    "category": "concept",
+    "patterns": [
+      "\\boars\\b",
+      "\\bmotivational interviewing\\b",
+      "\\breflective listening\\b",
+      "\\bmicro-?skills?\\b"
+    ],
+    "answer": "OARS stands for Open questions, Affirmations, Reflections and Summaries, the core micro-skills of motivational interviewing and counselling. Premature advice and false reassurance lose points in the Clinic.",
+    "action": {
+      "type": "setMode",
+      "arg": "clinic"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_screeners",
+    "category": "concept",
+    "patterns": [
+      "\\bphq-?9\\b",
+      "\\bgad-?7\\b",
+      "\\bscreening (tool|questionnaire)s?\\b"
+    ],
+    "answer": "PHQ-9 and GAD-7 are free to reproduce, but in ZEHN they are scored only for simulated clients, never for you. A screener flags possible concerns; it is not a diagnosis.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_stigma",
+    "category": "concept",
+    "patterns": [
+      "\\bstigma\\b",
+      "\\bhelp[- ]seeking\\b",
+      "\\bmental health in pakistan\\b"
+    ],
+    "answer": "Stigma, family expectations and limited services can make help-seeking harder. Culturally sensitive care respects family and faith while protecting the client's autonomy. ZEHN shows Pakistan-specific statistics only once verified.",
+    "action": {
+      "type": "openPanel",
+      "arg": "crosscultural"
+    },
+    "week": 15,
+    "apa": "3.2"
+  },
+  {
+    "id": "i_crosscultural",
+    "category": "concept",
+    "patterns": [
+      "\\bcross-?cultural\\b",
+      "\\bweird (samples?|participants?)\\b",
+      "\\bindividualis[mt]\\b",
+      "\\bcollectivis[mt]\\b",
+      "\\bindigenous psych"
+    ],
+    "answer": "Much psychology comes from WEIRD samples (Western, Educated, Industrialised, Rich, Democratic). Collectivist settings, such as many joint families in Sindh, can shape self-concept, emotion display and help-seeking.",
+    "action": {
+      "type": "openPanel",
+      "arg": "crosscultural"
+    },
+    "week": 15,
+    "apa": "3.2"
+  },
+  {
+    "id": "i_positive",
+    "category": "concept",
+    "patterns": [
+      "\\bpositive psych",
+      "\\bperma\\b",
+      "\\bwell-?being\\b",
+      "\\bgratitude\\b",
+      "\\bcharacter strengths\\b",
+      "\\bflow\\b.{0,10}\\bcsikszentmihalyi\\b"
+    ],
+    "answer": "Positive psychology studies wellbeing, strengths and flourishing. Seligman's PERMA model covers Positive emotion, Engagement, Relationships, Meaning and Accomplishment. Check evidence quality: some popular interventions have small effects.",
+    "action": {
+      "type": "openPanel",
+      "arg": "positive"
+    },
+    "week": 15,
+    "apa": "3.3"
+  },
+  {
+    "id": "i_therapy_effect",
+    "category": "concept",
+    "patterns": [
+      "\\bdoes therapy work\\b",
+      "\\bcommon factors\\b",
+      "\\btherapeutic alliance\\b",
+      "\\bevidence[- ]based (therapy|practice|treatment)\\b"
+    ],
+    "answer": "Evidence-based practice combines research evidence, clinical expertise and client preferences. Across therapies, common factors such as the therapeutic alliance are consistently linked to outcome.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_meds",
+    "category": "concept",
+    "patterns": [
+      "\\bantidepressants?\\b",
+      "\\bpsychopharmacolog",
+      "\\bssris?\\b",
+      "\\banti-?psychotics?\\b"
+    ],
+    "answer": "Psychiatric medicines act on neurotransmitter systems, for example SSRIs on serotonin reuptake. Only qualified prescribers should advise on medication. ZEHN covers the concept, never personal dosing.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "week": 15,
+    "apa": "4.1"
+  },
+  {
+    "id": "i_replication_crisis",
+    "category": "concept",
+    "patterns": [
+      "\\breplication crisis\\b",
+      "\\breproducibility (project|crisis)\\b",
+      "\\bopen science collaboration\\b",
+      "\\bosc 2015\\b"
+    ],
+    "answer": "The Open Science Collaboration (2015) repeated 100 studies: 97% of originals were significant but only 36% of replications were, and replication effects were about half the original size. Explore it in the Replication panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_ego_depletion",
+    "category": "concept",
+    "patterns": [
+      "\\bego[- ]depletion\\b",
+      "\\bwillpower\\b.{0,15}\\b(muscle|resource)\\b",
+      "\\bhagger\\b"
+    ],
+    "answer": "The ego-depletion registered replication (Hagger et al. 2016) ran 23 labs with N = 2,141 and found d = 0.04, 95% CI [−0.07, 0.15], far below the earlier meta-analytic d = 0.62. It is a textbook failed replication.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_prereg",
+    "category": "concept",
+    "patterns": [
+      "\\bpre-?regist(er|ered|ration)\\b",
+      "\\bregistered reports?\\b",
+      "\\bosf\\b"
+    ],
+    "answer": "Preregistration means recording hypotheses, sample size and analysis plan before collecting data, separating confirmatory from exploratory analysis. Registered reports go further: the journal accepts the plan before results exist. Build one in the Replication panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_phacking",
+    "category": "concept",
+    "patterns": [
+      "\\bp-?hack",
+      "\\bharking\\b",
+      "\\bgarden of forking paths\\b",
+      "\\bresearcher degrees of freedom\\b",
+      "\\bdata dredg"
+    ],
+    "answer": "P-hacking means trying analyses until p < .05 (adding participants, dropping outliers, picking DVs); HARKing means presenting a post hoc hypothesis as if it were predicted. Both inflate false positives. Try the p-hacking simulator to see how easy it is.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_pvalue",
+    "category": "concept",
+    "patterns": [
+      "\\bp[- ]?values?\\b",
+      "\\bstatistical(ly)? significan",
+      "\\bnull hypothesis\\b",
+      "\\bnhst\\b"
+    ],
+    "answer": "A p-value is the probability of data at least this extreme if the null hypothesis were true. It is not the probability that the null is true, and p < .05 does not mean the effect is large or important.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_errors",
+    "category": "concept",
+    "patterns": [
+      "\\btype (i|1|ii|2) errors?\\b",
+      "\\bfalse (positive|negative)s?\\b",
+      "\\balpha (level|error)\\b"
+    ],
+    "answer": "A Type I error is a false positive (rejecting a true null); its rate is set by α, conventionally .05. A Type II error is a false negative; its rate is β, and power = 1 − β.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_effect_size_concept",
+    "category": "concept",
+    "patterns": [
+      "\\beffect sizes?\\b.{0,20}\\b(what|why|mean)\\b",
+      "\\bpractical significance\\b",
+      "\\bwhy report effect sizes?\\b"
+    ],
+    "answer": "An effect size tells you how big an effect is, independent of sample size: Cohen's d, r, η² and others. With very large samples tiny effects become significant, so always report and interpret effect sizes.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_ci",
+    "category": "concept",
+    "patterns": [
+      "\\bconfidence intervals?\\b",
+      "\\b95 ?% ci\\b"
+    ],
+    "answer": "A 95% confidence interval is produced by a method that captures the true value in 95% of repeated samples. Narrow intervals mean precise estimates; an interval for a difference that excludes 0 corresponds to p < .05.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_open_data",
+    "category": "concept",
+    "patterns": [
+      "\\bopen (data|materials|science)\\b",
+      "\\bdata sharing\\b",
+      "\\bfair data\\b"
+    ],
+    "answer": "Open science shares data, materials and code so others can check and reuse them, after proper anonymisation. Use Data Export to create an anonymised CSV with a codebook.",
+    "action": {
+      "type": "openPanel",
+      "arg": "export"
+    },
+    "week": 16,
+    "apa": "4.4"
+  },
+  {
+    "id": "i_meta_analysis",
+    "category": "concept",
+    "patterns": [
+      "\\bmeta-?analy(sis|ses|tic)\\b",
+      "\\bpublication bias\\b",
+      "\\bfile[- ]drawer\\b",
+      "\\bfunnel plot\\b"
+    ],
+    "answer": "A meta-analysis combines effect sizes across studies. Publication bias (the file-drawer problem) can inflate pooled effects, which is why the ego-depletion meta-analysis (d = 0.62) and the registered replication (d = 0.04) disagreed.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "i_ai_psych",
+    "category": "concept",
+    "patterns": [
+      "\\bai in psych",
+      "\\bchatbot therap",
+      "\\balgorithmic bias\\b",
+      "\\bllms?\\b.{0,20}\\b(psych|therapy|limits?)\\b"
+    ],
+    "answer": "AI tools can help with tutoring and analysis, but they can also hallucinate, carry bias and mishandle private data. Chatbot \"therapy\" without clinical oversight raises serious safety concerns. See the AI in Psychology & Ethics panel.",
+    "action": {
+      "type": "openPanel",
+      "arg": "aiethics"
+    },
+    "week": 16,
+    "apa": "3.1"
+  },
+  {
+    "id": "i_bayes",
+    "category": "concept",
+    "patterns": [
+      "\\bbayes(ian)?\\b",
+      "\\bbayes factor\\b",
+      "\\bprior (probability|belief)\\b"
+    ],
+    "answer": "Bayesian statistics updates prior beliefs with data to give posterior beliefs. A Bayes factor compares how well two hypotheses predict the data and, unlike a p-value, can support the null.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "week": 16,
+    "apa": "2.2"
+  },
+  {
+    "id": "nav_zone_courtyard",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(courtyard|hub|start(ing)? point|neem trees?)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(courtyard|hub|start(ing)? point|neem trees?)\\b"
+    ],
+    "answer": "Heading to the Central Courtyard, the hub under the neem trees. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "courtyard"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_wundt",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(wundt hall|museum|history hall)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(wundt hall|museum|history hall)\\b"
+    ],
+    "answer": "Heading to Wundt Hall, the history-of-psychology museum. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "wundt"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_explab",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(experimental lab|lab wing|exp ?lab|illusion rooms?|psychophysics booth)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(experimental lab|lab wing|exp ?lab|illusion rooms?|psychophysics booth)\\b"
+    ],
+    "answer": "Heading to the Experimental Lab Wing, with the psychophysics booth and illusion rooms. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "explab"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_neuro",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(neuro atrium|atrium|walk-?through brain|neuron bridge|synapse chamber)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(neuro atrium|atrium|walk-?through brain|neuron bridge|synapse chamber)\\b"
+    ],
+    "answer": "Heading to the Neuro Atrium and its walk-through brain. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "neuro"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_sleep",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(sleep (lab|room)|consciousness lab)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(sleep (lab|room)|consciousness lab)\\b"
+    ],
+    "answer": "Heading to the Sleep & Consciousness Lab. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "sleep"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_learning",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(learning lab|skinner box(es)?|pavlov station)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(learning lab|skinner box(es)?|pavlov station)\\b"
+    ],
+    "answer": "Heading to the Learning Lab, with the Skinner boxes and the Pavlov station. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "learning"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_childdev",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(child (development|dev)( suite)?|one-?way mirror|observation room)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(child (development|dev)( suite)?|one-?way mirror|observation room)\\b"
+    ],
+    "answer": "Heading to the Child Development Suite behind the one-way mirror. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "childdev"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_clinic",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(clinic|counsell?ing (cent(re|er)|room)|therapy room)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(clinic|counsell?ing (cent(re|er)|room)|therapy room)\\b"
+    ],
+    "answer": "Heading to the Counselling & Clinic Centre. All clients there are simulated. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "clinic"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_mohalla",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(mohalla|plaza|social psych(ology)? plaza|street|chai dhaba|bus stop)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(mohalla|plaza|social psych(ology)? plaza|street|chai dhaba|bus stop)\\b"
+    ],
+    "answer": "Heading to the Mohalla street and Social Psychology Plaza. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "mohalla"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_zone_library",
+    "category": "nav",
+    "patterns": [
+      "\\b(take me|go|teleport|walk|head|bring me|navigate|travel|move)\\b.{0,25}\\b(library|methods (and|&) stats|poster hall|irb chamber)\\b",
+      "\\bwhere('?s| is)\\b.{0,15}\\b(library|methods (and|&) stats|poster hall|irb chamber)\\b"
+    ],
+    "answer": "Heading to the Methods & Stats Library, home of the IRB chamber and the Workbench. Press 7 to switch to the guided tour any time.",
+    "action": {
+      "type": "goZone",
+      "arg": "library"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_walk",
+    "category": "nav",
+    "patterns": [
+      "\\b(researcher )?walk mode\\b",
+      "\\bfirst[- ]person( mode)?\\b",
+      "\\bmode (1|one)\\b"
+    ],
+    "answer": "Researcher Walk mode (key 1): explore zones in first person, open exhibits and start paradigms.",
+    "action": {
+      "type": "setMode",
+      "arg": "walk"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_director",
+    "category": "nav",
+    "patterns": [
+      "\\bdirector (mode|view)\\b",
+      "\\borbit (view|camera)\\b",
+      "\\bmode (2|two)\\b"
+    ],
+    "answer": "Director View (key 2): orbit the scene, design studies, place simulated participants and watch live data overlays.",
+    "action": {
+      "type": "setMode",
+      "arg": "director"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_participant",
+    "category": "nav",
+    "patterns": [
+      "\\bparticipant (mode|journey)\\b",
+      "\\bbe (a|the) participant\\b",
+      "\\bmode (3|three)\\b"
+    ],
+    "answer": "Participant Mode (key 3): do real timed tasks after a consent screen, see your own data and get a debrief. Your data never leaves this device.",
+    "action": {
+      "type": "setMode",
+      "arg": "participant"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_clinic",
+    "category": "nav",
+    "patterns": [
+      "\\bclinic mode\\b",
+      "\\bcounsell?ing (mode|session)\\b",
+      "\\bmode (4|four)\\b",
+      "\\bsimulated clients?\\b"
+    ],
+    "answer": "Clinic mode (key 4): counselling practice with simulated clients only, using branching dialogue and FACS faces, with supervisor feedback.",
+    "action": {
+      "type": "setMode",
+      "arg": "clinic"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_social",
+    "category": "nav",
+    "patterns": [
+      "\\bsocial (sim|mode|simulation)\\b",
+      "\\bcrowd sim(ulation)?\\b",
+      "\\bmode (5|five)\\b"
+    ],
+    "answer": "Social Sim mode (key 5): crowd agents in the Mohalla follow conformity, bystander and cooperation models. Change the parameters and watch.",
+    "action": {
+      "type": "setMode",
+      "arg": "social"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_neuro",
+    "category": "nav",
+    "patterns": [
+      "\\bneuro (explorer|mode)\\b",
+      "\\bfly through the brain\\b",
+      "\\bmode (6|six)\\b"
+    ],
+    "answer": "Neuro Explorer (key 6): fly through the brain and run the neuron and synapse simulators.",
+    "action": {
+      "type": "setMode",
+      "arg": "neuro"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_mode_tour",
+    "category": "nav",
+    "patterns": [
+      "\\b(guided )?tour( mode)?\\b",
+      "\\bphoto mode\\b",
+      "\\bdrone( mode)?\\b",
+      "\\bmode (7|seven)\\b"
+    ],
+    "answer": "Tour / Photo / Drone (key 7): a guided tour of at least 32 beats, a depth-of-field photo mode and a free drone camera.",
+    "action": {
+      "type": "setMode",
+      "arg": "tour"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_panel_course",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(course map|week grid|syllabus|progress)\\b"
+    ],
+    "answer": "Opening the Course Map with your 16-week progress.",
+    "action": {
+      "type": "openPanel",
+      "arg": "course"
+    },
+    "apa": "1.2"
+  },
+  {
+    "id": "nav_panel_history",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(history|timeline|schools of psych)"
+    ],
+    "answer": "Opening History & Schools.",
+    "action": {
+      "type": "openPanel",
+      "arg": "history"
+    },
+    "apa": "1.3"
+  },
+  {
+    "id": "nav_panel_methods",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(research methods?|methods lab|design builder)\\b"
+    ],
+    "answer": "Opening the Research Methods Lab.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "nav_panel_irb",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(irb|ethics board|ethics committee)\\b"
+    ],
+    "answer": "Opening the Ethics Board (IRB): approve, revise or reject proposals with APA Code and Belmont reasons.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "nav_panel_stats",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(stat(istic)?s?( workbench)?|workbench|calculator)\\b",
+      "\\b(statistics|stats) workbench\\b"
+    ],
+    "answer": "Opening the Statistics Workbench. Try the analysis yourself first, and I'll critique it.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "nav_panel_builder",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(experiment builder|builder|timeline editor)\\b"
+    ],
+    "answer": "Opening the Experiment Builder: trials, blocks, randomisation and counterbalancing.",
+    "action": {
+      "type": "openPanel",
+      "arg": "builder"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "nav_panel_export",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(data export|export|download (my )?data|csv)\\b"
+    ],
+    "answer": "Opening Data Export: CSV or JSON per paradigm, with a codebook and anonymisation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "export"
+    },
+    "apa": "4.4"
+  },
+  {
+    "id": "nav_panel_report",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(apa report|report generator|write[- ]?up)\\b"
+    ],
+    "answer": "Opening the APA Report Generator.",
+    "action": {
+      "type": "openPanel",
+      "arg": "report"
+    },
+    "apa": "4.2"
+  },
+  {
+    "id": "nav_panel_cases",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(case studies|cases panel)\\b"
+    ],
+    "answer": "Opening Case Studies: every case is cited and labelled with its replication status.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cases"
+    },
+    "apa": "1.4"
+  },
+  {
+    "id": "nav_panel_missions",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(missions?|quests?|objectives)\\b"
+    ],
+    "answer": "Opening Missions: your weekly objectives, XP and progress.",
+    "action": {
+      "type": "openPanel",
+      "arg": "missions"
+    },
+    "apa": "5.2"
+  },
+  {
+    "id": "nav_panel_quiz",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(quiz|assessment|practice questions|test me)\\b",
+      "\\b(quiz|test) me\\b",
+      "\\bpractice (quiz|questions)\\b"
+    ],
+    "answer": "Opening Assessment & Quiz.",
+    "action": {
+      "type": "openPanel",
+      "arg": "quiz"
+    },
+    "apa": "2.1"
+  },
+  {
+    "id": "nav_panel_settings",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(settings|accessibility|options|preferences|consent log)\\b"
+    ],
+    "answer": "Opening Session, Safety & Settings: consent log, data deletion, crisis card and accessibility.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "nav_panel_replication",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(replication( panel)?|open science panel|p-?hacking simulator)\\b"
+    ],
+    "answer": "Opening Replication & Open Science.",
+    "action": {
+      "type": "openPanel",
+      "arg": "replication"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "nav_panel_aiethics",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(ai ethics|ai in psych(ology)?)\\b"
+    ],
+    "answer": "Opening AI in Psychology & Ethics.",
+    "action": {
+      "type": "openPanel",
+      "arg": "aiethics"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "nav_panel_present",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(presenter mode|present (my )?(poster|results)|poster export|slides?)\\b"
+    ],
+    "answer": "Opening Present & Report: presenter mode and poster export.",
+    "action": {
+      "type": "openPanel",
+      "arg": "present"
+    },
+    "apa": "4.2"
+  },
+  {
+    "id": "nav_panel_psychometrics",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(psychometrics|scale builder|test construction)\\b"
+    ],
+    "answer": "Opening the Psychometrics studio.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "nav_panel_sdt",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(sdt|signal detection|roc)( panel)?\\b"
+    ],
+    "answer": "Opening Signal Detection: ROC curves, d′ and c, with a payoff manipulation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sdt"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "nav_panel_crosscultural",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(cross-?cultural|indigenous)( panel)?\\b"
+    ],
+    "answer": "Opening Cross-Cultural & Indigenous Psychology.",
+    "action": {
+      "type": "openPanel",
+      "arg": "crosscultural"
+    },
+    "apa": "3.2"
+  },
+  {
+    "id": "nav_panel_therapy",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(therap(y|ies)|counsell?ing) panel\\b"
+    ],
+    "answer": "Opening Therapies & Counselling.",
+    "action": {
+      "type": "openPanel",
+      "arg": "therapy"
+    },
+    "apa": "4.1"
+  },
+  {
+    "id": "nav_panel_health",
+    "category": "nav",
+    "patterns": [
+      "\\b(open|show|launch|bring up|go to|take me to|display)\\b.{0,20}\\b(health|stress)( (&|and) stress)? panel\\b"
+    ],
+    "answer": "Opening Health & Stress.",
+    "action": {
+      "type": "openPanel",
+      "arg": "health"
+    },
+    "apa": "3.3"
+  },
+  {
+    "id": "s_which_test",
+    "category": "stats",
+    "patterns": [
+      "\\bwhich (stat(istical)?|test)\\b",
+      "\\bwhat test should\\b",
+      "\\bchoose (a|the) (stat(istical)? )?test\\b"
+    ],
+    "answer": "Ask three questions: what is the DV's level of measurement, how many groups or conditions are there, and are they between- or within-subjects? Two independent groups → independent t; two related → paired t; three or more → ANOVA; categories → χ²; two continuous variables → r or regression.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_t_test",
+    "category": "stats",
+    "patterns": [
+      "\\bt[- ]?tests?\\b",
+      "\\bt[- ]?(value|statistic)\\b",
+      "\\bstudent'?s t\\b"
+    ],
+    "answer": "A t-test compares two means relative to their variability. Use the independent-samples t when two different groups are compared and the paired t when the same people are measured twice. Ask me about either one for the formula, or open the Workbench and try it.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_t_ind",
+    "category": "stats",
+    "patterns": [
+      "\\bindependent(-samples?)? t[- ]?test\\b",
+      "\\b(two|2)[- ]sample t\\b",
+      "\\bwelch\\b"
+    ],
+    "answer": "For an independent-samples t-test, t = (M1 − M2) / SE of the difference, with df = n1 + n2 − 2 for the pooled version. Welch's version does not assume equal variances. Report it as t(df) = value, p = value, d = value.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_t_paired",
+    "category": "stats",
+    "patterns": [
+      "\\bpaired(-samples?)? t\\b",
+      "\\bdependent t[- ]?test\\b",
+      "\\brepeated[- ]measures t\\b",
+      "\\bwithin[- ]subjects? t\\b"
+    ],
+    "answer": "For a paired t-test, compute each person's difference score, then t = mean difference / (SD of differences / √n), with df = n − 1. Use it for within-subjects designs such as congruent vs incongruent Stroop RTs.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_anova",
+    "category": "stats",
+    "patterns": [
+      "\\banova\\b",
+      "\\banalysis of variance\\b",
+      "\\bf[- ]?(ratio|test|statistic)\\b"
+    ],
+    "answer": "One-way ANOVA compares three or more means: F = MS between / MS within, with df = (k − 1, N − k). A significant F tells you the means differ somewhere; use post hoc tests to find where, and report η².",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_posthoc",
+    "category": "stats",
+    "patterns": [
+      "\\bpost[- ]?hoc\\b",
+      "\\btukey\\b",
+      "\\bbonferroni\\b",
+      "\\bmultiple comparisons?\\b"
+    ],
+    "answer": "Running many tests inflates the Type I error rate. Bonferroni divides α by the number of tests; Tukey's HSD controls the error rate across all pairwise comparisons after ANOVA. Plan your comparisons in advance where possible.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_chi",
+    "category": "stats",
+    "patterns": [
+      "\\bchi[- ]?squared?\\b",
+      "χ(²|2)",
+      "\\bcontingency table\\b",
+      "\\bgoodness of fit\\b"
+    ],
+    "answer": "Chi-square compares observed and expected frequencies: χ² = Σ (O − E)² / E. For a contingency table, E = row total × column total / N, and df = (rows − 1)(columns − 1). Expected counts should not be too small.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_corr",
+    "category": "stats",
+    "patterns": [
+      "\\bpearson\\b",
+      "\\bcorrelation coefficient\\b",
+      "\\bcompute (r|correlation)\\b",
+      "\\bspearman'?s? rho\\b"
+    ],
+    "answer": "Pearson's r = covariance / (SDx × SDy) and ranges from −1 to +1; r² is the proportion of shared variance. Use Spearman's rho for ranks or monotonic but non-linear data. Plot the scatterplot first.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_regression",
+    "category": "stats",
+    "patterns": [
+      "\\bregression\\b",
+      "\\bline of best fit\\b",
+      "\\bslope (and|&) intercept\\b",
+      "\\bpredict(ing)? .{0,15}from\\b"
+    ],
+    "answer": "Simple linear regression fits Ŷ = a + bX, where b = r × (SDy / SDx) and a = My − b·Mx. R² tells you how much variance in Y the model explains. Regression shows prediction, not causation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_alpha",
+    "category": "stats",
+    "patterns": [
+      "\\bcronbach'?s?\\b",
+      "\\bcoefficient alpha\\b",
+      "\\bcompute alpha\\b"
+    ],
+    "answer": "Cronbach's α = (k / (k − 1)) × (1 − Σ item variances / total-score variance), where k is the number of items. It rises with more items and higher inter-item correlations, so a very high α can mean redundant items. Reverse-score negatively keyed items first.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_kappa",
+    "category": "stats",
+    "patterns": [
+      "\\bcohen'?s? kappa\\b",
+      "\\bkappa\\b",
+      "\\binter-?rater agreement\\b",
+      "\\binter-?coder\\b"
+    ],
+    "answer": "Cohen's κ = (po − pe) / (1 − pe), where po is the observed agreement between two raters and pe the agreement expected by chance. It corrects plain percentage agreement for chance.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_dprime",
+    "category": "stats",
+    "patterns": [
+      "(^|\\s)d[′'’](?=$|[\\s?.,])",
+      "\\bsensitivity index\\b",
+      "\\bd-?prime\\b",
+      "\\bcompute (sensitivity|criterion)\\b"
+    ],
+    "answer": "d′ = z(hit rate) − z(false-alarm rate), and the criterion c = −½ [z(H) + z(FA)]. Correct rates of 0 or 1 first, for example with a log-linear correction, or z becomes infinite.",
+    "action": {
+      "type": "openPanel",
+      "arg": "sdt"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_power",
+    "category": "stats",
+    "patterns": [
+      "\\bpower analysis\\b",
+      "\\bstatistical power\\b",
+      "\\bhow many participants\\b",
+      "\\bsample size calc"
+    ],
+    "answer": "Power is the probability of detecting an effect that really exists. It depends on effect size, α, sample size and design. Decide your smallest effect of interest, then compute the N needed for your target power before collecting data. A common target is .80.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_cohen_d",
+    "category": "stats",
+    "patterns": [
+      "\\bcohen'?s? d\\b",
+      "\\bcompute (effect size|d)\\b",
+      "\\bstandardi[sz]ed mean difference\\b"
+    ],
+    "answer": "Cohen's d = (M1 − M2) / pooled SD. Cohen's rough benchmarks are 0.2 small, 0.5 medium and 0.8 large, but judge size in context. Other measures: η² for ANOVA, r for correlations.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_apa_format",
+    "category": "stats",
+    "patterns": [
+      "\\bapa (format|style)\\b.{0,20}\\b(stat|result|report)",
+      "\\bhow (do i|to) (report|write)\\b.{0,20}\\b(results?|stats?|t-?test|anova)\\b",
+      "\\bapa[- ]?7\\b"
+    ],
+    "answer": "APA 7 style: italicise statistical symbols, give two decimals for most values, and report exact p to three decimals without a leading zero, for example t(38) = 2.41, p = .021, d = 0.76. Write p < .001 for very small values, and add effect sizes and confidence intervals.",
+    "action": {
+      "type": "openPanel",
+      "arg": "report"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_assumptions",
+    "category": "stats",
+    "patterns": [
+      "\\bassumptions?\\b.{0,20}\\b(t[- ]?test|anova|parametric)\\b",
+      "\\bnormality (test|assumption)\\b",
+      "\\bhomogeneity of variance\\b",
+      "\\blevene\\b"
+    ],
+    "answer": "Parametric tests assume roughly normal residuals, homogeneity of variance and independent observations. Check them with plots and Levene's test. If they are badly violated, use Welch's test, a transformation or a nonparametric test.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_nonparam",
+    "category": "stats",
+    "patterns": [
+      "\\bnon-?parametric\\b",
+      "\\bmann[- ]whitney\\b",
+      "\\bwilcoxon\\b",
+      "\\bkruskal\\b"
+    ],
+    "answer": "Nonparametric alternatives rank the data: Mann–Whitney U replaces the independent t-test, Wilcoxon signed-rank the paired t-test, and Kruskal–Wallis one-way ANOVA. They are robust to outliers but answer slightly different questions.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_df",
+    "category": "stats",
+    "patterns": [
+      "\\bdegrees of freedom\\b",
+      "\\bwhat is df\\b"
+    ],
+    "answer": "Degrees of freedom are the number of values free to vary once the estimates are fixed: for example n − 1 for a sample SD or a paired t, n1 + n2 − 2 for a pooled independent t. They pick the right reference distribution.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "s_rt_cleaning",
+    "category": "stats",
+    "patterns": [
+      "\\b(clean|trim|filter)\\b.{0,15}\\b(rts?|reaction times?)\\b",
+      "\\breaction time outliers?\\b"
+    ],
+    "answer": "Choose RT cleaning rules before you look at condition means: for example, remove error trials and RTs below or above fixed cut-offs, and report how many trials were removed. Consider medians or log-RTs for skewed data. Deciding after seeing the results is p-hacking.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.4"
+  },
+  {
+    "id": "d_counterbalance",
+    "category": "design",
+    "patterns": [
+      "\\bcounter-?balanc",
+      "\\blatin square\\b",
+      "\\border effects?\\b",
+      "\\bcarry-?over\\b"
+    ],
+    "answer": "In within-subjects designs, practice, fatigue and carry-over effects can confound condition with order. Counterbalance with a Latin square so each condition appears in each position equally often. The Experiment Builder can add a Latin square in one click.",
+    "action": {
+      "type": "openPanel",
+      "arg": "builder"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_confound",
+    "category": "design",
+    "patterns": [
+      "\\bconfound(s|ing|ed)?\\b",
+      "\\bextraneous variables?\\b"
+    ],
+    "answer": "A confound is a variable that changes along with your IV, so you cannot tell which one caused the effect. Common ones: time of day, experimenter, order and different stimuli across conditions. Control them by holding them constant, randomising or counterbalancing.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_sample_size",
+    "category": "design",
+    "patterns": [
+      "\\bsample size\\b",
+      "\\b(too )?(small|few) (sample|participants)\\b",
+      "\\bunderpowered\\b"
+    ],
+    "answer": "Small samples give unstable estimates and low power, and the significant results they do produce tend to exaggerate effect sizes. Justify N with a power analysis or precision target and preregister it. Avoid adding participants until p < .05.",
+    "action": {
+      "type": "openPanel",
+      "arg": "stats"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_random_assign",
+    "category": "design",
+    "patterns": [
+      "\\brandom(ly)? assign",
+      "\\brandomi[sz](e|ation)\\b.{0,15}\\b(groups?|conditions?|participants?)\\b"
+    ],
+    "answer": "Random assignment gives every participant an equal chance of each condition, so pre-existing differences balance out on average. It is what lets an experiment support causal claims. It is different from random sampling.",
+    "action": {
+      "type": "openPanel",
+      "arg": "builder"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_blinding",
+    "category": "design",
+    "patterns": [
+      "\\b(single|double)[- ]blind\\b",
+      "\\bblinding\\b",
+      "\\bexperimenter (bias|expectancy)\\b"
+    ],
+    "answer": "In a single-blind study participants do not know their condition; in a double-blind study the experimenter doesn't either. Blinding reduces demand characteristics and experimenter-expectancy effects.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_demand",
+    "category": "design",
+    "patterns": [
+      "\\bdemand characteristics?\\b",
+      "\\bhawthorne effect\\b.{0,15}\\bdesign\\b",
+      "\\bsocial desirability\\b"
+    ],
+    "answer": "Demand characteristics are cues that let participants guess the hypothesis and change their behaviour. Reduce them with cover stories (approved by the IRB and followed by a debrief), blinding and indirect measures.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_within_between",
+    "category": "design",
+    "patterns": [
+      "\\bwithin[- ]subjects?\\b.{0,20}\\bbetween\\b",
+      "\\bbetween[- ]subjects?\\b.{0,20}\\bwithin\\b",
+      "\\brepeated[- ]measures design\\b",
+      "\\bmixed design\\b"
+    ],
+    "answer": "Within-subjects designs test everyone in every condition: more power from fewer people, but order effects need counterbalancing. Between-subjects designs avoid carry-over but need more participants, plus random assignment.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_control",
+    "category": "design",
+    "patterns": [
+      "\\bcontrol (group|condition)\\b",
+      "\\bplacebo\\b",
+      "\\bwait-?list control\\b"
+    ],
+    "answer": "A control group shows what happens without the manipulation; a placebo control matches expectations too. In clinical studies, wait-list controls raise ethical issues, so monitor risk and offer support in the meantime.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_manip_check",
+    "category": "design",
+    "patterns": [
+      "\\bmanipulation check\\b",
+      "\\bdid (my|the) manipulation work\\b"
+    ],
+    "answer": "A manipulation check measures whether the IV actually changed what you intended, for example a mood rating after a mood induction. Without one, a null result is hard to interpret.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_ceiling",
+    "category": "design",
+    "patterns": [
+      "\\bceiling effect\\b",
+      "\\bfloor effect\\b"
+    ],
+    "answer": "Ceiling and floor effects happen when a task is so easy or so hard that scores bunch at the limit, hiding real differences. Pilot the task and adjust difficulty.",
+    "action": {
+      "type": "openPanel",
+      "arg": "methods"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_pilot",
+    "category": "design",
+    "patterns": [
+      "\\bpilot (study|test|run)\\b",
+      "\\bpractice block\\b"
+    ],
+    "answer": "A pilot run checks instructions, timing, difficulty and data logging before the real study. Pilot data should not be merged into the main analysis unless that was preregistered.",
+    "action": {
+      "type": "openPanel",
+      "arg": "builder"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "d_critique",
+    "category": "design",
+    "patterns": [
+      "\\bcritique my (design|study|experiment)\\b",
+      "\\bcheck my (design|study|experiment)\\b",
+      "\\bwhat'?s wrong with my (design|study)\\b"
+    ],
+    "answer": "I'll check your current design for counterbalancing, confounds, sample-size justification, random assignment, blinding, consent and debriefing. Fixes come as ranked advice cards; anything that changes your design waits for your Approve.",
+    "action": {
+      "type": "openPanel",
+      "arg": "builder"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "e_consent",
+    "category": "ethics",
+    "patterns": [
+      "\\binformed consent\\b",
+      "\\bconsent form\\b",
+      "\\bapa 8\\.02\\b"
+    ],
+    "answer": "APA Code 8.02 requires informed consent: tell people the purpose, duration and procedures, their right to decline or withdraw and its consequences, foreseeable risks, benefits, confidentiality limits, incentives and whom to contact. ZEHN shows a consent screen before recording your RTs.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_deception",
+    "category": "ethics",
+    "patterns": [
+      "\\bdeception\\b",
+      "\\bdeceiv(e|ing)\\b.{0,15}\\bparticipants?\\b",
+      "\\bcover stor(y|ies)\\b",
+      "\\bapa 8\\.07\\b"
+    ],
+    "answer": "APA 8.07 allows deception only when it is justified by significant scientific value, non-deceptive alternatives are not feasible, and it would not be expected to cause physical pain or severe distress. Deception must be explained as early as feasible, and participants may then withdraw their data.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_debrief",
+    "category": "ethics",
+    "patterns": [
+      "\\bdebrief(ing|ed)?\\b",
+      "\\bapa 8\\.08\\b"
+    ],
+    "answer": "APA 8.08: after the study, promptly give participants information about its nature, results and conclusions, and correct any misconceptions. If a debrief causes harm, take steps to reduce it. ZEHN debriefs after every deception demo and offers to delete your data.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_withdraw",
+    "category": "ethics",
+    "patterns": [
+      "\\bwithdraw(al)?\\b",
+      "\\bright to (leave|stop|quit)\\b",
+      "\\bstop the (study|experiment)\\b"
+    ],
+    "answer": "Participants may withdraw at any time without penalty, and should be told how to do so. In ZEHN press Esc during any task, and you can delete your data from Settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_confidential",
+    "category": "ethics",
+    "patterns": [
+      "\\bconfidential(ity)?\\b",
+      "\\banonymi[sz](e|ed|ation|ity)\\b",
+      "\\bapa 4\\.01\\b",
+      "\\bpseudonymi[sz]"
+    ],
+    "answer": "APA 4.01 requires protecting confidential information. Store data under codes, not names; keep the code key separately and securely; share only anonymised data; and state the limits of confidentiality in the consent form.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_belmont",
+    "category": "ethics",
+    "patterns": [
+      "\\bbelmont\\b",
+      "\\brespect for persons\\b",
+      "\\bbeneficence\\b",
+      "\\bjustice\\b.{0,15}\\b(principle|research)\\b"
+    ],
+    "answer": "The Belmont Report sets out three principles: Respect for persons (autonomy and informed consent, extra protection for those with reduced autonomy), Beneficence (maximise benefits, minimise harm) and Justice (fair distribution of the burdens and benefits of research).",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_irb_approval",
+    "category": "ethics",
+    "patterns": [
+      "\\b(irb|ethics committee|ethics board) approval\\b",
+      "\\bapa 8\\.01\\b",
+      "\\binstitutional (approval|review)\\b"
+    ],
+    "answer": "APA 8.01 requires accurate information to the institution and approval before research begins, then conducting the study as approved. Submit your design to the Ethics Board in the Library.",
+    "action": {
+      "type": "goZone",
+      "arg": "library"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_minors",
+    "category": "ethics",
+    "patterns": [
+      "\\b(minors?|children)\\b.{0,20}\\b(consent|assent|research)\\b",
+      "\\bparental consent\\b",
+      "\\bchild assent\\b",
+      "\\bassent\\b"
+    ],
+    "answer": "For children you normally need parental or guardian permission plus the child's own assent, in age-appropriate language (APA 3.10). A child's \"no\" should be respected even if the parents agreed.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_inducements",
+    "category": "ethics",
+    "patterns": [
+      "\\bcourse credit\\b",
+      "\\binducements?\\b",
+      "\\bpay(ing)? participants\\b",
+      "\\bapa 8\\.0[46]\\b",
+      "\\bstudents? as participants\\b"
+    ],
+    "answer": "APA 8.04 says students must be offered equitable alternative activities if participation is for course credit. APA 8.06 says avoid excessive or inappropriate inducements that could coerce people. Participation must stay voluntary.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_dispense",
+    "category": "ethics",
+    "patterns": [
+      "\\bwithout consent\\b",
+      "\\bdispens(e|ing) with (informed )?consent\\b",
+      "\\bapa 8\\.05\\b",
+      "\\barchival (data|research)\\b"
+    ],
+    "answer": "APA 8.05 lets researchers dispense with consent only when research is unlikely to cause distress or harm, for example anonymous questionnaires, naturalistic observation or archival research, with confidentiality protected, or where law or regulation permits.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_recording",
+    "category": "ethics",
+    "patterns": [
+      "\\b(audio|video)[- ]?record(ing)?\\b.{0,15}\\b(participant|consent)\\b",
+      "\\bapa 8\\.03\\b",
+      "\\brecording (voices|images)\\b"
+    ],
+    "answer": "APA 8.03 requires consent before recording voices or images, except for naturalistic observation in public places that is not used in an identifying or harmful way, or where deception requires consent to be obtained during the debrief.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_animals",
+    "category": "ethics",
+    "patterns": [
+      "\\banimal (research|welfare|ethics|studies)\\b",
+      "\\bapa 8\\.09\\b",
+      "\\bthree rs\\b|\\b3rs\\b"
+    ],
+    "answer": "APA 8.09 requires humane care of research animals: qualified supervision, minimised discomfort, and procedures justified by scientific value. The 3Rs principle is Replace, Reduce, Refine. ZEHN's Skinner-box animals are procedural simulations.",
+    "action": {
+      "type": "goZone",
+      "arg": "learning"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_integrity",
+    "category": "ethics",
+    "patterns": [
+      "\\bfabricat(e|ion|ing)\\b",
+      "\\bfalsif(y|ied|ication) data\\b",
+      "\\bplagiari[sz]",
+      "\\bapa 8\\.1[01]\\b",
+      "\\bresearch misconduct\\b"
+    ],
+    "answer": "APA 8.10 forbids fabricating data and requires correcting significant errors. APA 8.11 forbids presenting others' work as your own. Both are serious misconduct.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_authorship",
+    "category": "ethics",
+    "patterns": [
+      "\\bauthorship\\b",
+      "\\bpublication credit\\b",
+      "\\bapa 8\\.12\\b"
+    ],
+    "answer": "APA 8.12: authorship credit should reflect each person's actual scientific contribution, not their status. Students are usually principal author on work based on their own dissertation.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "e_harm",
+    "category": "ethics",
+    "patterns": [
+      "\\bminimi[sz]e harm\\b",
+      "\\bapa 3\\.04\\b",
+      "\\bpsychological harm\\b",
+      "\\bdistress(ing)? (study|task|procedure)\\b"
+    ],
+    "answer": "APA 3.04 requires taking reasonable steps to avoid harm and to minimise unavoidable harm. Stress and obedience-style studies need screening, a clear right to stop, monitoring and a careful debrief.",
+    "action": {
+      "type": "openPanel",
+      "arg": "irb"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_copyright_tests",
+    "category": "safety",
+    "patterns": [
+      "\\b(mmpi|wais|wisc|bdi(-?ii)?|beck depression|rorschach|tat cards?|stanford[- ]binet|raven'?s?( matrices)?|neo[- ]?pi|mbti|myers[- ]briggs)\\b"
+    ],
+    "answer": "I can't reproduce items, plates, stimuli or scoring keys from copyrighted tests such as the MMPI, WAIS, BDI-II, Rorschach, TAT, Raven's or MBTI. I can explain what a test measures and how it was built and validated, and ZEHN offers public-domain IPIP items and original practice puzzles instead.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychometrics"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_dsm_text",
+    "category": "safety",
+    "patterns": [
+      "\\b(give|list|copy|quote|show)\\b.{0,25}\\b(dsm|icd)\\b.{0,15}\\bcriteria\\b",
+      "\\bdiagnostic criteria (for|of)\\b"
+    ],
+    "answer": "I can't copy DSM-5-TR or ICD-11 criteria text. I can describe disorders in my own words for learning, with simulated cases. Please see the official manuals for the actual criteria.",
+    "action": {
+      "type": "openPanel",
+      "arg": "psychopathology"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_diagnose_me",
+    "category": "safety",
+    "patterns": [
+      "\\b(diagnose|assess|screen)\\b.{0,10}\\bme\\b",
+      "\\bdo i have\\b",
+      "\\bam i (depressed|bipolar|autistic|adhd|ocd|anxious|a psychopath|narcissist)",
+      "\\bwhat'?s wrong with me\\b"
+    ],
+    "answer": "I can't diagnose you, and ZEHN never screens or labels players: I'm an AI tutor, not a clinician. If something is worrying you, a qualified professional such as a university counsellor or psychologist is the right person to talk to. The crisis card in Settings lists support lines.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_not_therapist",
+    "category": "safety",
+    "patterns": [
+      "\\b(are you|be my|act as( my)?|you('re| are))\\b.{0,10}\\b(therapist|psychologist|counsell?or|psychiatrist|doctor)\\b",
+      "\\bcan you (counsel|treat|help) me\\b.{0,15}\\b(problem|feel|life)\\b"
+    ],
+    "answer": "I'm RAAHI, an AI tutor, not a psychologist or therapist, so I can't provide therapy or counselling. I can help you learn about therapy and practise skills with simulated clients. For real support, please contact a qualified professional. The crisis card has helplines.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_privacy",
+    "category": "safety",
+    "patterns": [
+      "\\b(my )?data\\b.{0,20}\\b(private|privacy|stored|saved|safe|leave|sent|upload)",
+      "\\bprivacy\\b",
+      "\\bwho can see my (data|answers|results)\\b"
+    ],
+    "answer": "Your data stays on this device in local browser storage, and nothing is uploaded. Exports happen only when you choose them. You can review your consent log and delete everything from Settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_api_key",
+    "category": "safety",
+    "patterns": [
+      "\\bapi[- ]?key\\b",
+      "\\blive (llm|ai|mode)\\b",
+      "\\bonline mode\\b",
+      "\\bconnect (to )?claude\\b"
+    ],
+    "answer": "Live mode is optional: paste your own API key in Settings. It is kept in sessionStorage only and cleared when you close the tab. Only your question and a small grounding snapshot are sent. Without a key I work fully offline.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_medication",
+    "category": "safety",
+    "patterns": [
+      "\\bshould i (take|stop|start)\\b.{0,20}\\b(medic|pills?|tablets?|antidepress)",
+      "\\b(dose|dosage)\\b.{0,15}\\b(should|how much)\\b"
+    ],
+    "answer": "I can't give personal medical or medication advice. Please speak to a doctor or psychiatrist before starting, stopping or changing any medicine.",
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_diagnose_other",
+    "category": "safety",
+    "patterns": [
+      "\\b(my )?(friend|brother|sister|roommate|mother|father|partner|cousin)\\b.{0,30}\\b(has|have|is)\\b.{0,10}\\b(depress|bipolar|psychopath|narcissis|schizo|adhd|autis|ocd)",
+      "\\bdiagnose (my|him|her|them)\\b"
+    ],
+    "answer": "I can't diagnose anyone, and labelling friends or family from a description can be inaccurate and hurtful. If you are worried about someone, encourage them to talk to a qualified professional. ZEHN's clinic uses simulated clients only.",
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_content_warning",
+    "category": "safety",
+    "patterns": [
+      "\\bcontent warnings?\\b",
+      "\\bskip (this|the) (module|demo)\\b",
+      "\\bopt[- ]?out\\b",
+      "\\btrigger(ing)? (content|warning)\\b"
+    ],
+    "answer": "Modules on suicide, self-harm, abuse, trauma, obedience/shock or prison simulations show a content warning first. You can opt out and take an equivalent text-and-quiz path without losing progress. Manage this in Settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "sf_photosensitive",
+    "category": "safety",
+    "patterns": [
+      "\\bphoto-?sensitiv",
+      "\\bepilep(sy|tic)\\b",
+      "\\bflash(ing|es)\\b",
+      "\\bflicker\\b.{0,15}\\b(safe|warning|seizure)\\b"
+    ],
+    "answer": "Flicker demos show a warning first, cap flashing at 3 Hz in line with WCAG \"three flashes\" guidance, and have a static alternative. Turn on photosafe mode in Settings to avoid them completely.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "3.1"
+  },
+  {
+    "id": "k_suicidal",
+    "category": "crisis",
+    "patterns": [
+      "\\bsuicidal\\b",
+      "\\b(commit(ting)?|attempt(ed|ing)?|thinking (of|about)|plan(ning)?|consider(ing)?)\\s+suicide\\b",
+      "\\b(kill|killing|end|ending|take|taking)\\s+(my\\s*self|myself|my\\s+(own\\s+)?life)\\b",
+      "\\bkhud\\s?kushi\\b"
+    ],
+    "answer": "I'm really glad you told me. I'm RAAHI, an AI tutor, so I can't give you the help you deserve myself, but I've paused the lesson and opened the crisis card with helplines and emergency numbers (hours may vary, please verify). If you are in immediate danger, call emergency services now or go to someone you trust nearby.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_want_die",
+    "category": "crisis",
+    "patterns": [
+      "\\b(want|wanna|wish|ready)\\s+(to\\s+)?die\\b",
+      "\\bwish i (was|were) (dead|never born)\\b",
+      "\\bbetter off (dead|without me)\\b",
+      "\\bdon'?t want to (live|be alive|exist|wake up)\\b",
+      "\\bmarna chaht[ai]\\b",
+      "\\bjee?na nahi?\\b"
+    ],
+    "answer": "I'm really glad you told me. I'm RAAHI, an AI tutor, so I can't give you the help you deserve myself, but I've paused the lesson and opened the crisis card with helplines and emergency numbers (hours may vary, please verify). If you are in immediate danger, call emergency services now or go to someone you trust nearby.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_self_harm",
+    "category": "crisis",
+    "patterns": [
+      "\\b(cut|cutting|hurt|hurting|harm|harming|burn|burning|punish(ing)?)\\s+(my\\s*self|myself)\\b",
+      "\\bself[- ]?harm(ing)? (again|urges?)\\b",
+      "\\bi\\b.{0,20}\\bself[- ]?harm"
+    ],
+    "answer": "I'm really glad you told me. I'm RAAHI, an AI tutor, so I can't give you the help you deserve myself, but I've paused the lesson and opened the crisis card with helplines and emergency numbers (hours may vary, please verify). If you are in immediate danger, call emergency services now or go to someone you trust nearby.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_overdose",
+    "category": "crisis",
+    "patterns": [
+      "\\boverdos(e|ed|ing)\\b",
+      "\\b(too many|whole (bottle|strip) of|bunch of) (pills|tablets)\\b",
+      "\\b(swallow(ed)?|took|take)\\b.{0,15}\\b(all|lots of)\\b.{0,10}\\b(pills|tablets)\\b"
+    ],
+    "answer": "I'm really glad you told me. I'm RAAHI, an AI tutor, so I can't give you the help you deserve myself, but I've paused the lesson and opened the crisis card with helplines and emergency numbers (hours may vary, please verify). If you are in immediate danger, call emergency services now or go to someone you trust nearby.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_hopeless",
+    "category": "crisis",
+    "patterns": [
+      "\\b(feel(ing)?|i('m| am))\\s+(so\\s+|completely\\s+)?hopeless\\b",
+      "\\bno (reason|point) (to|in) (live|living|go(ing)? on)\\b",
+      "\\bcan'?t (go on|take (it|this) any ?more|cope any ?more)\\b",
+      "\\bend it all\\b"
+    ],
+    "answer": "I'm really glad you told me. I'm RAAHI, an AI tutor, so I can't give you the help you deserve myself, but I've paused the lesson and opened the crisis card with helplines and emergency numbers (hours may vary, please verify). If you are in immediate danger, call emergency services now or go to someone you trust nearby.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_abuse",
+    "category": "crisis",
+    "patterns": [
+      "\\b(he|she|they|someone|somebody|my (\\w+ ){0,2}(father|mother|husband|wife|uncle|brother|teacher|boss|partner|step\\w*))\\s+(hits?|beats?|abuses?|hurts?|touch(es)?|threatens?)\\s+me\\b",
+      "\\b(i('m| am)|being|was|been|got)\\s+(sexually\\s+)?(abused|molested|raped|assaulted|beaten)\\b",
+      "\\b(not|don'?t feel) safe at home\\b",
+      "\\bafraid (of|to go) (home|my (husband|wife|father|mother|parents?|family))\\b"
+    ],
+    "answer": "Thank you for trusting me with this; what is happening to you is not your fault. I'm RAAHI, an AI tutor, not a counsellor, so I've opened the crisis card with helplines that can listen and help (hours may vary, please verify). If you are in danger right now, contact emergency services or move somewhere safe with a person you trust.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "k_other_at_risk",
+    "category": "crisis",
+    "patterns": [
+      "\\b(friend|brother|sister|cousin|classmate|roommate|someone i know)\\b.{0,40}\\b(kill (him|her|them)sel(f|ves)|suicid|self[- ]?harm|hurt(ing)? (him|her|them)sel(f|ves)|wants? to die)\\b"
+    ],
+    "answer": "It's caring of you to worry about them. I'm an AI tutor, so I've opened the crisis card with helplines that can advise you too. If they are in immediate danger, contact emergency services now and stay with them. Encourage them to reach a professional or a trusted adult.",
+    "action": {
+      "type": "showCrisis"
+    }
+  },
+  {
+    "id": "m_salam",
+    "category": "meta",
+    "patterns": [
+      "\\b(as+ala+m+|as-?sala+m+|sala+m+|aoa)\\b\\s*(o|u|-)?\\s*(alaikum|alaykum|aleikum)?",
+      "\\bassalam\\s*o\\s*alaikum\\b",
+      "السلام|سلام"
+    ],
+    "answer": "Wa alaikum assalam! I'm RAAHI (راہی, \"fellow traveller\"), your AI lab mentor at IIBS (a simulated institute). I'm an AI tutor, not a psychologist or therapist. Ask me about a concept, a stats test, or where to go next."
+  },
+  {
+    "id": "m_greeting",
+    "category": "meta",
+    "patterns": [
+      "^\\s*(hi|hello|hey|hiya|good (morning|afternoon|evening)|adaab|aadab)\\b"
+    ],
+    "answer": "Hello! I'm RAAHI, your AI lab mentor: an AI tutor, not a psychologist or therapist. I can explain concepts, help with statistics, check your study design, and take you anywhere on campus."
+  },
+  {
+    "id": "m_help",
+    "category": "meta",
+    "patterns": [
+      "^\\s*help\\s*[?!.]*\\s*$",
+      "\\bwhat can you do\\b",
+      "\\bhow (do i|to) use (you|this|raahi)\\b",
+      "\\bcommands\\b"
+    ],
+    "answer": "Try \"explain the Stroop effect\", \"which test should I use?\", \"how do I report a t-test in APA?\", \"take me to the clinic\", \"director mode\" or \"critique my design\". I work offline. You can add your own API key in Settings for live answers."
+  },
+  {
+    "id": "m_who",
+    "category": "meta",
+    "patterns": [
+      "\\bwho are you\\b",
+      "\\bwhat are you\\b",
+      "\\bwhat is raahi\\b",
+      "\\byour name\\b",
+      "\\bare you (a )?(human|real|bot|ai)\\b"
+    ],
+    "answer": "I'm RAAHI (راہی), an AI tutor built into ZEHN: not a human, psychologist or therapist. I answer from a fixed offline knowledge base and a verified facts file, and I say so when something isn't in my data."
+  },
+  {
+    "id": "m_thanks",
+    "category": "meta",
+    "patterns": [
+      "\\b(thanks|thank you|thx|shukriya|shukria|meherbani|jazak ?allah)\\b"
+    ],
+    "answer": "You're welcome! Keep going. Your next mission is in the Missions panel."
+  },
+  {
+    "id": "m_bye",
+    "category": "meta",
+    "patterns": [
+      "\\b(bye|goodbye|allah hafiz|khuda hafiz|see you)\\b"
+    ],
+    "answer": "Allah hafiz! Your progress is saved locally on this device. See you in the lab."
+  },
+  {
+    "id": "m_urdu",
+    "category": "meta",
+    "patterns": [
+      "\\burdu\\b",
+      "\\b(change|switch) language\\b",
+      "\\bkya aap urdu\\b"
+    ],
+    "answer": "I understand some Urdu greetings and terms, and many glossary entries include Urdu. You can switch the interface language in Settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    }
+  },
+  {
+    "id": "m_where_start",
+    "category": "meta",
+    "patterns": [
+      "\\bwhere (do|should) i start\\b",
+      "\\bwhat (should|do) i do (next|now|first)\\b",
+      "\\bi'?m (lost|stuck|confused)\\b"
+    ],
+    "answer": "Start at the Course Map: each week has a tour beat, a paradigm to experience, a design task, an IRB check, analysis and a write-up. Your current mission shows the next step.",
+    "action": {
+      "type": "openPanel",
+      "arg": "course"
+    }
+  },
+  {
+    "id": "m_facts_source",
+    "category": "meta",
+    "patterns": [
+      "\\bis (that|this) (true|correct|accurate)\\b",
+      "\\bsource\\b.{0,10}\\b(for|of) (that|this)\\b",
+      "\\bhow do you know\\b",
+      "\\bhallucinat"
+    ],
+    "answer": "Every number I give comes from ZEHN's facts file, where each entry has a source and a verification status. If a figure is still being verified I'll say so, and if something isn't in my data I'll tell you instead of guessing.",
+    "action": {
+      "type": "openPanel",
+      "arg": "cases"
+    }
+  },
+  {
+    "id": "m_joke",
+    "category": "meta",
+    "patterns": [
+      "\\btell me a joke\\b",
+      "\\bsay something funny\\b"
+    ],
+    "answer": "Why did the reaction time data go to therapy? It had too many outliers and nobody would accept it as it was. Now, back to the lab!"
+  },
+  {
+    "id": "mt_run_experiment",
+    "category": "method",
+    "patterns": [
+      "\\bhow (do i|to) (run|start|do) (an? )?(experiment|study|task|paradigm)\\b",
+      "\\bstart (an? )?experiment\\b"
+    ],
+    "answer": "Walk to a station and press E, or open a lab panel and choose a paradigm. You'll see a consent screen first, then a practice block, the experimental blocks and a debrief. Participant Mode (key 3) runs the full 12-step participant journey.",
+    "action": {
+      "type": "setMode",
+      "arg": "participant"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "mt_simulated",
+    "category": "method",
+    "patterns": [
+      "\\bsimulated participants?\\b",
+      "\\brun (n|\\d+) participants\\b",
+      "\\bvirtual participants?\\b"
+    ],
+    "answer": "In Director View you can run N simulated participants with individual differences and noise. All their data is labelled \"Simulated data\". Use the sim clock (×1, ×5, ×20) to speed up studies.",
+    "action": {
+      "type": "setMode",
+      "arg": "director"
+    },
+    "apa": "2.2"
+  },
+  {
+    "id": "mt_timing",
+    "category": "method",
+    "patterns": [
+      "\\b(timing|millisecond) (precision|accuracy)\\b",
+      "\\bhow accurate (are|is) (the )?(rts?|reaction times?|timing)\\b",
+      "\\bbrowser timing\\b"
+    ],
+    "answer": "Browser experiments can time well: Bridges et al. (2020) found that most packages achieved precision under 10 ms in all browsers, with audio-visual synchrony the least precise aspect. ZEHN pauses the 3D scene during trials and logs onset_req, onset_actual and frames.",
+    "apa": "2.1"
+  },
+  {
+    "id": "mt_export",
+    "category": "method",
+    "patterns": [
+      "\\bhow (do i|to) (export|download|save) (my )?(data|results)\\b",
+      "\\bcodebook\\b"
+    ],
+    "answer": "Open Data Export, choose a paradigm and format (CSV or JSON), and include the codebook. Exports are anonymised and only happen when you click: nothing is uploaded.",
+    "action": {
+      "type": "openPanel",
+      "arg": "export"
+    },
+    "apa": "4.4"
+  },
+  {
+    "id": "mt_write_report",
+    "category": "method",
+    "patterns": [
+      "\\bhow (do i|to) write (an? |my )?(apa )?(lab )?report\\b",
+      "\\bresults section\\b",
+      "\\bmethod section\\b",
+      "\\babstract\\b.{0,15}\\b(write|how)\\b"
+    ],
+    "answer": "The APA Report Generator walks you through Title page, Abstract, Method, Results (with APA-7 formatted statistics) and Discussion. Write the Discussion yourself: interpret, link to theory, and state limitations.",
+    "action": {
+      "type": "openPanel",
+      "arg": "report"
+    },
+    "apa": "4.2"
+  },
+  {
+    "id": "mt_seed",
+    "category": "method",
+    "patterns": [
+      "\\bseed\\b",
+      "\\breproducib(le|ility) (run|results?)\\b",
+      "\\bsame (results|data) again\\b"
+    ],
+    "answer": "ZEHN uses a seeded random number generator: add ?seed=1234 to the URL to reproduce exactly the same simulated participants and trial orders. The local leaderboard is grouped by seed.",
+    "apa": "2.2"
+  },
+  {
+    "id": "mt_difficulty",
+    "category": "method",
+    "patterns": [
+      "\\bdifficulty (levels?|settings?)\\b",
+      "\\bchange (the )?difficulty\\b",
+      "\\b(foundation|bachelor|honours) (level|mode)\\b",
+      "\\bmake it (harder|easier)\\b"
+    ],
+    "answer": "There are three difficulty levels: Foundation, Bachelor and Honours. Higher levels hide hints and add confounds for you to spot. Change the level in Settings.",
+    "action": {
+      "type": "openPanel",
+      "arg": "settings"
+    },
+    "apa": "5.1"
+  },
+  {
+    "id": "mt_xp",
+    "category": "method",
+    "patterns": [
+      "\\b(xp|badges?|level up|scorecard|leaderboard|certificate)\\b"
+    ],
+    "answer": "You earn XP and badges such as Debrief Champion, Preregistered and Replicator by completing missions ethically. Unethical choices on dilemma cards carry an ethics penalty. Your scorecard maps to the five APA goals.",
+    "action": {
+      "type": "openPanel",
+      "arg": "missions"
+    },
+    "apa": "5.2"
+  },
+  {
+    "id": "mt_peer_review",
+    "category": "method",
+    "patterns": [
+      "\\bpeer review\\b",
+      "\\breview (a|the) (report|paper)\\b",
+      "\\bflawed report\\b"
+    ],
+    "answer": "In peer review you critique a simulated peer's flawed report with a rubric: check design, confounds, statistics, APA formatting and whether the conclusions go beyond the data.",
+    "action": {
+      "type": "openPanel",
+      "arg": "report"
+    },
+    "apa": "4.2"
+  },
+  {
+    "id": "mt_clinic_how",
+    "category": "method",
+    "patterns": [
+      "\\bhow (does|do) (the )?clinic (work|sessions?)\\b",
+      "\\bfirst session\\b",
+      "\\bintake\\b"
+    ],
+    "answer": "In the Clinic you choose counsellor replies for a simulated client. Each choice is scored on micro-skills such as open questions, reflections and summaries, and a supervisor gives feedback afterwards. Practise explaining confidentiality limits at intake.",
+    "action": {
+      "type": "goZone",
+      "arg": "clinic"
+    },
+    "apa": "4.1"
+  }
+]

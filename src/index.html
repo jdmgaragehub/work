@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1E1B4B">
+<meta name="description" content="ZEHN (ذہن) — The Psychology Lab Simulator. A 3D psychology teaching game set in a simulated institution (Indus Institute of Behavioural Sciences, Hyderabad, Sindh). Run real timed experiments on yourself, study simulated participants, analyse data, pass an ethics board, counsel simulated clients and write an APA report. Offline; data stays on this device.">
+<title>ZEHN — The Psychology Lab Simulator</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #13112e; overflow: hidden; }
+  #boot { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; color: #F8FAFC;
+    background: radial-gradient(ellipse at 50% 110%, #2a2570 0%, #1E1B4B 45%, #0d0b22 100%);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif; transition: opacity .8s ease, visibility .8s; }
+  #boot.done { opacity: 0; visibility: hidden; pointer-events: none; }
+  #boot .inner { width: min(660px, 90vw); text-align: center; }
+  #boot canvas { width: 100%; height: 150px; display: block; margin: 0 auto 14px; }
+  #boot h1 { margin: 0; font-size: clamp(30px, 6vw, 54px); letter-spacing: .32em; font-weight: 800; padding-left: .32em; }
+  #boot h1 small { display: block; font-size: .42em; letter-spacing: .08em; color: #F59E0B; font-weight: 600; margin-top: 4px; padding: 0; }
+  #boot .sub { margin: 10px 0 18px; font-size: clamp(13px, 2vw, 15px); letter-spacing: .14em; color: #c7d2fe; text-transform: uppercase; }
+  #boot .bar { height: 5px; background: rgba(255,255,255,.1); border-radius: 3px; overflow: hidden; }
+  #boot .bar i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #9F1239, #F59E0B, #0F766E); transition: width .2s ease; }
+  #boot .step { min-height: 1.4em; margin: 12px 0 22px; font-size: 14px; color: #cbd5e1; }
+  #boot .foot { font-size: 12.5px; color: #a5b4fc; letter-spacing: .03em; }
+  #boot .err { margin-top: 16px; color: #fda4af; font-size: 14px; white-space: pre-wrap; text-align: left; }
+  .noscript { position: fixed; inset: 0; display: grid; place-items: center; color: #F8FAFC; font: 16px system-ui, sans-serif; }
+</style>
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div id="boot" role="status" aria-live="polite">
+  <div class="inner">
+    <canvas id="boot-net" width="660" height="150" aria-hidden="true"></canvas>
+    <h1>ZEHN <small lang="ur" dir="rtl">ذہن</small></h1>
+    <p class="sub">The Psychology Lab Simulator</p>
+    <div class="bar" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="boot-bar"><i id="boot-fill"></i></div>
+    <p id="boot-step" class="step">Growing dendrites…</p>
+    <p class="foot">Simulated institution • data stays on this device • for learning, not diagnosis</p>
+    <div id="boot-error" class="err" hidden></div>
+  </div>
+</div>
+<script>
+/* Boot neuron network: nodes fire along the REAL loading progress (window.__bootProgress). */
+(function () {
+  var c = document.getElementById('boot-net'), g = c.getContext('2d');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var W = c.width, H = c.height, N = [], E = [], seed = 7;
+  function r() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+  for (var i = 0; i < 34; i++) N.push({ x: 20 + (W - 40) * (i / 33) + (r() - .5) * 24, y: 20 + r() * (H - 40) });
+  for (i = 0; i < N.length; i++) for (var j = i + 1; j < N.length; j++) { var dx = N[i].x - N[j].x, dy = N[i].y - N[j].y; if (dx * dx + dy * dy < 95 * 95 && r() < .55) E.push([i, j]); }
+  window.__bootProgress = 0;
+  function draw(t) {
+    var p = window.__bootProgress || 0, lit = Math.floor(p * N.length);
+    g.clearRect(0, 0, W, H);
+    for (var k = 0; k < E.length; k++) { var a = N[E[k][0]], b = N[E[k][1]], on = E[k][1] <= lit;
+      g.strokeStyle = on ? 'rgba(245,158,11,.55)' : 'rgba(165,180,252,.14)'; g.lineWidth = on ? 1.4 : 1; g.beginPath(); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); g.stroke();
+      if (on && !reduce) { var f = ((t / 900) + k * .13) % 1; g.fillStyle = 'rgba(253,230,138,.9)'; g.beginPath(); g.arc(a.x + (b.x - a.x) * f, a.y + (b.y - a.y) * f, 1.6, 0, 7); g.fill(); } }
+    for (k = 0; k < N.length; k++) { var on2 = k <= lit; g.fillStyle = on2 ? (k === lit ? '#FDE68A' : '#F59E0B') : '#4c4a8a'; g.beginPath(); g.arc(N[k].x, N[k].y, on2 ? 3.6 : 2.6, 0, 7); g.fill(); }
+    if (!document.getElementById('boot').classList.contains('done')) requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+})();
+</script>
+<noscript><div class="noscript">ZEHN needs JavaScript and a WebGL 2 browser (Chrome, Edge or Firefox).</div></noscript>
+<div id="app"></div>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>

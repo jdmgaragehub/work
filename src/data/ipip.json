@@ -1,0 +1,442 @@
+{
+ "source": "IPIP 50-item representation of Goldberg's (1992) Big-Five Factor Markers. Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42. International Personality Item Pool: https://ipip.ori.org/newBigFive5broadKey.htm (item order as in IPIP 'Administering IPIP measures' 50-item sample).",
+ "license": "Public domain (IPIP)",
+ "licenseNote": "IPIP items are in the public domain and may be copied, edited, translated and used for any purpose without permission or fee (ipip.ori.org). See docs/LICENSES.md and facts.json F-IPIP.",
+ "factRef": [
+  "F-IPIP",
+  "F-IPIP50"
+ ],
+ "scales": [
+  "E",
+  "A",
+  "C",
+  "N",
+  "O"
+ ],
+ "scaleNames": {
+  "E": "Extraversion (IPIP Factor I, Surgency)",
+  "A": "Agreeableness (Factor II)",
+  "C": "Conscientiousness (Factor III)",
+  "N": "Neuroticism = reversed IPIP Factor IV 'Emotional Stability'",
+  "O": "Openness, reported by IPIP as Factor V 'Intellect/Imagination'"
+ },
+ "keyingConvention": "'keyed' is relative to the ZEHN scale code. IPIP scores Factor IV as Emotional Stability; ZEHN codes it as N (Neuroticism), so every Factor IV item's key is flipped: an item IPIP keys '-' for Emotional Stability (e.g., 'Get stressed out easily.') is '+' for N. The original IPIP key is kept in 'ipipKeyed' and the IPIP factor number in 'ipipFactor'. To report Emotional Stability instead, score ES = 6*10 - N_sum on a 1-5 response scale (i.e., reverse N). Factor V is labelled 'O' but the UI must show 'Openness/Intellect' because the IPIP marker emphasises intellect.",
+ "responseScale": {
+  "min": 1,
+  "max": 5,
+  "labels": [
+   "Very inaccurate",
+   "Moderately inaccurate",
+   "Neither accurate nor inaccurate",
+   "Moderately accurate",
+   "Very accurate"
+  ]
+ },
+ "scoring": "Reverse '-' keyed items as (6 - response); scale score = sum (10-50) or mean (1-5) of its 10 items.",
+ "useRestriction": "For learning only, not a diagnosis. Player self-report stays on the device. ZEHN must show this notice before the questionnaire (docs/ETHICS_SAFETY.md).",
+ "verification": "PARTIAL. ipip.ori.org was NOT reachable from the A1 session on 2026-11-14 (network proxy denial), so the 50 item texts and keys were entered from A1's knowledge of the published IPIP key and cross-checked online only partly: (a) 10 items per factor confirmed by secondary sources; (b) item 1 'Am the life of the party.' (Factor I, +) and item 2 'Feel little concern for others.' (Factor II, -) confirmed via IPIP's Arabic and German translation pages; (c) the remaining wording and keying are internally consistent with the known key pattern (E 5+/5-, A 6+/4-, C 6+/4-, ES 2+/8-, I 7+/3-). Status: must-verify. Before release, diff every line against https://ipip.ori.org/newBigFive5broadKey.htm and https://ipip.ori.org/New_IPIP-50-item-scale.htm.",
+ "verifiedOnline": false,
+ "retrieved": "2026-11-14",
+ "items": [
+  {
+   "id": 1,
+   "text": "Am the life of the party.",
+   "scale": "E",
+   "keyed": "+",
+   "ipipFactor": 1,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 2,
+   "text": "Feel little concern for others.",
+   "scale": "A",
+   "keyed": "-",
+   "ipipFactor": 2,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 3,
+   "text": "Am always prepared.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 4,
+   "text": "Get stressed out easily.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 5,
+   "text": "Have a rich vocabulary.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 6,
+   "text": "Don't talk a lot.",
+   "scale": "E",
+   "keyed": "-",
+   "ipipFactor": 1,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 7,
+   "text": "Am interested in people.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 8,
+   "text": "Leave my belongings around.",
+   "scale": "C",
+   "keyed": "-",
+   "ipipFactor": 3,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 9,
+   "text": "Am relaxed most of the time.",
+   "scale": "N",
+   "keyed": "-",
+   "ipipFactor": 4,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 10,
+   "text": "Have difficulty understanding abstract ideas.",
+   "scale": "O",
+   "keyed": "-",
+   "ipipFactor": 5,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 11,
+   "text": "Feel comfortable around people.",
+   "scale": "E",
+   "keyed": "+",
+   "ipipFactor": 1,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 12,
+   "text": "Insult people.",
+   "scale": "A",
+   "keyed": "-",
+   "ipipFactor": 2,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 13,
+   "text": "Pay attention to details.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 14,
+   "text": "Worry about things.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 15,
+   "text": "Have a vivid imagination.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 16,
+   "text": "Keep in the background.",
+   "scale": "E",
+   "keyed": "-",
+   "ipipFactor": 1,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 17,
+   "text": "Sympathize with others' feelings.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 18,
+   "text": "Make a mess of things.",
+   "scale": "C",
+   "keyed": "-",
+   "ipipFactor": 3,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 19,
+   "text": "Seldom feel blue.",
+   "scale": "N",
+   "keyed": "-",
+   "ipipFactor": 4,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 20,
+   "text": "Am not interested in abstract ideas.",
+   "scale": "O",
+   "keyed": "-",
+   "ipipFactor": 5,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 21,
+   "text": "Start conversations.",
+   "scale": "E",
+   "keyed": "+",
+   "ipipFactor": 1,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 22,
+   "text": "Am not interested in other people's problems.",
+   "scale": "A",
+   "keyed": "-",
+   "ipipFactor": 2,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 23,
+   "text": "Get chores done right away.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 24,
+   "text": "Am easily disturbed.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 25,
+   "text": "Have excellent ideas.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 26,
+   "text": "Have little to say.",
+   "scale": "E",
+   "keyed": "-",
+   "ipipFactor": 1,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 27,
+   "text": "Have a soft heart.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 28,
+   "text": "Often forget to put things back in their proper place.",
+   "scale": "C",
+   "keyed": "-",
+   "ipipFactor": 3,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 29,
+   "text": "Get upset easily.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 30,
+   "text": "Do not have a good imagination.",
+   "scale": "O",
+   "keyed": "-",
+   "ipipFactor": 5,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 31,
+   "text": "Talk to a lot of different people at parties.",
+   "scale": "E",
+   "keyed": "+",
+   "ipipFactor": 1,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 32,
+   "text": "Am not really interested in others.",
+   "scale": "A",
+   "keyed": "-",
+   "ipipFactor": 2,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 33,
+   "text": "Like order.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 34,
+   "text": "Change my mood a lot.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 35,
+   "text": "Am quick to understand things.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 36,
+   "text": "Don't like to draw attention to myself.",
+   "scale": "E",
+   "keyed": "-",
+   "ipipFactor": 1,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 37,
+   "text": "Take time out for others.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 38,
+   "text": "Shirk my duties.",
+   "scale": "C",
+   "keyed": "-",
+   "ipipFactor": 3,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 39,
+   "text": "Have frequent mood swings.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 40,
+   "text": "Use difficult words.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 41,
+   "text": "Don't mind being the center of attention.",
+   "scale": "E",
+   "keyed": "+",
+   "ipipFactor": 1,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 42,
+   "text": "Feel others' emotions.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 43,
+   "text": "Follow a schedule.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 44,
+   "text": "Get irritated easily.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 45,
+   "text": "Spend time reflecting on things.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 46,
+   "text": "Am quiet around strangers.",
+   "scale": "E",
+   "keyed": "-",
+   "ipipFactor": 1,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 47,
+   "text": "Make people feel at ease.",
+   "scale": "A",
+   "keyed": "+",
+   "ipipFactor": 2,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 48,
+   "text": "Am exacting in my work.",
+   "scale": "C",
+   "keyed": "+",
+   "ipipFactor": 3,
+   "ipipKeyed": "+"
+  },
+  {
+   "id": 49,
+   "text": "Often feel blue.",
+   "scale": "N",
+   "keyed": "+",
+   "ipipFactor": 4,
+   "ipipKeyed": "-"
+  },
+  {
+   "id": 50,
+   "text": "Am full of ideas.",
+   "scale": "O",
+   "keyed": "+",
+   "ipipFactor": 5,
+   "ipipKeyed": "+"
+  }
+ ]
+}

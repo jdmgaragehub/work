@@ -1,0 +1,510 @@
+[
+  {
+    "id": "M01", "week": 1, "track": "core",
+    "title": "Curate the Museum",
+    "brief": "Wundt Hall needs a curator. Walk the timeline, open the History & Schools and Perspectives exhibits, then prove you can tell structuralism from functionalism and a biological lens from a sociocultural one.",
+    "objectives": [
+      { "text": "Enter Wundt Hall", "event": "zone:enter", "where": { "zone": "wundt" }, "count": 1 },
+      { "text": "Open the History & Schools panel", "event": "panel:open", "where": { "id": "history" }, "count": 1 },
+      { "text": "Compare explanations in the Perspectives Lens", "event": "panel:open", "where": { "id": "perspectives" }, "count": 1 },
+      { "text": "Answer 5 Week 1 quiz items", "event": "quiz:answer", "where": { "week": 1 }, "count": 5 }
+    ],
+    "xp": 150, "badge": "curator", "apa": "1.3"
+  },
+  {
+    "id": "M02", "week": 2, "track": "core",
+    "title": "Pass the Board",
+    "brief": "Your first proposal goes before the Ethics Board. Review the design in the Research Methods Lab, then judge three proposals correctly and resolve two research dilemmas without an ethics penalty.",
+    "objectives": [
+      { "text": "Open the Research Methods Lab", "event": "panel:open", "where": { "id": "methods" }, "count": 1 },
+      { "text": "Open the Ethics Board (IRB)", "event": "panel:open", "where": { "id": "irb" }, "count": 1 },
+      { "text": "Judge 3 IRB proposals correctly", "event": "irb:decision", "where": { "correct": true }, "count": 3 },
+      { "text": "Resolve 2 dilemmas without an ethics penalty", "event": "dilemma:resolved", "where": { "ethicsPenalty": false }, "count": 2 }
+    ],
+    "xp": 150, "badge": "ethics_guardian", "apa": "3.1"
+  },
+  {
+    "id": "M03", "week": 3, "track": "core",
+    "title": "Describe the Class",
+    "brief": "The class dataset is in. Summarise it with the Statistics Workbench, check how two variables move together, and export a clean CSV for your lab notebook.",
+    "objectives": [
+      { "text": "Open the Statistics Workbench", "event": "panel:open", "where": { "id": "stats" }, "count": 1 },
+      { "text": "Run a correlation", "event": "stats:test", "where": { "test": "corr" }, "count": 1 },
+      { "text": "Export the dataset as CSV", "event": "export:done", "where": { "kind": "csv" }, "count": 1 },
+      { "text": "Answer 5 Week 3 quiz items", "event": "quiz:answer", "where": { "week": 3 }, "count": 5 }
+    ],
+    "xp": 150, "badge": "data_describer", "apa": "2.4"
+  },
+  {
+    "id": "M04", "week": 4, "track": "core",
+    "title": "Fire the Neuron",
+    "brief": "Cross the neuron bridge in the Neuro Atrium. Push the membrane past threshold, watch the action potential travel, and explain what happens at the synapse.",
+    "objectives": [
+      { "text": "Enter the Neuro Atrium", "event": "zone:enter", "where": { "zone": "neuro" }, "count": 1 },
+      { "text": "Open the Biopsychology panel", "event": "panel:open", "where": { "id": "bio" }, "count": 1 },
+      { "text": "Trigger 10 spikes in the neuron simulator", "event": "neuron:spike", "count": 10 },
+      { "text": "Answer 5 Week 4 quiz items", "event": "quiz:answer", "where": { "week": 4 }, "count": 5 }
+    ],
+    "xp": 150, "badge": "neuron_whisperer", "apa": "1.1"
+  },
+  {
+    "id": "M05", "week": 5, "track": "core",
+    "title": "Map the Brain",
+    "brief": "Fly through the walk-through brain, link structures to classic cases, then spend a simulated night in the Sleep Lab to see how consciousness changes across sleep stages.",
+    "objectives": [
+      { "text": "Switch to Neuro Explorer mode", "event": "mode:change", "where": { "mode": "neuro" }, "count": 1 },
+      { "text": "Open Brain & Cases", "event": "panel:open", "where": { "id": "brain" }, "count": 1 },
+      { "text": "Enter the Sleep & Consciousness Lab", "event": "zone:enter", "where": { "zone": "sleep" }, "count": 1 },
+      { "text": "Open the Consciousness & Sleep panel", "event": "panel:open", "where": { "id": "sleep" }, "count": 1 }
+    ],
+    "xp": 150, "badge": "brain_cartographer", "apa": "1.1"
+  },
+  {
+    "id": "M06", "week": 6, "track": "core",
+    "title": "Find Your JND",
+    "brief": "Step into the staircase booth and find your own just-noticeable difference. Then separate sensitivity from bias with a yes/no signal-detection run and compute d′.",
+    "objectives": [
+      { "text": "Give consent for the JND staircase", "event": "consent:given", "where": { "paradigm": "jnd_staircase" }, "count": 1 },
+      { "text": "Complete the JND staircase", "event": "exp:complete", "where": { "paradigm": "jnd_staircase" }, "count": 1 },
+      { "text": "Complete the yes/no signal-detection task", "event": "exp:complete", "where": { "paradigm": "sdt_yesno" }, "count": 1 },
+      { "text": "Compute d′ and criterion in the Workbench", "event": "stats:test", "where": { "test": "sdt" }, "count": 1 }
+    ],
+    "xp": 150, "badge": "jnd_hunter", "apa": "2.4"
+  },
+  {
+    "id": "M07", "week": 7, "track": "core",
+    "title": "Spot the Gorilla",
+    "brief": "Something unexpected crosses the Mohalla plaza while you count passes. Did you see it? Run the inattentional-blindness event, read the debrief, then measure interference in the Stroop task.",
+    "objectives": [
+      { "text": "Enter the Mohalla plaza", "event": "zone:enter", "where": { "zone": "mohalla" }, "count": 1 },
+      { "text": "Complete the inattentional-blindness event", "event": "exp:complete", "where": { "paradigm": "inattentional_blindness" }, "count": 1 },
+      { "text": "Read the inattentional-blindness debrief", "event": "debrief:shown", "where": { "paradigm": "inattentional_blindness" }, "count": 1 },
+      { "text": "Complete the Stroop task", "event": "exp:complete", "where": { "paradigm": "stroop" }, "count": 1 }
+    ],
+    "xp": 150, "badge": "gorilla_spotter", "apa": "2.1"
+  },
+  {
+    "id": "M08", "week": 8, "track": "core",
+    "title": "Shape the Agent",
+    "brief": "A simulated agent in the Skinner-box lab will not press the lever on its own. Reinforce successive approximations until it does, then compare schedules on the cumulative recorder.",
+    "objectives": [
+      { "text": "Enter the Learning Lab", "event": "zone:enter", "where": { "zone": "learning" }, "count": 1 },
+      { "text": "Shape the target behaviour", "event": "exp:complete", "where": { "paradigm": "shaping" }, "count": 1 },
+      { "text": "Run the operant schedules (FR/VR/FI/VI)", "event": "exp:complete", "where": { "paradigm": "operant_schedules" }, "count": 1 },
+      { "text": "Run classical conditioning acquisition and extinction", "event": "exp:complete", "where": { "paradigm": "classical_cond" }, "count": 1 }
+    ],
+    "xp": 150, "badge": "shaper", "apa": "1.1"
+  },
+  {
+    "id": "M09", "week": 9, "track": "core",
+    "title": "Palace of Loci",
+    "brief": "Build a memory palace in Wundt Hall and test it. Then see how fragile memory can be: plot a serial-position curve and witness the misinformation effect on the eyewitness street.",
+    "objectives": [
+      { "text": "Complete the method-of-loci palace", "event": "exp:complete", "where": { "paradigm": "memory_palace" }, "count": 1 },
+      { "text": "Complete serial-position free recall", "event": "exp:complete", "where": { "paradigm": "serial_position" }, "count": 1 },
+      { "text": "Complete the misinformation task", "event": "exp:complete", "where": { "paradigm": "misinformation" }, "count": 1 },
+      { "text": "Read the misinformation debrief", "event": "debrief:shown", "where": { "paradigm": "misinformation" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "palace_architect", "apa": "2.1"
+  },
+  {
+    "id": "M10", "week": 10, "track": "core",
+    "title": "Rotate & Reason",
+    "brief": "At the mental-rotation bench, find out whether response time grows with angle. Then solve the Tower of Hanoi and the Wason selection task, and reflect on what intelligence tests can and cannot capture.",
+    "objectives": [
+      { "text": "Complete 3D mental rotation", "event": "exp:complete", "where": { "paradigm": "mental_rotation" }, "count": 1 },
+      { "text": "Solve the Tower of Hanoi", "event": "exp:complete", "where": { "paradigm": "hanoi" }, "count": 1 },
+      { "text": "Complete the Wason selection task", "event": "exp:complete", "where": { "paradigm": "wason" }, "count": 1 },
+      { "text": "Open Intelligence & Testing", "event": "panel:open", "where": { "id": "intelligence" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "rotator", "apa": "2.1"
+  },
+  {
+    "id": "M11", "week": 11, "track": "core",
+    "title": "Code the Strange Situation",
+    "brief": "Behind the one-way mirror, observation is a measurement skill. Code simulated child episodes, check agreement with a second coder using Cohen's kappa, and run conservation and false-belief tasks.",
+    "objectives": [
+      { "text": "Enter the Child Development Suite", "event": "zone:enter", "where": { "zone": "childdev" }, "count": 1 },
+      { "text": "Code Piaget conservation episodes", "event": "exp:complete", "where": { "paradigm": "conservation" }, "count": 1 },
+      { "text": "Complete the false-belief task", "event": "exp:complete", "where": { "paradigm": "false_belief" }, "count": 1 },
+      { "text": "Check inter-rater agreement (Cohen's kappa)", "event": "stats:test", "where": { "test": "kappa" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "observer", "apa": "1.2"
+  },
+  {
+    "id": "M12", "week": 12, "track": "core",
+    "title": "Read the Face",
+    "brief": "In the FACS face lab, build expressions one action unit at a time, then test how well you recognise them. Finish by tracing how stress affects the body in the Health & Stress panel.",
+    "objectives": [
+      { "text": "Move FACS action-unit sliders 6 times", "event": "face:au", "count": 6 },
+      { "text": "Complete facial-expression recognition", "event": "exp:complete", "where": { "paradigm": "face_recognition" }, "count": 1 },
+      { "text": "Open Motivation & Emotion", "event": "panel:open", "where": { "id": "emotion" }, "count": 1 },
+      { "text": "Open Health & Stress", "event": "panel:open", "where": { "id": "health" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "face_reader", "apa": "1.1"
+  },
+  {
+    "id": "M13", "week": 13, "track": "core",
+    "title": "Build a Reliable Scale",
+    "brief": "In the test-construction studio, complete the public-domain IPIP Big Five (for learning only, not a diagnosis), compute Cronbach's alpha on class data, and export a codebook.",
+    "objectives": [
+      { "text": "Complete the IPIP Big Five", "event": "exp:complete", "where": { "paradigm": "ipip_big5" }, "count": 1 },
+      { "text": "Open the Psychometrics panel", "event": "panel:open", "where": { "id": "psychometrics" }, "count": 1 },
+      { "text": "Compute Cronbach's alpha", "event": "stats:test", "where": { "test": "alpha" }, "count": 1 },
+      { "text": "Export a codebook", "event": "export:done", "where": { "kind": "codebook" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "scale_builder", "apa": "2.4"
+  },
+  {
+    "id": "M14", "week": 14, "track": "core",
+    "title": "The Silent Crowd",
+    "brief": "Agent confederates in the Mohalla give an answer you can see is wrong. Will you go along? Run the Asch-style study, read its debrief, then explore cooperation in a prisoner's-dilemma tournament.",
+    "objectives": [
+      { "text": "Switch to Social Sim mode", "event": "mode:change", "where": { "mode": "social" }, "count": 1 },
+      { "text": "Complete the Asch-style conformity study", "event": "exp:complete", "where": { "paradigm": "asch" }, "count": 1 },
+      { "text": "Read the Asch debrief", "event": "debrief:shown", "where": { "paradigm": "asch" }, "count": 1 },
+      { "text": "Run a prisoner's-dilemma tournament", "event": "exp:complete", "where": { "paradigm": "prisoners_dilemma" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "crowd_breaker", "apa": "1.1"
+  },
+  {
+    "id": "M15", "week": 15, "track": "core",
+    "title": "First Session",
+    "brief": "Walk a simulated client from the waiting room through intake, consent and confidentiality limits to a first counselling session. Practise OARS skills and know when to refer.",
+    "objectives": [
+      { "text": "Switch to Clinic mode", "event": "mode:change", "where": { "mode": "clinic" }, "count": 1 },
+      { "text": "Complete 5 steps of A Client's First Session", "event": "journey:step", "where": { "journey": "client" }, "count": 5 },
+      { "text": "Finish a session with a simulated client", "event": "client:session:end", "count": 1 },
+      { "text": "Open Cross-Cultural & Indigenous", "event": "panel:open", "where": { "id": "crosscultural" }, "count": 1 }
+    ],
+    "xp": 200, "badge": "first_session", "apa": "4.1"
+  },
+  {
+    "id": "M16", "week": 16, "track": "core",
+    "title": "Replicate or Retract",
+    "brief": "Preregister a design in the Experiment Builder, run a replication, test the result in the Workbench and generate an APA report. Defend it in the poster hall, whatever the outcome.",
+    "objectives": [
+      { "text": "Save a preregistered design in the Experiment Builder", "event": "builder:save", "count": 1 },
+      { "text": "Run a replication", "event": "replication:run", "count": 1 },
+      { "text": "Run an independent-samples t test", "event": "stats:test", "where": { "test": "t_ind" }, "count": 1 },
+      { "text": "Generate an APA report", "event": "report:generated", "count": 1 }
+    ],
+    "xp": 300, "badge": "replicator", "apa": "2.2"
+  },
+
+  {
+    "id": "E-CLI-1", "week": null, "track": "clinical", "unlockAfterWeek": 16,
+    "title": "Intake & Consent",
+    "brief": "Start a clinical rotation. Walk a simulated client through intake, explain confidentiality and its limits, and review the Psychopathology (Simulated) panel.",
+    "objectives": [
+      { "text": "Open Psychopathology (Simulated)", "event": "panel:open", "where": { "id": "psychopathology" }, "count": 1 },
+      { "text": "Complete 3 client-journey steps", "event": "journey:step", "where": { "journey": "client" }, "count": 3 },
+      { "text": "Finish a client session", "event": "client:session:end", "count": 1 }
+    ],
+    "xp": 250, "apa": "4.1"
+  },
+  {
+    "id": "E-CLI-2", "week": null, "track": "clinical", "unlockAfterWeek": 16,
+    "title": "OARS in Practice",
+    "brief": "Open questions, affirmations, reflections and summaries. Hold 12 counselling turns and close two sessions with simulated clients.",
+    "objectives": [
+      { "text": "Take 12 counselling turns", "event": "client:turn", "count": 12 },
+      { "text": "Finish 2 client sessions", "event": "client:session:end", "count": 2 },
+      { "text": "Open Therapies & Counselling", "event": "panel:open", "where": { "id": "therapy" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "4.1"
+  },
+  {
+    "id": "E-CLI-3", "week": null, "track": "clinical", "unlockAfterWeek": 16,
+    "title": "Hard Calls in the Clinic",
+    "brief": "Clinical work is full of ethical choices. Resolve clinic dilemmas without an ethics penalty and look up the key terms you need to explain your reasoning.",
+    "objectives": [
+      { "text": "Resolve 3 dilemmas without an ethics penalty", "event": "dilemma:resolved", "where": { "ethicsPenalty": false }, "count": 3 },
+      { "text": "Look up 3 glossary terms", "event": "glossary:lookup", "count": 3 },
+      { "text": "Open Case Studies", "event": "panel:open", "where": { "id": "cases" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "3.1"
+  },
+  {
+    "id": "E-CLI-4", "week": null, "track": "clinical", "unlockAfterWeek": 16,
+    "title": "Culture in the Room",
+    "brief": "Explanatory models of distress differ across cultures. Study the Cross-Cultural panel, then complete two more sessions with culturally specific simulated clients.",
+    "objectives": [
+      { "text": "Open Cross-Cultural & Indigenous", "event": "panel:open", "where": { "id": "crosscultural" }, "count": 1 },
+      { "text": "Finish 2 client sessions", "event": "client:session:end", "count": 2 },
+      { "text": "Answer 5 Week 15 quiz items correctly", "event": "quiz:answer", "where": { "week": 15, "correct": true }, "count": 5 }
+    ],
+    "xp": 350, "badge": "clinician_in_training", "apa": "3.2"
+  },
+
+  {
+    "id": "E-CNS-1", "week": null, "track": "cogneuro", "unlockAfterWeek": 16,
+    "title": "Spike Train",
+    "brief": "Return to the neuron bridge as a cognitive neuroscientist. Drive the model hard enough to produce a sustained spike train and relate firing rate to stimulus strength.",
+    "objectives": [
+      { "text": "Switch to Neuro Explorer mode", "event": "mode:change", "where": { "mode": "neuro" }, "count": 1 },
+      { "text": "Trigger 25 neuron spikes", "event": "neuron:spike", "count": 25 },
+      { "text": "Open Biopsychology", "event": "panel:open", "where": { "id": "bio" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "1.1"
+  },
+  {
+    "id": "E-CNS-2", "week": null, "track": "cogneuro", "unlockAfterWeek": 16,
+    "title": "Conflict Monitor",
+    "brief": "Three tasks, one question: how does the mind handle response conflict? Run Stroop, flanker and go/no-go and compare congruent with incongruent trials.",
+    "objectives": [
+      { "text": "Complete the Stroop task", "event": "exp:complete", "where": { "paradigm": "stroop" }, "count": 1 },
+      { "text": "Complete the Eriksen flanker task", "event": "exp:complete", "where": { "paradigm": "flanker" }, "count": 1 },
+      { "text": "Complete go/no-go inhibition", "event": "exp:complete", "where": { "paradigm": "go_nogo" }, "count": 1 },
+      { "text": "Run a paired t test on congruency", "event": "stats:test", "where": { "test": "t_paired" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "2.1"
+  },
+  {
+    "id": "E-CNS-3", "week": null, "track": "cogneuro", "unlockAfterWeek": 16,
+    "title": "Attention in Time and Space",
+    "brief": "Cue a location with Posner cueing, then miss a second target in the attentional blink. Contrast spatial and temporal limits on attention.",
+    "objectives": [
+      { "text": "Complete Posner cueing", "event": "exp:complete", "where": { "paradigm": "posner" }, "count": 1 },
+      { "text": "Complete the attentional blink (RSVP)", "event": "exp:complete", "where": { "paradigm": "attn_blink" }, "count": 1 },
+      { "text": "Complete feature vs conjunction search", "event": "exp:complete", "where": { "paradigm": "visual_search" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "2.1"
+  },
+  {
+    "id": "E-CNS-4", "week": null, "track": "cogneuro", "unlockAfterWeek": 16,
+    "title": "Working-Memory Load",
+    "brief": "Vary n in the n-back task, test load effects with an ANOVA and write them up as an APA report.",
+    "objectives": [
+      { "text": "Complete the n-back task", "event": "exp:complete", "where": { "paradigm": "nback" }, "count": 1 },
+      { "text": "Run a one-way ANOVA", "event": "stats:test", "where": { "test": "anova" }, "count": 1 },
+      { "text": "Generate an APA report for n-back", "event": "report:generated", "where": { "paradigm": "nback" }, "count": 1 }
+    ],
+    "xp": 350, "badge": "cognitive_neuroscientist", "apa": "2.4"
+  },
+
+  {
+    "id": "E-DEV-1", "week": null, "track": "developmental", "unlockAfterWeek": 16,
+    "title": "Through the Mirror",
+    "brief": "Return to the one-way mirror and code conservation episodes again, this time with a stricter coding scheme. Check whether your agreement with the second coder improves.",
+    "objectives": [
+      { "text": "Enter the Child Development Suite", "event": "zone:enter", "where": { "zone": "childdev" }, "count": 1 },
+      { "text": "Code conservation episodes", "event": "exp:complete", "where": { "paradigm": "conservation" }, "count": 1 },
+      { "text": "Compute Cohen's kappa", "event": "stats:test", "where": { "test": "kappa" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "2.4"
+  },
+  {
+    "id": "E-DEV-2", "week": null, "track": "developmental", "unlockAfterWeek": 16,
+    "title": "Theory of Mind by Age",
+    "brief": "Run the false-belief task on simulated children of different ages and test whether passing depends on age group.",
+    "objectives": [
+      { "text": "Complete the false-belief task", "event": "exp:complete", "where": { "paradigm": "false_belief" }, "count": 1 },
+      { "text": "Run a simulated false-belief study", "event": "study:run", "where": { "paradigm": "false_belief" }, "count": 1 },
+      { "text": "Run a chi-square test", "event": "stats:test", "where": { "test": "chi2" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "2.4"
+  },
+  {
+    "id": "E-DEV-3", "week": null, "track": "developmental", "unlockAfterWeek": 16,
+    "title": "Lifespan Lens",
+    "brief": "Development does not stop at adolescence. Revisit the Development panel and show you can apply lifespan concepts.",
+    "objectives": [
+      { "text": "Open Development", "event": "panel:open", "where": { "id": "development" }, "count": 1 },
+      { "text": "Answer 10 Week 11 quiz items", "event": "quiz:answer", "where": { "week": 11 }, "count": 10 },
+      { "text": "Look up 5 glossary terms", "event": "glossary:lookup", "count": 5 }
+    ],
+    "xp": 250, "apa": "1.2"
+  },
+  {
+    "id": "E-DEV-4", "week": null, "track": "developmental", "unlockAfterWeek": 16,
+    "title": "Research with Children",
+    "brief": "Children cannot consent the way adults do. Judge IRB proposals involving minors, resolve dilemmas ethically and save a child-friendly design.",
+    "objectives": [
+      { "text": "Judge 2 IRB proposals correctly", "event": "irb:decision", "where": { "correct": true }, "count": 2 },
+      { "text": "Resolve 2 dilemmas without an ethics penalty", "event": "dilemma:resolved", "where": { "ethicsPenalty": false }, "count": 2 },
+      { "text": "Save a design in the Experiment Builder", "event": "builder:save", "count": 1 }
+    ],
+    "xp": 350, "badge": "child_advocate", "apa": "3.1"
+  },
+
+  {
+    "id": "E-EDU-1", "week": null, "track": "educational", "unlockAfterWeek": 16,
+    "title": "Study Smarter",
+    "brief": "Use memory research to improve study habits. Compare shallow with deep processing and look at where in a list items are best remembered.",
+    "objectives": [
+      { "text": "Complete levels of processing", "event": "exp:complete", "where": { "paradigm": "levels_processing" }, "count": 1 },
+      { "text": "Complete serial-position recall", "event": "exp:complete", "where": { "paradigm": "serial_position" }, "count": 1 },
+      { "text": "Open the Memory Lab", "event": "panel:open", "where": { "id": "memory" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "1.2"
+  },
+  {
+    "id": "E-EDU-2", "week": null, "track": "educational", "unlockAfterWeek": 16,
+    "title": "Retrieval Practice",
+    "brief": "Testing yourself is a learning tool, not only an assessment. Answer quiz items across the course and use the glossary to repair mistakes.",
+    "objectives": [
+      { "text": "Answer 20 quiz items", "event": "quiz:answer", "count": 20 },
+      { "text": "Answer 12 quiz items correctly", "event": "quiz:answer", "where": { "correct": true }, "count": 12 },
+      { "text": "Look up 5 glossary terms", "event": "glossary:lookup", "count": 5 }
+    ],
+    "xp": 250, "apa": "5.2"
+  },
+  {
+    "id": "E-EDU-3", "week": null, "track": "educational", "unlockAfterWeek": 16,
+    "title": "Reinforcement in the Classroom",
+    "brief": "Translate operant schedules into a classroom-reward plan. Run the schedules, then save a classroom-style design in the Experiment Builder.",
+    "objectives": [
+      { "text": "Run operant schedules", "event": "exp:complete", "where": { "paradigm": "operant_schedules" }, "count": 1 },
+      { "text": "Open the Learning Lab panel", "event": "panel:open", "where": { "id": "learning" }, "count": 1 },
+      { "text": "Save a design in the Experiment Builder", "event": "builder:save", "count": 1 }
+    ],
+    "xp": 250, "apa": "1.3"
+  },
+  {
+    "id": "E-EDU-4", "week": null, "track": "educational", "unlockAfterWeek": 16,
+    "title": "Fair Test Design",
+    "brief": "A good exam is reliable and well documented. Compute alpha, plan sample size with a power analysis and export a codebook.",
+    "objectives": [
+      { "text": "Compute Cronbach's alpha", "event": "stats:test", "where": { "test": "alpha" }, "count": 1 },
+      { "text": "Run a power analysis", "event": "stats:test", "where": { "test": "power" }, "count": 1 },
+      { "text": "Export a codebook", "event": "export:done", "where": { "kind": "codebook" }, "count": 1 }
+    ],
+    "xp": 350, "badge": "test_designer", "apa": "2.4"
+  },
+
+  {
+    "id": "E-FOR-1", "week": null, "track": "forensic", "unlockAfterWeek": 16,
+    "title": "The Witness Who Was Sure",
+    "brief": "Confidence is not the same as accuracy. Open the Eyewitness Room, run the misinformation task and read every debrief you trigger.",
+    "objectives": [
+      { "text": "Open the Eyewitness Room", "event": "panel:open", "where": { "id": "eyewitness" }, "count": 1 },
+      { "text": "Complete the misinformation task", "event": "exp:complete", "where": { "paradigm": "misinformation" }, "count": 1 },
+      { "text": "Read 3 debriefs from deception-based studies", "event": "debrief:shown", "count": 3 }
+    ],
+    "xp": 250, "badge": "debrief_champion", "apa": "1.4"
+  },
+  {
+    "id": "E-FOR-2", "week": null, "track": "forensic", "unlockAfterWeek": 16,
+    "title": "False Memories on Trial",
+    "brief": "Run the DRM task, compare false recognition of critical lures with true recognition and write the APA report a court expert might rely on.",
+    "objectives": [
+      { "text": "Complete the DRM false-memory task", "event": "exp:complete", "where": { "paradigm": "drm" }, "count": 1 },
+      { "text": "Run a paired t test", "event": "stats:test", "where": { "test": "t_paired" }, "count": 1 },
+      { "text": "Generate an APA report for DRM", "event": "report:generated", "where": { "paradigm": "drm" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "2.4"
+  },
+  {
+    "id": "E-FOR-3", "week": null, "track": "forensic", "unlockAfterWeek": 16,
+    "title": "Interrogation Ethics",
+    "brief": "Forensic psychologists must protect suspects as well as the public. Resolve forensic dilemmas ethically and review the case records.",
+    "objectives": [
+      { "text": "Resolve 3 dilemmas without an ethics penalty", "event": "dilemma:resolved", "where": { "ethicsPenalty": false }, "count": 3 },
+      { "text": "Open Case Studies", "event": "panel:open", "where": { "id": "cases" }, "count": 1 },
+      { "text": "Look up 3 glossary terms", "event": "glossary:lookup", "count": 3 }
+    ],
+    "xp": 250, "apa": "3.1"
+  },
+  {
+    "id": "E-FOR-4", "week": null, "track": "forensic", "unlockAfterWeek": 16,
+    "title": "Expert Witness",
+    "brief": "Prepare a printed expert brief on eyewitness memory. Show you know the evidence base and present it clearly.",
+    "objectives": [
+      { "text": "Answer 5 Week 9 quiz items correctly", "event": "quiz:answer", "where": { "week": 9, "correct": true }, "count": 5 },
+      { "text": "Generate an APA report", "event": "report:generated", "count": 1 },
+      { "text": "Print your report", "event": "export:done", "where": { "kind": "print" }, "count": 1 }
+    ],
+    "xp": 350, "badge": "expert_witness", "apa": "4.2"
+  },
+
+  {
+    "id": "E-HLT-1", "week": null, "track": "health", "unlockAfterWeek": 16,
+    "title": "Stress and the Body",
+    "brief": "Trace the stress response from appraisal to hormones and back. Review Health & Stress and Motivation & Emotion, then test yourself.",
+    "objectives": [
+      { "text": "Open Health & Stress", "event": "panel:open", "where": { "id": "health" }, "count": 1 },
+      { "text": "Open Motivation & Emotion", "event": "panel:open", "where": { "id": "emotion" }, "count": 1 },
+      { "text": "Answer 5 Week 12 quiz items", "event": "quiz:answer", "where": { "week": 12 }, "count": 5 }
+    ],
+    "xp": 250, "apa": "1.1"
+  },
+  {
+    "id": "E-HLT-2", "week": null, "track": "health", "unlockAfterWeek": 16,
+    "title": "Sleep Debt",
+    "brief": "Sleep is a health behaviour. Revisit the Sleep Lab and explain how sleep loss affects attention and mood.",
+    "objectives": [
+      { "text": "Enter the Sleep & Consciousness Lab", "event": "zone:enter", "where": { "zone": "sleep" }, "count": 1 },
+      { "text": "Open Consciousness & Sleep", "event": "panel:open", "where": { "id": "sleep" }, "count": 1 },
+      { "text": "Look up 3 glossary terms", "event": "glossary:lookup", "count": 3 }
+    ],
+    "xp": 250, "apa": "3.3"
+  },
+  {
+    "id": "E-HLT-3", "week": null, "track": "health", "unlockAfterWeek": 16,
+    "title": "Flourishing",
+    "brief": "Health is more than the absence of illness. Explore Positive Psychology and practise strengths-based reflections with a simulated client.",
+    "objectives": [
+      { "text": "Open Positive Psychology", "event": "panel:open", "where": { "id": "positive" }, "count": 1 },
+      { "text": "Take 6 counselling turns", "event": "client:turn", "count": 6 },
+      { "text": "Finish a client session", "event": "client:session:end", "count": 1 }
+    ],
+    "xp": 250, "apa": "3.3"
+  },
+  {
+    "id": "E-HLT-4", "week": null, "track": "health", "unlockAfterWeek": 16,
+    "title": "Framing the Health Message",
+    "brief": "Does it matter whether a health message talks about lives saved or lives lost? Run the framing task, test choice proportions and save a campaign design.",
+    "objectives": [
+      { "text": "Complete the framing task", "event": "exp:complete", "where": { "paradigm": "framing" }, "count": 1 },
+      { "text": "Run a chi-square test", "event": "stats:test", "where": { "test": "chi2" }, "count": 1 },
+      { "text": "Save a design in the Experiment Builder", "event": "builder:save", "count": 1 }
+    ],
+    "xp": 350, "badge": "health_advocate", "apa": "3.3"
+  },
+
+  {
+    "id": "E-IO-1", "week": null, "track": "io", "unlockAfterWeek": 16,
+    "title": "Selection Science",
+    "brief": "Which traits predict job performance, and how would you know? Open I-O Psychology, complete the IPIP (for learning only, not a diagnosis) and correlate traits with a simulated performance score.",
+    "objectives": [
+      { "text": "Open I-O Psychology", "event": "panel:open", "where": { "id": "io" }, "count": 1 },
+      { "text": "Complete the IPIP Big Five", "event": "exp:complete", "where": { "paradigm": "ipip_big5" }, "count": 1 },
+      { "text": "Run a correlation", "event": "stats:test", "where": { "test": "corr" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "1.4"
+  },
+  {
+    "id": "E-IO-2", "week": null, "track": "io", "unlockAfterWeek": 16,
+    "title": "Teams and Cooperation",
+    "brief": "Simulate a workplace prisoner's-dilemma tournament and compare how different strategies perform across groups.",
+    "objectives": [
+      { "text": "Complete the prisoner's-dilemma tournament", "event": "exp:complete", "where": { "paradigm": "prisoners_dilemma" }, "count": 1 },
+      { "text": "Run a simulated prisoner's-dilemma study", "event": "study:run", "where": { "paradigm": "prisoners_dilemma" }, "count": 1 },
+      { "text": "Run a one-way ANOVA", "event": "stats:test", "where": { "test": "anova" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "1.1"
+  },
+  {
+    "id": "E-IO-3", "week": null, "track": "io", "unlockAfterWeek": 16,
+    "title": "Human Factors",
+    "brief": "Design a better control panel. Model pointing time with Fitts's law and choice time with the Hick–Hyman law, then fit a regression line.",
+    "objectives": [
+      { "text": "Complete Fitts pointing", "event": "exp:complete", "where": { "paradigm": "fitts" }, "count": 1 },
+      { "text": "Complete Hick–Hyman choice RT", "event": "exp:complete", "where": { "paradigm": "hick_hyman" }, "count": 1 },
+      { "text": "Run a regression", "event": "stats:test", "where": { "test": "regression" }, "count": 1 }
+    ],
+    "xp": 250, "apa": "1.4"
+  },
+  {
+    "id": "E-IO-4", "week": null, "track": "io", "unlockAfterWeek": 16,
+    "title": "Preregistered Workplace Study",
+    "brief": "Plan a workplace study properly: run a power analysis, save a preregistered design and get it through the Ethics Board.",
+    "objectives": [
+      { "text": "Run a power analysis", "event": "stats:test", "where": { "test": "power" }, "count": 1 },
+      { "text": "Save a preregistered design", "event": "builder:save", "count": 1 },
+      { "text": "Judge 3 IRB proposals", "event": "irb:decision", "count": 3 }
+    ],
+    "xp": 350, "badge": "preregistered", "apa": "2.2"
+  }
+]

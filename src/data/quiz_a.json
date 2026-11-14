@@ -1,0 +1,3029 @@
+[
+  {
+    "id": "Q01-001",
+    "week": 1,
+    "topic": "Founding of experimental psychology",
+    "bloom": "remember",
+    "q": "Wilhelm Wundt is credited with opening the first laboratory devoted to experimental psychology in which city?",
+    "options": [
+      "Leipzig",
+      "Vienna",
+      "Paris",
+      "Cambridge, Massachusetts"
+    ],
+    "answer": 0,
+    "explain": "Wundt's Leipzig laboratory (1879) is conventionally treated as the start of psychology as a separate experimental science.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-002",
+    "week": 1,
+    "topic": "Structuralism",
+    "bloom": "remember",
+    "q": "Which school tried to break conscious experience into its basic elements using trained introspection?",
+    "options": [
+      "Structuralism",
+      "Functionalism",
+      "Behaviourism",
+      "Gestalt psychology"
+    ],
+    "answer": 0,
+    "explain": "Structuralism (Wundt's student Titchener) analysed sensations and feelings into elementary components through trained introspection.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-003",
+    "week": 1,
+    "topic": "Functionalism",
+    "bloom": "understand",
+    "q": "William James's functionalism differed from structuralism mainly by asking which question?",
+    "options": [
+      "What basic elements make up a sensation",
+      "How unconscious conflicts arise in early childhood",
+      "What mental processes are for, i.e., how they help the organism adapt",
+      "How reflexes can be studied without reference to the mind"
+    ],
+    "answer": 2,
+    "explain": "Functionalists, influenced by Darwin, focused on the purpose of consciousness and behaviour rather than its structure.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-004",
+    "week": 1,
+    "topic": "Gestalt psychology",
+    "bloom": "understand",
+    "q": "The Gestalt claim that \"the whole is different from the sum of its parts\" was mainly a reaction against which approach?",
+    "options": [
+      "Psychoanalysis's focus on the unconscious",
+      "Humanistic psychology's focus on personal growth",
+      "The cognitive revolution's computer metaphor",
+      "Structuralism's analysis of experience into separate elements"
+    ],
+    "answer": 3,
+    "explain": "Gestalt psychologists argued that perception is organised into wholes, which element-by-element analysis misses.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-005",
+    "week": 1,
+    "topic": "Behaviourism",
+    "bloom": "remember",
+    "q": "John B. Watson argued that scientific psychology should study what?",
+    "options": [
+      "Observable behaviour rather than consciousness",
+      "Unconscious drives revealed in dreams",
+      "Self-actualisation and free will",
+      "The elements of sensation through introspection"
+    ],
+    "answer": 0,
+    "explain": "Watson's behaviourism rejected introspection and restricted psychology to observable stimuli and responses.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-006",
+    "week": 1,
+    "topic": "Psychoanalysis",
+    "bloom": "understand",
+    "q": "Which idea is central to Freud's psychoanalytic perspective?",
+    "options": [
+      "Behaviour is controlled only by reinforcement contingencies",
+      "People naturally strive toward self-actualisation",
+      "Unconscious motives and conflicts shape behaviour",
+      "The mind works like a computer processing information"
+    ],
+    "answer": 2,
+    "explain": "Freud emphasised unconscious processes, early experience, and internal conflict.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-007",
+    "week": 1,
+    "topic": "Humanistic psychology",
+    "bloom": "remember",
+    "q": "Which pair is most closely associated with humanistic psychology?",
+    "options": [
+      "Carl Rogers and Abraham Maslow",
+      "B. F. Skinner and John B. Watson",
+      "Sigmund Freud and Carl Jung",
+      "Max Wertheimer and Wolfgang Köhler"
+    ],
+    "answer": 0,
+    "explain": "Rogers and Maslow emphasised personal growth, free will, and self-actualisation.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-008",
+    "week": 1,
+    "topic": "Cognitive revolution",
+    "bloom": "understand",
+    "q": "The mid-20th-century \"cognitive revolution\" renewed scientific interest in what?",
+    "options": [
+      "Introspective reports of pure sensations",
+      "Purely reflexive stimulus–response chains",
+      "The interpretation of dreams",
+      "Internal mental processes such as memory, language, and problem-solving"
+    ],
+    "answer": 3,
+    "explain": "Cognitive psychology brought mental processes back into scientific study, using experiments and information-processing models.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-009",
+    "week": 1,
+    "topic": "Applying perspectives: cognitive",
+    "bloom": "apply",
+    "q": "A researcher explains a student's exam anxiety by pointing to her belief, \"If I fail this, I am worthless.\" Which perspective is she using?",
+    "options": [
+      "Biological",
+      "Behavioural",
+      "Psychodynamic",
+      "Cognitive"
+    ],
+    "answer": 3,
+    "explain": "Focusing on beliefs, appraisals, and thought patterns is the hallmark of the cognitive perspective.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-010",
+    "week": 1,
+    "topic": "Applying perspectives: biological",
+    "bloom": "apply",
+    "q": "Another researcher studies the same exam anxiety by measuring cortisol and heart rate during the exam. Which perspective does this reflect?",
+    "options": [
+      "Humanistic",
+      "Sociocultural",
+      "Biological",
+      "Psychodynamic"
+    ],
+    "answer": 2,
+    "explain": "Measuring hormones and physiological arousal reflects the biological perspective.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-011",
+    "week": 1,
+    "topic": "Applying perspectives: behavioural",
+    "bloom": "apply",
+    "q": "A psychologist argues that a child's fear of dogs was learned because dog encounters were repeatedly followed by being knocked over. Which perspective is this?",
+    "options": [
+      "Humanistic",
+      "Behavioural",
+      "Evolutionary",
+      "Psychodynamic"
+    ],
+    "answer": 1,
+    "explain": "Explaining a fear through learning from environmental pairings and consequences is a behavioural account.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-012",
+    "week": 1,
+    "topic": "Applying perspectives: sociocultural",
+    "bloom": "apply",
+    "q": "A study compares how collectivist and individualist communities interpret the same act of helping a neighbour. Which perspective does this best fit?",
+    "options": [
+      "Biological",
+      "Sociocultural",
+      "Structuralist",
+      "Psychodynamic"
+    ],
+    "answer": 1,
+    "explain": "The sociocultural perspective examines how culture, norms, and social context shape behaviour and meaning.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-013",
+    "week": 1,
+    "topic": "Applying perspectives: evolutionary",
+    "bloom": "apply",
+    "q": "Explaining a widespread fear of snakes as a predisposition that helped ancestors survive reflects which perspective?",
+    "options": [
+      "Humanistic",
+      "Structuralist",
+      "Evolutionary",
+      "Cognitive"
+    ],
+    "answer": 2,
+    "explain": "Evolutionary psychology explains traits by their likely adaptive value in ancestral environments.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-014",
+    "week": 1,
+    "topic": "Biopsychosocial model",
+    "bloom": "analyse",
+    "q": "A clinician uses the biopsychosocial model to understand a patient's chronic headaches. Which set of factors best reflects that model?",
+    "options": [
+      "Only the brain chemistry involved in pain",
+      "Genetic vulnerability, stressful thoughts, and family or work pressures",
+      "Only childhood conflicts revealed through free association",
+      "Only the reinforcement history of pain behaviours"
+    ],
+    "answer": 1,
+    "explain": "The biopsychosocial model integrates biological, psychological, and social influences rather than relying on one level.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-015",
+    "week": 1,
+    "topic": "Limits of introspection",
+    "bloom": "analyse",
+    "q": "Trained introspectionists sometimes disagreed about the elements of the same experience, and nobody could check whose report was right. Which weakness does this expose?",
+    "options": [
+      "Introspection relied too heavily on animal research",
+      "Introspection ignored conscious experience altogether",
+      "Introspection required brain-imaging equipment that did not exist",
+      "Private reports cannot be independently verified, so disagreements cannot be resolved"
+    ],
+    "answer": 3,
+    "explain": "Because introspective data are private, they lacked the public verifiability that science requires, which behaviourists later stressed.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-016",
+    "week": 1,
+    "topic": "Behaviourism and animal research",
+    "bloom": "analyse",
+    "q": "Why did early behaviourists consider studies of rats and pigeons relevant to human psychology?",
+    "options": [
+      "They assumed basic learning principles generalise across species and that behaviour can be observed directly",
+      "They believed animals give richer introspective reports than humans",
+      "They rejected experimental control in favour of case studies",
+      "They were mainly interested in unconscious motives"
+    ],
+    "answer": 0,
+    "explain": "Behaviourists treated learning laws as general and preferred directly observable, controllable behaviour.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-017",
+    "week": 1,
+    "topic": "Applying perspectives: humanistic",
+    "bloom": "apply",
+    "q": "A therapist focuses on unconditional positive regard and the client's own capacity for growth. Which school informs this approach?",
+    "options": [
+      "Behaviourism",
+      "Humanistic",
+      "Structuralism",
+      "Psychoanalysis"
+    ],
+    "answer": 1,
+    "explain": "Unconditional positive regard is a core idea of Carl Rogers's person-centred, humanistic approach.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-018",
+    "week": 1,
+    "topic": "Integrating perspectives",
+    "bloom": "evaluate",
+    "q": "A student claims: \"Psychology's perspectives contradict each other, so only one can be correct.\" Which response is best supported?",
+    "options": [
+      "The biological perspective has replaced all the others",
+      "Perspectives often explain the same behaviour at different levels and can complement one another",
+      "The oldest perspective is always the most accurate",
+      "Perspectives cannot be tested, so none can be evaluated"
+    ],
+    "answer": 1,
+    "explain": "Most modern psychologists combine levels of explanation (e.g., biological, cognitive, social) rather than choosing a single perspective.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-019",
+    "week": 1,
+    "topic": "Evaluating psychoanalysis",
+    "bloom": "evaluate",
+    "q": "Which criticism of classic psychoanalytic theory is strongest from a scientific standpoint?",
+    "options": [
+      "It ignores the unconscious",
+      "It relies too much on reaction-time experiments",
+      "It focuses only on observable behaviour",
+      "Many of its claims are hard to falsify because almost any outcome can be explained after the fact"
+    ],
+    "answer": 3,
+    "explain": "A theory that can explain any result predicts none; falsifiability is a key scientific criterion.",
+    "apa": "1.5",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-020",
+    "week": 1,
+    "topic": "Pioneers in psychology",
+    "bloom": "remember",
+    "q": "Mary Whiton Calkins is remembered as which of the following?",
+    "options": [
+      "The founder of behaviourism",
+      "The founder of psychoanalysis",
+      "The first woman elected president of the American Psychological Association",
+      "The founder of the first psychology laboratory in Leipzig"
+    ],
+    "answer": 2,
+    "explain": "Calkins completed Harvard's doctoral requirements but was denied the degree because she was a woman; she later became the first woman APA president.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q01-021",
+    "week": 1,
+    "topic": "Nature and nurture",
+    "bloom": "understand",
+    "q": "How is the nature–nurture question best framed in modern psychology?",
+    "options": [
+      "Whether genes alone or environment alone determines behaviour",
+      "How genes and environment interact to shape behaviour",
+      "Whether introspection is a valid method",
+      "Whether animals are capable of learning"
+    ],
+    "answer": 1,
+    "explain": "Contemporary research treats heredity and environment as interacting influences rather than rival explanations.",
+    "apa": "1.3",
+    "domain": "CHI",
+    "hec": "S1 Schools & Perspectives"
+  },
+  {
+    "id": "Q02-001",
+    "week": 2,
+    "topic": "Independent and dependent variables",
+    "bloom": "apply",
+    "q": "Participants receive either 0 mg or 200 mg of caffeine and then count how many words they can recall from a list. What is the dependent variable?",
+    "options": [
+      "Caffeine dose",
+      "Participants' age",
+      "Length of the word list",
+      "Number of words recalled"
+    ],
+    "answer": 3,
+    "explain": "The dependent variable is the outcome measured; the caffeine dose is the manipulated independent variable.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-002",
+    "week": 2,
+    "topic": "Independent and dependent variables",
+    "bloom": "apply",
+    "q": "A study tests whether background sound (silence, instrumental music, music with lyrics) affects reading-comprehension scores. What is the independent variable?",
+    "options": [
+      "Reading-comprehension score",
+      "Type of background sound",
+      "Length of the reading passage",
+      "Participants' reading speed"
+    ],
+    "answer": 1,
+    "explain": "The independent variable is what the researcher manipulates, here the three sound conditions.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-003",
+    "week": 2,
+    "topic": "Operational definitions",
+    "bloom": "apply",
+    "q": "Which is the best operational definition of \"aggression\" for a playground observation study?",
+    "options": [
+      "Number of hits, pushes, or kicks per 10-minute observation period",
+      "How angry the child feels inside",
+      "The child's general personality",
+      "Whether the teacher thinks the child is difficult"
+    ],
+    "answer": 0,
+    "explain": "An operational definition states exactly how a construct will be observed or measured so others can replicate it.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-004",
+    "week": 2,
+    "topic": "Confounds",
+    "bloom": "analyse",
+    "q": "Morning-session participants learn with a new app; evening-session participants study from the old textbook. The app group scores higher. What is the main problem?",
+    "options": [
+      "No dependent variable was measured",
+      "Time of day is confounded with the teaching method",
+      "The sample was selected too randomly",
+      "There were too many conditions"
+    ],
+    "answer": 1,
+    "explain": "Because method and session time vary together, either could explain the difference; random assignment across times would remove the confound.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-005",
+    "week": 2,
+    "topic": "Self-selection",
+    "bloom": "analyse",
+    "q": "Volunteers who chose to join a meditation class report less stress than people who did not join. Why can't we conclude that meditation reduces stress?",
+    "options": [
+      "Stress cannot be measured",
+      "The study used random assignment",
+      "People selected themselves, so the groups may have differed before the class began",
+      "Meditation has no plausible mechanism"
+    ],
+    "answer": 2,
+    "explain": "Without random assignment, pre-existing differences (e.g., free time, motivation) could explain the result.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-006",
+    "week": 2,
+    "topic": "Counterbalancing",
+    "bloom": "apply",
+    "q": "In a within-subjects study with three conditions (A, B, C), how many orders are needed for complete counterbalancing?",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "4"
+    ],
+    "answer": 1,
+    "explain": "Complete counterbalancing uses every possible order: 3! = 3 × 2 × 1 = 6.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-007",
+    "week": 2,
+    "topic": "Latin square",
+    "bloom": "apply",
+    "q": "With four within-subjects conditions, how many orders does a basic Latin square use so that each condition appears once in each serial position?",
+    "options": [
+      "4",
+      "24",
+      "16",
+      "8"
+    ],
+    "answer": 0,
+    "explain": "A Latin square for k conditions has k orders (rows); complete counterbalancing would need 4! = 24.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-008",
+    "week": 2,
+    "topic": "Random assignment vs random sampling",
+    "bloom": "understand",
+    "q": "Random assignment mainly protects ___, whereas random sampling mainly protects ___.",
+    "options": [
+      "external validity; internal validity",
+      "reliability; construct validity",
+      "internal validity; external validity (generalisability)",
+      "statistical power; ethical standards"
+    ],
+    "answer": 2,
+    "explain": "Random assignment equates groups so differences can be attributed to the IV; random sampling makes the sample representative of a population.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-009",
+    "week": 2,
+    "topic": "Blinding",
+    "bloom": "understand",
+    "q": "In a double-blind drug trial, who does not know which participants receive the active drug?",
+    "options": [
+      "Only the participants",
+      "Both the participants and the researchers who interact with them",
+      "Only the researchers",
+      "Only the ethics board"
+    ],
+    "answer": 1,
+    "explain": "Double-blind procedures reduce both participant expectancy effects and experimenter bias.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-010",
+    "week": 2,
+    "topic": "Demand characteristics",
+    "bloom": "understand",
+    "q": "Participants guess the hypothesis and change their behaviour to \"help\" the researcher. What is this called?",
+    "options": [
+      "Regression to the mean",
+      "Counterbalancing",
+      "Sampling error",
+      "Demand characteristics"
+    ],
+    "answer": 3,
+    "explain": "Cues that reveal the hypothesis can lead participants to behave as they think they are expected to.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-011",
+    "week": 2,
+    "topic": "Causal inference",
+    "bloom": "remember",
+    "q": "Which research method permits the strongest causal conclusions?",
+    "options": [
+      "A true experiment with manipulation of the IV and random assignment",
+      "A correlational survey",
+      "A single case study",
+      "Naturalistic observation"
+    ],
+    "answer": 0,
+    "explain": "Only manipulation plus random assignment rules out pre-existing group differences as explanations.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-012",
+    "week": 2,
+    "topic": "Quasi-experiments",
+    "bloom": "apply",
+    "q": "A study compares anxiety in people who did or did not live through an earthquake. Because people cannot be randomly assigned to groups, the design is best called what?",
+    "options": [
+      "A true experiment",
+      "A double-blind experiment",
+      "Quasi-experimental",
+      "A within-subjects experiment"
+    ],
+    "answer": 2,
+    "explain": "When the grouping variable is pre-existing rather than manipulated and randomly assigned, the design is quasi-experimental.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-013",
+    "week": 2,
+    "topic": "Order effects",
+    "bloom": "understand",
+    "q": "Practice and fatigue effects are a particular concern for which design?",
+    "options": [
+      "Between-subjects",
+      "Within-subjects (repeated measures)",
+      "Single case study",
+      "Naturalistic observation"
+    ],
+    "answer": 1,
+    "explain": "When the same people complete every condition, earlier conditions can affect later ones; counterbalancing addresses this.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q02-014",
+    "week": 2,
+    "topic": "Belmont Report",
+    "bloom": "remember",
+    "q": "Which three principles are set out in the Belmont Report?",
+    "options": [
+      "Autonomy, efficiency, and profit",
+      "Confidentiality, publication, and replication",
+      "Respect for persons, beneficence, and justice",
+      "Fidelity, competence, and diversity"
+    ],
+    "answer": 2,
+    "explain": "The Belmont Report grounds research ethics in respect for persons (consent), beneficence (risk–benefit), and justice (fair selection).",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-015",
+    "week": 2,
+    "topic": "Belmont: justice",
+    "bloom": "apply",
+    "q": "A risky trial recruits only low-income patients, while the benefits of the treatment will mainly go to wealthy private clinics. Which Belmont principle is most at stake?",
+    "options": [
+      "Beneficence",
+      "Respect for persons",
+      "Justice",
+      "Fidelity"
+    ],
+    "answer": 2,
+    "explain": "Justice concerns the fair distribution of research burdens and benefits across groups.",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-016",
+    "week": 2,
+    "topic": "Informed consent",
+    "bloom": "understand",
+    "q": "Under the APA Ethics Code, informed consent for research should include which of the following?",
+    "options": [
+      "The exact hypothesis in every case, even when it would bias results",
+      "The identities of all other participants",
+      "A statement that withdrawal is not allowed once the study starts",
+      "The purpose, procedures, foreseeable risks, and the right to decline or withdraw"
+    ],
+    "answer": 3,
+    "explain": "Participants must understand what they agree to, including risks and their right to withdraw without penalty.",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-017",
+    "week": 2,
+    "topic": "Deception",
+    "bloom": "evaluate",
+    "q": "When is deception in research acceptable under the APA Ethics Code?",
+    "options": [
+      "Whenever the ethics board is too busy to review the study",
+      "Whenever participants are students receiving course credit",
+      "When it is justified by significant prospective value, non-deceptive alternatives are not feasible, and participants are debriefed as early as feasible",
+      "It is never permitted under any circumstances"
+    ],
+    "answer": 2,
+    "explain": "Deception is a narrow exception; it is never allowed about aspects expected to cause physical pain or severe emotional distress, and requires debriefing.",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-018",
+    "week": 2,
+    "topic": "Debriefing",
+    "bloom": "understand",
+    "q": "What is the main purpose of debriefing?",
+    "options": [
+      "To collect additional data after the study",
+      "To recruit participants for future studies",
+      "To confirm to participants that the hypothesis was right",
+      "To explain the study's true purpose and correct any misconceptions or harm"
+    ],
+    "answer": 3,
+    "explain": "Debriefing restores participants' understanding and wellbeing, especially after deception.",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-019",
+    "week": 2,
+    "topic": "Confidentiality",
+    "bloom": "analyse",
+    "q": "A researcher plans to email participants' identifiable stress scores to their employers \"for workplace wellbeing\". Which concern should an ethics board raise first?",
+    "options": [
+      "Breach of confidentiality and risk of harm to participants",
+      "Insufficient statistical power",
+      "Lack of counterbalancing",
+      "Use of a between-subjects design"
+    ],
+    "answer": 0,
+    "explain": "Sharing identifiable data without consent can harm participants (e.g., job consequences) and violates confidentiality.",
+    "apa": "3.1",
+    "domain": "Methods",
+    "hec": "S3 Ethics in Psychology"
+  },
+  {
+    "id": "Q02-020",
+    "week": 2,
+    "topic": "Replication",
+    "bloom": "evaluate",
+    "q": "The Open Science Collaboration (2015) repeated 100 studies: 97% of the original studies had reported significant results, but only 36% of the replications did. Which conclusion is best supported?",
+    "options": [
+      "All psychology findings are false",
+      "The replications must all have been poorly run",
+      "Statistical significance guarantees that an effect is real",
+      "A single significant result should be treated cautiously; independent replication is essential"
+    ],
+    "answer": 3,
+    "explain": "The project showed that many published effects were weaker or less reliable than reported, motivating open-science reforms, not a blanket rejection of psychology.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods",
+    "factRef": "F-OSC"
+  },
+  {
+    "id": "Q02-021",
+    "week": 2,
+    "topic": "Reliability and validity",
+    "bloom": "analyse",
+    "q": "A new \"happiness\" questionnaire gives very consistent scores from week to week but correlates only weakly with other established happiness measures. What is the best description?",
+    "options": [
+      "Reliable, but its validity is questionable",
+      "Valid, but unreliable",
+      "Both reliable and valid",
+      "Neither reliable nor consistent"
+    ],
+    "answer": 0,
+    "explain": "Consistency shows reliability; weak agreement with related measures undermines convergent validity. A measure can be reliable without being valid.",
+    "apa": "2.2",
+    "domain": "Methods",
+    "hec": "S6 Academic Writing & Research Methods"
+  },
+  {
+    "id": "Q03-001",
+    "week": 3,
+    "topic": "z-scores",
+    "bloom": "apply",
+    "q": "Scores have a mean of 100 and a standard deviation of 15. What is the z-score for a raw score of 130?",
+    "options": [
+      "+1.5",
+      "+2.0",
+      "+3.0",
+      "+0.5"
+    ],
+    "answer": 1,
+    "explain": "z = (x − μ) / σ = (130 − 100) / 15 = 2.0.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-002",
+    "week": 3,
+    "topic": "T-scores",
+    "bloom": "apply",
+    "q": "A z-score of −1.5 converts to what T-score (mean 50, SD 10)?",
+    "options": [
+      "45",
+      "65",
+      "35",
+      "48.5"
+    ],
+    "answer": 2,
+    "explain": "T = 50 + 10z = 50 + 10(−1.5) = 35.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-003",
+    "week": 3,
+    "topic": "Raw score from z",
+    "bloom": "apply",
+    "q": "On a test with mean 50 and SD 10, what raw score corresponds to z = −2?",
+    "options": [
+      "30",
+      "48",
+      "70",
+      "40"
+    ],
+    "answer": 0,
+    "explain": "x = μ + zσ = 50 + (−2)(10) = 30.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-004",
+    "week": 3,
+    "topic": "Mean",
+    "bloom": "apply",
+    "q": "What is the mean of these scores: 2, 4, 4, 4, 5, 5, 7, 9?",
+    "options": [
+      "5",
+      "4",
+      "4.5",
+      "5.5"
+    ],
+    "answer": 0,
+    "explain": "The sum is 40 and there are 8 scores, so the mean is 40 / 8 = 5.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-005",
+    "week": 3,
+    "topic": "Standard deviation",
+    "bloom": "apply",
+    "q": "For the scores 2, 4, 4, 4, 5, 5, 7, 9 (mean = 5), what is the population standard deviation?",
+    "options": [
+      "4",
+      "32",
+      "2",
+      "1.5"
+    ],
+    "answer": 2,
+    "explain": "Squared deviations sum to 32; 32 / 8 = 4 (the variance); √4 = 2.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-006",
+    "week": 3,
+    "topic": "Mean vs median with outliers",
+    "bloom": "analyse",
+    "q": "For the scores 3, 7, 8, 12, 50, which statement is correct?",
+    "options": [
+      "The mean (16) is best because it uses every score",
+      "The mode is 50",
+      "The median (8) represents a typical score better than the mean (16) because 50 is an outlier",
+      "The distribution is negatively skewed"
+    ],
+    "answer": 2,
+    "explain": "The mean is 80 / 5 = 16, pulled upward by the extreme score; the median is resistant to outliers. The long tail is to the right (positive skew).",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-007",
+    "week": 3,
+    "topic": "Skewness",
+    "bloom": "understand",
+    "q": "In a positively skewed distribution, the mean is usually where relative to the median?",
+    "options": [
+      "Less than the median",
+      "Equal to the mode",
+      "Greater than the median",
+      "Equal to zero"
+    ],
+    "answer": 2,
+    "explain": "A few high scores in the right tail pull the mean up more than the median.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-008",
+    "week": 3,
+    "topic": "Normal curve",
+    "bloom": "remember",
+    "q": "In a normal distribution, approximately what percentage of scores falls within ±1 SD of the mean?",
+    "options": [
+      "50%",
+      "95%",
+      "68%",
+      "99.7%"
+    ],
+    "answer": 2,
+    "explain": "The 68–95–99.7 rule describes the proportion within ±1, ±2, and ±3 SDs of the mean in a normal distribution.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-009",
+    "week": 3,
+    "topic": "Percentiles",
+    "bloom": "apply",
+    "q": "A student scores z = +1.0 on a normally distributed exam. Approximately what percentile is this?",
+    "options": [
+      "68th",
+      "50th",
+      "98th",
+      "84th"
+    ],
+    "answer": 3,
+    "explain": "50% of scores lie below the mean and about 34% lie between the mean and +1 SD, so about 84% lie below z = +1.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-010",
+    "week": 3,
+    "topic": "Comparing scores with z",
+    "bloom": "analyse",
+    "q": "Ayesha scores 80 on statistics (mean 70, SD 5) and 85 on biology (mean 80, SD 10). On which test did she do better relative to her classmates?",
+    "options": [
+      "Biology, because her raw score was higher",
+      "Statistics (z = 2.0 versus z = 0.5)",
+      "Equally well, since both are above the mean",
+      "It cannot be determined without the sample sizes"
+    ],
+    "answer": 1,
+    "explain": "Standardising puts scores on a common scale: (80 − 70) / 5 = 2.0 and (85 − 80) / 10 = 0.5.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-011",
+    "week": 3,
+    "topic": "Correlation strength",
+    "bloom": "understand",
+    "q": "Which correlation coefficient indicates the strongest linear relationship?",
+    "options": [
+      "r = +0.30",
+      "r = −0.80",
+      "r = +0.05",
+      "r = −0.10"
+    ],
+    "answer": 1,
+    "explain": "Strength depends on the absolute value of r; the sign only gives the direction.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-012",
+    "week": 3,
+    "topic": "Coefficient of determination",
+    "bloom": "apply",
+    "q": "If r = 0.60 between study hours and exam score, what proportion of variance in exam scores is shared with study hours?",
+    "options": [
+      "0.36 (36%)",
+      "0.60 (60%)",
+      "0.06 (6%)",
+      "0.40 (40%)"
+    ],
+    "answer": 0,
+    "explain": "The coefficient of determination is r² = 0.60² = 0.36.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-013",
+    "week": 3,
+    "topic": "Correlation and causation",
+    "bloom": "evaluate",
+    "q": "A survey finds that students who eat breakfast have higher grades (r = 0.40). A headline says, \"Breakfast boosts grades.\" What is the best critique?",
+    "options": [
+      "r = 0.40 is too small to mean anything",
+      "Correlation does not establish causation; a third variable such as family routine could influence both",
+      "The relationship must really be negative",
+      "Surveys can never measure grades"
+    ],
+    "answer": 1,
+    "explain": "Without manipulation and random assignment, reverse causation or third variables cannot be ruled out.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-014",
+    "week": 3,
+    "topic": "Scales of measurement",
+    "bloom": "understand",
+    "q": "Ranking runners as 1st, 2nd, and 3rd uses which scale of measurement?",
+    "options": [
+      "Nominal",
+      "Interval",
+      "Ratio",
+      "Ordinal"
+    ],
+    "answer": 3,
+    "explain": "Ranks show order but not equal distances between positions.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-015",
+    "week": 3,
+    "topic": "Central tendency",
+    "bloom": "remember",
+    "q": "What is the name for the most frequently occurring score in a distribution?",
+    "options": [
+      "Mode",
+      "Median",
+      "Mean",
+      "Range"
+    ],
+    "answer": 0,
+    "explain": "The mode is the most common value; the median is the middle value and the mean is the arithmetic average.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-016",
+    "week": 3,
+    "topic": "Restriction of range",
+    "bloom": "analyse",
+    "q": "A university finds almost no correlation between admission-test scores and grades among its admitted students, all of whom scored very high on the test. What best explains the weak correlation?",
+    "options": [
+      "The test must measure nothing at all",
+      "Correlation only detects negative relationships",
+      "The sample was too large",
+      "Restriction of range reduces the observed correlation"
+    ],
+    "answer": 3,
+    "explain": "When one variable varies only a little in the sample, the observed r underestimates the relationship in the full population.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-017",
+    "week": 3,
+    "topic": "Scatterplots",
+    "bloom": "understand",
+    "q": "A scatterplot shows points rising from lower-left to upper-right, tightly clustered around a straight line. What does this suggest?",
+    "options": [
+      "A strong positive correlation",
+      "A strong negative correlation",
+      "No correlation",
+      "A curvilinear relationship"
+    ],
+    "answer": 0,
+    "explain": "An upward, tightly clustered linear pattern indicates a strong positive correlation.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-018",
+    "week": 3,
+    "topic": "Outliers and r",
+    "bloom": "understand",
+    "q": "What can adding one extreme outlier to a small data set do to Pearson's r?",
+    "options": [
+      "Nothing; r is unaffected by outliers",
+      "Substantially inflate or reduce it",
+      "Always make r exactly zero",
+      "Change only the median, not r"
+    ],
+    "answer": 1,
+    "explain": "Pearson's r is sensitive to extreme points, which is why scatterplots should always be inspected.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-019",
+    "week": 3,
+    "topic": "Range",
+    "bloom": "apply",
+    "q": "What is the range of these scores: 12, 15, 19, 22, 30?",
+    "options": [
+      "30",
+      "19.6",
+      "12",
+      "18"
+    ],
+    "answer": 3,
+    "explain": "Range = highest − lowest = 30 − 12 = 18. (19.6 is the mean.)",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-020",
+    "week": 3,
+    "topic": "Reporting variability",
+    "bloom": "evaluate",
+    "q": "A researcher reports only each group's mean reaction time. Why should she also report the standard deviations?",
+    "options": [
+      "Standard deviations are required only for nominal data",
+      "The SD always equals the mean, so it adds nothing",
+      "Means are not allowed for reaction times",
+      "Without variability, readers cannot judge how much the groups overlap or how precise the means are"
+    ],
+    "answer": 3,
+    "explain": "Two groups can have the same mean difference but very different overlap; variability is needed to interpret effects.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q03-021",
+    "week": 3,
+    "topic": "Properties of z-scores",
+    "bloom": "understand",
+    "q": "What are the mean and standard deviation of any complete set of z-scores?",
+    "options": [
+      "Mean 50, SD 10",
+      "Mean 100, SD 15",
+      "Mean 1, SD 0",
+      "Mean 0, SD 1"
+    ],
+    "answer": 3,
+    "explain": "Converting to z-scores centres the distribution at 0 and rescales it to an SD of 1.",
+    "apa": "2.4",
+    "domain": "Methods",
+    "hec": "S5 Data Analysis"
+  },
+  {
+    "id": "Q04-001",
+    "week": 4,
+    "topic": "Neuron structure",
+    "bloom": "remember",
+    "q": "Which part of a neuron mainly receives incoming signals from other neurons?",
+    "options": [
+      "Axon terminals",
+      "Myelin sheath",
+      "Nodes of Ranvier",
+      "Dendrites"
+    ],
+    "answer": 3,
+    "explain": "Dendrites carry incoming signals toward the cell body; axon terminals send signals on.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-002",
+    "week": 4,
+    "topic": "Myelin",
+    "bloom": "remember",
+    "q": "What is the fatty insulating layer that speeds conduction along many axons?",
+    "options": [
+      "Myelin sheath",
+      "Synaptic vesicle",
+      "Dendritic spine",
+      "Soma"
+    ],
+    "answer": 0,
+    "explain": "Myelin, formed by glial cells, insulates axons and enables faster conduction.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-003",
+    "week": 4,
+    "topic": "Resting potential",
+    "bloom": "understand",
+    "q": "At rest, how is the inside of a neuron charged?",
+    "options": [
+      "Negatively, relative to the outside",
+      "Positively, relative to the outside",
+      "It is electrically neutral",
+      "It has the same charge as the synaptic cleft"
+    ],
+    "answer": 0,
+    "explain": "Ion pumps and channels keep the interior negative relative to the outside at rest (roughly −70 mV in textbook models).",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-004",
+    "week": 4,
+    "topic": "Depolarisation",
+    "bloom": "understand",
+    "q": "What mainly causes the rising (depolarising) phase of an action potential?",
+    "options": [
+      "K⁺ ions flowing into the cell",
+      "Cl⁻ ions leaving the cell",
+      "Neurotransmitter leaving the dendrites",
+      "Na⁺ ions flowing into the cell"
+    ],
+    "answer": 3,
+    "explain": "Voltage-gated sodium channels open and Na⁺ rushes in, making the inside more positive.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-005",
+    "week": 4,
+    "topic": "Repolarisation",
+    "bloom": "understand",
+    "q": "What mainly causes repolarisation after the peak of an action potential?",
+    "options": [
+      "Na⁺ ions flowing into the cell",
+      "Reuptake of neurotransmitter",
+      "K⁺ ions flowing out of the cell",
+      "Formation of new myelin"
+    ],
+    "answer": 2,
+    "explain": "Voltage-gated potassium channels open and K⁺ leaves, restoring the negative interior.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-006",
+    "week": 4,
+    "topic": "All-or-none principle",
+    "bloom": "apply",
+    "q": "A researcher doubles the strength of an already above-threshold stimulus applied to an axon. What most likely changes?",
+    "options": [
+      "The firing rate increases, but each action potential stays the same size",
+      "Each action potential becomes twice as large",
+      "The action potential travels backward along the axon",
+      "The resting potential becomes positive"
+    ],
+    "answer": 0,
+    "explain": "Action potentials are all-or-none; stimulus intensity is coded by firing rate and the number of neurons recruited.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-007",
+    "week": 4,
+    "topic": "Summation",
+    "bloom": "apply",
+    "q": "In a simplified model, a neuron rests at −70 mV and fires at −55 mV. It receives three simultaneous EPSPs of +6 mV each and one IPSP of −2 mV. What happens?",
+    "options": [
+      "It does not fire: the membrane reaches about −58 mV",
+      "It does not fire, because any IPSP cancels all EPSPs",
+      "It fires: the membrane reaches about −54 mV, past threshold",
+      "It fires only because IPSPs are excitatory"
+    ],
+    "answer": 2,
+    "explain": "Net change = 3 × 6 − 2 = +16 mV, so −70 + 16 = −54 mV, which is above the −55 mV threshold.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-008",
+    "week": 4,
+    "topic": "Summation",
+    "bloom": "apply",
+    "q": "In the same simplified model (rest −70 mV, threshold −55 mV), two EPSPs of +5 mV and two IPSPs of −4 mV arrive together. What is the result?",
+    "options": [
+      "About −52 mV; the neuron fires",
+      "About −78 mV; the neuron fires",
+      "Exactly −55 mV; the neuron fires",
+      "About −68 mV; no action potential"
+    ],
+    "answer": 3,
+    "explain": "Net change = 10 − 8 = +2 mV, giving about −68 mV, well below threshold.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-009",
+    "week": 4,
+    "topic": "Refractory period",
+    "bloom": "understand",
+    "q": "Why can't a neuron fire again immediately after an action potential, however strong the stimulus?",
+    "options": [
+      "Its dendrites have been temporarily removed",
+      "Its myelin has broken down",
+      "It is in the absolute refractory period",
+      "Neurotransmitters can be used only once"
+    ],
+    "answer": 2,
+    "explain": "During the absolute refractory period, sodium channels are inactivated, so no new action potential can start.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-010",
+    "week": 4,
+    "topic": "Saltatory conduction",
+    "bloom": "understand",
+    "q": "In myelinated axons, the action potential appears to \"jump\" between which structures?",
+    "options": [
+      "Synaptic vesicles",
+      "Dendrites",
+      "Glial cell nuclei",
+      "Nodes of Ranvier"
+    ],
+    "answer": 3,
+    "explain": "Saltatory conduction regenerates the signal only at the gaps in the myelin, which speeds transmission.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-011",
+    "week": 4,
+    "topic": "Demyelination",
+    "bloom": "analyse",
+    "q": "Predict the main consequence of a disease that damages myelin in the nervous system.",
+    "options": [
+      "Faster reflexes than normal",
+      "Complete absence of all neurotransmitters",
+      "Slowed or disrupted conduction, causing problems with movement and sensation",
+      "Extra myelin growth throughout the cortex"
+    ],
+    "answer": 2,
+    "explain": "Without intact myelin, signals slow or fail; multiple sclerosis is a demyelinating disease with motor and sensory symptoms.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-012",
+    "week": 4,
+    "topic": "Reuptake",
+    "bloom": "apply",
+    "q": "A drug blocks the reuptake of serotonin. What is the immediate effect at the synapse?",
+    "options": [
+      "Serotonin remains in the synaptic cleft longer",
+      "Less serotonin is released",
+      "Serotonin receptors are destroyed",
+      "The presynaptic neuron stops firing"
+    ],
+    "answer": 0,
+    "explain": "Blocking reuptake prolongs neurotransmitter action in the cleft; SSRIs work this way.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-013",
+    "week": 4,
+    "topic": "Antagonists",
+    "bloom": "apply",
+    "q": "A substance binds to acetylcholine receptors and blocks them without activating them. How is it acting?",
+    "options": [
+      "As an agonist",
+      "As an antagonist",
+      "As a reuptake inhibitor",
+      "As a hormone"
+    ],
+    "answer": 1,
+    "explain": "Antagonists block or reduce a neurotransmitter's effect; curare, which blocks acetylcholine receptors at muscles, is a classic example.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-014",
+    "week": 4,
+    "topic": "Agonists",
+    "bloom": "apply",
+    "q": "A drug mimics the action of endorphins and reduces pain. How is it acting?",
+    "options": [
+      "As an agonist at opioid receptors",
+      "As an antagonist at opioid receptors",
+      "As a myelin blocker",
+      "As a sodium-channel blocker"
+    ],
+    "answer": 0,
+    "explain": "An agonist activates receptors in the same way as the natural neurotransmitter.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-015",
+    "week": 4,
+    "topic": "Neurotransmitters: GABA",
+    "bloom": "remember",
+    "q": "What is the brain's main inhibitory neurotransmitter?",
+    "options": [
+      "Glutamate",
+      "Dopamine",
+      "Acetylcholine",
+      "GABA"
+    ],
+    "answer": 3,
+    "explain": "GABA makes postsynaptic neurons less likely to fire; glutamate is the main excitatory transmitter.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-016",
+    "week": 4,
+    "topic": "Neurotransmitters: glutamate",
+    "bloom": "understand",
+    "q": "Which description of glutamate is accurate?",
+    "options": [
+      "It is the main inhibitory neurotransmitter",
+      "It is the main excitatory neurotransmitter in the brain",
+      "It is a hormone released by the pituitary",
+      "It is a type of glial cell"
+    ],
+    "answer": 1,
+    "explain": "Glutamate makes postsynaptic neurons more likely to fire and is important for learning and memory.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-017",
+    "week": 4,
+    "topic": "Dopamine and Parkinson's disease",
+    "bloom": "analyse",
+    "q": "Parkinson's disease involves the loss of dopamine-producing neurons. Why is L-DOPA, a dopamine precursor, given instead of dopamine itself?",
+    "options": [
+      "L-DOPA is an antagonist that blocks dopamine",
+      "Dopamine does not cross the blood–brain barrier well, but L-DOPA does and is converted to dopamine in the brain",
+      "Dopamine is too inhibitory to be useful",
+      "L-DOPA destroys the remaining neurons"
+    ],
+    "answer": 1,
+    "explain": "The blood–brain barrier limits which substances reach the brain; precursors can bypass this limitation.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-018",
+    "week": 4,
+    "topic": "Sodium-channel blockers",
+    "bloom": "analyse",
+    "q": "A local anaesthetic blocks voltage-gated sodium channels in sensory axons. What happens to pain signals from that area?",
+    "options": [
+      "Signals travel faster than normal",
+      "Only serotonin release increases",
+      "Action potentials cannot be generated or conducted, so signals do not reach the brain",
+      "Pain signals become stronger"
+    ],
+    "answer": 2,
+    "explain": "Without sodium influx there is no depolarisation, so no action potential can carry the pain signal.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-019",
+    "week": 4,
+    "topic": "Glial cells",
+    "bloom": "understand",
+    "q": "Which statement about glial cells is accurate?",
+    "options": [
+      "They are the only cells that fire action potentials",
+      "They support neurons, for example by forming myelin and maintaining the chemical environment",
+      "They exist only in the spinal cord",
+      "They are a type of neurotransmitter"
+    ],
+    "answer": 1,
+    "explain": "Glia provide structural, metabolic, and insulating support; they are not the primary signalling cells.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-020",
+    "week": 4,
+    "topic": "Evaluating a supplement claim",
+    "bloom": "evaluate",
+    "q": "A website claims a supplement \"balances your neurotransmitters\" because it contains serotonin. Which critique is strongest?",
+    "options": [
+      "Swallowed serotonin does not readily cross the blood–brain barrier, and the claim lacks controlled evidence",
+      "Serotonin is not a neurotransmitter",
+      "Natural supplements always work",
+      "The claim must be true because serotonin affects mood"
+    ],
+    "answer": 0,
+    "explain": "Plausibility of mechanism and controlled trials are both needed; the blood–brain barrier undermines the stated mechanism.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q04-021",
+    "week": 4,
+    "topic": "Electrical and chemical signalling",
+    "bloom": "evaluate",
+    "q": "A student says, \"Neurons communicate purely electrically from one to the next.\" What is the best evaluation?",
+    "options": [
+      "Accurate for all synapses",
+      "Mostly inaccurate: signals within a neuron are electrical, but most communication between neurons is chemical across synapses",
+      "Inaccurate, because neurons do not use electrical signals at all",
+      "Accurate, because neurotransmitters are electric currents"
+    ],
+    "answer": 1,
+    "explain": "Action potentials are electrochemical events along the axon; at most synapses neurotransmitters carry the signal across the cleft.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-001",
+    "week": 5,
+    "topic": "Cortical lobes",
+    "bloom": "remember",
+    "q": "Primary visual processing is located mainly in which lobe?",
+    "options": [
+      "Occipital",
+      "Temporal",
+      "Frontal",
+      "Parietal"
+    ],
+    "answer": 0,
+    "explain": "The primary visual cortex lies in the occipital lobe at the back of the brain.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-002",
+    "week": 5,
+    "topic": "Broca's area",
+    "bloom": "apply",
+    "q": "After a stroke, a patient understands speech but speaks haltingly and with great effort. Damage to which area is most likely?",
+    "options": [
+      "Broca's area (left frontal lobe)",
+      "Wernicke's area",
+      "Primary visual cortex",
+      "Cerebellum"
+    ],
+    "answer": 0,
+    "explain": "Broca's area supports speech production; damage typically causes effortful, non-fluent speech with relatively spared comprehension.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-003",
+    "week": 5,
+    "topic": "Wernicke's area",
+    "bloom": "apply",
+    "q": "A patient speaks fluently, but her sentences make little sense and she struggles to understand others. Damage to which area is most likely?",
+    "options": [
+      "Broca's area",
+      "Wernicke's area (left temporal lobe)",
+      "Primary motor cortex",
+      "Medulla"
+    ],
+    "answer": 1,
+    "explain": "Wernicke's area supports language comprehension; damage produces fluent but meaningless speech and poor comprehension.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-004",
+    "week": 5,
+    "topic": "Cerebellum",
+    "bloom": "apply",
+    "q": "An intoxicated person cannot walk a straight line or touch their nose accurately. Disrupted function of which structure best explains this?",
+    "options": [
+      "Amygdala",
+      "Cerebellum",
+      "Hippocampus",
+      "Occipital lobe"
+    ],
+    "answer": 1,
+    "explain": "The cerebellum coordinates balance and smooth, accurate movement.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-005",
+    "week": 5,
+    "topic": "Hippocampus",
+    "bloom": "understand",
+    "q": "The hippocampus is especially important for which function?",
+    "options": [
+      "Forming new explicit (declarative) memories",
+      "Regulating breathing",
+      "Processing colour",
+      "Producing melatonin"
+    ],
+    "answer": 0,
+    "explain": "The hippocampus helps consolidate new facts and events into long-term memory.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-006",
+    "week": 5,
+    "topic": "Amygdala",
+    "bloom": "understand",
+    "q": "The amygdala is most closely linked with which function?",
+    "options": [
+      "Fine motor coordination",
+      "Primary auditory processing",
+      "Regulating body temperature",
+      "Detecting threat and fear learning"
+    ],
+    "answer": 3,
+    "explain": "The amygdala evaluates emotional significance, especially threat, and supports fear conditioning.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-007",
+    "week": 5,
+    "topic": "Hypothalamus",
+    "bloom": "remember",
+    "q": "Which structure regulates hunger, thirst, and body temperature, and controls the pituitary gland?",
+    "options": [
+      "Thalamus",
+      "Cerebellum",
+      "Pons",
+      "Hypothalamus"
+    ],
+    "answer": 3,
+    "explain": "The hypothalamus maintains homeostasis and links the nervous and endocrine systems.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-008",
+    "week": 5,
+    "topic": "Automatic processing",
+    "bloom": "apply",
+    "q": "A driver arrives home with no memory of the familiar route, yet drove safely. What does this illustrate?",
+    "options": [
+      "Automatic processing with little conscious awareness",
+      "A REM sleep episode",
+      "A split-brain effect",
+      "A circadian phase advance"
+    ],
+    "answer": 0,
+    "explain": "Well-practised tasks can run with minimal conscious attention, showing that awareness varies in level.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-009",
+    "week": 5,
+    "topic": "Split-brain",
+    "bloom": "analyse",
+    "q": "A split-brain patient fixates on the centre of a screen while the word KEY is flashed briefly in her left visual field. What is the most likely result?",
+    "options": [
+      "She cannot say the word, but she can pick out a key with her left hand",
+      "She says \"key\" and picks it out with her right hand",
+      "She cannot respond in any way",
+      "She says \"key\" but cannot pick out the object"
+    ],
+    "answer": 0,
+    "explain": "The left visual field projects to the right hemisphere, which controls the left hand; speech is usually controlled by the left hemisphere, which no longer receives the information.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-010",
+    "week": 5,
+    "topic": "Corpus callosum",
+    "bloom": "remember",
+    "q": "Split-brain surgery involves cutting which structure?",
+    "options": [
+      "Cerebellum",
+      "Hypothalamus",
+      "Corpus callosum",
+      "Spinal cord"
+    ],
+    "answer": 2,
+    "explain": "The corpus callosum is the main fibre bundle connecting the two hemispheres.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-011",
+    "week": 5,
+    "topic": "Lateralisation myths",
+    "bloom": "evaluate",
+    "q": "An online quiz labels you \"right-brained, so creative\". What is the best evaluation?",
+    "options": [
+      "Accurate: creativity is located only in the right hemisphere",
+      "Accurate: personality is set by a dominant hemisphere",
+      "Overstated: the hemispheres show some specialisation, but both work together in most tasks",
+      "Meaningless, because the hemispheres have no differences at all"
+    ],
+    "answer": 2,
+    "explain": "Lateralisation is real (e.g., language is usually left-lateralised), but \"brain-type\" personality labels are not supported.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-012",
+    "week": 5,
+    "topic": "Brain myths",
+    "bloom": "evaluate",
+    "q": "Claim: \"We use only 10% of our brains.\" What is the best evidence-based response?",
+    "options": [
+      "True: 90% of neurons are never active",
+      "True: the unused 90% is made of glial cells",
+      "False: imaging shows activity across virtually all regions, and damage to almost any area has effects",
+      "Unknown, because brain activity cannot be measured"
+    ],
+    "answer": 2,
+    "explain": "Both functional imaging and lesion evidence contradict the 10% myth.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-013",
+    "week": 5,
+    "topic": "Sleep stage N2",
+    "bloom": "understand",
+    "q": "Sleep spindles and K-complexes are characteristic of which stage?",
+    "options": [
+      "N1",
+      "N3",
+      "REM",
+      "N2 (Stage 2)"
+    ],
+    "answer": 3,
+    "explain": "N2 is identified by sleep spindles and K-complexes on the EEG.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-014",
+    "week": 5,
+    "topic": "Sleep stage N3",
+    "bloom": "understand",
+    "q": "Deep sleep dominated by slow, high-amplitude delta waves is which stage?",
+    "options": [
+      "N1",
+      "N3 (slow-wave sleep)",
+      "REM",
+      "Relaxed wakefulness"
+    ],
+    "answer": 1,
+    "explain": "N3 is slow-wave sleep; it is hardest to wake from.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-015",
+    "week": 5,
+    "topic": "REM sleep",
+    "bloom": "understand",
+    "q": "Why is REM sleep sometimes called \"paradoxical sleep\"?",
+    "options": [
+      "The body moves vigorously while the brain is silent",
+      "It occurs only during daytime naps",
+      "It contains the largest delta waves of the night",
+      "The brain is highly active, with an EEG resembling wakefulness, while most skeletal muscles are paralysed"
+    ],
+    "answer": 3,
+    "explain": "REM combines wake-like brain activity and vivid dreaming with muscle atonia.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-016",
+    "week": 5,
+    "topic": "Identifying sleep stages",
+    "bloom": "apply",
+    "q": "A sleep-lab recording shows low-amplitude, mixed-frequency EEG, rapid eye movements, and almost no chin-muscle tone. Which stage is this?",
+    "options": [
+      "N3",
+      "REM",
+      "N2",
+      "Awake with eyes closed"
+    ],
+    "answer": 1,
+    "explain": "Rapid eye movements plus muscle atonia and a wake-like EEG define REM sleep.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-017",
+    "week": 5,
+    "topic": "REM rebound",
+    "bloom": "analyse",
+    "q": "After several nights of being woken whenever REM begins, a volunteer sleeps undisturbed. What pattern is most likely?",
+    "options": [
+      "No REM sleep at all",
+      "Only N1 sleep all night",
+      "No change in sleep architecture",
+      "REM rebound: more REM sleep than usual"
+    ],
+    "answer": 3,
+    "explain": "REM deprivation is typically followed by a compensatory increase in REM.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-018",
+    "week": 5,
+    "topic": "Circadian clock",
+    "bloom": "remember",
+    "q": "What is the brain's \"master clock\" for circadian rhythms?",
+    "options": [
+      "The cerebellum",
+      "Broca's area",
+      "The suprachiasmatic nucleus (SCN) of the hypothalamus",
+      "The amygdala"
+    ],
+    "answer": 2,
+    "explain": "The SCN receives light information from the retina and synchronises bodily rhythms to the day–night cycle.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-019",
+    "week": 5,
+    "topic": "Light and melatonin",
+    "bloom": "apply",
+    "q": "A student scrolls a bright phone late at night and has trouble falling asleep. What is a likely mechanism?",
+    "options": [
+      "Light increases melatonin so much that sleep becomes impossible",
+      "Light permanently damages the SCN",
+      "Evening light suppresses melatonin release, delaying the body's sleep signal",
+      "Phone use stimulates the cerebellum"
+    ],
+    "answer": 2,
+    "explain": "Light signals reach the SCN, which reduces melatonin release from the pineal gland.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-020",
+    "week": 5,
+    "topic": "Sleep architecture",
+    "bloom": "understand",
+    "q": "Across a typical night, how does the sleep pattern change?",
+    "options": [
+      "REM dominates early in the night and N3 later",
+      "N3 is concentrated early in the night, and REM periods lengthen toward morning",
+      "Sleep stays in N1 all night",
+      "Every cycle is identical in composition"
+    ],
+    "answer": 1,
+    "explain": "Sleep cycles repeat through the night, with slow-wave sleep front-loaded and REM increasing in later cycles.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q05-021",
+    "week": 5,
+    "topic": "EEG rhythms",
+    "bloom": "apply",
+    "q": "A participant lies awake, relaxed, with eyes closed. Which EEG rhythm is most likely to dominate?",
+    "options": [
+      "Delta waves",
+      "Alpha waves",
+      "Sleep spindles",
+      "K-complexes"
+    ],
+    "answer": 1,
+    "explain": "Alpha activity is typical of relaxed wakefulness with eyes closed; delta, spindles, and K-complexes are sleep features.",
+    "apa": "1.1",
+    "domain": "Bio",
+    "hec": "S2 Behavioral Neuroscience"
+  },
+  {
+    "id": "Q06-001",
+    "week": 6,
+    "topic": "Sensation vs perception",
+    "bloom": "understand",
+    "q": "Sensation is to ___ as perception is to ___.",
+    "options": [
+      "interpreting information; detecting energy",
+      "the brain; the eye",
+      "memory; attention",
+      "detecting physical energy; organising and interpreting it"
+    ],
+    "answer": 3,
+    "explain": "Sensation registers stimulus energy; perception organises and interprets it into meaningful experience.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-002",
+    "week": 6,
+    "topic": "Transduction",
+    "bloom": "remember",
+    "q": "What is the conversion of physical energy, such as light, into neural signals called?",
+    "options": [
+      "Adaptation",
+      "Accommodation",
+      "Transduction",
+      "Perception"
+    ],
+    "answer": 2,
+    "explain": "Sensory receptors transduce physical energy into neural activity.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-003",
+    "week": 6,
+    "topic": "Absolute threshold",
+    "bloom": "understand",
+    "q": "In a classic yes/no detection procedure, the absolute threshold is conventionally defined as the intensity detected how often?",
+    "options": [
+      "50% of the time",
+      "100% of the time",
+      "The first time it is presented",
+      "Never; it is estimated from the JND"
+    ],
+    "answer": 0,
+    "explain": "Detection rises gradually with intensity, so threshold is defined statistically, conventionally at 50% detection.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-004",
+    "week": 6,
+    "topic": "Weber's law",
+    "bloom": "apply",
+    "q": "The Weber fraction for lifted weights in a task is 0.02. With a 50 g standard, what is the predicted JND?",
+    "options": [
+      "2 g",
+      "0.02 g",
+      "5 g",
+      "1 g"
+    ],
+    "answer": 3,
+    "explain": "Weber's law: ΔI = k × I = 0.02 × 50 g = 1 g.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-005",
+    "week": 6,
+    "topic": "Weber's law",
+    "bloom": "apply",
+    "q": "If the JND for a 100 g weight is 4 g, what JND does Weber's law predict for a 300 g weight?",
+    "options": [
+      "4 g",
+      "12 g",
+      "8 g",
+      "30 g"
+    ],
+    "answer": 1,
+    "explain": "k = 4 / 100 = 0.04, so ΔI = 0.04 × 300 g = 12 g; the JND grows in proportion to the standard.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-006",
+    "week": 6,
+    "topic": "Fechner's law",
+    "bloom": "understand",
+    "q": "According to Fechner's law, perceived magnitude grows in what way with stimulus intensity?",
+    "options": [
+      "Linearly",
+      "Exponentially",
+      "Not at all",
+      "With the logarithm of stimulus intensity"
+    ],
+    "answer": 3,
+    "explain": "Fechner derived S = k log I from Weber's law, implying diminishing increases in sensation.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-007",
+    "week": 6,
+    "topic": "Stevens' power law",
+    "bloom": "apply",
+    "q": "Using Stevens' power law ψ = kφⁿ with a hypothetical exponent n = 0.5, quadrupling stimulus intensity changes perceived magnitude by what factor?",
+    "options": [
+      "It quadruples",
+      "It increases 16-fold",
+      "It doubles",
+      "It halves"
+    ],
+    "answer": 2,
+    "explain": "4^0.5 = 2. (The exponent here is hypothetical; real exponents vary by continuum.)",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-008",
+    "week": 6,
+    "topic": "Stevens' power law",
+    "bloom": "apply",
+    "q": "For a hypothetical continuum with a Stevens exponent of n = 2, doubling stimulus intensity changes perceived magnitude by what factor?",
+    "options": [
+      "2",
+      "About 1.4",
+      "4",
+      "1 (no change)"
+    ],
+    "answer": 2,
+    "explain": "2² = 4. Exponents above 1 indicate response expansion.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-009",
+    "week": 6,
+    "topic": "Computing d′",
+    "bloom": "apply",
+    "q": "An observer has a hit rate of 0.84 and a false-alarm rate of 0.16, where z(0.84) ≈ +1.0 and z(0.16) ≈ −1.0. What is d′?",
+    "options": [
+      "About 1.0",
+      "About 0.68",
+      "About 2.0",
+      "About 0"
+    ],
+    "answer": 2,
+    "explain": "d′ = z(H) − z(FA) = 1.0 − (−1.0) = 2.0.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-010",
+    "week": 6,
+    "topic": "Computing d′",
+    "bloom": "apply",
+    "q": "An observer has a hit rate of 0.69 and a false-alarm rate of 0.31, where z(0.69) ≈ +0.5 and z(0.31) ≈ −0.5. What is d′?",
+    "options": [
+      "About 1.0",
+      "About 0.38",
+      "About 2.0",
+      "About 0.5"
+    ],
+    "answer": 0,
+    "explain": "d′ = z(H) − z(FA) = 0.5 − (−0.5) = 1.0.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-011",
+    "week": 6,
+    "topic": "Response criterion",
+    "bloom": "analyse",
+    "q": "Two radiologists have the same d′, but A has both more hits and more false alarms than B. What differs between them?",
+    "options": [
+      "Their sensitivity: A is more sensitive",
+      "Their response criterion: A is more liberal",
+      "Their sensitivity: B is more sensitive",
+      "Nothing; this pattern is impossible"
+    ],
+    "answer": 1,
+    "explain": "Equal d′ means equal sensitivity; trading more hits for more false alarms reflects a lower (more liberal) criterion.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-012",
+    "week": 6,
+    "topic": "Payoffs and criterion",
+    "bloom": "analyse",
+    "q": "In a yes/no task, a miss now costs 10 points while a false alarm costs only 1 point. What change is expected?",
+    "options": [
+      "d′ increases sharply",
+      "The criterion becomes more conservative",
+      "Both hit and false-alarm rates fall",
+      "The criterion becomes more liberal: more hits and more false alarms"
+    ],
+    "answer": 3,
+    "explain": "Payoffs shift the decision criterion, not sensitivity; making misses costly encourages saying \"yes\".",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-013",
+    "week": 6,
+    "topic": "ROC curves",
+    "bloom": "understand",
+    "q": "What does an ROC curve lying along the diagonal indicate?",
+    "options": [
+      "Chance performance (d′ = 0)",
+      "Perfect sensitivity",
+      "A very conservative criterion",
+      "A very liberal criterion"
+    ],
+    "answer": 0,
+    "explain": "Along the diagonal, hits equal false alarms at every criterion, so the observer cannot discriminate signal from noise.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-014",
+    "week": 6,
+    "topic": "SDT outcomes",
+    "bloom": "remember",
+    "q": "In signal detection theory, what is a \"miss\"?",
+    "options": [
+      "Responding \"yes\" when no signal was present",
+      "Responding \"yes\" when the signal was present",
+      "Responding \"no\" when the signal was present",
+      "Responding \"no\" when no signal was present"
+    ],
+    "answer": 2,
+    "explain": "The four outcomes are hit, miss, false alarm, and correct rejection.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-015",
+    "week": 6,
+    "topic": "Sensory adaptation",
+    "bloom": "apply",
+    "q": "After a few minutes in a room, you no longer notice a ticking clock that is still ticking. What is this?",
+    "options": [
+      "Weber's law",
+      "Transduction failure",
+      "A false alarm",
+      "Sensory adaptation"
+    ],
+    "answer": 3,
+    "explain": "Sensory systems reduce their response to constant, unchanging stimulation.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-016",
+    "week": 6,
+    "topic": "Müller-Lyer illusion",
+    "bloom": "understand",
+    "q": "In the Müller-Lyer illusion, how does the line with outward-pointing fins usually look compared with the line with inward-pointing arrowheads?",
+    "options": [
+      "Shorter",
+      "Longer, even though both are the same length",
+      "Exactly the same length",
+      "Curved"
+    ],
+    "answer": 1,
+    "explain": "The fins change the perceived length of physically equal lines; one explanation involves misapplied depth cues.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-017",
+    "week": 6,
+    "topic": "Ames room",
+    "bloom": "understand",
+    "q": "Why do people appear to change size as they walk across an Ames room?",
+    "options": [
+      "The people actually change height",
+      "Hidden mirrors shrink the people",
+      "The room's distorted shape is disguised, so the visual system assumes a normal rectangular room and misjudges distance",
+      "Colour cues distort perceived size"
+    ],
+    "answer": 2,
+    "explain": "Assuming a normal room, viewers treat the people as equally distant, so size differences are attributed to the people.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-018",
+    "week": 6,
+    "topic": "Depth cues",
+    "bloom": "apply",
+    "q": "Railway tracks appear to converge in the distance. Which depth cue is this?",
+    "options": [
+      "Linear perspective",
+      "Binocular disparity",
+      "Convergence",
+      "Motion parallax"
+    ],
+    "answer": 0,
+    "explain": "Parallel lines that seem to meet with distance are the pictorial cue of linear perspective.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-019",
+    "week": 6,
+    "topic": "Monocular depth cues",
+    "bloom": "analyse",
+    "q": "A person who has lost sight in one eye still judges depth fairly well when moving their head. Which cue is still available?",
+    "options": [
+      "Binocular disparity",
+      "Motion parallax",
+      "Convergence of the two eyes",
+      "Stereopsis"
+    ],
+    "answer": 1,
+    "explain": "Motion parallax needs only one eye; disparity, convergence, and stereopsis depend on two eyes.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-020",
+    "week": 6,
+    "topic": "Choosing a psychophysical method",
+    "bloom": "evaluate",
+    "q": "Why might a researcher prefer an adaptive staircase over the method of constant stimuli for estimating a threshold?",
+    "options": [
+      "It concentrates trials near the threshold, so it usually needs fewer trials",
+      "It removes all response bias automatically",
+      "It requires no responses from participants",
+      "It measures d′ directly without any false alarms"
+    ],
+    "answer": 0,
+    "explain": "Staircases adjust intensity based on responses, spending trials where they are most informative; bias still needs separate attention.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q06-021",
+    "week": 6,
+    "topic": "Hits alone mislead",
+    "bloom": "evaluate",
+    "q": "A participant in a yes/no detection test says \"yes\" on every trial and achieves a 100% hit rate. Evaluate the claim that she has excellent sensitivity.",
+    "options": [
+      "Supported: a 100% hit rate means perfect sensitivity",
+      "Unsupported: her false-alarm rate is also 100%, so she shows no ability to discriminate",
+      "Supported, because she never missed a signal",
+      "Unsupported, because hit rates above 90% are invalid"
+    ],
+    "answer": 1,
+    "explain": "Sensitivity depends on hits relative to false alarms; responding \"yes\" to everything reflects an extreme criterion, not discrimination.",
+    "apa": "2.4",
+    "domain": "Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q07-001",
+    "week": 7,
+    "topic": "Stroop effect",
+    "bloom": "understand",
+    "q": "In the Stroop task, which trial type is typically slowest?",
+    "options": [
+      "Naming the ink colour of an incongruent word (RED printed in blue)",
+      "Naming the ink colour of a congruent word (RED printed in red)",
+      "Reading colour words printed in black",
+      "Naming the colour of a row of XXXX"
+    ],
+    "answer": 0,
+    "explain": "Incongruent trials create conflict between the automatic reading response and the required colour-naming response.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-002",
+    "week": 7,
+    "topic": "Stroop interference",
+    "bloom": "apply",
+    "q": "In hypothetical class data, mean RT is 640 ms on congruent trials and 760 ms on incongruent trials. What is the Stroop interference effect?",
+    "options": [
+      "1400 ms",
+      "760 ms",
+      "0.84 ms",
+      "120 ms"
+    ],
+    "answer": 3,
+    "explain": "Interference = incongruent − congruent = 760 − 640 = 120 ms.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-003",
+    "week": 7,
+    "topic": "Explaining Stroop",
+    "bloom": "understand",
+    "q": "How is the Stroop effect usually explained?",
+    "options": [
+      "Reading is highly automatic and competes with the colour-naming response",
+      "Participants cannot perceive colours on incongruent trials",
+      "Words are forgotten before the colour is named",
+      "Participants become fatigued only on incongruent trials"
+    ],
+    "answer": 0,
+    "explain": "Skilled readers process word meaning automatically, which interferes when it conflicts with the ink colour.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-004",
+    "week": 7,
+    "topic": "Feature search",
+    "bloom": "understand",
+    "q": "Finding a red T among green Ts takes about the same time however many green Ts are shown. What type of search is this?",
+    "options": [
+      "Conjunction search",
+      "Inattentional blindness",
+      "Feature (pop-out) search",
+      "Attentional blink"
+    ],
+    "answer": 2,
+    "explain": "A unique single feature can be detected in parallel, so set size has little effect on RT.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-005",
+    "week": 7,
+    "topic": "Feature integration theory",
+    "bloom": "analyse",
+    "q": "Finding a red T among green Ts and red Ls takes longer as the number of items increases. How does feature integration theory explain this?",
+    "options": [
+      "Colour is processed only after shape is identified",
+      "Red cannot be detected among other colours",
+      "Larger displays trigger an attentional blink",
+      "The target is defined by a conjunction, and binding colour and shape requires focused attention item by item"
+    ],
+    "answer": 3,
+    "explain": "Treisman's theory proposes that features are registered in parallel but combined only with focused attention.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-006",
+    "week": 7,
+    "topic": "Search slopes",
+    "bloom": "apply",
+    "q": "Mean RT is 520 ms with 4 items and 760 ms with 12 items. What is the search slope?",
+    "options": [
+      "240 ms per item",
+      "63 ms per item",
+      "20 ms per item",
+      "30 ms per item"
+    ],
+    "answer": 3,
+    "explain": "Slope = (760 − 520) / (12 − 4) = 240 / 8 = 30 ms per item.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-007",
+    "week": 7,
+    "topic": "Target-absent slopes",
+    "bloom": "analyse",
+    "q": "In serial self-terminating search, target-absent slopes are often about twice as steep as target-present slopes. Why?",
+    "options": [
+      "Absent trials use harder-to-see items",
+      "On absent trials every item must be checked; on present trials about half are checked on average before the target is found",
+      "Participants are more tired on absent trials",
+      "The target is invisible on absent trials"
+    ],
+    "answer": 1,
+    "explain": "If search stops when the target is found, present trials need on average about half the inspections that absent trials need.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-008",
+    "week": 7,
+    "topic": "Posner cueing",
+    "bloom": "understand",
+    "q": "In the Posner cueing paradigm, how do responses to targets at a validly cued location typically compare with responses at an invalidly cued location?",
+    "options": [
+      "They are faster",
+      "They are slower",
+      "They are identical",
+      "They cannot be compared"
+    ],
+    "answer": 0,
+    "explain": "Attention shifted to the cued location speeds processing there and slows it elsewhere.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-009",
+    "week": 7,
+    "topic": "Cue validity effect",
+    "bloom": "apply",
+    "q": "Mean RT is 310 ms on valid-cue trials and 365 ms on invalid-cue trials. What is the cue validity effect?",
+    "options": [
+      "675 ms",
+      "310 ms",
+      "55 ms",
+      "365 ms"
+    ],
+    "answer": 2,
+    "explain": "Validity effect = invalid − valid = 365 − 310 = 55 ms.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-010",
+    "week": 7,
+    "topic": "Endogenous vs exogenous attention",
+    "bloom": "understand",
+    "q": "A central arrow that predicts the target's location engages ___ attention, whereas a sudden flash at that location engages ___ attention.",
+    "options": [
+      "exogenous (reflexive); endogenous (voluntary)",
+      "divided; sustained",
+      "inhibitory; feature-based",
+      "endogenous (voluntary); exogenous (reflexive)"
+    ],
+    "answer": 3,
+    "explain": "Symbolic cues require voluntary interpretation; abrupt peripheral onsets capture attention automatically.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-011",
+    "week": 7,
+    "topic": "Attentional blink",
+    "bloom": "understand",
+    "q": "In rapid serial visual presentation (RSVP), what does the \"attentional blink\" refer to?",
+    "options": [
+      "An increase in physical eye blinks during the stream",
+      "Failure to notice an unexpected object in a scene",
+      "Difficulty reporting a second target that appears shortly after a first target",
+      "Slowing caused by incongruent colour words"
+    ],
+    "answer": 2,
+    "explain": "Processing the first target temporarily impairs report of a second target presented soon after.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-012",
+    "week": 7,
+    "topic": "Interpreting the attentional blink",
+    "bloom": "analyse",
+    "q": "In an RSVP task, accuracy for the second target (T2) is low when T2 follows T1 closely and recovers when the gap is longer. What does this pattern indicate?",
+    "options": [
+      "Permanent damage to the visual system",
+      "A temporary limit in processing or consolidating the first target",
+      "Stroop-like conflict between word and colour",
+      "Change blindness caused by blank screens"
+    ],
+    "answer": 1,
+    "explain": "Recovery with longer lags points to a transient central bottleneck, not a sensory deficit.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-013",
+    "week": 7,
+    "topic": "Dichotic listening",
+    "bloom": "remember",
+    "q": "In a dichotic listening task, what do participants usually do?",
+    "options": [
+      "Listen to the same message in both ears",
+      "Name the ink colour of printed words",
+      "Shadow (repeat aloud) a message in one ear while a different message plays in the other ear",
+      "Search for a target among visual distractors"
+    ],
+    "answer": 2,
+    "explain": "Shadowing one channel lets researchers test what is processed from the unattended channel.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-014",
+    "week": 7,
+    "topic": "Attenuation model",
+    "bloom": "analyse",
+    "q": "While shadowing the right-ear message, a participant notices their own name in the unattended left ear. Which model handles this better than Broadbent's early filter?",
+    "options": [
+      "Broadbent's all-or-none filter model",
+      "Feature integration theory",
+      "Treisman's attenuation model",
+      "Weber's law"
+    ],
+    "answer": 2,
+    "explain": "Treisman proposed that unattended input is weakened rather than blocked, so highly relevant words such as one's name can still break through.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-015",
+    "week": 7,
+    "topic": "Broadbent's filter",
+    "bloom": "understand",
+    "q": "What did Broadbent's filter model propose about unattended information?",
+    "options": [
+      "It is fully processed for meaning and then discarded",
+      "It is blocked early, on the basis of physical characteristics, before meaning is analysed",
+      "It is stored permanently in long-term memory",
+      "It is amplified relative to attended information"
+    ],
+    "answer": 1,
+    "explain": "Broadbent's early-selection filter passes only the attended channel on for semantic analysis.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-016",
+    "week": 7,
+    "topic": "Inattentional blindness",
+    "bloom": "remember",
+    "q": "In Simons and Chabris's (1999) study, in which observers counted basketball passes, what share of observers overall failed to notice the unexpected event?",
+    "options": [
+      "4%",
+      "46%",
+      "96%",
+      "10%"
+    ],
+    "answer": 1,
+    "explain": "Across 192 observers, 46% failed to notice the unexpected event while engaged in the counting task.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology",
+    "factRef": "F-IB"
+  },
+  {
+    "id": "Q07-017",
+    "week": 7,
+    "topic": "Attentional load",
+    "bloom": "analyse",
+    "q": "In the same study, more observers noticed the unexpected event when the counting task was easy (64%) than when it was hard (45%). What does this suggest?",
+    "options": [
+      "Greater attentional load reduces awareness of unexpected objects",
+      "Easy tasks cause blindness to unexpected objects",
+      "Noticing is unrelated to task demands",
+      "Harder tasks improve visual acuity"
+    ],
+    "answer": 0,
+    "explain": "More demanding primary tasks leave fewer resources for unexpected events.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology",
+    "factRef": "F-IB"
+  },
+  {
+    "id": "Q07-018",
+    "week": 7,
+    "topic": "Change blindness",
+    "bloom": "apply",
+    "q": "In a flicker paradigm, a large building disappears from a photo between alternations separated by a brief blank, yet viewers take many cycles to notice. What does this demonstrate?",
+    "options": [
+      "Change blindness",
+      "Attentional blink",
+      "Stroop interference",
+      "Sensory adaptation"
+    ],
+    "answer": 0,
+    "explain": "The blank masks the motion signal, so detecting the change requires attending to the changed region.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-019",
+    "week": 7,
+    "topic": "Divided attention and driving",
+    "bloom": "evaluate",
+    "q": "A driver says, \"Hands-free phone calls are perfectly safe because my eyes stay on the road.\" What is the best evaluation based on attention research?",
+    "options": [
+      "Strong: keeping the eyes on the road ensures awareness",
+      "Strong: hands-free devices remove all attentional demands",
+      "Weak only because phones are visual devices",
+      "Weak: looking at something does not guarantee attending to it, and divided attention can cause failures to notice"
+    ],
+    "answer": 3,
+    "explain": "Inattentional blindness shows that perception depends on attention, not just on where the eyes point.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-020",
+    "week": 7,
+    "topic": "Evaluating brain-training claims",
+    "bloom": "evaluate",
+    "q": "A \"brain-training\" game improves players' scores on its own visual-search levels. The company claims it improves everyday attention. What is the best evaluation?",
+    "options": [
+      "The claim is proven because the scores improved",
+      "Gains on the trained task alone do not show transfer; tests on untrained tasks with an active control group are needed",
+      "The claim is proven if players enjoyed the game",
+      "The claim is false because attention can never change"
+    ],
+    "answer": 1,
+    "explain": "Practice effects on a specific task differ from general improvement; transfer must be tested directly.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q07-021",
+    "week": 7,
+    "topic": "Flanker task",
+    "bloom": "apply",
+    "q": "In the Eriksen flanker task, participants respond to the direction of the central arrow. Which display usually produces the slowest correct responses?",
+    "options": [
+      "← ← ← ← ←",
+      "— — ← — —",
+      "←",
+      "→ → ← → →"
+    ],
+    "answer": 3,
+    "explain": "Incongruent flankers activate the opposite response, creating conflict that slows responding.",
+    "apa": "2.1",
+    "domain": "Cog",
+    "hec": "S3 Cognitive Psychology"
+  },
+  {
+    "id": "Q08-001",
+    "week": 8,
+    "topic": "Classical conditioning components",
+    "bloom": "understand",
+    "q": "A dog salivates to food. After repeated tone–food pairings, the tone alone makes the dog salivate. What is salivation to the tone?",
+    "options": [
+      "The unconditioned response",
+      "The conditioned response",
+      "The unconditioned stimulus",
+      "A neutral stimulus"
+    ],
+    "answer": 1,
+    "explain": "A learned response to a formerly neutral stimulus is the conditioned response (CR).",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-002",
+    "week": 8,
+    "topic": "Classical conditioning components",
+    "bloom": "apply",
+    "q": "A child receives a painful injection in a clinic with a distinctive smell. Later, the smell alone triggers fear. In this example, what is the smell?",
+    "options": [
+      "The unconditioned stimulus",
+      "The unconditioned response",
+      "The conditioned stimulus",
+      "A reinforcer"
+    ],
+    "answer": 2,
+    "explain": "The smell was originally neutral and became a conditioned stimulus (CS) through pairing with pain (the US).",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-003",
+    "week": 8,
+    "topic": "Extinction",
+    "bloom": "understand",
+    "q": "In classical conditioning, when does extinction occur?",
+    "options": [
+      "When the US is presented without the CS",
+      "When CS–US pairings become more frequent",
+      "When a new CS is introduced",
+      "When the CS is repeatedly presented without the US"
+    ],
+    "answer": 3,
+    "explain": "Without the US, the CS stops predicting it and the CR weakens.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-004",
+    "week": 8,
+    "topic": "Spontaneous recovery",
+    "bloom": "remember",
+    "q": "After extinction and a rest period, a weakened CR reappears when the CS is presented. What is this called?",
+    "options": [
+      "Generalisation",
+      "Spontaneous recovery",
+      "Discrimination",
+      "Blocking"
+    ],
+    "answer": 1,
+    "explain": "Spontaneous recovery shows that extinction suppresses rather than erases the original learning.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-005",
+    "week": 8,
+    "topic": "Generalisation",
+    "bloom": "apply",
+    "q": "A dog conditioned to a 1,000 Hz tone also salivates, though less, to a 900 Hz tone. What is this?",
+    "options": [
+      "Stimulus discrimination",
+      "Extinction",
+      "Second-order conditioning",
+      "Stimulus generalisation"
+    ],
+    "answer": 3,
+    "explain": "Stimuli similar to the CS also elicit the CR, typically more weakly as similarity decreases.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-006",
+    "week": 8,
+    "topic": "Negative reinforcement",
+    "bloom": "apply",
+    "q": "A driver buckles her seatbelt to stop the car's annoying beeping. What maintains the buckling behaviour?",
+    "options": [
+      "Positive reinforcement",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Negative punishment"
+    ],
+    "answer": 1,
+    "explain": "Removing an aversive stimulus increases the behaviour, which defines negative reinforcement.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-007",
+    "week": 8,
+    "topic": "Negative punishment",
+    "bloom": "apply",
+    "q": "A teenager's phone is taken away after he breaks curfew, and he breaks curfew less often afterwards. What is this?",
+    "options": [
+      "Negative punishment",
+      "Negative reinforcement",
+      "Positive punishment",
+      "Positive reinforcement"
+    ],
+    "answer": 0,
+    "explain": "Removing a desirable stimulus to decrease a behaviour is negative punishment.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-008",
+    "week": 8,
+    "topic": "Schedules: fixed ratio",
+    "bloom": "apply",
+    "q": "A garment worker is paid for every 10 shirts completed. Which reinforcement schedule is this?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": 0,
+    "explain": "Reinforcement after a set number of responses is a fixed-ratio schedule.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-009",
+    "week": 8,
+    "topic": "Schedules: variable ratio",
+    "bloom": "apply",
+    "q": "A slot machine pays out after an unpredictable number of plays. Which schedule is this?",
+    "options": [
+      "Fixed ratio",
+      "Variable ratio",
+      "Fixed interval",
+      "Variable interval"
+    ],
+    "answer": 1,
+    "explain": "Reinforcement after an unpredictable number of responses is a variable-ratio schedule.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-010",
+    "week": 8,
+    "topic": "Schedules: variable interval",
+    "bloom": "apply",
+    "q": "A student checks a messaging app for a reply that can arrive at unpredictable times; checking pays off only once some unpredictable amount of time has passed. Which schedule is this?",
+    "options": [
+      "Variable ratio",
+      "Fixed ratio",
+      "Variable interval",
+      "Fixed interval"
+    ],
+    "answer": 2,
+    "explain": "Reinforcement for the first response after an unpredictable time period is a variable-interval schedule, which produces steady responding.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-011",
+    "week": 8,
+    "topic": "Cumulative records",
+    "bloom": "analyse",
+    "q": "A cumulative record shows a pause after each reinforcer, then accelerating responding just before the next one is due (a \"scallop\"). Which schedule is most likely?",
+    "options": [
+      "Variable ratio",
+      "Variable interval",
+      "Continuous reinforcement",
+      "Fixed interval"
+    ],
+    "answer": 3,
+    "explain": "Because reinforcement is available only after a fixed time, responding drops after reinforcement and rises as the interval ends.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-012",
+    "week": 8,
+    "topic": "Resistance to extinction",
+    "bloom": "analyse",
+    "q": "Which training history should make a behaviour most resistant to extinction?",
+    "options": [
+      "Continuous reinforcement",
+      "Reinforcement of only the very first response",
+      "Variable-ratio (partial) reinforcement",
+      "No reinforcement at all"
+    ],
+    "answer": 2,
+    "explain": "The partial-reinforcement extinction effect: unpredictable reinforcement makes the shift to extinction harder to detect.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-013",
+    "week": 8,
+    "topic": "Shaping",
+    "bloom": "apply",
+    "q": "To teach a simulated rat to press a lever, a trainer reinforces facing the lever, then approaching it, then touching it, and finally pressing it. What is this?",
+    "options": [
+      "Shaping by successive approximations",
+      "Classical conditioning",
+      "Observational learning",
+      "Spontaneous recovery"
+    ],
+    "answer": 0,
+    "explain": "Shaping reinforces closer and closer approximations to the target behaviour.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-014",
+    "week": 8,
+    "topic": "Rescorla–Wagner calculation",
+    "bloom": "apply",
+    "q": "In the Rescorla–Wagner model, ΔV = αβ(λ − V). With αβ = 0.3, λ = 1, and V starting at 0, what is V after the first reinforced trial?",
+    "options": [
+      "0.70",
+      "1.00",
+      "0.30",
+      "0.09"
+    ],
+    "answer": 2,
+    "explain": "ΔV = 0.3 × (1 − 0) = 0.30, so V = 0 + 0.30 = 0.30.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-015",
+    "week": 8,
+    "topic": "Rescorla–Wagner calculation",
+    "bloom": "apply",
+    "q": "With αβ = 0.3 and λ = 1, the current associative strength is V = 0.30. What is V after the next reinforced trial?",
+    "options": [
+      "0.60",
+      "0.21",
+      "0.51",
+      "0.81"
+    ],
+    "answer": 2,
+    "explain": "ΔV = 0.3 × (1 − 0.30) = 0.21, so V = 0.30 + 0.21 = 0.51. Gains shrink as prediction error falls.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-016",
+    "week": 8,
+    "topic": "Prediction error",
+    "bloom": "understand",
+    "q": "In the Rescorla–Wagner model, when is learning on a trial largest?",
+    "options": [
+      "When the US is already fully predicted",
+      "When there is no US and V is already 0",
+      "After the CS has been extinguished",
+      "When the outcome is most surprising (λ − ΣV is large)"
+    ],
+    "answer": 3,
+    "explain": "Learning is driven by prediction error: the gap between what happens and what was expected.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-017",
+    "week": 8,
+    "topic": "Blocking",
+    "bloom": "analyse",
+    "q": "Rats first learn light → shock. Then light + tone → shock. Later, the tone alone produces little fear. How does the Rescorla–Wagner model explain this?",
+    "options": [
+      "The light already predicted the shock, so there was little prediction error to drive learning about the tone",
+      "The tone was too quiet to be heard",
+      "The tone was extinguished during compound trials",
+      "Rats can learn about only one stimulus in their lifetime"
+    ],
+    "answer": 0,
+    "explain": "This is blocking (Kamin): with ΣV already near λ, the added cue gains little associative strength.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-018",
+    "week": 8,
+    "topic": "Observational learning",
+    "bloom": "remember",
+    "q": "Which processes does Bandura's account of observational learning include?",
+    "options": [
+      "Attention, retention, reproduction, and motivation",
+      "Acquisition, extinction, recovery, and generalisation",
+      "Transduction, perception, recognition, and recall",
+      "Id, ego, superego, and defence"
+    ],
+    "answer": 0,
+    "explain": "Learners must attend to a model, remember the behaviour, be able to perform it, and be motivated to do so.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-019",
+    "week": 8,
+    "topic": "Vicarious reinforcement",
+    "bloom": "apply",
+    "q": "Children watch a classmate being praised for sharing, and later they share more themselves. What does this illustrate?",
+    "options": [
+      "Negative punishment",
+      "Spontaneous recovery",
+      "Sensory adaptation",
+      "Vicarious reinforcement"
+    ],
+    "answer": 3,
+    "explain": "Seeing a model rewarded increases the observer's likelihood of performing the behaviour.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-020",
+    "week": 8,
+    "topic": "Taste aversion",
+    "bloom": "evaluate",
+    "q": "After one episode of food poisoning hours after eating a new dish, a person avoids that dish for years. Why did such findings challenge early views of conditioning?",
+    "options": [
+      "Learning occurred in a single trial despite a long CS–US delay, suggesting biological preparedness",
+      "They showed that conditioning requires hundreds of trials",
+      "They proved the CS and US must be simultaneous",
+      "They showed that taste cannot serve as a CS"
+    ],
+    "answer": 0,
+    "explain": "Conditioned taste aversion showed that some associations are learned unusually easily, contrary to the idea that any stimulus pairs equally well with any outcome.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  },
+  {
+    "id": "Q08-021",
+    "week": 8,
+    "topic": "Punishment vs reinforcement",
+    "bloom": "evaluate",
+    "q": "A parent relies only on physical punishment to stop a child's tantrums. What is the best evaluation based on learning principles?",
+    "options": [
+      "Punishment is the most effective way to teach a new behaviour",
+      "Punishment may suppress behaviour temporarily but does not teach an alternative; reinforcing appropriate behaviour is generally more effective",
+      "Punishment always strengthens the punished behaviour",
+      "Reinforcement and punishment have identical effects"
+    ],
+    "answer": 1,
+    "explain": "Punishment can produce fear or avoidance and does not specify what to do instead; reinforcing desired behaviour builds an alternative.",
+    "apa": "1.1",
+    "domain": "Bio/Cog",
+    "hec": "S2 Experimental Psychology"
+  }
+]

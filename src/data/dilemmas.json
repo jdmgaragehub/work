@@ -1,0 +1,2730 @@
+[
+  {
+    "id": "DL01",
+    "week": 2,
+    "kind": "irb",
+    "title": "The missing consent screen",
+    "text": "Your Stroop pilot at IIBS Hyderabad (simulated) runs tomorrow with classmates as participants. The consent screen is not built yet and your partner says \"it is only colour naming, nobody needs consent\".",
+    "options": [
+      {
+        "label": "Build a short consent screen (purpose, duration, right to withdraw, data stays local) and start an hour later",
+        "effects": {
+          "rigour": 1,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.02 applies to minimal-risk studies too. The cost is an hour; the benefit is that participation is voluntary and informed."
+      },
+      {
+        "label": "Skip consent: classmates will not mind",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 2,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Being a classmate does not replace informed consent, and peers may feel pressure to take part. This breaches APA 8.02."
+      },
+      {
+        "label": "Ask verbally \"is it OK?\" without mentioning withdrawal or data use",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Consent is not informed unless people know the purpose, procedure, their right to withdraw and what happens to their data."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL02",
+    "week": 9,
+    "kind": "irb",
+    "title": "Debrief now or never?",
+    "text": "Your misinformation study misleads participants about a video detail. Debriefing adds ten minutes per person, and a co-researcher suggests skipping it so word does not spread to future participants.",
+    "options": [
+      {
+        "label": "Skip the debrief to protect the cover story",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 2,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Leaving people with a false belief, and without the chance to withdraw their data, violates APA 8.08. Contamination is managed by asking for discretion, not by skipping the debrief."
+      },
+      {
+        "label": "Give a short spoken debrief plus a written sheet, and ask participants not to discuss the study until data collection ends",
+        "effects": {
+          "rigour": 1,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "A good balance. This debriefs fully, offers withdrawal and reduces the risk of contamination."
+      },
+      {
+        "label": "Debrief each participant in person, explain the deception and offer to withdraw their data",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -2,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.07 and 8.08 require explaining deception promptly and offering data withdrawal. It costs time but protects trust."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Cog/Social"
+  },
+  {
+    "id": "DL03",
+    "week": 11,
+    "kind": "irb",
+    "title": "Principal says yes",
+    "text": "A Hyderabad primary school principal agrees to let you run a false-belief task with 5-year-olds next week. No parents have been contacted.",
+    "options": [
+      {
+        "label": "Get parental consent, but skip child assent because they are too young to understand",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Five-year-olds can give simple assent, and a child's refusal should be respected even when parents agree."
+      },
+      {
+        "label": "Run it next week on the principal's permission",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 2,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. A principal cannot consent on behalf of parents. Children need parental permission and their own assent (APA 3.10, 8.02)."
+      },
+      {
+        "label": "Send consent forms in Urdu, Sindhi and English, and also ask each child for simple verbal assent",
+        "effects": {
+          "rigour": 1,
+          "ethics": 3,
+          "time": -2,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Parental permission plus child assent, in languages families read, respects persons. Expect a delay of about two weeks."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Dev"
+  },
+  {
+    "id": "DL04",
+    "week": 2,
+    "kind": "irb",
+    "title": "The prize-draw emails",
+    "text": "Your online exam-anxiety survey asks for email addresses for a prize draw, and the emails are saved in the same sheet as the anxiety scores.",
+    "options": [
+      {
+        "label": "Collect emails through a separate form, unlinked to responses, and delete them after the draw",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Separating identifiers from responses protects confidentiality (APA 4.01) and keeps the survey effectively anonymous."
+      },
+      {
+        "label": "Keep emails with responses so you can contact high scorers later without telling them",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Secretly linking identity to sensitive scores and planning undisclosed contact breaches consent and confidentiality."
+      },
+      {
+        "label": "Drop the prize draw and accept a lower response rate",
+        "effects": {
+          "rigour": -1,
+          "ethics": 1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethical, but fewer responses reduce precision. Separating the identifiers keeps both."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL05",
+    "week": 2,
+    "kind": "irb",
+    "title": "Ten percent of the grade",
+    "text": "An IIBS instructor plans to make participation in her own study worth 10% of the course grade, with no alternative assignment.",
+    "options": [
+      {
+        "label": "Approve: participation is educational anyway",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Without an alternative, students cannot decline freely. That is coercion of a subordinate group."
+      },
+      {
+        "label": "Suggest making it optional extra credit with an alternative of equal effort",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable. Voluntariness is protected, though the instructor still needs to avoid knowing who declined."
+      },
+      {
+        "label": "Advise her to offer an equally demanding alternative activity, such as a short research-summary assignment",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.04(b) requires an equitable alternative when participation is for course credit."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL06",
+    "week": 12,
+    "kind": "irb",
+    "title": "The speech that stopped",
+    "text": "Halfway through a public-speaking stress induction, a participant says \"I want to stop\". Losing her would leave your cortisol condition one person short.",
+    "options": [
+      {
+        "label": "Pause and ask whether she would like to continue later or withdraw, making clear both are fine",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable if there is no pressure. She has already said stop, so simply stopping is cleaner."
+      },
+      {
+        "label": "Stop immediately, run the relaxation period and debrief, and let her decide whether her data is kept",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. The right to withdraw at any time without penalty is absolute (APA 8.02, 3.04). Report the attrition honestly."
+      },
+      {
+        "label": "Say \"the experiment requires that you continue\"",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Pressuring someone to continue after they withdraw is coercive and harmful, a lesson from the obedience studies."
+      }
+    ],
+    "apa": "3.3",
+    "domain": "Bio"
+  },
+  {
+    "id": "DL07",
+    "week": 14,
+    "kind": "irb",
+    "title": "A \"faithful\" obedience replication",
+    "text": "A student proposes replicating an obedience paradigm with a mock shock generator up to the maximum level, using the original insistent prods.",
+    "options": [
+      {
+        "label": "Revise: cap the procedure at an early decision point, screen out vulnerable participants, repeat the right to withdraw, and debrief immediately",
+        "effects": {
+          "rigour": 1,
+          "ethics": 2,
+          "time": -2,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "A defensible redesign: the key decision point can be studied at much lower risk. Approval still requires careful monitoring."
+      },
+      {
+        "label": "Run it exactly as the original for authenticity",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Severe distress and prods that deny the right to withdraw cannot be justified today (APA 3.04, 8.02)."
+      },
+      {
+        "label": "Replace it with a simulated-agent version in the Mohalla plus a structured literature analysis",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": 1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Very safe, and the teaching value is retained, though you lose human data. A good choice for a class project."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL08",
+    "week": 2,
+    "kind": "irb",
+    "title": "The withdrawn participant",
+    "text": "A participant withdrew halfway and asked for her data to be deleted. Her partial data would raise your power noticeably.",
+    "options": [
+      {
+        "label": "Keep her partial data, anonymised; she will never know",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Anonymising the data does not cancel her request. Using it breaks the consent agreement."
+      },
+      {
+        "label": "Delete it, then recruit one extra participant to restore N",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good, provided your stopping rule allowed replacements. Otherwise note it as a deviation."
+      },
+      {
+        "label": "Delete her data and report one withdrawal in the participant flow",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Honouring withdrawal requests is part of informed consent. Transparent attrition reporting keeps your rigour intact."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL09",
+    "week": 11,
+    "kind": "irb",
+    "title": "Behind the one-way mirror",
+    "text": "You want to video-record parent–child play in the Child Development Suite for later coding. The parents know they are being observed, but not that they are being recorded.",
+    "options": [
+      {
+        "label": "Code live with two observers and no recording, then compute κ",
+        "effects": {
+          "rigour": -1,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethical, with some loss of rigour because you cannot re-check. Live double-coding with κ is a reasonable compromise."
+      },
+      {
+        "label": "Ask for explicit recording consent and explain who will see the video and when it will be deleted",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.03 requires consent for recording voices and images in research that is not public naturalistic observation."
+      },
+      {
+        "label": "Record covertly and blur faces later",
+        "effects": {
+          "rigour": 1,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Blurring later does not replace consent; recordings of identifiable families are sensitive."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Dev"
+  },
+  {
+    "id": "DL10",
+    "week": 2,
+    "kind": "irb",
+    "title": "An unnecessary cover story",
+    "text": "A mood-induction study tells participants it is about \"music taste\". Your pilot showed that telling them the true purpose does not change the results.",
+    "options": [
+      {
+        "label": "Drop the deception and describe the study honestly",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.07 allows deception only when non-deceptive alternatives are not feasible. Here one is."
+      },
+      {
+        "label": "Keep the cover story because it makes the study more interesting",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. \"More fun\" is not a scientific justification for deception."
+      },
+      {
+        "label": "Describe the procedure truthfully, but do not state the hypothesis",
+        "effects": {
+          "rigour": 1,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable. Not disclosing the hypothesis is not deception, as long as nothing false is said."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL11",
+    "week": 15,
+    "kind": "irb",
+    "title": "Consent in the right language",
+    "text": "You are recruiting displaced families in Hyderabad (simulated scenario) for a resilience interview. Your consent forms are in English only.",
+    "options": [
+      {
+        "label": "Let a family member translate informally on the spot",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Informal translation risks errors and family pressure, and confidentiality suffers."
+      },
+      {
+        "label": "Exclude anyone who cannot read English",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Excluding a group for convenience violates the Belmont principle of Justice and biases the sample."
+      },
+      {
+        "label": "Translate the forms, use a trained interpreter and check understanding with teach-back questions",
+        "effects": {
+          "rigour": 1,
+          "ethics": 3,
+          "time": -2,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Consent must be understood to be informed. Extra care for vulnerable groups reflects Respect for persons."
+      }
+    ],
+    "apa": "3.2",
+    "domain": "Social"
+  },
+  {
+    "id": "DL12",
+    "week": 5,
+    "kind": "irb",
+    "title": "An offer they cannot refuse",
+    "text": "A sleep-restriction study recruits daily-wage workers. A sponsor offers a payment worth several weeks' wages to speed up recruitment.",
+    "options": [
+      {
+        "label": "Pay nothing and rely on volunteers",
+        "effects": {
+          "rigour": 0,
+          "ethics": 0,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethically acceptable but slow, and it may exclude people who cannot afford lost wages, a Justice concern."
+      },
+      {
+        "label": "Offer modest compensation for time and travel, set independently of the risk",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Fair compensation avoids undue inducement (APA 8.06)."
+      },
+      {
+        "label": "Use the large payment: recruitment will be fast",
+        "effects": {
+          "rigour": 1,
+          "ethics": -2,
+          "time": 2,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. An excessive inducement to an economically vulnerable group can override judgement about risk."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Bio"
+  },
+  {
+    "id": "DL13",
+    "week": 2,
+    "kind": "irb",
+    "title": "A worrying comment box",
+    "text": "In your anonymous online wellbeing survey, one free-text answer says the respondent is being hurt at home.",
+    "options": [
+      {
+        "label": "Follow the protocol you pre-approved: show helpline resources to everyone at the end and inform your supervisor or IRB",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Plan for disclosures in advance: anonymous surveys should show crisis resources to every respondent."
+      },
+      {
+        "label": "Ignore it: the data is anonymous",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Anonymity limits what you can do, but researchers still have a duty to minimise harm (APA 3.04)."
+      },
+      {
+        "label": "Trace the respondent's IP address to contact them",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Re-identifying someone you promised anonymity breaks the consent agreement. Act through approved channels only."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL14",
+    "week": 15,
+    "kind": "clinic",
+    "title": "\"You study psychology, so tell me\"",
+    "text": "After your psychopathology lecture, a friend describes her brother's moods and asks you which disorder he has.",
+    "options": [
+      {
+        "label": "Give your best guess at a label",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Diagnosing a friend or relative from a description is outside your competence and can stigmatise."
+      },
+      {
+        "label": "Share general information about mood problems and where to find services, without a label",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Helpful and safe: psychoeducation and signposting without diagnosis."
+      },
+      {
+        "label": "Explain that you cannot diagnose and suggest he sees a qualified professional",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Students are not competent to diagnose (APA 2.01), and second-hand labels can harm."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "IndDiff/Applied"
+  },
+  {
+    "id": "DL15",
+    "week": 15,
+    "kind": "clinic",
+    "title": "A disclosure in session",
+    "text": "Your simulated client says she has been thinking about not being alive. Your supervisor is in the next room.",
+    "options": [
+      {
+        "label": "Promise to keep it completely secret",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Risk to life is a limit of confidentiality (APA 4.05), which should have been explained at intake."
+      },
+      {
+        "label": "Ask directly and calmly about safety, follow the clinic risk protocol and bring in your supervisor",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Asking directly does not increase risk. Follow protocol and involve your supervisor immediately."
+      },
+      {
+        "label": "Change the topic to protect rapport",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Avoiding risk talk leaves the client unsafe."
+      }
+    ],
+    "apa": "4.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL16",
+    "week": 15,
+    "kind": "clinic",
+    "title": "Small-town overlap",
+    "text": "Your new simulated client turns out to be your cousin's close classmate, and you will meet at family events.",
+    "options": [
+      {
+        "label": "Tell your supervisor and refer the client to another trainee",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Avoid multiple relationships that could impair objectivity (APA 3.05)."
+      },
+      {
+        "label": "Continue: nobody will find out",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. The conflict exists whether or not anyone finds out, and confidentiality at family events is at risk."
+      },
+      {
+        "label": "Discuss with your supervisor and follow their decision",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good practice. Supervision is the right place for this decision."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL17",
+    "week": 15,
+    "kind": "clinic",
+    "title": "\"Just tell me what to do\"",
+    "text": "In the first session, a simulated student client asks: \"Should I leave university?\"",
+    "options": [
+      {
+        "label": "Tell them what you would do",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Premature advice. It is not unethical, but it often reduces engagement and ignores the client's values."
+      },
+      {
+        "label": "Summarise the dilemma, then offer brief psychoeducation on decision-making",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Reasonable. Summarising first keeps the client in charge."
+      },
+      {
+        "label": "Explore with open questions and reflections before any advice",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Strong micro-skills. OARS helps the client find their own reasons and builds autonomy."
+      }
+    ],
+    "apa": "4.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL18",
+    "week": 15,
+    "kind": "clinic",
+    "title": "The worried father",
+    "text": "The father of an adult simulated client calls the clinic and asks what his daughter has been talking about in sessions.",
+    "options": [
+      {
+        "label": "Confirm that she attends, but say nothing else",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Even confirming that someone is a client discloses confidential information."
+      },
+      {
+        "label": "Politely explain that you cannot share anything without her written consent",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Adult clients' information is confidential (APA 4.01) even from family."
+      },
+      {
+        "label": "Share a brief summary because he means well",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Good intentions do not override confidentiality."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL19",
+    "week": 15,
+    "kind": "clinic",
+    "title": "Faith and coping",
+    "text": "A simulated client says prayer and family support help her cope. Your trainee partner calls it \"avoidance\" and wants to challenge it.",
+    "options": [
+      {
+        "label": "Respect her values and explore how these resources help her, integrating them into the plan",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Culturally responsive practice. Religious and family coping are often strengths."
+      },
+      {
+        "label": "Challenge the beliefs as irrational",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 0,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Dismissing a client's faith imposes your values and damages the alliance."
+      },
+      {
+        "label": "Raise it in supervision to build your cultural competence",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good. Supervision helps separate your assumptions from the client's needs."
+      }
+    ],
+    "apa": "3.2",
+    "domain": "Social"
+  },
+  {
+    "id": "DL20",
+    "week": 15,
+    "kind": "clinic",
+    "title": "The three-month waiting list",
+    "text": "The IIBS clinic (simulated) has a three-month waiting list. A new referral shows high-risk indicators but is tenth in the queue.",
+    "options": [
+      {
+        "label": "Keep strict first-come-first-served order for fairness",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Equal treatment of unequal risk is not fair. Beneficence requires prioritising safety."
+      },
+      {
+        "label": "Arrange a warm referral to an external service and follow up",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good if the external service can see them quickly. Confirm the handover."
+      },
+      {
+        "label": "Triage by risk: see the client urgently and set interim check-ins for others",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Risk-based triage is standard. Pure first-come-first-served ignores harm."
+      }
+    ],
+    "apa": "4.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL21",
+    "week": 15,
+    "kind": "clinic",
+    "title": "Recordings on a phone",
+    "text": "Supervision needs session audio. A fellow trainee records sessions on her personal phone, which syncs to a cloud account.",
+    "options": [
+      {
+        "label": "Use detailed written process notes instead of audio",
+        "effects": {
+          "rigour": -1,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethical, but supervision loses detail."
+      },
+      {
+        "label": "Use the clinic's encrypted recorder and delete recordings on the agreed schedule",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Confidential records need secure storage and planned disposal (APA 4.01, 6.02)."
+      },
+      {
+        "label": "Keep using the phone: it is convenient",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Cloud-synced personal devices expose client data."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL22",
+    "week": 15,
+    "kind": "clinic",
+    "title": "Out of your depth",
+    "text": "A simulated client's history of complex trauma is beyond what your training has covered.",
+    "options": [
+      {
+        "label": "Seek supervision now and refer to a trauma-trained clinician if needed",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Practise within the boundaries of your competence (APA 2.01)."
+      },
+      {
+        "label": "Carry on alone and read about trauma online",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Working beyond competence can harm, and online reading is not supervised training."
+      },
+      {
+        "label": "Co-work the next sessions with your supervisor present",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good, if the client consents to the change."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL23",
+    "week": 15,
+    "kind": "clinic",
+    "title": "A golden thank-you",
+    "text": "At the final session a simulated client offers you an expensive gold bangle as thanks.",
+    "options": [
+      {
+        "label": "Accept: refusing would be rude in local culture",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Expensive gifts can create obligation and blur boundaries. Small token gifts are different."
+      },
+      {
+        "label": "Suggest a token gift such as sweets for the team, and record it for supervision",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "A culturally sensitive compromise that keeps the boundary."
+      },
+      {
+        "label": "Thank them warmly, decline the bangle, and explore what the gesture means",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good boundary practice, handled with cultural sensitivity."
+      }
+    ],
+    "apa": "3.2",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL24",
+    "week": 15,
+    "kind": "clinic",
+    "title": "Practising on a classmate",
+    "text": "You learned to score the PHQ-9. A classmate seems low and you consider giving it to her \"for practice\".",
+    "options": [
+      {
+        "label": "Check in kindly and mention the university counselling service",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Supportive and appropriate. Signposting is the right peer role."
+      },
+      {
+        "label": "Practise only with simulated clients in the Clinic",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Screening real people is outside your role, and ZEHN applies screeners to simulated clients only."
+      },
+      {
+        "label": "Score her and tell her the result",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Administering a screener and sharing a result without a clinical framework can mislead and distress."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "IndDiff/Applied"
+  },
+  {
+    "id": "DL25",
+    "week": 16,
+    "kind": "clinic",
+    "title": "The chatbot between sessions",
+    "text": "A simulated client wants to use a free AI chatbot app for support between sessions. You have not checked its privacy policy or safety features.",
+    "options": [
+      {
+        "label": "Discuss the limits and privacy risks, suggest vetted resources, and make sure she has the crisis card",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Balanced. It respects her autonomy and makes sure safety nets exist."
+      },
+      {
+        "label": "Recommend the app without checking",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Endorsing an unvetted tool may expose her data and leave her without crisis escalation."
+      },
+      {
+        "label": "Forbid all apps",
+        "effects": {
+          "rigour": 0,
+          "ethics": 0,
+          "time": 0,
+          "welfare": -1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Over-controlling. It ignores client autonomy and may push use underground."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "CHI"
+  },
+  {
+    "id": "DL26",
+    "week": 15,
+    "kind": "clinic",
+    "title": "The seminar presentation",
+    "text": "You want to present an interesting simulated client case at a department seminar, including the client's village name and job.",
+    "options": [
+      {
+        "label": "Keep the details: they make the case vivid",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Vivid is not worth a breach of confidentiality."
+      },
+      {
+        "label": "Use a fully fictional teaching case instead",
+        "effects": {
+          "rigour": -1,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Safe, and slightly less authentic."
+      },
+      {
+        "label": "Remove identifying details and present a de-identified or composite case",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Identifiable details in small communities can reveal who the client is (APA 4.07)."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL27",
+    "week": 14,
+    "kind": "social",
+    "title": "Embarrassed by conformity",
+    "text": "After an Asch-style demo in class, a student realises she went along with the confederates and looks upset.",
+    "options": [
+      {
+        "label": "Check in with her privately after class",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Kind, but everyone deceived needs a debrief, not only those who look upset."
+      },
+      {
+        "label": "Debrief fully, explain that conformity is common and understandable, and offer to delete her data",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. A good debrief removes any sense of failure (APA 8.08)."
+      },
+      {
+        "label": "Joke about it in front of the class",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Public embarrassment adds harm after deception."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL28",
+    "week": 14,
+    "kind": "social",
+    "title": "A staged emergency",
+    "text": "For a bystander study you plan to stage a collapse at a busy Hyderabad bus stop (simulated scenario) and film who helps.",
+    "options": [
+      {
+        "label": "Run it with simulated crowd agents in the Mohalla instead",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": 1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Safe and quick. You lose real-world data but avoid public distress."
+      },
+      {
+        "label": "Stage a realistic collapse with no warning and no debrief",
+        "effects": {
+          "rigour": 2,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Real distress, possible emergency calls and no debrief are unacceptable risks."
+      },
+      {
+        "label": "Stage a low-intensity need (dropped books), get IRB approval, and do not film faces",
+        "effects": {
+          "rigour": 1,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "A defensible field design. Minimal risk; naturalistic observation rules apply."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL29",
+    "week": 14,
+    "kind": "social",
+    "title": "Showing obedience footage",
+    "text": "You plan to show classic obedience-study footage to first-year students. Some may find it distressing.",
+    "options": [
+      {
+        "label": "Show it without warning for maximum impact",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Distress without warning is avoidable harm."
+      },
+      {
+        "label": "Use a text summary and discussion only",
+        "effects": {
+          "rigour": -1,
+          "ethics": 2,
+          "time": 1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Safe, with less impact for those who would have been fine watching."
+      },
+      {
+        "label": "Give a content warning and an equivalent text-and-quiz path for anyone who opts out",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. This matches ZEHN's rule: warn, offer an opt-out, and do not block progress."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "CHI"
+  },
+  {
+    "id": "DL30",
+    "week": 14,
+    "kind": "social",
+    "title": "Teaching the prison study",
+    "text": "Your slides present the Stanford Prison Experiment as definitive proof that situations turn good people cruel.",
+    "options": [
+      {
+        "label": "Drop it from the syllabus",
+        "effects": {
+          "rigour": -1,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Avoids the problem but loses a valuable lesson in critical thinking."
+      },
+      {
+        "label": "Present it with the archival critique (Le Texier 2019) and its contested status",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Scientific integrity means teaching the evidence as it stands, including the critiques."
+      },
+      {
+        "label": "Keep the classic framing: students like it",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Presenting a contested study as settled misleads learners."
+      }
+    ],
+    "apa": "1.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL31",
+    "week": 14,
+    "kind": "social",
+    "title": "Stakes in the tournament",
+    "text": "For a prisoner's dilemma tournament, a student suggests using real money from players, with losers paying winners.",
+    "options": [
+      {
+        "label": "Use points only",
+        "effects": {
+          "rigour": -1,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Safe. Stakes are low, so behaviour may differ from real choices."
+      },
+      {
+        "label": "Give a small token prize funded by the department, with voluntary entry",
+        "effects": {
+          "rigour": 1,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "A reasonable balance: some stakes and no losses."
+      },
+      {
+        "label": "Let losers pay winners from their own pockets",
+        "effects": {
+          "rigour": 1,
+          "ethics": -2,
+          "time": 0,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Real financial loss harms participants and pressures them."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL32",
+    "week": 14,
+    "kind": "social",
+    "title": "Bias scores on the noticeboard",
+    "text": "An implicit-bias class activity produced individual scores. A student wants to post the names with the highest scores to \"raise awareness\".",
+    "options": [
+      {
+        "label": "Post the names",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Public shaming based on an unreliable measure harms people."
+      },
+      {
+        "label": "Give each person their own score privately, with an explanation of its limits",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable if people chose to see it and the caveats are clear."
+      },
+      {
+        "label": "Keep individual scores private and share only group results, with caveats about reliability",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Individual implicit scores are noisy, and publishing them is a confidentiality breach."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL33",
+    "week": 14,
+    "kind": "social",
+    "title": "Fake profiles in WhatsApp groups",
+    "text": "You plan to join student WhatsApp groups with fake profiles, post requests for help, and record who responds.",
+    "options": [
+      {
+        "label": "Analyse only public, aggregated posts with IRB approval",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Possible, but even public data raises consent and re-identification questions."
+      },
+      {
+        "label": "Redesign as a consented online study with a debrief",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethical, and you trade some realism for consent."
+      },
+      {
+        "label": "Run it covertly and never debrief",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Covert entry into private groups, deception without debrief and a privacy intrusion."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL34",
+    "week": 14,
+    "kind": "social",
+    "title": "A sensitive essay topic",
+    "text": "In your dissonance study, participants would write an essay arguing against a deeply held religious view.",
+    "options": [
+      {
+        "label": "Use a low-stakes topic, such as canteen prices",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. The mechanism can be studied without threatening identity or causing distress."
+      },
+      {
+        "label": "Keep the religious topic for a stronger effect",
+        "effects": {
+          "rigour": 1,
+          "ethics": -2,
+          "time": 0,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Distress and community risk outweigh a larger effect size."
+      },
+      {
+        "label": "Keep the topic, but screen, consent fully and debrief carefully",
+        "effects": {
+          "rigour": 1,
+          "ethics": 0,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Better than nothing, but the risk is still high for little extra knowledge."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Social"
+  },
+  {
+    "id": "DL35",
+    "week": 16,
+    "kind": "replication",
+    "title": "The null result",
+    "text": "Your preregistered replication of a famous priming effect finds no effect (p = .41, simulated data). Your supervisor suggests not writing it up.",
+    "options": [
+      {
+        "label": "File it away",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. The file drawer distorts the literature. The Open Science Collaboration found only 36% of replications significant."
+      },
+      {
+        "label": "Add participants until it becomes significant",
+        "effects": {
+          "rigour": -3,
+          "ethics": -2,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Optional stopping is p-hacking and inflates false positives."
+      },
+      {
+        "label": "Post a preprint with full methods, the effect size and its CI",
+        "effects": {
+          "rigour": 3,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Null results are informative and counter publication bias."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL36",
+    "week": 16,
+    "kind": "replication",
+    "title": "Materials not available",
+    "text": "The original authors do not reply to your request for stimuli.",
+    "options": [
+      {
+        "label": "Contact the journal and look for shared materials in open repositories",
+        "effects": {
+          "rigour": 1,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Worth trying alongside the rebuild."
+      },
+      {
+        "label": "Rebuild the materials from the paper, document every deviation and preregister",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Transparency about deviations lets readers judge how close the replication is."
+      },
+      {
+        "label": "Call it a \"direct replication\" anyway",
+        "effects": {
+          "rigour": -2,
+          "ethics": -2,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Mislabelling a conceptual replication misleads readers."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL37",
+    "week": 16,
+    "kind": "replication",
+    "title": "p = .07 at the planned N",
+    "text": "You preregistered 40 per group. At N = 80 your test gives p = .07.",
+    "options": [
+      {
+        "label": "Report it as preregistered: p = .07, with the effect size and CI",
+        "effects": {
+          "rigour": 3,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Report what you planned. The CI shows how informative the result is."
+      },
+      {
+        "label": "Quietly add 10 more per group and re-test",
+        "effects": {
+          "rigour": -3,
+          "ethics": -3,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Undisclosed optional stopping is p-hacking."
+      },
+      {
+        "label": "Report this study honestly, then run a new preregistered study with a power-based N",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Excellent, though it costs time."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL38",
+    "week": 16,
+    "kind": "replication",
+    "title": "The weak manipulation",
+    "text": "Your ego-depletion replication found a tiny effect. A reviewer notes that your manipulation check was also weak.",
+    "options": [
+      {
+        "label": "Remove the manipulation check from the paper",
+        "effects": {
+          "rigour": -2,
+          "ethics": -3,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Hiding inconvenient data is misrepresentation (APA 8.10)."
+      },
+      {
+        "label": "Plan a follow-up with a stronger, preregistered manipulation",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good science. Note that a large registered replication (N = 2,141) already found d = 0.04."
+      },
+      {
+        "label": "Report the manipulation check honestly and discuss what it means",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. A weak manipulation limits the conclusion, and readers deserve to know."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL39",
+    "week": 16,
+    "kind": "replication",
+    "title": "An error in your own paper",
+    "text": "Months after publication you find a coding error that changes one of your key results.",
+    "options": [
+      {
+        "label": "Quietly update only your preprint",
+        "effects": {
+          "rigour": 0,
+          "ethics": -1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Not enough: readers of the published version are still misled."
+      },
+      {
+        "label": "Contact the journal and publish a correction",
+        "effects": {
+          "rigour": 2,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. APA 8.10(b) requires taking steps to correct significant errors."
+      },
+      {
+        "label": "Say nothing",
+        "effects": {
+          "rigour": -2,
+          "ethics": -3,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Knowingly leaving an error in the record misleads other researchers."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL40",
+    "week": 9,
+    "kind": "replication",
+    "title": "Choosing the verbs afterwards",
+    "text": "Your class replication of the Loftus & Palmer verb study (simulated data) shows smaller differences than the original. A teammate wants to report only the two most extreme verbs, as if that had been the plan.",
+    "options": [
+      {
+        "label": "Analyse all five verb conditions as preregistered",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Comparisons should follow the plan, not the data."
+      },
+      {
+        "label": "Report only \"smashed\" vs \"contacted\" as the planned test",
+        "effects": {
+          "rigour": -2,
+          "ethics": -3,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Presenting a post hoc choice as planned is HARKing."
+      },
+      {
+        "label": "Report the full analysis plus a clearly labelled exploratory contrast",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Fine. Exploratory work is welcome when it is labelled."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Cog"
+  },
+  {
+    "id": "DL41",
+    "week": 16,
+    "kind": "replication",
+    "title": "Joining a multi-lab project",
+    "text": "Your IIBS lab is invited to join a registered replication across many labs. It would take three months.",
+    "options": [
+      {
+        "label": "Decline and focus on novel, eye-catching studies",
+        "effects": {
+          "rigour": -1,
+          "ethics": 0,
+          "time": 2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Your choice, but novelty without replication is how fragile findings spread."
+      },
+      {
+        "label": "Join with a smaller, pre-agreed role",
+        "effects": {
+          "rigour": 1,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "A sensible compromise."
+      },
+      {
+        "label": "Join",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Multi-lab studies give precise, credible estimates, as the 23-lab ego-depletion project showed."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL42",
+    "week": 16,
+    "kind": "replication",
+    "title": "\"Successful\" replication?",
+    "text": "Your replication is significant, but the effect is about half the original size.",
+    "options": [
+      {
+        "label": "Add an equivalence or small-telescopes analysis",
+        "effects": {
+          "rigour": 3,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Excellent rigour: it asks whether the original study could have detected an effect this small."
+      },
+      {
+        "label": "Report the effect size and CI side by side with the original",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Effect sizes matter. Replication effects in OSC 2015 were about half the original size too."
+      },
+      {
+        "label": "Headline it as a successful replication on p alone",
+        "effects": {
+          "rigour": -1,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Overclaiming hides the shrinking effect."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL43",
+    "week": 7,
+    "kind": "research",
+    "title": "Block order in Stroop",
+    "text": "Every participant in your Stroop study gets the congruent block first, then the incongruent block.",
+    "options": [
+      {
+        "label": "Counterbalance block order with a Latin square",
+        "effects": {
+          "rigour": 3,
+          "ethics": 0,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Practice and fatigue are now spread across conditions."
+      },
+      {
+        "label": "Keep the fixed order",
+        "effects": {
+          "rigour": -2,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Order is confounded with condition, so interference may be over- or under-estimated."
+      },
+      {
+        "label": "Randomise congruent and incongruent trials within one mixed block",
+        "effects": {
+          "rigour": 2,
+          "ethics": 0,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Also valid. Note that mixing trial types can change the size of the effect."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Cog"
+  },
+  {
+    "id": "DL44",
+    "week": 12,
+    "kind": "research",
+    "title": "The hopeful experimenter",
+    "text": "You know the hypothesis and plan to run every participant yourself in a mood-induction study.",
+    "options": [
+      {
+        "label": "Run it yourself with a standard script",
+        "effects": {
+          "rigour": 0,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "A script helps, but your expectations can still leak into tone and timing."
+      },
+      {
+        "label": "Deliver all instructions on the computer",
+        "effects": {
+          "rigour": 2,
+          "ethics": 0,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "A good partial fix that reduces your influence."
+      },
+      {
+        "label": "Have a research assistant who does not know the conditions run the sessions (double-blind)",
+        "effects": {
+          "rigour": 3,
+          "ethics": 0,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. This removes experimenter-expectancy effects."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Bio/Social"
+  },
+  {
+    "id": "DL45",
+    "week": 3,
+    "kind": "research",
+    "title": "Twelve per group",
+    "text": "You plan 12 participants per group \"because last year's class did\".",
+    "options": [
+      {
+        "label": "Preregister a sequential design with a correct stopping rule",
+        "effects": {
+          "rigour": 2,
+          "ethics": 0,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Efficient and rigorous when the stopping rule is planned."
+      },
+      {
+        "label": "Run a power analysis for your smallest effect of interest",
+        "effects": {
+          "rigour": 3,
+          "ethics": 0,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Justify N before collecting data."
+      },
+      {
+        "label": "Stick with 12",
+        "effects": {
+          "rigour": -2,
+          "ethics": 0,
+          "time": 2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Low power gives unstable estimates and exaggerated significant effects."
+      }
+    ],
+    "apa": "2.4",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL46",
+    "week": 9,
+    "kind": "research",
+    "title": "Measuring memory",
+    "text": "Your memory-training study measures the outcome by asking \"How good is your memory now?\"",
+    "options": [
+      {
+        "label": "Use an objective recall test",
+        "effects": {
+          "rigour": 3,
+          "ethics": 0,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Self-ratings are vulnerable to expectancy and demand effects."
+      },
+      {
+        "label": "Keep the self-rating",
+        "effects": {
+          "rigour": -2,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Weak operationalisation. It may just measure expectations."
+      },
+      {
+        "label": "Use both measures",
+        "effects": {
+          "rigour": 2,
+          "ethics": 0,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good. Comparing the two can be informative."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Cog"
+  },
+  {
+    "id": "DL47",
+    "week": 2,
+    "kind": "research",
+    "title": "Pilot data temptation",
+    "text": "Your pilot looked promising. Merging the 10 pilot participants into the main sample would raise N.",
+    "options": [
+      {
+        "label": "Merge them without reporting it",
+        "effects": {
+          "rigour": -2,
+          "ethics": -2,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. An undisclosed change in the data is misrepresentation."
+      },
+      {
+        "label": "Merge them but report it as a deviation, with a sensitivity analysis",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Transparent, though still weaker than keeping them separate."
+      },
+      {
+        "label": "Keep the pilot data separate, as planned",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Pilots were run under different conditions."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL48",
+    "week": 8,
+    "kind": "research",
+    "title": "Real cats in the Skinner box",
+    "text": "For \"realism\", a teammate wants to put stray campus cats in a homemade operant box.",
+    "options": [
+      {
+        "label": "Apply for animal-ethics approval with a full welfare plan",
+        "effects": {
+          "rigour": 1,
+          "ethics": 1,
+          "time": -3,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Possible, but very slow, and the 3Rs ask whether animals are needed at all."
+      },
+      {
+        "label": "Use the simulated agents in the Learning Lab",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct for a class project. Simulation teaches the principles with no animal welfare cost."
+      },
+      {
+        "label": "Catch strays without approval",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 0,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Animal research needs approval, qualified supervision and a welfare plan (APA 8.09)."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Bio/Cog"
+  },
+  {
+    "id": "DL49",
+    "week": 10,
+    "kind": "research",
+    "title": "A narrow sample",
+    "text": "Your mental-rotation study recruited only male engineering students, and the draft abstract says \"people rotate at X degrees per second\".",
+    "options": [
+      {
+        "label": "Recruit a broader sample",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Better generalisability and fairer inclusion."
+      },
+      {
+        "label": "Keep the general claim",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Overgeneralisation. The sample cannot support claims about \"people\"."
+      },
+      {
+        "label": "Keep the sample, but narrow the claim and state the limitation",
+        "effects": {
+          "rigour": 0,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Honest and quick, though the finding is less useful."
+      }
+    ],
+    "apa": "2.2",
+    "domain": "Cog"
+  },
+  {
+    "id": "DL50",
+    "week": 11,
+    "kind": "research",
+    "title": "The crying toddler",
+    "text": "During an A-not-B session in the Child Development Suite, a toddler starts crying and reaching for her mother.",
+    "options": [
+      {
+        "label": "Continue, you are almost done",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Ignoring a child's dissent violates assent and welfare."
+      },
+      {
+        "label": "Pause and try again later only if she is calm and the mother agrees",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable if there is no pressure and the session stays brief."
+      },
+      {
+        "label": "Stop and return her to her mother: treat the distress as dissent",
+        "effects": {
+          "rigour": -1,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 3
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Young children show withdrawal through behaviour, and it must be respected."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Dev"
+  },
+  {
+    "id": "DL51",
+    "week": 3,
+    "kind": "data",
+    "title": "Three slow participants",
+    "text": "Removing three very slow participants turns your RT effect from p = .09 to p = .03 (simulated data). You had no outlier rule in advance.",
+    "options": [
+      {
+        "label": "Report both analyses, label the trimmed one as a sensitivity analysis, and preregister a rule next time",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Transparent, and readers can judge for themselves."
+      },
+      {
+        "label": "Keep everyone and report the result honestly",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Without a pre-set rule, removing data after seeing results is p-hacking."
+      },
+      {
+        "label": "Drop them because the result looks better",
+        "effects": {
+          "rigour": -3,
+          "ethics": -3,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Post hoc outlier removal to reach significance misrepresents the evidence."
+      }
+    ],
+    "apa": "2.4",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL52",
+    "week": 16,
+    "kind": "data",
+    "title": "Sharing a small-class dataset",
+    "text": "You want to post your data openly. It includes age, department and hometown for a class of 30 students.",
+    "options": [
+      {
+        "label": "Remove or coarsen the quasi-identifiers before sharing, and add a codebook",
+        "effects": {
+          "rigour": 1,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. In a small group, combinations of details can identify people."
+      },
+      {
+        "label": "Share the raw file",
+        "effects": {
+          "rigour": 1,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. The data could re-identify classmates and breaches confidentiality (APA 4.01)."
+      },
+      {
+        "label": "Do not share any data",
+        "effects": {
+          "rigour": -2,
+          "ethics": 1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Safe, but others cannot verify your results (APA 8.14 supports sharing for verification)."
+      }
+    ],
+    "apa": "4.4",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL53",
+    "week": 3,
+    "kind": "data",
+    "title": "Missing answers",
+    "text": "A sizeable share of respondents skipped the household-income item in your survey.",
+    "options": [
+      {
+        "label": "Fill the gaps with the mean and do not mention it",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Undisclosed imputation misrepresents the data and shrinks the variance."
+      },
+      {
+        "label": "Use listwise deletion and report it",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Transparent, but it may bias results if data are not missing at random."
+      },
+      {
+        "label": "Report the missingness pattern and use a principled method, such as multiple imputation",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Readers can judge the possible bias."
+      }
+    ],
+    "apa": "2.4",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL54",
+    "week": 2,
+    "kind": "data",
+    "title": "The USB stick",
+    "text": "Your consent forms (with names) and response data are on the same unencrypted USB stick that you carry around campus.",
+    "options": [
+      {
+        "label": "Lock the paper consent forms in the lab cabinet and keep only coded data digitally",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Good practice as well."
+      },
+      {
+        "label": "Encrypt the data and store the name–code key separately from responses",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Separation and encryption protect participants if the stick is lost."
+      },
+      {
+        "label": "Keep using the stick: it has not been lost yet",
+        "effects": {
+          "rigour": 0,
+          "ethics": -2,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Foreseeable risks to confidentiality must be addressed (APA 4.01)."
+      }
+    ],
+    "apa": "3.1",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL55",
+    "week": 13,
+    "kind": "data",
+    "title": "Six outcomes, one star",
+    "text": "You measured six wellbeing outcomes, and only one was significant.",
+    "options": [
+      {
+        "label": "Report all six, with a correction for multiple comparisons",
+        "effects": {
+          "rigour": 3,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Readers need the full picture."
+      },
+      {
+        "label": "Report only the significant outcome",
+        "effects": {
+          "rigour": -3,
+          "ethics": -3,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Selective reporting inflates false positives and misleads readers."
+      },
+      {
+        "label": "Report all six and treat the significant one as exploratory, needing replication",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Honest and useful."
+      }
+    ],
+    "apa": "2.4",
+    "domain": "Methods"
+  },
+  {
+    "id": "DL56",
+    "week": 13,
+    "kind": "data",
+    "title": "Low alpha after translation",
+    "text": "Your Urdu translation of a public-domain IPIP scale shows low internal consistency in a pilot (simulated data).",
+    "options": [
+      {
+        "label": "Quietly drop items until alpha looks acceptable",
+        "effects": {
+          "rigour": -2,
+          "ethics": -2,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Undisclosed item deletion capitalises on chance and misreports the scale."
+      },
+      {
+        "label": "Give up and use only the English version",
+        "effects": {
+          "rigour": -1,
+          "ethics": 0,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Quick, but it excludes participants who are more comfortable in Urdu."
+      },
+      {
+        "label": "Report it honestly, check item–total correlations and translation quality, then re-pilot",
+        "effects": {
+          "rigour": 2,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Back-translation and cognitive interviews often reveal the problem items."
+      }
+    ],
+    "apa": "2.4",
+    "domain": "IndDiff"
+  },
+  {
+    "id": "DL57",
+    "week": 9,
+    "kind": "forensic",
+    "title": "The red jacket lineup",
+    "text": "In a simulated case, the witness described a man in a red jacket. The detective's lineup has the suspect as the only person in red.",
+    "options": [
+      {
+        "label": "Use a single-suspect show-up instead",
+        "effects": {
+          "rigour": -1,
+          "ethics": -1,
+          "time": 1,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Show-ups are suggestive too. Use them only when urgency requires it."
+      },
+      {
+        "label": "Use fillers who match the description, unbiased instructions and a double-blind administrator",
+        "effects": {
+          "rigour": 2,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Fair lineups protect both the innocent and the investigation."
+      },
+      {
+        "label": "Run it as it is",
+        "effects": {
+          "rigour": -3,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. A biased lineup invites a mistaken identification."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Cog/Social"
+  },
+  {
+    "id": "DL58",
+    "week": 9,
+    "kind": "forensic",
+    "title": "The confession request",
+    "text": "A simulated police officer asks you, a psychology student, how to get a confession from a 16-year-old by claiming false evidence exists.",
+    "options": [
+      {
+        "label": "Decline, and recommend recorded, non-coercive investigative interviewing with an appropriate adult present",
+        "effects": {
+          "rigour": 2,
+          "ethics": 3,
+          "time": -1,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. False-evidence ploys raise the risk of false confessions, especially in young people."
+      },
+      {
+        "label": "Explain how to use a false-evidence ploy",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. It contributes to coercion of a minor and risks a false confession."
+      },
+      {
+        "label": "Say it is outside your competence and refer to a forensic psychologist",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Appropriate humility (APA 2.01)."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Applied"
+  },
+  {
+    "id": "DL59",
+    "week": 9,
+    "kind": "forensic",
+    "title": "Confident means correct?",
+    "text": "A lawyer asks you to testify that a highly confident eyewitness \"must be accurate\".",
+    "options": [
+      {
+        "label": "Say what the lawyer wants",
+        "effects": {
+          "rigour": -3,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Misrepresenting the evidence in court can convict an innocent person."
+      },
+      {
+        "label": "Decline to testify",
+        "effects": {
+          "rigour": 0,
+          "ethics": 1,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Acceptable, but the court loses accurate expertise."
+      },
+      {
+        "label": "Testify accurately: confidence can relate to accuracy when it is recorded immediately under fair conditions, but it becomes inflated later",
+        "effects": {
+          "rigour": 2,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 0
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Experts must represent the science, not the client's wishes."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Cog"
+  },
+  {
+    "id": "DL60",
+    "week": 14,
+    "kind": "io",
+    "title": "Research data for firing decisions",
+    "text": "A company that hosted your personality study asks for individual results to dismiss staff with low conscientiousness scores.",
+    "options": [
+      {
+        "label": "Refuse, and offer to design a validated selection procedure for future hiring",
+        "effects": {
+          "rigour": 1,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Ethical and helpful, done as a separate project with proper consent."
+      },
+      {
+        "label": "Refuse: the data was collected for research, with a promise of confidentiality",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 2
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Using research data for employment decisions breaks consent (APA 4.01, 8.02)."
+      },
+      {
+        "label": "Hand over the data",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -3
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. A serious breach that could cost people their jobs."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Social"
+  },
+  {
+    "id": "DL61",
+    "week": 14,
+    "kind": "io",
+    "title": "Gut-feel interviews",
+    "text": "A manager wants to keep unstructured interviews to \"judge character\" when hiring graduates.",
+    "options": [
+      {
+        "label": "Recommend a job analysis and structured interviews",
+        "effects": {
+          "rigour": 3,
+          "ethics": 1,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Structured interviews are typically more valid and less biased."
+      },
+      {
+        "label": "Keep unstructured interviews",
+        "effects": {
+          "rigour": -2,
+          "ethics": -1,
+          "time": 1,
+          "welfare": -1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Higher risk of bias and lower predictive validity."
+      },
+      {
+        "label": "Combine a structured interview with a work-sample test",
+        "effects": {
+          "rigour": 3,
+          "ethics": 1,
+          "time": -2,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Strong. Combining valid methods improves prediction."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Social"
+  },
+  {
+    "id": "DL62",
+    "week": 14,
+    "kind": "io",
+    "title": "The \"anonymous\" wellbeing survey",
+    "text": "HR wants the staff wellbeing survey to quietly record names so they can \"follow up\".",
+    "options": [
+      {
+        "label": "Record names secretly",
+        "effects": {
+          "rigour": 0,
+          "ethics": -3,
+          "time": 1,
+          "welfare": -2
+        },
+        "ethicsPenalty": true,
+        "feedback": "Ethics penalty. Covert identification is deception and a confidentiality breach."
+      },
+      {
+        "label": "Add an optional, clearly explained section where staff can leave their name if they want follow-up",
+        "effects": {
+          "rigour": 0,
+          "ethics": 2,
+          "time": -1,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Respects choice and still enables support."
+      },
+      {
+        "label": "Keep it anonymous and report only aggregated results",
+        "effects": {
+          "rigour": 0,
+          "ethics": 3,
+          "time": 0,
+          "welfare": 1
+        },
+        "ethicsPenalty": false,
+        "feedback": "Correct. Honest answers depend on real anonymity."
+      }
+    ],
+    "apa": "1.4",
+    "domain": "Social"
+  }
+]
