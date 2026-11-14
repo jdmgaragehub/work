@@ -543,9 +543,10 @@ const FUNCS = [
 // ---------- brain signed-distance field (brain-relative coords: +x = left hemisphere, +z = anterior) ----------
 function smoothstep(a, b, x) { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); }
 function hemiD(x, y, z) {
-  const hx = Math.abs(x);
   const w = 2.45 + 0.14 * Math.max(0, -z / 5.7);
-  return Math.max(sd.ellipsoid(hx - 2.42, y, z, w, 3.25, 5.7), -(y + 2.75));
+  // two hemispheres joined below; they diverge near the top, leaving the longitudinal fissure
+  const d = sd.smin(sd.ellipsoid(x - 2.2, y, z, w, 3.25, 5.7), sd.ellipsoid(x + 2.2, y, z, w, 3.25, 5.7), 0.5);
+  return Math.max(d, -(y + 2.75));
 }
 function temporalD(x, y, z) { return sd.ellipsoid(Math.abs(x) - 3.35, y + 1.7, z - 0.4, 1.45, 1.25, 2.9); }
 function centralZ(y) { return -0.2 - 0.38 * Math.max(y, 0); }
@@ -585,14 +586,11 @@ function classify(x, y, z) {
   if (dBs < dCr - 0.05 && dBs < dCb) return R.brainstem;
   if (dCb < dCr) return R.cerebellum;
   const zc = centralZ(y);
-  if (temporalD(x, y, z) < hemiD(x, y, z) + 0.15 && y < -0.45) {
-    if (x > 0 && z < -0.6 && z > -2.7 && y > -2.0) return R.wernicke;
-    return R.temporal;
-  }
-  if (z > zc + 0.85) {
-    if (x > 2.85 && y < 0.6 && y > -1.4 && z > zc + 1.0 && z < zc + 2.9) return R.broca;
-    return R.frontal;
-  }
+  // left-hemisphere language areas (+x = left): inferior frontal (Broca) and posterior superior temporal (Wernicke)
+  if (x > 2.7 && y < 0.5 && y > -1.5 && z > zc + 0.95 && z < zc + 2.8) return R.broca;
+  if (x > 2.7 && y < 0.1 && y > -1.9 && z < -0.7 && z > -2.9) return R.wernicke;
+  if (temporalD(x, y, z) < hemiD(x, y, z) + 0.15 && y < -0.45) return R.temporal;
+  if (z > zc + 0.85) return R.frontal;
   if (z > zc) return y > -0.9 ? R.motor : R.frontal;
   if (z > zc - 0.85 && y > -0.9) return R.somato;
   if (z > -3.4 - 0.15 * y) return R.parietal;
@@ -690,7 +688,7 @@ function build(kit) {
     return mesh;
   }
   inner[R.callosum] = innerMat(R.callosum);
-  tube([[0, 0.7, 2.3], [0, 1.45, 1.1], [0, 1.65, -0.8], [0, 1.45, -2.4], [0, 0.85, -2.95]], 0.3, inner[R.callosum], 4.2);
+  tube([[0, -0.05, 2.25], [0, 0.4, 1.2], [0, 0.55, -0.6], [0, 0.4, -2.2], [0, -0.1, -2.8]], 0.26, inner[R.callosum], 4.0);
   inner[R.thalamus] = innerMat(R.thalamus);
   inner[R.hippocampus] = innerMat(R.hippocampus);
   inner[R.amygdala] = innerMat(R.amygdala);
@@ -743,7 +741,7 @@ function build(kit) {
   surfLabel(R.parietal, 'R', [-2.4, 2.0, -2.8]); surfLabel(R.temporal, 'R', [-4.0, -1.8, 0.4]); surfLabel(R.occipital, 'L', [2.2, 0.5, -4.6]);
   surfLabel(R.visual, 'R', [-0.8, 0.3, -5.6], 1.0); surfLabel(R.cerebellum, 'L', [1.6, -2.4, -5.2]); surfLabel(R.brainstem, 'R', [-0.6, -2.6, -2.3], 1.6);
   surfLabel(R.broca, 'L', [4.4, -0.3, 1.6], 1.4); surfLabel(R.wernicke, 'L', [4.3, -1.2, -1.6], 1.4);
-  addLabel(R.callosum, C(0, 1.7, 0.2), new V3(0, 0.6, 0));
+  addLabel(R.callosum, C(0, 0.3, 1.5), new V3(0, -0.75, 0.5));
   addLabel(R.thalamus, C(0.62, -0.1, -0.6), new V3(0, -0.85, 0.6));
   addLabel(R.hippocampus, C(1.9, -1.2, -0.4), new V3(-0.6, -0.55, 0.4));
   addLabel(R.amygdala, C(-1.85, -1.5, 1.4), new V3(0.5, -0.45, 0.3));
@@ -767,7 +765,7 @@ function build(kit) {
     tractDefs.push({ fns: ['balance'], color: 0x9c8c7a, pts: [new V3(0, -3.0, -2.1), new V3(0.8 * s, -2.6, -3.2), new V3(1.8 * s, -2.1, -4.3)] });
   }
   tractDefs.push({ fns: ['language production'], color: 0xf59e0b, pts: [P(R.broca, 'L', [3.6, -0.3, 1.4]), new V3(3.3, 0.9, -0.6), new V3(3.2, 0.2, -2.0), P(R.wernicke, 'L', [3.6, -1.2, -1.6])] });
-  for (const z of [1.4, -0.6, -2.2]) tractDefs.push({ fns: ['language production', 'touch', 'vision', 'movement'], color: 0xf8fafc, pts: [new V3(2.6, 1.7, z), new V3(0, 1.75 + 0.1 * z, z), new V3(-2.6, 1.7, z)] });
+  for (const z of [1.4, -0.6, -2.2]) tractDefs.push({ fns: ['language production', 'touch', 'vision', 'movement'], color: 0xf8fafc, pts: [new V3(2.6, 1.2, z), new V3(0, 0.5 + 0.05 * z, z), new V3(-2.6, 1.2, z)] });
   const LUT = 48;
   const tracts = tractDefs.map((t) => {
     const curve = new THREE.CatmullRomCurve3(t.pts.map((p) => p.clone().add(new V3(BRAIN_C[0], BRAIN_C[1], BRAIN_C[2]))));
