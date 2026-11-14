@@ -362,6 +362,7 @@ class AudioEngine {
     this._hidden = false;
     this._win = opts.window || (typeof window !== 'undefined' ? window : null);
     this._doc = opts.document || (typeof document !== 'undefined' ? document : null);
+    this._hidden = !!(this._doc && this._doc.hidden);
     this._wireBus();
     this._wireDom();
   }
@@ -664,23 +665,19 @@ class AudioEngine {
       const t0 = this._at(o.when);
       let env; const end = t0 + d;
       const v = this._voice((reg, track) => {
-        env = this._G(reg, 0);
+        // osc -> per-ear gate -> hard panner -> shared output (stop() fades this)
+        env = this._G(reg, 1, this.stimBus);
         const fade = Math.min(0.5, d / 4);
-        this._gate(env.gain, t0, peak, d, { attack: fade, release: fade });
         [[left, -1], [right, 1]].forEach(([f, pan]) => {
-          const osc = this._O(reg, 'sine', f);
-          const g = this._G(reg, 1);
-          osc.connect(g); g.connect(env);
-          // each ear needs its own panner after the shared envelope
-          const ear = this._G(reg, 1);
-          osc.disconnect(); osc.connect(ear); ear.connect(this._G(reg, 1, this._P(reg, pan, this.stimBus)));
-          ear.gain.value = 0; ear.gain.setValueAtTime(0, t0);
+          const ear = this._G(reg, 0);
+          ear.connect(this._P(reg, pan, env));
           this._gate(ear.gain, t0, peak, d, { attack: fade, release: fade });
+          const osc = this._O(reg, 'sine', f, ear);
           osc.start(t0); osc.stop(end + 0.01); track(osc);
         });
       }, true);
       this._caption(o.caption || `[binaural beat: ${Math.round(left)} Hz left ear, ${Math.round(right)} Hz right ear; headphones needed]`);
-      return this._handle(v, t0, end, null);
+      return this._handle(v, t0, end, env);
     } catch (e) { return NULL_HANDLE; }
   }
 
