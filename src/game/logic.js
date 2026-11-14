@@ -25,7 +25,7 @@ const EVENT_CATALOGUE = [
   'badge:earned', 'week:set',
 ];
 /** Events the game itself emits; never fed back into mission/stat tallies (avoids loops). */
-const SELF_EVENTS = new Set(['mission:complete', 'badge:earned', 'xp:gain', 'level:up', 'scorecard:update', 'missions:unlocked', 'state:restored']);
+const SELF_EVENTS = new Set(['mission:complete', 'mission:progress', 'badge:earned', 'xp:gain', 'level:up', 'scorecard:update', 'missions:unlocked', 'state:restored', 'leaderboard:submit']);
 
 // ------------------------------------------------------------------ missions
 function eq(a, b) {

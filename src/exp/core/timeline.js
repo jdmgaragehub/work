@@ -67,9 +67,10 @@ function balancedSequence(conditions, reps, rng, maxRun = 3) {
  *  opts.practice (n practice trials), opts.attentionChecks (n), opts.quick (bot/e2e shortening)
  */
 function buildTimeline(spec, rng, opts = {}) {
-  const main = spec.buildTrials(rng, opts).map((t) => Object.assign({ block: t.block || 'main' }, t));
+  const nPractice = typeof opts.practice === 'number' ? opts.practice : (spec.practice || 0);
+  const mainOpts = Object.assign({}, opts); delete mainOpts.practice; // practice:true is reserved for the practice build
+  const main = spec.buildTrials(rng, mainOpts).map((t) => Object.assign({ block: t.block || 'main' }, t));
   const out = [];
-  const nPractice = opts.practice != null ? opts.practice : (spec.practice || 0);
   if (nPractice > 0 && spec.buildTrials) {
     const prac = spec.buildTrials(rng.fork('practice'), Object.assign({}, opts, { practice: true })).slice(0, nPractice);
     for (const p of prac) out.push(Object.assign({}, p, { block: 'practice' }));
