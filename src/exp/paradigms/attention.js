@@ -247,7 +247,7 @@ const attnBlink = Object.assign({}, TAGS, {
 });
 
 // =====================================================================================
-// 4. Dichotic listening (fact F-CHERRY). Audio via A10: audio.tone({freq, dur, pan, gain, type, when}) —
+// 4. Dichotic listening (fact F-CHERRY). Audio via A10: audio.tone({freq, dur, pan, gain, type, when}) (dur, when in SECONDS) —
 //    dur and when in milliseconds (when = offset from the call).
 // =====================================================================================
 const DL_N = 8, DL_IOI = 350, DL_TONE = 160, DL_FREQS = [392, 440, 494, 523, 587, 659];
@@ -282,9 +282,9 @@ const dichotic = Object.assign({}, TAGS, {
       t[side].forEach((freq, i) => {
         const when = offset + i * DL_IOI;
         if (chirpPan === pan && i === t.pos) {
-          audio.tone({ freq: 1700, dur: 45, pan, gain: 0.22, type: 'sine', when });
-          audio.tone({ freq: 2300, dur: 55, pan, gain: 0.22, type: 'sine', when: when + 45 });
-        } else audio.tone({ freq, dur: DL_TONE, pan, gain: 0.2, type: 'triangle', when });
+          audio.tone({ freq: 1700, dur: 0.045, pan, gain: 0.22, type: 'sine', when: when / 1000 });
+          audio.tone({ freq: 2300, dur: 0.055, pan, gain: 0.22, type: 'sine', when: (when + 45) / 1000 });
+        } else audio.tone({ freq, dur: DL_TONE / 1000, pan, gain: 0.2, type: 'triangle', when: when / 1000 });
       });
     }
   },
