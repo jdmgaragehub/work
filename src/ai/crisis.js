@@ -206,29 +206,17 @@ function firstMatch(text, table) {
 }
 
 function scan(t) {
-  // 1) strong patterns on the raw normalised text — never weakened by any context rule
-  const raw = firstMatch(t, STRONG_RE);
-  // 2) strip benign idioms/game contexts, then re-check strong + weak
+  // 1) strip narrow benign idioms / game contexts ("kill the process", "this neuron dies")
   let s = t;
   for (const re of BENIGN) s = s.replace(re, ' ');
-  // reassurance removal only when nothing hedges it
-  let reassured = s;
-  if (!HEDGE.test(s)) for (const re of REASSURE) reassured = reassured.replace(re, ' ');
-  const strong = firstMatch(reassured, STRONG_RE);
+  // 2) remove explicit reassurances only when nothing hedges them
+  if (!HEDGE.test(s)) for (const re of REASSURE) s = s.replace(re, ' ');
+  // 3) strong patterns always fire
+  const strong = firstMatch(s, STRONG_RE);
   if (strong) return strong;
-  if (raw) {
-    // The raw hit vanished only through stripping. Keep it unless the stripped span fully
-    // explains it (benign idiom) or it was an explicit, unhedged reassurance.
-    const explainedByBenign = !firstMatch(s, STRONG_RE);
-    const explainedByReassure = reassured !== s;
-    if (!(explainedByBenign && BENIGN.some((re) => { re.lastIndex = 0; return re.test(t); })) && !explainedByReassure) return raw;
-    if (explainedByReassure && !explainedByBenign) { /* reassurance-only: suppressed */ }
-  }
-  const weak = firstMatch(reassured, WEAK_RE);
-  if (weak) {
-    const academic = ACADEMIC.test(reassured) && !FIRST_PERSON.test(reassured);
-    if (!academic) return weak;
-  }
+  // 4) weak topic words fire unless clearly academic AND not first-person
+  const weak = firstMatch(s, WEAK_RE);
+  if (weak && !(ACADEMIC.test(s) && !FIRST_PERSON.test(s))) return weak;
   return null;
 }
 

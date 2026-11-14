@@ -238,7 +238,7 @@ const ames = Object.assign({
     let P;
     if (t.condition === 'peephole') { const f = vw * 0.95; P = (p) => ({ x: W / 2 + f * p[0] / p[2], y: vy + vh * 0.5 - f * (p[1] + 0.1) / p[2] }); }
     else {
-      const cam = lookAt([9, 11, -7], [-1, -1.5, 9]), all = [].concat(g.back, g.left, g.right, g.tiles[0].pts, g.tiles[g.tiles.length - 1].pts, [[0, 0, 0]]).map(cam);
+      const cam = lookAt([6, 4.5, -7], [-1, -1.2, 9]), all = [].concat(g.back, g.left, g.right, g.tiles[0].pts, g.tiles[g.tiles.length - 1].pts, [[0, 0, 0]]).map(cam);
       const xs = all.map((q) => q.x), ys = all.map((q) => q.y), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
       const sc = Math.min((vw - 40) / (x1 - x0), (vh - 40) / (y1 - y0));
       P = (p) => { const q = cam(p); return { x: vx + vw / 2 + (q.x - (x0 + x1) / 2) * sc, y: vy + vh / 2 + (q.y - (y0 + y1) / 2) * sc }; };
@@ -600,7 +600,7 @@ const DIRS = [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1
 /** Draw a polycube: own 3D→2D projection (weak perspective), back-face culling, painter's sort, Lambert shading. */
 function drawCubeFigure(ctx, cells, mirror, yaw, cx, cy, u, base) {
   const occ = new Set(cells.map((c) => c.join(',')));
-  const R = (v) => rotX(-0.45)(rotY(base + yaw)(mirror ? [-v[0], v[1], v[2]] : v));
+  const R = (v) => rotX(-0.55)(rotY(base + yaw)(mirror ? [-v[0], v[1], v[2]] : v));
   const light = norm([-0.45, 0.65, 0.6]), faces = [];
   for (const c of cells) {
     for (const d of DIRS) {
@@ -609,13 +609,13 @@ function drawCubeFigure(ctx, cells, mirror, yaw, cx, cy, u, base) {
       for (const [a, b] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) { const v = c.slice(); v[ax] += d[ax] * 0.5; v[o[0]] += a * 0.5; v[o[1]] += b * 0.5; corners.push(R(v)); }
       const N = R(d); // reflection + rotation are orthogonal, so the normal maps like a point
       if (N[2] <= 0.001) continue; // viewer looks along −z: keep faces whose normal points to the viewer (+z)
-      faces.push({ pts: corners, z: S.mean(corners.map((q) => q[2])), shade: 0.42 + 0.58 * Math.max(0, dot(N, light)) });
+      faces.push({ pts: corners, z: S.mean(corners.map((q) => q[2])), shade: 0.55 + 0.45 * Math.max(0, dot(N, light)) });
     }
   }
   faces.sort((a, b) => a.z - b.z);
   for (const f of faces) {
     const pts = f.pts.map((q) => { const k = 1 + q[2] * 0.04; return { x: cx + q[0] * u * k, y: cy - q[1] * u * k }; });
-    const r = Math.round(70 * f.shade), g = Math.round(125 * f.shade), b = Math.round(205 * f.shade);
+    const r = Math.round(95 * f.shade), g = Math.round(150 * f.shade), b = Math.round(230 * f.shade);
     poly(ctx, pts, `rgb(${r},${g},${b})`, '#0b1320', 1.6);
   }
 }
@@ -634,7 +634,7 @@ const mentalRotation = {
     });
   },
   draw(ctx, t, W, H) {
-    const u = Math.min(W * 0.42, H * 0.72) / 7.2, cells = mrCubes(t.shape);
+    const u = Math.min(W * 0.42, H * 0.72) / 6, cells = mrCubes(t.shape);
     drawCubeFigure(ctx, cells, false, 0, W * 0.29, H * 0.5, u, t.base);
     drawCubeFigure(ctx, cells, t.condition === 'mirror', (t.angle * Math.PI) / 180, W * 0.71, H * 0.5, u, t.base);
     line(ctx, W / 2, H * 0.2, W / 2, H * 0.8, '#cbd5e1', 2);
