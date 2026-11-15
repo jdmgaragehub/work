@@ -25,7 +25,8 @@ class HUD {
       h('button', { type: 'button', class: 'modebtn', onclick: () => sim.services.chat && sim.services.chat.toggle(), 'aria-label': 'Open RAAHI AI tutor' }, h('kbd', null, 'T'), 'RAAHI'),
       h('button', { type: 'button', class: 'modebtn', onclick: () => sim.services.journey && sim.services.journey.start('participant') }, h('kbd', null, 'J'), "Participant's Journey"),
       h('button', { type: 'button', class: 'modebtn', onclick: () => this.toggleNight() }, h('kbd', null, 'N'), 'Day/Night'),
-      h('button', { type: 'button', class: 'modebtn', onclick: () => this.save() }, '💾 Save'));
+      h('button', { type: 'button', class: 'modebtn', onclick: () => this.save() }, '💾 Save'),
+      h('button', { type: 'button', class: 'modebtn', onclick: () => this.load() }, '📂 Load'));
     this.banner = h('div', { class: 'zone-banner', 'aria-live': 'polite', style: { opacity: 0 } });
     this.prompt = h('div', { class: 'prompt3d', hidden: true });
     this.cross = h('div', { class: 'crosshair', 'aria-hidden': 'true' });
@@ -106,6 +107,17 @@ class HUD {
     const ok = this.sim.store.save(this.sim.snapshot());
     toast(ok ? 'Progress saved on this device.' : 'Could not save (storage unavailable).');
     this.sim.bus.emit('save:done', { ok });
+  }
+
+  load() {
+    const sim = this.sim;
+    const snap = sim.store.load();
+    if (!snap) { toast('No saved game on this device yet. Press 💾 Save first.'); return; }
+    const ok = sim.restore(snap);
+    if (ok && sim.services.world) sim.services.world.teleport(sim.state.zone || 'courtyard');
+    this.refresh();
+    toast(ok ? 'Saved game loaded (saved ' + (snap.savedAt || '').slice(0, 16).replace('T', ' ') + ').' : 'Could not load the saved game.');
+    sim.bus.emit('load:done', { ok });
   }
 
   help() {

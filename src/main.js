@@ -78,6 +78,8 @@ async function boot() {
     progress(0.5, 'Sculpting the Neuro Atrium (marching cubes)…');
     const world = tryService(sim, 'world', () => require('./world/campus.js').buildWorld(sim, engine));
     if (world && sim.services.controls) sim.services.controls.setWorld(world);
+    // Drive camera controls every frame (movement, mouse look, collisions), then drop unread key edges.
+    if (sim.services.controls) engine.addUpdate((dt) => { sim.services.controls.update(dt); if (sim.services.input) sim.services.input.endFrame(); });
     await frame();
     progress(0.66, 'Dressing the Mohalla crowd…');
   }
@@ -96,13 +98,11 @@ async function boot() {
   if (sim.services.world && sim.services.world.crowd) tryService(sim, 'social', () => require('./people/social.js').createSocialSim(sim, sim.services.world.crowd));
   await frame();
 
-  progress(0.92, 'Restoring your lab notebook…');
-  const saved = sim.store.load();
-  if (saved) sim.restore(saved);
+  progress(0.92, 'Preparing a fresh lab notebook…');
+  // Always start fresh: progress is restored ONLY when the player presses Load (no auto-load, no autosave).
   wireModes(sim, hud);
   wireKeys(sim, hud, panels);
   installTestHooks(sim, panels);
-  setInterval(() => sim.store.save(sim.snapshot()), 60000);
 
   if (engine) {
     // HUD: interaction prompt + minimap (throttled)
@@ -123,7 +123,7 @@ async function boot() {
   sim.bus.emit('boot:done', { steps });
   if (!sim.params.get('e2e')) {
     await require('./ui/onboarding.js').onboarding(sim);
-    toast('Welcome to IIBS (simulated). Press 1–7 for modes, T for RAAHI, ❔ for help.', 5000);
+    toast('Welcome to IIBS (simulated). Click the 3D view to look with the mouse, walk with W A S D (Shift = run), E to use. 1–7 modes, T for RAAHI, Esc frees the cursor.', 7000);
   }
 }
 
