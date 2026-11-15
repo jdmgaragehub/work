@@ -621,7 +621,13 @@ function missions(body, api) {
   const tracks = [...new Set(all.map((m) => m.track || 'core'))];
   body.appendChild(api.charts.bar(tracks.map((t) => { const ms = all.filter((m) => (m.track || 'core') === t); return { name: t, value: Math.round(100 * ms.filter((m) => st(m.id).done).length / ms.length) }; }), { label: 'Missions complete per track (%)', yl: '% complete', yr: [0, 100], W: 600 }));
   const scoring = api.service('scoring');
-  if (scoring && scoring.certificate) body.appendChild(btn('Show my certificate', () => scoring.certificate(), 'teal'));
+  if (scoring && scoring.certificate) body.appendChild(btn('Show my certificate', () => {
+    const c = scoring.certificate(sim.state.certName || '');
+    c.style.cssText = 'width:100%;height:auto;border-radius:8px;';
+    api.modal({ title: 'Your ZEHN certificate (simulated institution)', body: h('div', null, c), actions: [
+      { label: 'Print', value: 'print', cls: 'ghost' }, { label: 'Download PNG', value: 'png', cls: 'teal' }, { label: 'Close', value: null }] })
+      .then((v) => { if (v === 'png' && scoring.downloadCertificate) scoring.downloadCertificate(sim.state.certName || ''); if (v === 'print' && scoring.printCertificate) scoring.printCertificate(sim.state.certName || ''); });
+  }, 'teal'));
 
   const go = (o) => {
     const w = o.where || {};

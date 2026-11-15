@@ -56596,12 +56596,12 @@ __def("src/core/bus.js", function (module, exports, require) {
 'use strict';
 /** Event bus (`sim.bus`). Catalogue of events: docs/ARCHITECTURE.md §3. A throwing listener never breaks others. */
 class EventBus {
-  constructor() { this.listeners = new Map(); this.log = []; }
+  constructor() { this.listeners = new Map(); this.log = []; this.count = 0; }
   on(event, fn) { if (!this.listeners.has(event)) this.listeners.set(event, new Set()); this.listeners.get(event).add(fn); return () => this.off(event, fn); }
   once(event, fn) { const off = this.on(event, (p, e) => { off(); fn(p, e); }); return off; }
   off(event, fn) { const s = this.listeners.get(event); if (s) s.delete(fn); }
   emit(event, payload = {}) {
-    this.log.push({ event, t: Date.now() }); if (this.log.length > 500) this.log.shift();
+    this.count++; this.log.push({ event, t: Date.now() }); if (this.log.length > 500) this.log.shift();
     for (const key of [event, '*']) {
       const set = this.listeners.get(key); if (!set) continue;
       for (const fn of [...set]) { try { fn(payload, event); } catch (err) { setTimeout(() => { throw err; }, 0); } }
@@ -101120,7 +101120,13 @@ function missions(body, api) {
   const tracks = [...new Set(all.map((m) => m.track || 'core'))];
   body.appendChild(api.charts.bar(tracks.map((t) => { const ms = all.filter((m) => (m.track || 'core') === t); return { name: t, value: Math.round(100 * ms.filter((m) => st(m.id).done).length / ms.length) }; }), { label: 'Missions complete per track (%)', yl: '% complete', yr: [0, 100], W: 600 }));
   const scoring = api.service('scoring');
-  if (scoring && scoring.certificate) body.appendChild(btn('Show my certificate', () => scoring.certificate(), 'teal'));
+  if (scoring && scoring.certificate) body.appendChild(btn('Show my certificate', () => {
+    const c = scoring.certificate(sim.state.certName || '');
+    c.style.cssText = 'width:100%;height:auto;border-radius:8px;';
+    api.modal({ title: 'Your ZEHN certificate (simulated institution)', body: h('div', null, c), actions: [
+      { label: 'Print', value: 'print', cls: 'ghost' }, { label: 'Download PNG', value: 'png', cls: 'teal' }, { label: 'Close', value: null }] })
+      .then((v) => { if (v === 'png' && scoring.downloadCertificate) scoring.downloadCertificate(sim.state.certName || ''); if (v === 'print' && scoring.printCertificate) scoring.printCertificate(sim.state.certName || ''); });
+  }, 'teal'));
 
   const go = (o) => {
     const w = o.where || {};
@@ -108783,7 +108789,7 @@ module.exports = { id, build };
 
 });
 
-window.__ZEHN_BUILD__ = {"built":"2026-11-15T15:32:04.256Z","modules":95};
+window.__ZEHN_BUILD__ = {"built":"2026-11-15T16:07:06.882Z","modules":95};
 __require('', 'src/main.js');
 })();
 </script>

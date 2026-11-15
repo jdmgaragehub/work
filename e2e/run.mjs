@@ -100,9 +100,9 @@ for (const id of panelIds) {
       const label = b.textContent.trim().slice(0, 40);
       if (/delete all|clear all|reset everything/i.test(label)) return { skip: true, label };
       let mut = 0; const mo = new MutationObserver((r) => { mut += r.length; }); mo.observe(document.body, { subtree: true, childList: true, attributes: true, characterData: true });
-      const ev0 = window.__zehnTest.sim.bus.log.length, dl0 = window.__lastDownload;
+      const ev0 = window.__zehnTest.sim.bus.count, dl0 = window.__lastDownload;
       b.click(); await new Promise((r) => setTimeout(r, 60)); mo.disconnect();
-      return { label, live: mut > 0 || window.__zehnTest.sim.bus.log.length > ev0 || window.__lastDownload !== dl0 };
+      return { label, live: mut > 0 || window.__zehnTest.sim.bus.count > ev0 || window.__lastDownload !== dl0 };
     }, i);
     if (res.skip) continue;
     pressed++; if (!res.live) dead.push(res.label);
