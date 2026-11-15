@@ -100,7 +100,8 @@ for (const tier of TIERS) {
     out.extra.motionBlur = engine.stats.passes.includes('motionBlur'); spin();
     controls.teleport({ pos: [0, 1.65, 9], yaw: 0, pitch: -0.05 });
     engine.setExperimentMode(true); const f0 = engine.frame; await wait(300); out.extra.expPaused = engine.frame === f0; engine.setExperimentMode(false);
-    sim.settings.reducedMotion = true; await wait(300); out.extra.reducedNoMB = !engine.stats.passes.includes('motionBlur'); sim.settings.reducedMotion = false;
+    sim.settings.reducedMotion = true; const spin2 = engine.addUpdate((dt) => { controls.yaw += dt * 0.6; }); const fr = engine.frame; await wait(1500);
+    out.extra.reducedNoMB = engine.frame > fr + 1 && !engine.stats.passes.includes('motionBlur'); spin2(); sim.settings.reducedMotion = false;
     const t0 = engine.frame, ts = performance.now(); await wait(3000); out.fps = +((engine.frame - t0) / ((performance.now() - ts) / 1000)).toFixed(1);
     out.finalStats = engine.stats;
     return out;
