@@ -33,7 +33,7 @@ const SEGS = { ultra: 20, high: 16, medium: 12, low: 8 };
 
 const PAL = {
   kameezM: ['#f2efe6', '#e8dcc4', '#d9e4ea', '#c9d8c2', '#9fb6c8', '#6f7d5a', '#2b3a6b', '#b8a27a', '#4a6a6a', '#5a4a3a', '#ffffff', '#3b4252'],
-  kameezF: ['#9f1239', '#7a2232', '#0f766e', '#b45309', '#e9d2d6', '#6d28d9', '#1e3a8a', '#d8b04a', '#be185d', '#047857', '#f3e8d2', '#7c3aed'],
+  kameezF: ['#9f1239', '#7a2232', '#0f766e', '#e9d2d6', '#6d28d9', '#1e3a8a', '#d8b04a', '#be185d', '#047857', '#f3e8d2', '#7c3aed', '#0e7490'],
   dupatta: ['#f4e3c1', '#8e1a2e', '#23317a', '#d9a21c', '#be185d', '#0f766e', '#f8fafc', '#fde68a'],
   hijab: ['#1e1b4b', '#7c2d12', '#334155', '#0f766e', '#9f1239', '#e7e5e4', '#57534e', '#312e81'],
   waistcoat: ['#1c1917', '#3f3f46', '#44403c', '#1e293b', '#4a3728', '#3b2f2f'],
@@ -50,6 +50,11 @@ const JOINTS = ['hips', 'spine', 'chest', 'neck', 'head', 'shL', 'elL', 'haL', '
 function hrng(seed) {
   let a = (seed * 2654435761) >>> 0 || 1;
   return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+}
+function mixHex(a, b, f) {
+  const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+  const ch = (sh) => Math.round(((pa >> sh) & 255) * (1 - f) + ((pb >> sh) & 255) * f);
+  return '#' + [16, 8, 0].map((sh) => ch(sh).toString(16).padStart(2, '0')).join('');
 }
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const pick = (arr, r) => arr[Math.floor(r() * arr.length) % arr.length];
@@ -98,8 +103,8 @@ function makeSkin(T, color, extra = {}) {
   } catch (e) { /* engine not present: use the local SSS approximation */ }
   const m = new T.MeshStandardMaterial(Object.assign({ color, roughness: 0.58, metalness: 0 }, extra));
   m.onBeforeCompile = (sh) => {
-    sh.uniforms.uWrap = { value: 0.5 };
-    sh.uniforms.uScatter = { value: new T.Color(0.62, 0.2, 0.1) };
+    sh.uniforms.uWrap = { value: 0.4 };
+    sh.uniforms.uScatter = { value: new T.Color(0.32, 0.1, 0.05) };
     sh.fragmentShader = 'uniform float uWrap;\nuniform vec3 uScatter;\n' + sh.fragmentShader.replace('#include <lights_fragment_end>', `#include <lights_fragment_end>
       {
         // subsurface approximation: wrap lighting past the terminator, red-shifted (Jimenez-style cheap SSS)
@@ -112,7 +117,7 @@ function makeSkin(T, color, extra = {}) {
         #endif
         #if NUM_HEMI_LIGHTS > 0
         float rim = pow(1.0 - saturate(dot(normal, normalize(vViewPosition))), 3.0);
-        reflectedLight.indirectDiffuse += rim * 0.18 * uScatter * material.diffuseColor * hemisphereLights[0].skyColor;
+        reflectedLight.indirectDiffuse += rim * 0.12 * uScatter * material.diffuseColor * hemisphereLights[0].skyColor;
         #endif
       }`);
   };
@@ -160,6 +165,7 @@ function resolveLook(o) {
   const i = o.lookIndex | 0;
   const r = hrng(i + 17);
   const face = Object.assign({}, face2d.look(i));
+  face.skin = mixHex(face.skin, '#a88a76', 0.22); // slightly desaturated for PBR lighting (same tone on head + face texture)
   const gender = o.gender || (face.hijab || i % 4 === 3 ? 'f' : 'm');
   if (gender === 'f') { face.beard = false; face.cap = null; } else face.hijab = null;
   let outfit = o.outfit;
@@ -272,7 +278,7 @@ function createHumanoid(THREE_, opts = {}) {
   bone('hips', group, 0, 0.92, 0);
   bone('spine', B.hips, 0, 0.08, 0);
   bone('chest', B.spine, 0, 0.22, 0);
-  bone('neck', B.chest, 0, 0.25, -0.01);
+  bone('neck', B.chest, 0, 0.235, -0.01);
   bone('head', B.neck, 0, 0.09, 0.01);
   const shX = female ? 0.165 : 0.185;
   bone('shL', B.chest, shX, 0.2, -0.005); bone('elL', B.shL, 0, -0.29, 0); bone('haL', B.elL, 0, -0.25, 0);
@@ -301,15 +307,12 @@ function createHumanoid(THREE_, opts = {}) {
   add(B.hips, profileGeo(T, [[-0.11, 0], [-0.1, W.hip * 0.6], [-0.07, W.hip * 0.95], [-0.02, W.hip], [0.05, W.hip * 0.97], [0.12, W.waist * 1.02]], 0.7, seg), pelvisMat);
   const chestMesh = new T.Group(); B.chest.add(chestMesh);
   add(B.spine, profileGeo(T, [[-0.05, W.waist * 1.02], [0.06, W.waist], [0.16, (W.waist + W.chest) / 2], [0.25, W.chest * 0.98]], 0.68, seg), topMat);
-  add(chestMesh, profileGeo(T, [[-0.06, W.chest * 0.97], [0.04, W.chest], [0.12, W.chest * 1.02], [0.18, W.sh], [0.225, W.sh * 0.88], [0.255, 0.1], [0.27, 0.055], [0.275, 0]], 0.62, seg), topMat);
-  if (female) {
-    for (const s of [-1, 1]) add(chestMesh, ellipsoid(T, 0.062, 0.058, 0.05, seg), topMat, s * 0.062, 0.075, 0.072);
-  }
+  add(chestMesh, profileGeo(T, [[-0.06, W.chest * 0.97], [0.04, W.chest * (female ? 1.04 : 1)], [0.1, W.chest * (female ? 1.06 : 1.02)], [0.17, W.sh], [0.215, W.sh * 0.9], [0.245, 0.1], [0.26, 0.055], [0.265, 0]], female ? 0.66 : 0.62, seg), topMat);
   // collar
   add(B.chest, new T.TorusGeometry(0.058, 0.012, 6, seg), outfit === 'sweater' ? M(cloth(T, '#f8fafc')) : topMat, 0, 0.255, -0.005, Math.PI / 2 + 0.25, 0, 0);
   // ---- neck & head
-  add(B.neck, limbGeo(T, 0.05, 0.052, 0.1, seg), skinMat, 0, 0.1, 0);
-  const HR = { x: 0.077, y: 0.106, z: 0.094 };
+  add(B.neck, limbGeo(T, 0.05, 0.054, 0.09, seg), skinMat, 0, 0.1, 0);
+  const HR = { x: 0.08, y: 0.11, z: 0.097 };
   const HC = { y: 0.088, z: 0.012 };
   const headGeo = new T.SphereGeometry(1, seg + 8, seg + 4); shapeHead(headGeo); headGeo.scale(HR.x, HR.y, HR.z); headGeo.computeVertexNormals();
   add(B.head, headGeo, skinMat, 0, HC.y, HC.z);
@@ -366,7 +369,7 @@ function createHumanoid(THREE_, opts = {}) {
   // ---- arms
   const sleeveMat = topMat;
   for (const s of ['L', 'R']) {
-    add(B['sh' + s], ellipsoid(T, 0.058, 0.06, 0.055, seg), sleeveMat, 0, -0.01, 0);
+    add(B['sh' + s], ellipsoid(T, 0.05, 0.052, 0.05, seg), sleeveMat, 0, -0.025, 0);
     add(B['sh' + s], limbGeo(T, female ? 0.046 : 0.052, female ? 0.037 : 0.042, 0.28, seg), sleeveMat);
     const sleeveEnd = outfit === 'kurta' && L.i % 3 === 0 ? 0.12 : 0.23;
     add(B['el' + s], limbGeo(T, female ? 0.037 : 0.042, female ? 0.03 : 0.035, sleeveEnd, seg), sleeveMat);
@@ -413,10 +416,15 @@ function createHumanoid(THREE_, opts = {}) {
     add(B.chest, new T.BoxGeometry(0.06, 0.005, 0.01), M(new T.MeshStandardMaterial({ color: '#334155' })), 0.09, 0.06, W.chest * 0.62);
   }
   if (outfit === 'dupatta') {
-    const dm = M(cloth(T, L.colors.over === 'ajrak' ? '#ffffff' : L.colors.over, { pattern: L.colors.over === 'ajrak' ? 'ajrak' : null, side: T.DoubleSide, roughness: 0.95 }));
-    const drape = new T.TorusGeometry(0.15, 0.022, 6, seg * 2, Math.PI * 1.25); drape.rotateZ(-Math.PI * 0.125 - Math.PI / 2); drape.rotateX(Math.PI / 2 - 0.35); drape.scale(1, 1, 0.7);
-    add(B.chest, drape, dm, 0, 0.2, -0.03);
-    for (const s of [-1, 1]) add(B.chest, new T.PlaneGeometry(0.17, 0.62), dm, s * 0.09, -0.08, -W.chest * 0.62 - 0.012, 0.06, Math.PI, s * 0.06);
+    const isAjrak = L.colors.over === 'ajrak';
+    const dm = M(cloth(T, isAjrak ? '#ffffff' : L.colors.over, { pattern: isAjrak ? 'ajrak' : null, side: T.DoubleSide, roughness: 0.95 }));
+    // draped over both shoulders…
+    add(B.chest, profileGeo(T, [[0.1, W.sh * 1.08], [0.17, W.sh * 1.08], [0.215, W.sh * 0.98], [0.245, 0.115], [0.26, 0.075]], 0.7, seg, Math.PI / 2 + 0.2, Math.PI * 2 - 0.4), dm);
+    // …a soft U-fold across the front of the chest…
+    const fold = new T.TorusGeometry(0.135, 0.024, 8, seg * 2, Math.PI); fold.rotateZ(Math.PI); fold.scale(1, 1.05, 0.45);
+    add(B.chest, fold, dm, 0, 0.215, W.chest * 0.66 + 0.005, -0.18, 0, 0);
+    // …and both ends falling down the back
+    for (const sd of [-1, 1]) add(B.chest, new T.PlaneGeometry(0.15, 0.6), dm, sd * 0.085, -0.07, -W.chest * 0.66 - 0.012, 0.05, 0, sd * 0.05);
   }
 
   /* ---------------------------------------------------------------- state */

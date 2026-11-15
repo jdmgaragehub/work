@@ -23,7 +23,7 @@ const SLOT = { FIXED: 0, A: 1, B: 2, C: 3, SKIN: 4, D: 5 };
 const POSE = { walk: 0, idle: 1, sit: 2, talk: 3 };
 
 const KAMEEZ_M = ['#f2efe6', '#e8dcc4', '#d9e4ea', '#c9d8c2', '#9fb6c8', '#6f7d5a', '#2b3a6b', '#b8a27a', '#f4f4f2', '#4a6a6a', '#8a8070', '#5a4a3a'];
-const KAMEEZ_F = ['#9f1239', '#7a2232', '#0f766e', '#b45309', '#e9d2d6', '#6d28d9', '#1e3a8a', '#d8b04a', '#be185d', '#047857', '#f3e8d2', '#c2410c'];
+const KAMEEZ_F = ['#9f1239', '#7a2232', '#0f766e', '#e9d2d6', '#6d28d9', '#1e3a8a', '#d8b04a', '#be185d', '#047857', '#f3e8d2', '#0e7490', '#7c3aed'];
 const SHALWAR = ['#f2efe6', '#e8dcc4', '#d8d2c4', '#2f3440', '#f4f4f2', '#c8c0b0', '#1f2937'];
 const SHAWLS = ['#8e1a2e', '#23317a', '#8e1a2e', '#1d2550', '#b03a2a', '#d9a21c', '#2f6b3a', '#f4e3c1', '#be185d'];
 const HIJABS = ['#1e1b4b', '#7c2d12', '#334155', '#0f766e', '#9f1239', '#e7e5e4', '#57534e'];
@@ -42,13 +42,13 @@ function tag(T, g, limb, part, slot, color) {
   const col = new Float32Array(n * 3);
   for (let i = 0; i < n; i++) { col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b; }
   g.setAttribute('color', new T.BufferAttribute(col, 3));
-  g.setAttribute('aLimb', new T.BufferAttribute(new Float32Array(n).fill(limb), 1));
-  g.setAttribute('aPart', new T.BufferAttribute(new Float32Array(n).fill(part), 1));
-  g.setAttribute('aSlot', new T.BufferAttribute(new Float32Array(n).fill(slot), 1));
+  const tg = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) { tg[i * 3] = limb; tg[i * 3 + 1] = part; tg[i * 3 + 2] = slot; }
+  g.setAttribute('aTag', new T.BufferAttribute(tg, 3)); // x limb, y part, z colour slot (packed: WebGL caps attributes at 16)
   return g;
 }
 function merge(T, parts) {
-  const names = ['position', 'normal', 'color', 'aLimb', 'aPart', 'aSlot'];
+  const names = ['position', 'normal', 'color', 'aTag'];
   let n = 0; for (const p of parts) n += p.attributes.position.count;
   const out = new T.BufferGeometry();
   for (const name of names) {
@@ -135,9 +135,7 @@ function personGeometry(T, seg) {
 
 /* ------------------------------------------------------------- material */
 const VERT_PARS = /* glsl */`
-attribute float aLimb;
-attribute float aPart;
-attribute float aSlot;
+attribute vec3 aTag;    // x limb, y part, z colour slot
 attribute vec4 aGait;   // x step rate (rad/s), y thigh amplitude, z phase, w pose (0 walk,1 idle,2 sit,3 talk)
 attribute vec4 aStyle;  // x hijab, y topi, z shawl, w skirt
 attribute vec3 aColA;   // kameez / top
@@ -150,6 +148,7 @@ varying vec4 vMark;
 vec3 rotX(vec3 p, float py, float pz, float a) { float s = sin(a), c = cos(a); float y = p.y - py, z = p.z - pz; return vec3(p.x, py + y * c - z * s, pz + y * s + z * c); }
 vec3 rotXn(vec3 n, float a) { float s = sin(a), c = cos(a); return vec3(n.x, n.y * c - n.z * s, n.y * s + n.z * c); }
 void crowdAnim(inout vec3 p, inout vec3 n) {
+  float aLimb = aTag.x, aPart = aTag.y;
   float pose = aGait.w;
   float t = uCrowdTime * aGait.x + aGait.z;
   float A = aGait.y;
@@ -216,6 +215,7 @@ function crowdMaterial(T, time) {
       .replace('#include <begin_vertex>', '#include <begin_vertex>\ntransformed = crowdP;')
       .replace('#include <color_vertex>', `#include <color_vertex>
         {
+          float aSlot = aTag.z;
           vec3 skin = mix(vec3(0.6, 0.38, 0.24), vec3(0.3, 0.18, 0.1), aColD.a);
           if (aSlot > 0.5 && aSlot < 1.5) vColor.rgb = aColA;
           else if (aSlot > 1.5 && aSlot < 2.5) vColor.rgb = aColB;
@@ -227,9 +227,21 @@ function crowdMaterial(T, time) {
     sh.fragmentShader = sh.fragmentShader
       .replace('#include <common>', '#include <common>\nvarying vec4 vMark;')
       .replace('#include <color_fragment>', '#include <color_fragment>\ndiffuseColor.rgb = mix(diffuseColor.rgb, vMark.rgb, vMark.a);')
-      .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += vMark.rgb * vMark.a * 0.35;');
+      .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += vMark.rgb * vMark.a * 0.15;');
   };
   m.customProgramCacheKey = () => 'zehn-crowd-v1';
+  return m;
+}
+/** Shadow depth material running the same vertex animation (so shadows walk/sit too). */
+function crowdDepthMaterial(T, time) {
+  const m = new T.MeshDepthMaterial({ depthPacking: T.RGBADepthPacking });
+  m.onBeforeCompile = (sh) => {
+    sh.uniforms.uCrowdTime = time;
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\n' + VERT_PARS)
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\n{ vec3 crowdN = vec3(0.0, 1.0, 0.0); vec3 crowdP = position; crowdAnim(crowdP, crowdN); transformed = crowdP; }');
+  };
+  m.customProgramCacheKey = () => 'zehn-crowd-depth-v1';
   return m;
 }
 
@@ -255,7 +267,9 @@ function createCrowd(THREE_, opts = {}) {
   const geo = personGeometry(T, seg);
   const time = { value: 0 };
   const mat = crowdMaterial(T, time);
+  const depthMat = crowdDepthMaterial(T, time);
   const mesh = new T.InstancedMesh(geo, mat, count);
+  mesh.customDepthMaterial = depthMat;
   mesh.name = 'crowd';
   mesh.frustumCulled = false;
   mesh.castShadow = tier !== 'low'; mesh.receiveShadow = true;
@@ -394,7 +408,7 @@ function createCrowd(THREE_, opts = {}) {
     },
     dispose() {
       if (mesh.parent) mesh.parent.remove(mesh);
-      geo.dispose(); mat.dispose(); if (mesh.dispose) mesh.dispose();
+      geo.dispose(); mat.dispose(); depthMat.dispose(); if (mesh.dispose) mesh.dispose();
     },
   };
   crowd.update(0, 0);

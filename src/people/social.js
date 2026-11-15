@@ -153,7 +153,7 @@ function createSocialSim(sim, crowd, opts = {}) {
         clearStage();
         const s = model === 'conformity' ? stageConformity(res) : model === 'bystander' ? stageBystander(res) : stageCooperation(res);
         stage = { model, roles: s.roles, t: 0 };
-        for (const [i, r] of s.roles) crowd.setMark(i, r.mark, 0.55);
+        for (const [i, r] of s.roles) crowd.setMark(i, r.mark, 0.4);
         crowd.setBehaviour(behaviour);
       }
       if (bus) { bus.emit('study:run', { paradigm: model, n }); bus.emit('social:result', { model, results: res }); }
