@@ -475,10 +475,10 @@ function buildWorld(sim, engine) {
       toWorld(local) { return (Array.isArray(local) ? new THREE.Vector3(...local) : local.clone()).applyMatrix4(group.matrixWorld); },
       worldYaw(localYaw) { return zone.yaw + (localYaw || 0); },
       /** Teleport the player to a local pose (yaw 0 = looking toward local −Z). */
-      teleportLocal(local, localYaw) {
+      teleportLocal(local, localYaw, pitch) {
         const p = kit.toWorld(local); const yaw = kit.worldYaw(localYaw);
         const c = sim.services.controls;
-        if (c && c.teleport) c.teleport({ pos: [p.x, p.y, p.z], yaw });
+        if (c && c.teleport) c.teleport({ pos: [p.x, p.y, p.z], yaw, pitch: pitch || 0 });
         else { const cam = camera(); if (cam) { cam.position.copy(p); cam.rotation.set(0, yaw, 0, 'YXZ'); } }
       },
       act,
@@ -506,7 +506,7 @@ function buildWorld(sim, engine) {
     // --- ground disc
     const groundGeo = new THREE.CircleGeometry(320, 96); groundGeo.rotateX(-Math.PI / 2);
     const uv = groundGeo.attributes.uv; const pos = groundGeo.attributes.position;
-    for (let i = 0; i < uv.count; i++) uv.setXY(i, pos.getX(i) * 0.25, pos.getZ(i) * 0.25);
+    for (let i = 0; i < uv.count; i++) uv.setXY(i, pos.getX(i) * 0.012, pos.getZ(i) * 0.012);
     const ground = new THREE.Mesh(groundGeo, mats.get('grass')); ground.position.y = -0.03; ground.receiveShadow = true; ground.name = 'ground'; ground.userData.floor = true;
     G.add(ground);
 

@@ -419,9 +419,9 @@ function createHumanoid(THREE_, opts = {}) {
     const isAjrak = L.colors.over === 'ajrak';
     const dm = M(cloth(T, isAjrak ? '#ffffff' : L.colors.over, { pattern: isAjrak ? 'ajrak' : null, side: T.DoubleSide, roughness: 0.95 }));
     // draped over both shoulders…
-    add(B.chest, profileGeo(T, [[0.1, W.sh * 1.08], [0.17, W.sh * 1.08], [0.215, W.sh * 0.98], [0.245, 0.115], [0.26, 0.075]], 0.7, seg, Math.PI / 2 + 0.2, Math.PI * 2 - 0.4), dm);
+    add(B.chest, profileGeo(T, [[0.15, W.sh * 1.03], [0.19, W.sh * 1.02], [0.222, W.sh * 0.93], [0.247, 0.108], [0.262, 0.07]], 0.67, seg, Math.PI / 2 + 0.2, Math.PI * 2 - 0.4), dm);
     // …a soft U-fold across the front of the chest…
-    const fold = new T.TorusGeometry(0.135, 0.024, 8, seg * 2, Math.PI); fold.rotateZ(Math.PI); fold.scale(1, 1.05, 0.45);
+    const fold = new T.TorusGeometry(0.13, 0.014, 8, seg * 2, Math.PI); fold.rotateZ(Math.PI); fold.scale(1, 1.05, 0.45);
     add(B.chest, fold, dm, 0, 0.215, W.chest * 0.66 + 0.005, -0.18, 0, 0);
     // …and both ends falling down the back
     for (const sd of [-1, 1]) add(B.chest, new T.PlaneGeometry(0.15, 0.6), dm, sd * 0.085, -0.07, -W.chest * 0.66 - 0.012, 0.05, 0, sd * 0.05);

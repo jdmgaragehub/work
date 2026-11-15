@@ -47,7 +47,7 @@ class PanelHost {
     this.drawer = h('aside', { class: 'drawer', hidden: true, 'aria-label': 'Dashboard panel', role: 'region' });
     this.rail = h('nav', { class: 'rail', 'aria-label': 'Dashboard panels' });
     for (const r of RAILS) {
-      const g = h('div', { class: 'rail-group', role: 'group', 'aria-label': r.title }, h('span', null, r.title.split(' ')[0]));
+      const g = h('div', { class: 'rail-group', role: 'group', 'aria-label': r.title }, h('span', null, { foundations: 'Basics', brain: 'Brain', thinking: 'Think', lifespan: 'Self', practice: 'People', system: 'System' }[r.id]));
       for (const p of PANELS.filter((x) => x.rail === r.id)) {
         g.appendChild(h('button', { type: 'button', 'data-panel': p.id, title: `${p.title} (week ${p.week})`, 'aria-label': p.title, onclick: () => this.toggle(p.id) }, h('span', { class: 'ic', 'aria-hidden': 'true' }, p.icon), p.title.split(/[ &(]/)[0]));
       }

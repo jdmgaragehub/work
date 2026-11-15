@@ -123,7 +123,7 @@ class Engine {
     if (tier !== 'auto' && !TIERS[tier]) return false;
     this.sim.settings.quality = tier;
     if (this.sim.saveSettings) this.sim.saveSettings();
-    if (tier === 'auto') { this.quality.setTier(this.quality.detected === 'ultra' ? 'high' : this.quality.detected, { auto: true }); this.quality.setTier('auto'); return true; }
+    if (tier === 'auto') { this.quality.setTier('auto'); return true; } // re-tiers from frame time, never into ultra
     this.quality.setTier(tier);
     return true;
   }

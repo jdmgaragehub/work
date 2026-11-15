@@ -442,7 +442,7 @@ const personality = {
       psChart.innerHTML = '';
       psChart.appendChild(api.charts.scatter(xs, ys, { label: `Behaviour in situation 1 vs situation 2 (simulated, r = ${r.r.toFixed(2)})`, xl: 'situation 1 (z)', yl: 'situation 2 (z)' }));
       psChart.appendChild(api.simLabel());
-      psOut.textContent = `Cross-situational consistency: ${api.format.italicise ? '' : ''}r(${n - 2}) = ${noLead(r.r)} with trait weight ${psim.w.toFixed(2)} and ${psim.agg} occasion(s) averaged.`;
+      psOut.textContent = `Cross-situational consistency: r(${n - 2}) = ${noLead(r.r)} with trait weight ${psim.w.toFixed(2)} and ${psim.agg} occasion(s) averaged.`;
       if (user) api.emit('stats:test', { test: 'corr' });
     };
     body.appendChild(card(null, h('div', { class: 'grid2' },

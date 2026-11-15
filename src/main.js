@@ -104,6 +104,17 @@ async function boot() {
   installTestHooks(sim, panels);
   setInterval(() => sim.store.save(sim.snapshot()), 60000);
 
+  if (engine) {
+    // HUD: interaction prompt + minimap (throttled)
+    let acc = 0;
+    engine.addUpdate((dt) => {
+      acc += dt; if (acc < 0.15) return; acc = 0;
+      const c = sim.services.controls;
+      const it = c && c.lookTarget ? c.lookTarget() : null;
+      hud.setPrompt(it && sim.state.mode !== 'director' ? `Press E — ${it.label}` : null);
+      if (!hud.mini.hidden) hud.drawMinimap(engine.camera.position, c ? c.yaw : 0);
+    });
+  }
   progress(1, 'Ready.');
   if (engine) engine.start();
   if (sim.services.world) sim.services.world.teleport(sim.state.zone || 'courtyard');

@@ -22,7 +22,7 @@ for (const id of Object.keys(ZONES)) { ZONES[id].name = NAMES[id][0]; ZONES[id].
 /** Entry point: 24 m from centre toward the courtyard, facing the building. */
 function entry(id) {
   const z = ZONES[id];
-  if (id === 'courtyard') return { pos: [0, 1.65, 18], yaw: Math.PI };
+  if (id === 'courtyard') return { pos: [5, 1.65, 24], yaw: 0.2 };
   const [x, , zz] = z.center; const len = Math.hypot(x, zz);
   return { pos: [x - (x / len) * 24, 1.65, zz - (zz / len) * 24], yaw: Math.atan2(x, zz) + Math.PI };
 }

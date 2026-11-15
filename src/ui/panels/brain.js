@@ -472,7 +472,7 @@ function renderSDT(body, api) {
       s.c = Math.max(-2, Math.min(2, c)); draw();
       const r = sdtRates(s.d, s.c);
       const ev = pay.p * (r.H * pay.hit - (1 - r.H) * pay.miss) + (1 - pay.p) * ((1 - r.FA) * pay.cr - r.FA * pay.fa);
-      payOut.textContent = `Optimal β* = ${fmt(b, 3)} → c* = ${fmt(c)} at d′ = ${fmt(s.d)}. Expected payoff per trial = ${fmt(ev, 3)}. (Slider shows the criterion; the c slider handle itself is not moved.)`;
+      payOut.textContent = `Optimal β* = ${fmt(b, 3)} → c* = ${fmt(c)} at d′ = ${fmt(s.d)}. Expected payoff per trial = ${fmt(ev, 3)}. The charts now show c*; the c slider handle keeps its old position until you move it.`;
       api.emit('stats:test', { test: 'sdt' });
     }, 'primary'), payOut);
 
