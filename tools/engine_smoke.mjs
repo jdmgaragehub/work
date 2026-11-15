@@ -55,13 +55,15 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>html,body{
 fs.writeFileSync(OUT, html);
 console.log('wrote', OUT, (html.length / 1048576).toFixed(2), 'MB');
 
+if (process.env.BUILD_ONLY) process.exit(0);
 const { chromium } = require('playwright');
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 const TOGGLES = ['taa', 'motionBlur', 'ssao', 'bloom', 'godrays', 'ssr', 'dof', 'lensflare', 'grain', 'vignette', 'chroma', 'autoExposure', 'volumetric', 'sss', 'fxaa'];
 let failed = 0;
 const results = [];
-for (const tier of ['low', 'medium', 'high', 'ultra']) {
-  const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
+const TIERS = (process.env.SMOKE_TIERS || 'low,medium,high,ultra').split(',');
+for (const tier of TIERS) {
+  const page = await browser.newPage({ viewport: { width: 640, height: 360 } });
   const errors = [];
   page.on('console', (m) => { if (m.type() === 'error' || (m.type() === 'warning' && /WebGL|GL_|shader|THREE/i.test(m.text()))) errors.push(m.type() + ': ' + m.text()); });
   page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));

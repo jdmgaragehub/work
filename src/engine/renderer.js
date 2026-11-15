@@ -190,11 +190,11 @@ class Engine {
 
   tick(now) {
     now = now == null ? performance.now() : now;
-    const dt = Math.min(0.1, Math.max(0, (now - (this._last || now)) / 1000)); this._last = now;
+    const raw = Math.max(0, (now - (this._last || now)) / 1000), dt = Math.min(0.1, raw); this._last = now;
     this.lastDt = dt || 1 / 60;
     if (this.experimentMode || this.contextLost || (typeof document !== 'undefined' && document.hidden)) return;
     this.time += dt; this.frame++;
-    if (this.quality.update(dt)) { /* tier changed: onChange already rebuilt */ }
+    this.quality.update(raw || 1 / 60); // unclamped: fps stat must reflect real frame time
     for (let i = 0; i < this._updates.length; i++) {
       try { this._updates[i](dt, this.time); } catch (e) { if (this._errCount++ < 5) console.error('[engine] update failed', e); }
     }

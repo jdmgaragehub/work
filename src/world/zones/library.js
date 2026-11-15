@@ -62,24 +62,24 @@ function build(kit) {
   kit.addInteractable({ id: 'replication_stacks', pos: [13.7, 1.5, -8.6], radius: 2.6, label: 'Replication & Open Science (panel)', onUse: () => act.panel('replication') });
 
   /* ============================================================ IRB CHAMBER */
-  const icx = 0, icz = -16.4, R = 4.6;
-  marble.cyl(6.6, 6.6, 0.3, icx, 0, icz, PAL.marble, 40);
-  carpet.cyl(5.2, 5.2, 0.31, icx, 0, icz, PAL.crimson, 40);
-  kit.addCollider([icx - 6.6, 0, icz - 1.5], [icx + 6.6, 0.3, icz + 6.6]);
-  const NSEG = 14, a0 = -1.35, a1 = 1.35; let prev = null;
-  for (let i = 0; i <= NSEG; i++) {
-    const a = a0 + (a1 - a0) * (i / NSEG); const x = icx + Math.sin(a) * R, z = icz + Math.cos(a) * R * -0.0 + Math.cos(a) * R;
-    if (i < NSEG) { const am = a0 + (a1 - a0) * ((i + 0.5) / NSEG); const xm = icx + Math.sin(am) * R, zm = icz + Math.cos(am) * R; const L = 2 * R * Math.sin((a1 - a0) / NSEG / 2) + 0.04; wood.box(L, 0.95, 0.12, xm, 0.3, zm, PAL.woodDark, am); wood.box(L + 0.02, 0.05, 0.6, xm - Math.sin(am) * 0.25, 1.25, zm - Math.cos(am) * 0.25, PAL.wood, am); }
-    if (prev) kit.addLineCollider(prev[0], prev[1], x, z, 0.3, 1.3, 0); prev = [x, z];
+  const icx = 0, icz = -10.6, R = 4.8; // semicircle centre = presenter's podium; the board sits on the far arc
+  marble.box(15, 0.3, 7.2, 0, 0, -14.2, PAL.marble);
+  carpet.cyl(4.2, 4.2, 0.31, icx, 0, -13.4, PAL.crimson, 40);
+  kit.addCollider([-7.5, 0, -17.8], [7.5, 0.3, -10.6]);
+  const NSEG = 14, a0 = -1.3, a1 = 1.3; const P = (a, r) => [icx + Math.sin(a) * r, icz - Math.cos(a) * r];
+  for (let i = 0; i < NSEG; i++) {
+    const am = a0 + (a1 - a0) * ((i + 0.5) / NSEG); const [xm, zm] = P(am, R); const L = 2 * R * Math.sin((a1 - a0) / NSEG / 2) + 0.04;
+    wood.box(L, 0.95, 0.12, xm, 0.3, zm, PAL.woodDark, -am); const [tx, tz] = P(am, R + 0.25); wood.box(L + 0.02, 0.05, 0.6, tx, 1.25, tz, PAL.wood, -am);
+    const [x1, z1] = P(a0 + (a1 - a0) * (i / NSEG), R), [x2, z2] = P(a0 + (a1 - a0) * ((i + 1) / NSEG), R); kit.addLineCollider(x1, z1, x2, z2, 0.3, 1.3, 0);
   }
-  for (let i = 0; i < 7; i++) { const a = -1.1 + i * (2.2 / 6); const x = icx + Math.sin(a) * (R - 0.95), z = icz + Math.cos(a) * (R - 0.95); fabric.box(0.55, 0.1, 0.55, x, 0.78, z, PAL.indigo, a); fabric.box(0.55, 0.85, 0.08, x - Math.sin(a) * 0.27, 0.8, z - Math.cos(a) * 0.27, PAL.indigo, a); }
+  for (let i = 0; i < 7; i++) { const a = -1.05 + i * (2.1 / 6); const [x, z] = P(a, R + 0.95); const ry = -a; const [bx, bz] = rot(x, z, ry, 0, -0.27); fabric.box(0.55, 0.1, 0.55, x, 0.75, z, PAL.indigo, ry); fabric.box(0.55, 0.85, 0.08, bx, 0.8, bz, PAL.indigo, ry); }
   // presenter podium (faces the bench)
-  wood.box(0.8, 1.15, 0.55, 0, 0, -8.6, PAL.woodDark); metal.boxC(0.85, 0.04, 0.6, 0, 1.2, -8.66, PAL.saffron, 0.3, 0, 0); kit.addColliderBox(0, 0, -8.6, 0.8, 1.2, 0.55);
+  wood.box(0.8, 1.15, 0.55, 0, 0, -9.6, PAL.woodDark); metal.boxC(0.85, 0.04, 0.6, 0, 1.2, -9.54, PAL.saffron, -0.3, 0, 0); kit.addColliderBox(0, 0, -9.6, 0.8, 1.2, 0.55);
   // jaali screens enclosing the chamber sides + ajrak backdrop
   for (const sx of [-1, 1]) { jaali.box(0.12, 3, 7.5, sx * 7.8, 0, -13.9, 0xffffff); kit.addCollider([sx * 7.8 - 0.1, 0, -17.6], [sx * 7.8 + 0.1, 3, -10.2]); marble.box(0.3, 0.2, 7.7, sx * 7.8, 3, -13.9, PAL.marble); }
   { const bd = new THREE.Mesh(new THREE.PlaneGeometry(9, 3.4), kit.mats.get('ajrak')); bd.position.set(0, 3.1, -17.75); D.add(bd); }
   lab('Ethics Board (IRB) · اخلاقیات بورڈ\nRespect for persons · Beneficence · Justice', 0, 5.4, -17.7, 0, { size: 0.3, maxWidth: 8 });
-  kit.addInteractable({ id: 'irb', pos: [0, 1.6, -7.6], radius: 2.4, label: 'Present a proposal to the Ethics Board (IRB)', onUse: () => act.irb() });
+  kit.addInteractable({ id: 'irb', pos: [0, 1.6, -8.6], radius: 2.4, label: 'Present a proposal to the Ethics Board (IRB)', onUse: () => act.irb() });
 
   /* ============================================================ STATISTICS WORKBENCH */
   const scrTex = U.canvasTex(1536, 320, (c) => {

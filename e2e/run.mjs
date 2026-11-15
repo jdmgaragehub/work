@@ -26,6 +26,8 @@ await context.route('**/*', (route) => { const u = route.request().url(); if (u.
 const page = await context.newPage();
 page.on('console', (m) => { if (m.type() === 'error') report.consoleErrors.push(m.text()); });
 page.on('pageerror', (e) => report.pageErrors.push(String(e && e.stack || e)));
+const lastLogs = []; page.on('console', (m) => { lastLogs.push(m.type() + ': ' + m.text().slice(0, 240)); if (lastLogs.length > 30) lastLogs.shift(); });
+page.on('crash', () => { report.crash = { at: new Date().toISOString(), lastLogs: lastLogs.slice() }; fs.writeFileSync(path.join(OUT, 'report.json'), JSON.stringify(report, null, 1)); console.log('[e2e] PAGE CRASH', lastLogs.slice(-12).join('\n')); });
 page.on('download', async (d) => { report.downloads = (report.downloads || 0) + 1; await d.cancel().catch(() => {}); });
 
 async function load(q = '') {

@@ -39,7 +39,7 @@ function build(kit) {
     c.fillStyle = '#5b3a22'; c.fillRect(0, 472, 1024, 40); c.fillRect(0, 80, 1024, 14);
     for (const x0 of [170, 640]) { c.fillStyle = '#9fc6d6'; c.fillRect(x0, 150, 214, 220); c.strokeStyle = '#f6eedd'; c.lineWidth = 16; c.strokeRect(x0, 150, 214, 220); c.beginPath(); c.moveTo(x0 + 107, 150); c.lineTo(x0 + 107, 370); c.moveTo(x0, 260); c.lineTo(x0 + 214, 260); c.stroke(); }
   });
-  const mkMat = (tex, col) => U.track(new THREE.MeshStandardMaterial({ map: tex || null, color: tex ? 0xffffff : col, roughness: 0.85 }));
+  const mkMat = (tex, col) => U.track(new THREE.MeshStandardMaterial({ map: tex || null, color: tex ? 0xffffff : (col || 0xf6eedd), roughness: 0.85 }));
   const roomCtr = amap(0, f0 + AH / 2, (d0 + Dt) / 2);
   const N = 12;
   /** grid face in apparent coords → real triangles, oriented toward the room interior */
