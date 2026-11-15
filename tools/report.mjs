@@ -23,6 +23,7 @@ md += `| Boot | ${S.boot ? S.boot.ms + ' ms; services: ' + Object.entries(S.boot
 md += `| Console errors / page errors | ${sum.consoleErrors} / ${sum.pageErrors} |\n`;
 md += `| Blocked network requests (offline, G8) | ${sum.blockedNetwork} |\n`;
 md += `| Page crash | ${R.crash ? 'YES at ' + R.crash.at : 'none'} |\n`;
+md += `| WASD walk + mouse look | ${S.movement ? (S.movement.ok ? 'OK' : 'FAIL') + ` (walked ${S.movement.walkedMetres.toFixed(2)} m, look Δ ${S.movement.lookChangedRad.toFixed(2)} rad)` : 'n/a'} |\n`;
 md += `| Modes visited | ${S.modes_zones ? Object.keys(S.modes_zones.modes).length : 0} / 7 |\n`;
 md += `| Zones visited | ${S.modes_zones ? Object.entries(S.modes_zones.zones).filter(([k, v]) => k === v).length : 0} / 10 |\n`;
 md += `| Panels opened (with APA+domain+HEC+week tags) | ${sum.panels} (${sum.panelsWithAllTags} with 4 tags) |\n`;

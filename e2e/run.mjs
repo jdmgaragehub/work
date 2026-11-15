@@ -60,6 +60,17 @@ section('boot', { ms: Date.now() - t0, services: await page.evaluate(() => windo
 await settle();
 await shot('00_boot_courtyard');
 
+// ---- player movement + mouse look (regression for "WASD / mouse do nothing")
+const camInfo = () => page.evaluate(() => { const c = window.__zehnTest.sim.services.controls; const cam = window.__zehnTest.sim.services.engine.camera; return { x: cam.position.x, z: cam.position.z, yaw: c ? c.yaw : 0 }; });
+const m0 = await camInfo();
+await page.mouse.click(640, 420); await page.keyboard.down('KeyW'); await page.waitForTimeout(2500); await page.keyboard.up('KeyW');
+const m1 = await camInfo();
+await page.keyboard.press('Escape'); await page.mouse.move(640, 420); await page.mouse.down(); await page.mouse.move(760, 420, { steps: 8 }); await page.mouse.up();
+const m2 = await camInfo();
+section('movement', { walkedMetres: Math.hypot(m1.x - m0.x, m1.z - m0.z), lookChangedRad: Math.abs(m2.yaw - m1.yaw), ok: Math.hypot(m1.x - m0.x, m1.z - m0.z) > 0.1 && Math.abs(m2.yaw - m1.yaw) > 0.01 });
+log('movement', JSON.stringify(report.sections.movement));
+await settle();
+
 // ---- modes & zones
 const modes = ['walk', 'director', 'participant', 'clinic', 'social', 'neuro', 'tour'];
 const modeRes = {};
