@@ -1,6 +1,6 @@
 # ZEHN — Test Report
 
-Generated 2026-11-15T16:06:10.435Z by `node tools/report.mjs` from `e2e/out/report.json` (e2e started 2026-11-15T15:37:18.341Z).
+Generated 2026-11-15T16:50:32.352Z by `node tools/report.mjs` from `e2e/out/report.json` (e2e started 2026-11-15T16:20:09.978Z).
 Environment: headless Chromium (Playwright) with **SwiftShader software WebGL** (no GPU), file:// URL, all network requests blocked except file:/data:/blob:.
 
 ## Unit tests (`npm test`)
@@ -31,15 +31,15 @@ G3 PASS
 
 | Check | Result |
 |---|---|
-| Boot | 4222 ms; services: ui✓ runner✓ audio✓ engine✓ renderer✓ input✓ controls✓ world✓ ai✓ chat✓ clinic✓ scoring✓ missions✓ director✓ tour✓ journey✓ |
+| Boot | 4515 ms; services: ui✓ runner✓ audio✓ engine✓ renderer✓ input✓ controls✓ world✓ ai✓ chat✓ clinic✓ scoring✓ missions✓ director✓ tour✓ journey✓ |
 | Console errors / page errors | 0 / 0 |
 | Blocked network requests (offline, G8) | 0 |
 | Page crash | none |
-| WASD walk + mouse look | OK (walked 1.28 m, look Δ 1.41 rad) |
+| WASD walk + mouse look | OK (walked 1.92 m, look Δ 1.41 rad) |
 | Modes visited | 7 / 7 |
 | Zones visited | 10 / 10 |
 | Panels opened (with APA+domain+HEC+week tags) | 39 (39 with 4 tags) |
-| Buttons pressed / dead buttons | 944 / 2 |
+| Buttons pressed / dead buttons | 944 / 0 |
 | Paradigms run by bot + CSV schema valid | 38 / 38 |
 | Dilemmas / IRB resolved | 62 / 17 (events 62 / 17) |
 | Clinic full session | completed |
@@ -49,14 +49,13 @@ G3 PASS
 
 ### Dead-button audit
 
-- eyewitness: Check my question
-- missions: Show my certificate
+No dead buttons detected (every click changed the DOM, emitted a bus event or produced a download).
 
 ### Paradigms (bot participant, quick mode)
 
 | Paradigm | Rows | Schema | First result line |
 |---|---|---|---|
-| stroop | 26 | valid | Mean correct RT — congruent 82 ms, neutral 84 ms, incongruent 92 ms |
+| stroop | 26 | valid | Mean correct RT — congruent 80 ms, neutral 84 ms, incongruent 94 ms |
 | flanker | 26 | valid | Mean RT: congruent 68 ms, neutral 74 ms, incongruent 71 ms |
 | go_nogo | 32 | valid | Commission errors (pressed on X): 16.7% |
 | muller_lyer | 7 | valid | PSE error (matched − true length, % of true): fins-in -8.0%, fins-out 18.2%, control 0.7% |
@@ -67,9 +66,9 @@ G3 PASS
 | sdt_yesno | 26 | valid | liberal: H = .90, FA = .50 → d′ = 1.28, c = −0.64 (log-linear corrected); optimal β for th |
 | hick_hyman | 26 | valid | n = 1 (1.00 bits): mean correct RT 47 ms, accuracy 100% |
 | fitts | 20 | valid | ID table (ID = log₂(2D/W)): |
-| mental_rotation | 16 | valid | "Same" trials: RT = 137 + 0.69·angle ms (slope 0.69 ms/deg ≈ 1447 deg/s, R² = 1.00) |
-| visual_search | 26 | valid | Feature search, target present: slope 0.5 ms/item (RT 4:91, 8:83, 16:94 ms) |
-| posner | 22 | valid | Central (arrow) cue: valid -211 ms, invalid -201 ms → validity effect 10 ms |
+| mental_rotation | 16 | valid | "Same" trials: RT = 137 + 0.69·angle ms (slope 0.69 ms/deg ≈ 1446 deg/s, R² = 1.00) |
+| visual_search | 26 | valid | Feature search, target present: slope 0.4 ms/item (RT 4:91, 8:83, 16:94 ms) |
+| posner | 22 | valid | Central (arrow) cue: valid -212 ms, invalid -201 ms → validity effect 10 ms |
 | attn_blink | 14 | valid | X detection given the red letter was correct (T2/T1) by lag: lag 1 50%, lag 2 100%, lag 3  |
 | dichotic | 12 | valid | Attended ear — chirp detected: 50% |
 | inattentional_blindness | 4 | valid | Counting: 50% of clips exactly right; mean absolute error 0.75 passes. |
@@ -101,20 +100,20 @@ Measured in headless Chromium on **SwiftShader (CPU software rasteriser)**, 1280
 
 | Tier | rAF fps | engine fps | draw calls | triangles | onset median (frames) | onset p95 (frames) | RT resolution (ms) | G13 |
 |---|---|---|---|---|---|---|---|---|
-| low | 0.7 | 11.2 | 115 | 129451 | 0.29 | 0.32 | 0.100 | ✅ PASS (n=500) |
-| medium | 5.7 | 12.3 | 115 | 129451 | 0.29 | 0.32 | 0.100 | ✅ PASS (n=500) |
-| high | 1.7 | 12.6 | 115 | 129451 | 0.29 | 0.33 | 0.100 | ✅ PASS (n=500) |
-| ultra | 0.6 | 17.6 | 115 | 129451 | 0.29 | 0.33 | 0.100 | ✅ PASS (n=500) |
+| low | 2.0 | 10.9 | 115 | 129451 | 0.02 | 0.03 | 0.100 | ✅ PASS (n=500) |
+| medium | 6.7 | 30.0 | 115 | 129451 | 0.02 | 0.04 | 0.100 | ✅ PASS (n=500) |
+| high | 2.4 | 14.8 | 115 | 129451 | 0.02 | 0.03 | 0.100 | ✅ PASS (n=500) |
+| ultra | 0.7 | 20.5 | 115 | 129451 | 0.02 | 0.05 | 0.100 | ✅ PASS (n=500) |
 
 ### Onset-error histogram (|onset_actual − onset_req| in frames, tier low)
 
 ```
-0.00–0.25 f |  2
-0.25–0.50 f | ████████████████████████████████████████ 486
+0.00–0.25 f | ████████████████████████████████████████ 489
+0.25–0.50 f |  0
 0.50–0.75 f |  0
-0.75–1.00 f |  2
+0.75–1.00 f |  0
 1.00–1.25 f |  0
-1.25–1.50 f |  0
+1.25–1.50 f |  1
 1.50–1.75 f |  0
 1.75–2.00 f | █ 10
 ```

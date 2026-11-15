@@ -18,7 +18,7 @@ Loop: READ PROGRESS → PLAN → BUILD → VERIFY → CRITIQUE → FIX → UPDAT
 | G10 UX polish | PASS (automated part) | e2e pressed every panel button: 0 dead controls; keyboard map, focus rings, ARIA labels, reduced motion, dyslexia, colour-blind and conference modes. WCAG contrast not machine-audited |
 | G11 Visual quality | PARTIAL | 16 AUs + gaze + blink + visemes; post-FX parity; screenshots per mode, zone and time of day in docs/screenshots. Human visual review still needed |
 | G12 Docs | PASS | README, PRESENTER_GUIDE, INSTRUCTOR_GUIDE, 16 LAB_WORKSHEETS, COURSE_MAPPING, BENCHMARK_PARITY, FACTS_AND_SOURCES, LICENSES, ETHICS_SAFETY, TEST_REPORT |
-| G13 Timing accuracy | PASS (headless) | 500 bot trials per tier: median onset error ≈ 0.3 frames, p95 ≈ 0.33 frames, RT resolution < 1 ms; UI states the Bridges et al. (2020) lag |
+| G13 Timing accuracy | PASS (headless) | 500 bot trials per tier: median onset error 0.02 frames, p95 ≤ 0.05 frames (final run), RT resolution < 1 ms; UI states the Bridges et al. (2020) lag |
 | G14 Ethics & safety | PASS | consent before every RT task; debrief after deception demos (Asch, misinformation, inattentional blindness, levels-of-processing surprise test); content warnings with text-only paths; crisis detector 45/45 unit phrases, e2e 30/30 cards shown; licence linter passes; helplines carry retrieved dates and "verify" caveats |
 
 ## Fixed after user testing
