@@ -76,7 +76,9 @@ class Mentor {
   _crisis(source, category, { dedupe = false } = {}) {
     try { this.sim.bus.emit('crisis:detected', { source, category }); } catch (e) { /* no bus */ }
     const now = Date.now();
-    if (dedupe && now - this.lastCardAt < CARD_DEDUPE_MS) return; // card already on screen (e.g., watcher fired while typing)
+    // Suppress only while a crisis card is actually open (never after the user closed it — safety first).
+    const open = typeof document !== 'undefined' && document.querySelector && document.querySelector('.modal.crisis');
+    if (dedupe && open && now - this.lastCardAt < CARD_DEDUPE_MS) return;
     this.lastCardAt = now;
     const ui = this.sim.services && this.sim.services.ui;
     if (ui && ui.showCrisis) try { ui.showCrisis({ source }); } catch (e) { /* ui optional */ }

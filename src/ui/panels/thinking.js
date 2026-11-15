@@ -368,7 +368,7 @@ const eyewitness = {
       if (/^\s*(how fast|how many|what colou?r)/i.test(q) && !flags.length) flags.push('Specific estimate request — acceptable, but follow free recall first.');
       qOut.textContent = flags.length ? flags.map((f, i) => `${i + 1}. ${f}`).join('\n') : 'No leading features detected. Best practice: begin with open free recall (“Tell me everything you remember”), then ask neutral follow-ups.';
     };
-    body.appendChild(card(null, qIn, row(btn('Check my question', checkQ, 'primary'), K.run('misinformation'))), qOut);
+    body.appendChild(card(null, qIn, row(btn('Check my question', () => { if (!qIn.value.trim()) { api.toast('Type a question for the witness first.'); return; } checkQ(); api.emit('glossary:lookup', { term: 'misinformation effect' }); }, 'primary'), K.run('misinformation'))), qOut);
     checkQ();
 
     // ---- lineup fairness tool

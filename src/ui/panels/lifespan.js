@@ -493,7 +493,7 @@ const personality = {
     };
     const seeIn = h('input', { type: 'text', 'aria-label': 'What do you see?', placeholder: 'e.g. two birds facing each other' });
     body.appendChild(card('Blot generator', h('span', { class: 'tag' }, 'original simulation, not a Rorschach plate'), blotCanvas,
-      row(btn('Generate a new blot', drawBlot, 'primary'), h('label', { class: 'f' }, 'What do you see?', seeIn), btn('Reflect', () => {
+      row(btn('Generate a new blot', () => { drawBlot(); api.toast('New original symmetric blot generated (original simulation, not a Rorschach plate).'); }, 'primary'), h('label', { class: 'f' }, 'What do you see?', seeIn), btn('Reflect', () => {
         const s = seeIn.value.trim();
         blotOut.textContent = (s ? `You saw: “${s}”. ` : 'You did not write anything — that is also a response. ') + 'ZEHN does not score this, deliberately. Ask: would two trained coders agree on how to code your answer? Is there evidence that this kind of answer predicts anything important better than simply asking you? Without reliable coding, representative norms and incremental validity, an interpretation is just a guess.';
       })), blotOut));

@@ -155,7 +155,8 @@ log('clinic', JSON.stringify(clin));
 // ---- crisis detector path (30 phrases)
 const phrases = (() => { try { const s = fs.readFileSync(path.join(root, 'test', 'crisis.test.js'), 'utf8'); const m = s.match(/CRISIS\s*=\s*\[([\s\S]*?)\];/); return m ? eval('[' + m[1] + ']') : []; } catch (e) { return []; } })();
 const crisisRes = { n: phrases.length, shown: 0, misses: [] };
-for (const ph of phrases.slice(0, 30)) {
+for (const item of phrases.slice(0, 30)) {
+  const ph = Array.isArray(item) ? item[0] : item;
   await settle();
   const shown = await page.evaluate(async (t) => { await window.__zehnTest.crisis(t); await new Promise((r) => setTimeout(r, 80)); return !!document.querySelector('.modal.crisis'); }, ph);
   if (shown) crisisRes.shown++; else crisisRes.misses.push(ph);
@@ -168,7 +169,6 @@ log('crisis', crisisRes.shown, '/', crisisRes.n);
 const persist = await page.evaluate(() => {
   const z = window.__zehnTest; z.sim.state.xp += 7; const xp = z.sim.state.xp;
   const ok = z.save(); z.sim.state.xp = 0; z.load();
-  const csv = require ? null : null;
   return { saved: ok, restored: z.sim.state.xp === xp, datasets: Object.keys(z.sim.datasets).length };
 });
 section('persistence', persist);

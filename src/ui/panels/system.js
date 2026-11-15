@@ -1053,7 +1053,7 @@ function settings(body, api) {
   const audio = api.service('audio');
   body.appendChild(checkbox(api, 'Sound on', s.audio, (v) => { s.audio = v; if (audio && audio.setEnabled) audio.setEnabled(v); changed('audio'); }));
   body.appendChild(api.slider('Volume', { min: 0, max: 1, step: 0.05, value: s.volume, onInput: (v) => { s.volume = v; if (audio && audio.setVolume) audio.setVolume(v); changed('volume'); }, fmt: (v) => Math.round(v * 100) + '%' }));
-  if (audio && audio.ui) body.appendChild(btn('Test sound', () => audio.ui('open'), 'ghost'));
+  if (audio && audio.ui) body.appendChild(btn('Test sound', () => { if (audio.unlock) audio.unlock(); audio.ui('open'); api.toast('Played a test sound (procedural WebAudio).'); }, 'ghost'));
 
   // Game
   body.appendChild(h('h3', null, 'Game'));

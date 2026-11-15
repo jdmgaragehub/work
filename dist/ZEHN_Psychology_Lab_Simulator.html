@@ -54320,7 +54320,9 @@ class Mentor {
   _crisis(source, category, { dedupe = false } = {}) {
     try { this.sim.bus.emit('crisis:detected', { source, category }); } catch (e) { /* no bus */ }
     const now = Date.now();
-    if (dedupe && now - this.lastCardAt < CARD_DEDUPE_MS) return; // card already on screen (e.g., watcher fired while typing)
+    // Suppress only while a crisis card is actually open (never after the user closed it — safety first).
+    const open = typeof document !== 'undefined' && document.querySelector && document.querySelector('.modal.crisis');
+    if (dedupe && open && now - this.lastCardAt < CARD_DEDUPE_MS) return;
     this.lastCardAt = now;
     const ui = this.sim.services && this.sim.services.ui;
     if (ui && ui.showCrisis) try { ui.showCrisis({ source }); } catch (e) { /* ui optional */ }
@@ -98889,7 +98891,7 @@ const personality = {
     };
     const seeIn = h('input', { type: 'text', 'aria-label': 'What do you see?', placeholder: 'e.g. two birds facing each other' });
     body.appendChild(card('Blot generator', h('span', { class: 'tag' }, 'original simulation, not a Rorschach plate'), blotCanvas,
-      row(btn('Generate a new blot', drawBlot, 'primary'), h('label', { class: 'f' }, 'What do you see?', seeIn), btn('Reflect', () => {
+      row(btn('Generate a new blot', () => { drawBlot(); api.toast('New original symmetric blot generated (original simulation, not a Rorschach plate).'); }, 'primary'), h('label', { class: 'f' }, 'What do you see?', seeIn), btn('Reflect', () => {
         const s = seeIn.value.trim();
         blotOut.textContent = (s ? `You saw: “${s}”. ` : 'You did not write anything — that is also a response. ') + 'ZEHN does not score this, deliberately. Ask: would two trained coders agree on how to code your answer? Is there evidence that this kind of answer predicts anything important better than simply asking you? Without reliable coding, representative norms and incremental validity, an interpretation is just a guess.';
       })), blotOut));
@@ -101538,7 +101540,7 @@ function settings(body, api) {
   const audio = api.service('audio');
   body.appendChild(checkbox(api, 'Sound on', s.audio, (v) => { s.audio = v; if (audio && audio.setEnabled) audio.setEnabled(v); changed('audio'); }));
   body.appendChild(api.slider('Volume', { min: 0, max: 1, step: 0.05, value: s.volume, onInput: (v) => { s.volume = v; if (audio && audio.setVolume) audio.setVolume(v); changed('volume'); }, fmt: (v) => Math.round(v * 100) + '%' }));
-  if (audio && audio.ui) body.appendChild(btn('Test sound', () => audio.ui('open'), 'ghost'));
+  if (audio && audio.ui) body.appendChild(btn('Test sound', () => { if (audio.unlock) audio.unlock(); audio.ui('open'); api.toast('Played a test sound (procedural WebAudio).'); }, 'ghost'));
 
   // Game
   body.appendChild(h('h3', null, 'Game'));
@@ -101981,7 +101983,7 @@ const eyewitness = {
       if (/^\s*(how fast|how many|what colou?r)/i.test(q) && !flags.length) flags.push('Specific estimate request — acceptable, but follow free recall first.');
       qOut.textContent = flags.length ? flags.map((f, i) => `${i + 1}. ${f}`).join('\n') : 'No leading features detected. Best practice: begin with open free recall (“Tell me everything you remember”), then ask neutral follow-ups.';
     };
-    body.appendChild(card(null, qIn, row(btn('Check my question', checkQ, 'primary'), K.run('misinformation'))), qOut);
+    body.appendChild(card(null, qIn, row(btn('Check my question', () => { if (!qIn.value.trim()) { api.toast('Type a question for the witness first.'); return; } checkQ(); api.emit('glossary:lookup', { term: 'misinformation effect' }); }, 'primary'), K.run('misinformation'))), qOut);
     checkQ();
 
     // ---- lineup fairness tool
@@ -108769,7 +108771,7 @@ module.exports = { id, build };
 
 });
 
-window.__ZEHN_BUILD__ = {"built":"2026-11-15T14:49:32.772Z","modules":95};
+window.__ZEHN_BUILD__ = {"built":"2026-11-15T15:03:58.621Z","modules":95};
 __require('', 'src/main.js');
 })();
 </script>
