@@ -87044,11 +87044,11 @@ class Engine {
 
   tick(now) {
     now = now == null ? performance.now() : now;
-    const dt = Math.min(0.1, Math.max(0, (now - (this._last || now)) / 1000)); this._last = now;
+    const raw = Math.max(0, (now - (this._last || now)) / 1000), dt = Math.min(0.1, raw); this._last = now;
     this.lastDt = dt || 1 / 60;
     if (this.experimentMode || this.contextLost || (typeof document !== 'undefined' && document.hidden)) return;
     this.time += dt; this.frame++;
-    if (this.quality.update(dt)) { /* tier changed: onChange already rebuilt */ }
+    this.quality.update(raw || 1 / 60); // unclamped: fps stat must reflect real frame time
     for (let i = 0; i < this._updates.length; i++) {
       try { this._updates[i](dt, this.time); } catch (e) { if (this._errCount++ < 5) console.error('[engine] update failed', e); }
     }
@@ -104880,7 +104880,7 @@ function build(kit) {
     c.fillStyle = '#5b3a22'; c.fillRect(0, 472, 1024, 40); c.fillRect(0, 80, 1024, 14);
     for (const x0 of [170, 640]) { c.fillStyle = '#9fc6d6'; c.fillRect(x0, 150, 214, 220); c.strokeStyle = '#f6eedd'; c.lineWidth = 16; c.strokeRect(x0, 150, 214, 220); c.beginPath(); c.moveTo(x0 + 107, 150); c.lineTo(x0 + 107, 370); c.moveTo(x0, 260); c.lineTo(x0 + 214, 260); c.stroke(); }
   });
-  const mkMat = (tex, col) => U.track(new THREE.MeshStandardMaterial({ map: tex || null, color: tex ? 0xffffff : col, roughness: 0.85 }));
+  const mkMat = (tex, col) => U.track(new THREE.MeshStandardMaterial({ map: tex || null, color: tex ? 0xffffff : (col || 0xf6eedd), roughness: 0.85 }));
   const roomCtr = amap(0, f0 + AH / 2, (d0 + Dt) / 2);
   const N = 12;
   /** grid face in apparent coords → real triangles, oriented toward the room interior */
@@ -106045,6 +106045,482 @@ function build(kit) {
 }
 
 module.exports = { id: ZONE, build, _scheduleEvents: scheduleEvents };
+
+});
+/* ===== src/world/zones/library.js ===== */
+__def("src/world/zones/library.js", function (module, exports, require) {
+'use strict';
+/**
+ * Methods & Stats Library (zone 9). WORLD_API zone builder; local coords, entrance toward +Z.
+ * Book stacks (instanced books), the Ethics Board (IRB) chamber with a semicircular bench (→ director.presentIRB),
+ * the Statistics Workbench (→ panel stats), a data sculpture — a 3D histogram that rebuilds from sim.datasets
+ * on use — the poster-presentation hall (→ panels present / report), study carrels and "problems & tests" tables
+ * (Tower of Hanoi, Wason cards, anchoring wheel, framing & IPIP kiosks).
+ */
+const id = 'library';
+
+const POSTERS = [
+  'Stroop interference in bilingual readers', 'Sleep duration and n-back accuracy', 'Anchoring in price estimates', 'Serial position after a 30-s distractor',
+  'Group size and conformity: a replication', 'Change blindness and driving expertise', 'Working-memory span across a semester', 'Framing effects in health messages',
+  'Colour constancy under coloured light', 'Big Five reliability by scale', 'Mental-rotation slopes: depth vs picture plane', 'Leading questions and speed estimates',
+];
+
+function build(kit) {
+  const { THREE, act, sim } = kit; const U = kit.util; const PAL = U.PAL; const GB = U.GeoBuilder;
+  const g = kit.group, D = kit.detail; const rng = kit.rng; const updaters = [];
+  U.shell({ w: 36, d: 36, cz: 0, h: 8, roof: 'skylight', skipBack: () => true, floorMat: 'terrazzo' });
+  const wood = new GB(), metal = new GB(), fabric = new GB(), marble = new GB(), dark = new GB(), carpet = new GB({ uvScale: 0.5 }), jaali = new GB({ uvScale: 0.6 });
+  const C = (h) => new THREE.Color(h);
+  const lab = (text, x, y, z, ry, o) => { const m = kit.label3d(text, Object.assign({ size: 0.2, maxWidth: 3 }, o || {})); m.position.set(x, y, z); m.rotation.y = ry || 0; D.add(m); return m; };
+  const add = (gb, mat, parent, opt) => { const m = gb.mesh(mat, opt); if (m) (parent || g).add(m); return m; };
+  const rot = (x, z, ry, lx, lz) => [x + lx * Math.cos(ry) + lz * Math.sin(ry), z - lx * Math.sin(ry) + lz * Math.cos(ry)];
+  const table = (x, z, w, d, h = 0.76, ry = 0) => { wood.box(w, 0.06, d, x, h - 0.06, z, PAL.wood, ry); for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const [px, pz] = rot(x, z, ry, sx * (w / 2 - 0.08), sz * (d / 2 - 0.08)); metal.box(0.05, h - 0.06, 0.05, px, 0, pz, PAL.charcoal, ry); } };
+  const chair = (x, z, ry, col = PAL.crimson) => { const [bx, bz] = rot(x, z, ry, 0, -0.21); fabric.box(0.46, 0.08, 0.46, x, 0.45, z, col, ry); fabric.box(0.46, 0.55, 0.06, bx, 0.5, bz, col, ry); for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const [px, pz] = rot(x, z, ry, sx * 0.19, sz * 0.19); metal.box(0.03, 0.45, 0.03, px, 0, pz, PAL.charcoal, ry); } };
+
+  /* ============================================================ BOOK STACKS (instanced books) */
+  const BOOKC = [0x8f1d2c, 0x26346b, 0x2f7d7a, 0xe39b2d, 0x5b3a22, 0xe8dcc0, 0x55602e, 0x6b3a4a, 0x1f2937];
+  const books = []; const dens = { low: 0.45, medium: 0.75, high: 1, ultra: 1 }[kit.tier] || 0.75;
+  const unit = (x, z, ry, sides) => { // 2.2 m wide, 2.4 m tall, 0.5 deep
+    wood.box(2.2, 2.4, 0.04, x, 0, z, PAL.woodDark, ry);
+    for (const sx of [-1, 1]) { const [px, pz] = rot(x, z, ry, sx * 1.1, 0); wood.box(0.05, 2.45, 0.52, px, 0, pz, PAL.woodDark, ry); }
+    for (let s = 0; s < 5; s++) {
+      const y = 0.08 + s * 0.46; const [px, pz] = rot(x, z, ry, 0, 0); wood.box(2.2, 0.035, 0.52, px, y, pz, PAL.wood, ry);
+      for (const side of sides) {
+        let lx = -1.05;
+        while (lx < 1.0) {
+          const bw = 0.025 + rng.random() * 0.035; if (rng.random() > dens) { lx += bw + 0.01; continue; }
+          const bh = 0.24 + rng.random() * 0.14, bd = 0.17 + rng.random() * 0.05;
+          const [bx, bz] = rot(x, z, ry, lx + bw / 2, side * (0.03 + bd / 2));
+          books.push([bx, y + 0.035 + bh / 2, bz, bw, bh, bd, ry, BOOKC[Math.floor(rng.random() * BOOKC.length)]]); lx += bw + 0.004;
+        }
+      }
+    }
+  };
+  for (const sx of [-1, 1]) {
+    for (let k = 0; k < 3; k++) { const x = sx * (16 - k * 2.3) - sx * 0; unit(x, -17.45, 0, [1]); }
+    for (const z of [-13.6, -10.2]) for (let k = 0; k < 3; k++) unit(sx * (16 - k * 2.3), z, 0, [-1, 1]);
+    for (const z of [-17.45, -13.6, -10.2]) kit.addCollider([Math.min(sx * 17.2, sx * 10.7), 0, z - 0.3], [Math.max(sx * 17.2, sx * 10.7), 2.5, z + 0.3]);
+  }
+  if (books.length) {
+    const bm = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), U.vc('fabric', { color: 0xffffff, roughness: 0.8 }).clone(), books.length);
+    bm.material.vertexColors = false; U.track(bm.material);
+    const M = new THREE.Matrix4(), Q = new THREE.Quaternion(), E = new THREE.Euler();
+    books.forEach((b, i) => { M.compose(new THREE.Vector3(b[0], b[1], b[2]), Q.setFromEuler(E.set(0, b[6], 0)), new THREE.Vector3(b[3], b[4], b[5])); bm.setMatrixAt(i, M); bm.setColorAt(i, C(b[7])); });
+    bm.castShadow = false; bm.receiveShadow = true; bm.computeBoundingSphere(); D.add(bm);
+  }
+  lab('Research Methods stacks', -13.7, 2.9, -9.9, 0, { size: 0.2 }); lab('Replication & Open Science stacks', 13.7, 2.9, -9.9, 0, { size: 0.2 });
+  kit.addInteractable({ id: 'methods_stacks', pos: [-13.7, 1.5, -8.6], radius: 2.6, label: 'Research Methods Lab (panel)', onUse: () => act.panel('methods') });
+  kit.addInteractable({ id: 'replication_stacks', pos: [13.7, 1.5, -8.6], radius: 2.6, label: 'Replication & Open Science (panel)', onUse: () => act.panel('replication') });
+
+  /* ============================================================ IRB CHAMBER */
+  const icx = 0, icz = -10.6, R = 4.8; // semicircle centre = presenter's podium; the board sits on the far arc
+  marble.box(15, 0.3, 7.2, 0, 0, -14.2, PAL.marble);
+  carpet.cyl(4.2, 4.2, 0.31, icx, 0, -13.4, PAL.crimson, 40);
+  kit.addCollider([-7.5, 0, -17.8], [7.5, 0.3, -10.6]);
+  const NSEG = 14, a0 = -1.3, a1 = 1.3; const P = (a, r) => [icx + Math.sin(a) * r, icz - Math.cos(a) * r];
+  for (let i = 0; i < NSEG; i++) {
+    const am = a0 + (a1 - a0) * ((i + 0.5) / NSEG); const [xm, zm] = P(am, R); const L = 2 * R * Math.sin((a1 - a0) / NSEG / 2) + 0.04;
+    wood.box(L, 0.95, 0.12, xm, 0.3, zm, PAL.woodDark, -am); const [tx, tz] = P(am, R + 0.25); wood.box(L + 0.02, 0.05, 0.6, tx, 1.25, tz, PAL.wood, -am);
+    const [x1, z1] = P(a0 + (a1 - a0) * (i / NSEG), R), [x2, z2] = P(a0 + (a1 - a0) * ((i + 1) / NSEG), R); kit.addLineCollider(x1, z1, x2, z2, 0.3, 1.3, 0);
+  }
+  for (let i = 0; i < 7; i++) { const a = -1.05 + i * (2.1 / 6); const [x, z] = P(a, R + 0.95); const ry = -a; const [bx, bz] = rot(x, z, ry, 0, -0.27); fabric.box(0.55, 0.1, 0.55, x, 0.75, z, PAL.indigo, ry); fabric.box(0.55, 0.85, 0.08, bx, 0.8, bz, PAL.indigo, ry); }
+  // presenter podium (faces the bench)
+  wood.box(0.8, 1.15, 0.55, 0, 0, -9.6, PAL.woodDark); metal.boxC(0.85, 0.04, 0.6, 0, 1.2, -9.54, PAL.saffron, -0.3, 0, 0); kit.addColliderBox(0, 0, -9.6, 0.8, 1.2, 0.55);
+  // jaali screens enclosing the chamber sides + ajrak backdrop
+  for (const sx of [-1, 1]) { jaali.box(0.12, 3, 7.5, sx * 7.8, 0, -13.9, 0xffffff); kit.addCollider([sx * 7.8 - 0.1, 0, -17.6], [sx * 7.8 + 0.1, 3, -10.2]); marble.box(0.3, 0.2, 7.7, sx * 7.8, 3, -13.9, PAL.marble); }
+  { const bd = new THREE.Mesh(new THREE.PlaneGeometry(9, 3.4), kit.mats.get('ajrak')); bd.position.set(0, 3.1, -17.75); D.add(bd); }
+  lab('Ethics Board (IRB) · اخلاقیات بورڈ\nRespect for persons · Beneficence · Justice', 0, 5.4, -17.7, 0, { size: 0.3, maxWidth: 8 });
+  kit.addInteractable({ id: 'irb', pos: [0, 1.6, -8.6], radius: 2.4, label: 'Present a proposal to the Ethics Board (IRB)', onUse: () => act.irb() });
+
+  /* ============================================================ STATISTICS WORKBENCH */
+  const scrTex = U.canvasTex(1536, 320, (c) => {
+    c.fillStyle = '#0f1424'; c.fillRect(0, 0, 1536, 320);
+    c.strokeStyle = '#e39b2d'; c.lineWidth = 4; c.beginPath(); for (let x = 20; x < 492; x++) { const t = (x - 256) / 70; c.lineTo(x, 280 - Math.exp(-t * t / 2) * 220); } c.stroke(); // normal curve
+    c.fillStyle = '#2f7d7a'; for (let i = 0; i < 60; i++) { const x = 552 + i * 7, y = 270 - i * 3 - Math.sin(i * 1.7) * 30; c.beginPath(); c.arc(x, y, 5, 0, 7); c.fill(); } c.strokeStyle = '#f6eedd'; c.beginPath(); c.moveTo(552, 270); c.lineTo(980, 90); c.stroke(); // scatter + fit
+    c.fillStyle = '#f6eedd'; c.font = '600 30px monospace'; ['t(38) = 2.41', 'p = .021', 'd = 0.76', "α = .84", 'F(2,57) = 5.3'].forEach((s, i) => c.fillText(s, 1060, 60 + i * 52));
+  });
+  table(12.5, -3, 5, 0.9); for (const k of [-1, 0, 1]) { metal.box(0.08, 0.3, 0.08, 12.5 + k * 1.6, 0.76, -3.2, PAL.charcoal); dark.box(1.4, 0.82, 0.05, 12.5 + k * 1.6, 1.02, -3.25, 0x111111); }
+  if (scrTex) { const sg = new GB(); [-1, 0, 1].forEach((k, i) => { const x = 12.5 + k * 1.6, z = -3.22; sg.quad([x - 0.66, 1.06, z], [x + 0.66, 1.06, z], [x + 0.66, 1.8, z], [x - 0.66, 1.8, z], 0xffffff, [[i / 3, 0], [(i + 1) / 3, 0], [(i + 1) / 3, 1], [i / 3, 1]]); }); add(sg, U.track(new THREE.MeshBasicMaterial({ map: scrTex, toneMapped: false })), D, { cast: false }); }
+  for (const k of [-1, 0, 1]) chair(12.5 + k * 1.6, -2, Math.PI, PAL.teal);
+  kit.addColliderBox(12.5, 0, -3, 5, 0.8, 0.9);
+  lab('Statistics Workbench · شماریات', 12.5, 2.4, -3.3, 0, { size: 0.24 });
+  kit.addInteractable({ id: 'stats', pos: [12.5, 1.5, -1.2], radius: 2.8, label: 'Statistics Workbench (panel)', onUse: () => act.panel('stats') });
+  wood.box(0.9, 1.1, 0.6, 16.4, 0, 0.5, PAL.woodDark); kit.addColliderBox(16.4, 0, 0.5, 0.9, 1.2, 0.6); lab('Data Export · Experiment Builder', 16.4, 1.55, 0.82, 0, { size: 0.12, maxWidth: 1.4 });
+  kit.addInteractable({ id: 'export', pos: [16.4, 1.4, 1.4], radius: 1.3, label: 'Data Export (panel)', onUse: () => act.panel('export') });
+  kit.addInteractable({ id: 'builder', pos: [15.2, 1.4, 1.4], radius: 1.2, label: 'Experiment Builder (panel)', onUse: () => act.panel('builder') });
+
+  /* ============================================================ DATA SCULPTURE (3D histogram) */
+  const NB = 16, BW = 0.17, MAXH = 2.4;
+  marble.cyl(1.7, 1.8, 0.6, 0, 0, -2.5, PAL.marble, 32); kit.addColliderBox(0, 0, -2.5, 3.4, 0.7, 3.4);
+  const barMat = U.track(new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.35, metalness: 0.1, emissive: 0x2a1405, emissiveIntensity: 0.25 }));
+  const bars = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), barMat, NB); bars.castShadow = true; D.add(bars);
+  const cur = new Float32Array(NB).fill(0.05), tgt = new Float32Array(NB).fill(0.05);
+  const bM = new THREE.Matrix4();
+  const setBars = () => { for (let i = 0; i < NB; i++) { const x = -1.35 + i * (2.7 / (NB - 1)); bM.compose(new THREE.Vector3(x, 0.6 + cur[i] / 2, -2.5), new THREE.Quaternion(), new THREE.Vector3(BW, Math.max(0.02, cur[i]), 0.9)); bars.setMatrixAt(i, bM); bars.setColorAt(i, new THREE.Color().setHSL(0.08 + 0.55 * (i / NB), 0.65, 0.5)); } bars.instanceMatrix.needsUpdate = true; if (bars.instanceColor) bars.instanceColor.needsUpdate = true; };
+  setBars(); bars.computeBoundingSphere();
+  const histLab = lab('Data Sculpture\nUse to rebuild from your data', 0, 3.6, -2.5, 0, { size: 0.2, billboard: true, maxWidth: 3.4 });
+  const NUMF = ['rt', 'rt_ms', 'RT', 'response_time', 'latency', 'estimate', 'value', 'response', 'score', 'error', 'accuracy', 'correct'];
+  function rebuild() {
+    const ds = (sim && sim.datasets) || {}; let best = null, bestN = 0;
+    for (const k of Object.keys(ds)) { const rows = Array.isArray(ds[k]) ? ds[k] : (ds[k] && Array.isArray(ds[k].rows) ? ds[k].rows : null); if (rows && rows.length > bestN) { best = k; bestN = rows.length; } }
+    let vals = [], title;
+    if (best) {
+      const rows = Array.isArray(ds[best]) ? ds[best] : ds[best].rows; const r0 = rows.find((r) => r && typeof r === 'object') || {};
+      const field = NUMF.find((f) => typeof r0[f] === 'number') || Object.keys(r0).find((k) => typeof r0[k] === 'number' && !/^(trial|block|onset|frames|id|t)/i.test(k));
+      if (field) { vals = rows.map((r) => Number(r && r[field])).filter((v) => Number.isFinite(v)); title = `${best} · ${field} (n = ${vals.length})`; }
+    }
+    if (vals.length < 3) { vals = []; for (let i = 0; i < 400; i++) { let s = 0; for (let k = 0; k < 6; k++) s += rng.random(); vals.push(450 + (s - 3) * 120); } title = 'Simulated RT sample (n = 400) — run a paradigm to see your own data'; }
+    let mn = Infinity, mx = -Infinity; for (const v of vals) { if (v < mn) mn = v; if (v > mx) mx = v; } if (mx - mn < 1e-9) mx = mn + 1;
+    const cnt = new Array(NB).fill(0); for (const v of vals) cnt[Math.min(NB - 1, Math.floor((v - mn) / (mx - mn) * NB))]++;
+    const top = Math.max(...cnt); for (let i = 0; i < NB; i++) tgt[i] = 0.05 + (cnt[i] / top) * MAXH;
+    const mean = vals.reduce((a, b) => a + b, 0) / vals.length; const sd = Math.sqrt(vals.reduce((a, b) => a + (b - mean) ** 2, 0) / Math.max(1, vals.length - 1));
+    const txt = `Data Sculpture\n${title}\nM = ${mean.toFixed(1)}, SD = ${sd.toFixed(1)}, range ${mn.toFixed(0)}–${mx.toFixed(0)}`;
+    if (histLab.userData.setText) histLab.userData.setText(txt);
+    if (!act.motionOK()) { cur.set(tgt); setBars(); }
+    return txt;
+  }
+  rebuild();
+  updaters.push((dt) => { let ch = false; for (let i = 0; i < NB; i++) { const d = tgt[i] - cur[i]; if (Math.abs(d) > 1e-3) { cur[i] += d * Math.min(1, dt * 3); ch = true; } } if (ch) setBars(); });
+  kit.addInteractable({ id: 'data_sculpture', pos: [0, 1.5, -0.3], radius: 2.6, label: 'Rebuild the data sculpture from your data', onUse: () => { const t = rebuild(); act.toast(t.split('\n').slice(1).join(' · ')); } });
+
+  /* ============================================================ CARRELS (memory paradigms) */
+  const CAR = [['serial_position', 'Serial position'], ['brown_peterson', 'Brown–Peterson'], ['levels_processing', 'Levels of processing'], ['drm', 'DRM false memory'], ['nback', 'n-back']];
+  const scr = new GB();
+  CAR.forEach(([pid, name], i) => {
+    const z = -5.5 + i * 3, x = -16.9;
+    wood.box(0.75, 0.05, 1.8, x, 0.74, z, PAL.wood); wood.box(0.75, 1.3, 0.05, x, 0, z - 0.9, PAL.woodDark); wood.box(0.75, 1.3, 0.05, x, 0, z + 0.9, PAL.woodDark); wood.box(0.05, 0.6, 1.8, x - 0.38, 0.79, z, PAL.woodDark);
+    dark.boxC(0.02, 0.24, 0.36, x - 0.12, 0.9, z, 0x111111, 0, 0, 0.35); scr.boxC(0.005, 0.2, 0.32, x - 0.105, 0.9, z, C([0x1e3a8a, 0x3a1622, 0x16323a, 0x2b2112, 0x1f3326][i]), 0, 0, 0.35);
+    metal.rod([x - 0.25, 0.77, z + 0.6], [x - 0.1, 1.15, z + 0.55], 0.015, PAL.charcoal); metal.cone(0.09, 0.12, x - 0.06, 1.08, z + 0.55, PAL.saffron, 10);
+    chair(x + 0.8, z, -Math.PI / 2, PAL.crimson); kit.addCollider([x - 0.4, 0, z - 0.95], [x + 0.4, 1.35, z + 0.95]);
+    lab(name, x - 0.36, 1.6, z, Math.PI / 2, { size: 0.13, maxWidth: 1.6 });
+    kit.addInteractable({ id: pid, pos: [x + 1.1, 1.4, z], radius: 1.4, label: name + ' (run)', onUse: () => act.run(pid) });
+  });
+  lab('Memory carrels · Memory Lab', -16.4, 2.6, 7.4, Math.PI / 2, { size: 0.2 });
+  kit.addInteractable({ id: 'memory_panel', pos: [-15, 1.5, 8.4], radius: 1.6, label: 'Memory Lab (panel)', onUse: () => act.panel('memory') });
+
+  /* ============================================================ PROBLEMS & TESTS */
+  // Tower of Hanoi
+  table(-6.5, 6, 2.2, 1.1); kit.addColliderBox(-6.5, 0, 6, 2.2, 0.8, 1.1);
+  for (let p = 0; p < 3; p++) { wood.cyl(0.03, 0.03, 0.6, -7.2 + p * 0.7, 0.76, 6, PAL.woodDark, 8); }
+  wood.box(2.0, 0.05, 0.4, -6.5, 0.76, 6, PAL.wood);
+  for (let k = 0; k < 5; k++) marble.cyl(0.26 - k * 0.04, 0.26 - k * 0.04, 0.07, -7.2, 0.81 + k * 0.07, 6, C([0x8f1d2c, 0xe39b2d, 0x2f7d7a, 0x26346b, 0xb0603f][k]), 20);
+  lab('Tower of Hanoi', -6.5, 1.8, 6.6, 0, { size: 0.15 });
+  kit.addInteractable({ id: 'hanoi', pos: [-6.5, 1.4, 7.3], radius: 1.5, label: 'Tower of Hanoi (run)', onUse: () => act.run('hanoi') });
+  // Wason cards
+  table(-2.5, 6, 2.2, 1.1); kit.addColliderBox(-2.5, 0, 6, 2.2, 0.8, 1.1);
+  const cardTex = U.canvasTex(1024, 384, (c) => { ['E', 'K', '4', '7'].forEach((s, i) => { c.fillStyle = '#f6eedd'; c.fillRect(i * 256 + 8, 8, 240, 368); c.strokeStyle = '#26346b'; c.lineWidth = 10; c.strokeRect(i * 256 + 14, 14, 228, 356); c.fillStyle = i < 2 ? '#8f1d2c' : '#26346b'; c.font = '700 180px "Segoe UI", Arial'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(s, i * 256 + 128, 200); }); });
+  if (cardTex) { const cg = new GB(); for (let i = 0; i < 4; i++) { const x = -3.25 + i * 0.5, z = 6.05; cg.quad([x - 0.18, 0.78, z + 0.12], [x + 0.18, 0.78, z + 0.12], [x + 0.18, 1.2, z - 0.05], [x - 0.18, 1.2, z - 0.05], 0xffffff, [[i / 4, 0], [(i + 1) / 4, 0], [(i + 1) / 4, 1], [i / 4, 1]]); } add(cg, U.track(new THREE.MeshStandardMaterial({ map: cardTex, roughness: 0.7, side: THREE.DoubleSide })), D, { cast: false }); }
+  lab('Wason selection task\n"If a card has a vowel on one side, it has an even number on the other"', -2.5, 1.85, 6.7, 0, { size: 0.12, maxWidth: 2.6 });
+  kit.addInteractable({ id: 'wason', pos: [-2.5, 1.4, 7.3], radius: 1.5, label: 'Wason selection task (run)', onUse: () => act.run('wason') });
+  // Anchoring wheel
+  const wheelTex = U.canvasTex(512, 512, (c) => { c.translate(256, 256); for (let i = 0; i < 20; i++) { c.fillStyle = i % 2 ? '#8f1d2c' : '#26346b'; if (i % 5 === 0) c.fillStyle = '#e39b2d'; c.beginPath(); c.moveTo(0, 0); c.arc(0, 0, 250, (i / 20) * Math.PI * 2, ((i + 1) / 20) * Math.PI * 2); c.fill(); c.save(); c.rotate(((i + 0.5) / 20) * Math.PI * 2); c.fillStyle = '#f6eedd'; c.font = '700 28px Arial'; c.textAlign = 'right'; c.fillText(String(i * 5), 235, 10); c.restore(); } c.fillStyle = '#f6eedd'; c.beginPath(); c.arc(0, 0, 26, 0, 7); c.fill(); });
+  const wheel = new THREE.Mesh(new THREE.CircleGeometry(0.75, 48), U.track(new THREE.MeshStandardMaterial({ map: wheelTex, roughness: 0.5 }))); wheel.position.set(-6.5, 1.55, 11); D.add(wheel);
+  metal.box(0.12, 0.8, 0.12, -6.5, 0, 10.95, PAL.charcoal); metal.box(0.6, 0.05, 0.4, -6.5, 0, 10.95, PAL.charcoal); metal.cone(0.06, 0.18, -6.5, 2.3, 11.02, PAL.saffron, 3); kit.addColliderBox(-6.5, 0, 10.95, 0.6, 1.2, 0.4);
+  let spin = 0; updaters.push((dt) => { if (spin > 0) { wheel.rotation.z += spin * dt; spin = Math.max(0, spin - dt * 2.5); } });
+  lab('Anchoring wheel', -6.5, 0.55, 11.2, 0, { size: 0.13 });
+  kit.addInteractable({ id: 'anchoring', pos: [-6.5, 1.4, 12.2], radius: 1.5, label: 'Anchoring (run)', onUse: () => { if (act.motionOK()) spin = 9 + rng.random() * 5; act.run('anchoring'); } });
+  // kiosks: framing, IPIP
+  const kiosk = (x, z, name, pid, col) => { metal.box(0.14, 1.05, 0.14, x, 0, z, PAL.charcoal); dark.boxC(0.7, 0.46, 0.06, x, 1.3, z + 0.05, 0x111111, -0.35, 0, 0); scr.boxC(0.62, 0.38, 0.01, x, 1.31, z + 0.09, C(col), -0.35, 0, 0); kit.addColliderBox(x, 0, z, 0.5, 1.4, 0.5); lab(name, x, 1.8, z, 0, { size: 0.12, maxWidth: 1.6 }); kit.addInteractable({ id: pid, pos: [x, 1.4, z + 0.9], radius: 1.2, label: name + ' (run)', onUse: () => act.run(pid) }); };
+  kiosk(-2.5, 11, 'Framing (original wording)', 'framing', 0x2b2112); kiosk(1.2, 11, 'IPIP Big Five', 'ipip_big5', 0x1e3a8a);
+  lab('Problems & Tests · Cognition & Personality', -4.5, 3.0, 4.6, 0, { size: 0.22, maxWidth: 5 });
+  kit.addInteractable({ id: 'cognition_panel', pos: [-4.5, 1.5, 9], radius: 1.6, label: 'Cognition & Language (panel)', onUse: () => act.panel('cognition') });
+  kit.addInteractable({ id: 'personality_panel', pos: [2.4, 1.4, 12], radius: 1.2, label: 'Personality / Psychometrics (panel)', onUse: () => act.panel('personality') });
+
+  /* ============================================================ POSTER HALL */
+  const TW = 512, TH = 680;
+  const posterTex = U.canvasTex(2048, 2048, (c) => {
+    POSTERS.forEach((t, i) => {
+      const x = (i % 4) * TW, y = Math.floor(i / 4) * TH; c.fillStyle = '#fbf6ec'; c.fillRect(x + 4, y + 4, TW - 8, TH - 8);
+      c.fillStyle = ['#26346b', '#8f1d2c', '#2f7d7a'][i % 3]; c.fillRect(x + 4, y + 4, TW - 8, 120);
+      c.fillStyle = '#fff'; c.font = '700 30px "Segoe UI", Arial'; let line = '', ly = y + 50; for (const w of t.split(' ')) { const tt = line ? line + ' ' + w : w; if (c.measureText(tt).width > TW - 50) { c.fillText(line, x + 22, ly); line = w; ly += 36; } else line = tt; } c.fillText(line, x + 22, ly);
+      c.fillStyle = '#c9bfae'; for (let k = 0; k < 7; k++) c.fillRect(x + 22, y + 150 + k * 22, (k % 3 === 2 ? 150 : 210), 10);
+      for (let k = 0; k < 7; k++) c.fillRect(x + 270, y + 150 + k * 22, 210, 10);
+      const gx = x + 40, gy = y + 560; c.strokeStyle = '#2b2a2e'; c.lineWidth = 3; c.beginPath(); c.moveTo(gx, gy - 240); c.lineTo(gx, gy); c.lineTo(gx + 430, gy); c.stroke();
+      if (i % 2) { for (let k = 0; k < 5; k++) { const h = 60 + ((i * 37 + k * 53) % 170); c.fillStyle = ['#e39b2d', '#2f7d7a'][k % 2]; c.fillRect(gx + 20 + k * 82, gy - h, 56, h); } }
+      else { c.fillStyle = '#26346b'; for (let k = 0; k < 40; k++) { const px = gx + 15 + ((k * 97 + i * 13) % 400), py = gy - 20 - ((px - gx) * 0.4 + ((k * 61) % 90)); c.beginPath(); c.arc(px, py, 5, 0, 7); c.fill(); } }
+      c.fillStyle = '#8f1d2c'; c.font = 'italic 22px "Segoe UI", Arial'; c.fillText('Simulated data · IIBS poster session', x + 22, y + TH - 30);
+    });
+  });
+  const pq = new GB(); let pi = 0;
+  for (const rz of [8, 13]) for (const bx of [8.6, 12, 15.4]) {
+    metal.box(0.08, 2.4, 0.08, bx - 1.3, 0, rz, PAL.charcoal); metal.box(0.08, 2.4, 0.08, bx + 1.3, 0, rz, PAL.charcoal); wood.box(2.6, 1.9, 0.06, bx, 0.45, rz, PAL.plaster);
+    kit.addCollider([bx - 1.35, 0, rz - 0.1], [bx + 1.35, 2.4, rz + 0.1]);
+    for (const sd of [1, -1]) {
+      const i = pi++ % POSTERS.length; const u0 = (i % 4) / 4, v1 = 1 - Math.floor(i / 4) * (TH / 2048), v0 = v1 - TH / 2048; const z = rz + sd * 0.035, hw = 0.62, y0 = 0.6, y1 = 0.6 + 1.64;
+      for (const off of [-0.63, 0.63]) { const xa = bx + off - hw * sd * 0.98, xb = bx + off + hw * sd * 0.98; pq.quad([xa, y0, z], [xb, y0, z], [xb, y1, z], [xa, y1, z], 0xffffff, [[u0, v0], [u0 + 0.25, v0], [u0 + 0.25, v1], [u0, v1]]); }
+    }
+  }
+  if (posterTex) add(pq, U.track(new THREE.MeshStandardMaterial({ map: posterTex, roughness: 0.75 })), D, { cast: false });
+  lab('Poster Hall · Present & Report', 12, 3.2, 10.5, 0, { size: 0.26, maxWidth: 5 });
+  kit.addInteractable({ id: 'present', pos: [12, 1.5, 9.6], radius: 2.6, label: 'Present & Report (panel)', onUse: () => act.panel('present') });
+  kit.addInteractable({ id: 'report', pos: [12, 1.5, 14.6], radius: 2.6, label: 'APA Report Generator (panel)', onUse: () => act.panel('report') });
+
+  /* ============================================================ circulation desk + reading tables */
+  for (let k = 0; k < 7; k++) { const a = -0.9 + k * 0.3; wood.box(0.75, 1.05, 0.6, -8 + Math.sin(a) * 2.2, 0, 14.5 - Math.cos(a) * 2.2 + 2.2, PAL.woodDark, a); }
+  kit.addColliderBox(-8, 0, 14.4, 4, 1.1, 1.4);
+  lab('Methods & Stats Library · لائبریری', -8, 2.0, 15.5, 0, { size: 0.24, maxWidth: 4 });
+  for (const [x, z] of [[4, 0.5], [4, 3.5]]) { table(x, z, 2.4, 1.2); kit.addColliderBox(x, 0, z, 2.4, 0.8, 1.2); chair(x - 0.6, z - 0.9, 0, PAL.indigo); chair(x + 0.6, z + 0.9, Math.PI, PAL.indigo); metal.cyl(0.08, 0.12, 0.05, x, 0.76, z, PAL.saffron, 10); }
+  carpet.box(9, 0.01, 6, 3, 0.012, 2, PAL.indigo);
+
+  /* ---- meshes */
+  add(wood, U.vc('wood')); add(metal, U.vc('metal', { color: 0xffffff })); add(fabric, U.vc('fabric', { color: 0xffffff })); add(marble, U.vc('marble'));
+  add(carpet, U.vc('carpet', { color: 0xffffff }), g, { cast: false }); add(jaali, U.vc('jaali')); add(dark, U.vc('metal', { color: 0xffffff, metalness: 0.2, roughness: 0.6 }));
+  add(scr, U.track(new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false })), D, { cast: false });
+
+  kit.anchor('inside', [0, 1.6, -14]); kit.anchor('insideCam', [0, 2.6, -4]); kit.anchor('exhibit', [0, 1.6, -2.5]); kit.anchor('exhibitCam', [3.5, 2.4, 1.5]);
+  kit.anchor('irb', [0, 1.6, -15]); kit.anchor('workbench', [12.5, 1.3, -3]); kit.anchor('posters', [12, 1.5, 10.5]); kit.anchor('dataSculpture', [0, 1.8, -2.5]);
+
+  return {
+    update(dt, t) { for (const u of updaters) u(dt, t); },
+    rebuildHistogram: rebuild,
+    dispose() { /* freed by world.dispose() */ },
+  };
+}
+
+module.exports = { id, build };
+
+});
+/* ===== src/world/zones/mohalla.js ===== */
+__def("src/world/zones/mohalla.js", function (module, exports, require) {
+'use strict';
+/**
+ * Social Psychology Plaza — "Mohalla" street (zone 8). WORLD_API zone builder; local coords, entrance toward +Z.
+ * Open-air street: shopfronts with awnings and bilingual signs, a road with auto-rickshaws, a bus stop, a chai
+ * dhaba with charpais, market stalls with fruit crates, string lights (glow at dusk/night) and an ambient crowd
+ * (kit.crowd.createCrowd when available). Staged demos — all labelled "simulated":
+ *  - inattentional blindness: two teams pass a ball while a costumed mascot strolls through (paradigm
+ *    inattentional_blindness; the crossing also starts on bus event 'mohalla:ib:start');
+ *  - bystander emergency staging near the bus stop (panel social);
+ *  - Asch room (paradigm asch), prisoner's-dilemma table (prisoners_dilemma), misinformation junction with a staged
+ *    minor collision (misinformation; panel eyewitness).
+ */
+const id = 'mohalla';
+
+const SHOPS = [
+  ['Kitab Ghar', 'کتاب گھر', 0xe6c27a], ['Sabzi Wala', 'سبزی والا', 0x9cc5a1], ['Darzi', 'درزی', 0xd99a8b],
+  ['Mobile Repair', 'موبائل مرمت', 0x8fb3c9], ['Dawakhana', 'دواخانہ', 0xeadfca], ['Kiryana Store', 'کریانہ اسٹور', 0xe39b6d],
+];
+
+function build(kit) {
+  const { THREE, act, sim } = kit; const U = kit.util; const PAL = U.PAL; const GB = U.GeoBuilder; const V3 = THREE.Vector3;
+  const g = kit.group, D = kit.detail; const rng = kit.rng; const updaters = []; const offs = []; let crowd = null;
+  const wood = new GB(), metal = new GB(), plaster = new GB(), fabric = new GB(), brick = new GB(), dark = new GB(), pave = new GB({ uvScale: 0.5 }), road = new GB(), jaali = new GB({ uvScale: 0.8 }), glass = new GB();
+  const C = (h) => new THREE.Color(h);
+  const lab = (text, x, y, z, ry, o) => { const m = kit.label3d(text, Object.assign({ size: 0.22, maxWidth: 3.6 }, o || {})); m.position.set(x, y, z); m.rotation.y = ry || 0; D.add(m); return m; };
+  const add = (gb, mat, parent, opt) => { const m = gb.mesh(mat, opt); if (m) (parent || g).add(m); return m; };
+
+  /* ---- ground: paving, road, kerbs */
+  pave.box(40, 0.06, 32, 0, -0.05, 4, 0xffffff);
+  road.box(40, 0.05, 5.5, 0, -0.04, -8.75, C(0x3b3a3f));
+  for (let x = -18; x < 19; x += 4) road.box(2, 0.004, 0.15, x, 0.012, -8.75, C(0xf6eedd));
+  brick.box(40, 0.16, 0.3, 0, 0, -5.9, PAL.brickDark); brick.box(40, 0.16, 0.3, 0, 0, -11.6, PAL.brickDark);
+  pave.box(40, 0.1, 0.5, 0, -0.03, -11.95, 0xd8c8b0);
+  for (const [x0, x1] of [[-14, -4], [4, 14]]) for (let x = x0; x <= x1; x += 2) road.box(0.5, 0.004, 3, x, 0.013, -2.2 + 0, C(0x9a8a76));
+
+  /* ============================================================ SHOPFRONTS */
+  SHOPS.forEach(([en, ur, col], i) => {
+    const cx = -15 + i * 6, zf = -12.2, h = 7.2 + (i % 2) * 0.8;
+    plaster.box(1.0, h, 0.4, cx - 2.5, 0, zf, C(col)); plaster.box(1.0, h, 0.4, cx + 2.5, 0, zf, C(col)); plaster.box(4.0, h - 3.2, 0.4, cx, 3.2, zf, C(col));
+    plaster.box(6, h, 6.8, cx, 0, zf - 3.6, C(col).multiplyScalar(0.92));
+    dark.box(4, 3.2, 0.1, cx, 0, zf - 1.4, C(0x2a2522)); metal.box(4.1, 1.1, 0.12, cx, 2.1, zf + 0.05, C(0x8c9096));
+    for (let k = 0; k < 6; k++) metal.box(4.1, 0.03, 0.14, cx, 2.15 + k * 0.17, zf + 0.06, C(0x6b6f75));
+    for (let k = 0; k < 6; k++) { const sc = k % 2 ? PAL.cream : [PAL.crimson, PAL.indigo, PAL.teal][i % 3]; fabric.boxC(0.68, 0.04, 1.6, cx - 2.04 + k * 0.68 + 0.34 - 0.0, 3.35, zf + 0.75, C(sc), -0.32, 0, 0); }
+    plaster.box(6.1, 0.3, 0.6, cx, h, zf, C(0xf3ece0));
+    // upper window + jaali balcony
+    dark.box(1.6, 1.6, 0.05, cx, 4.4, zf + 0.22, C(0x1d2733)); glass.box(1.5, 1.5, 0.02, cx, 4.45, zf + 0.25, 0xffffff);
+    wood.box(2.4, 0.12, 0.9, cx, 3.9, zf + 0.6, PAL.woodDark); jaali.box(2.4, 0.9, 0.06, cx, 4.02, zf + 1.02, 0xffffff);
+    lab(`${en} · ${ur}`, cx, 3.75 + 0.1, zf + 0.26, 0, { size: 0.3, maxWidth: 3.8, bg: ['rgba(143,29,44,0.94)', 'rgba(38,52,107,0.94)', 'rgba(47,125,122,0.94)'][i % 3], border: '#f3e7cf' });
+  });
+  kit.addCollider([-18.2, 0, -12.6], [18.2, 3.5, -11.95]);
+  // side buildings (left block, right block) + end walls
+  plaster.box(3, 6.5, 9.5, -18.5, 0, -1.2, C(0xd9b989)); kit.addColliderBox(-18.5, 0, -1.2, 3, 3.5, 9.5);
+  plaster.box(2.5, 6, 8, 18.75, 0, -1.8, C(0xc9d6c8)); kit.addColliderBox(18.75, 0, -1.8, 2.5, 3.5, 8);
+  for (const [x, z] of [[-17, 1], [-17, -3], [17.5, 1], [17.5, -4]]) { dark.box(0.05, 1.4, 1.1, x + (x < 0 ? 0.03 : -0.03), 3.6, z, C(0x1d2733)); }
+  plaster.box(3, 5.5, 6, -18.5, 0, 16.5, C(0xe39b6d)); kit.addColliderBox(-18.5, 0, 16.5, 3, 3.5, 6);
+  plaster.box(2.5, 5, 5, 18.75, 0, 17, C(0x8fb3c9)); kit.addColliderBox(18.75, 0, 17, 2.5, 3.5, 5);
+
+  /* ============================================================ ROAD PROPS: rickshaws + staged collision */
+  const wheel = (x, z, r, axis, ry) => { const c = Math.cos(ry), s = Math.sin(ry); const ax = axis === 'x' ? [c * 0.08, -s * 0.08] : [s * 0.08, c * 0.08]; dark.rod([x - ax[0], r, z - ax[1]], [x + ax[0], r, z + ax[1]], r, C(0x18181b), 14); };
+  const rickshaw = (x, z, ry, col) => {
+    const c = Math.cos(ry), s = Math.sin(ry); const P = (lx, lz) => [x + lx * c + lz * s, z - lx * s + lz * c];
+    let [px, pz] = P(0, 0); metal.box(1.3, 0.7, 2.4, px, 0.3, pz, C(col), ry);
+    [px, pz] = P(0, 0.2); fabric.box(1.35, 0.08, 2.2, px, 1.75, pz, C(0x1f2937), ry);
+    for (const [lx, lz] of [[-0.62, 1.1], [0.62, 1.1], [-0.62, -0.9], [0.62, -0.9]]) { [px, pz] = P(lx, lz); metal.box(0.05, 1.05, 0.05, px, 0.95, pz, C(0x2b2a2e), ry); }
+    [px, pz] = P(0, -0.3); fabric.box(1.1, 0.12, 0.6, px, 0.95, pz, C(0x8f1d2c), ry);
+    [px, pz] = P(0, 1.35); metal.box(0.5, 0.3, 0.3, px, 0.55, pz, C(col), ry); [px, pz] = P(0, 1.55); metal.rod([px, 0.9, pz], [P(0, 1.35)[0], 1.25, P(0, 1.35)[1]], 0.03, PAL.charcoal);
+    [px, pz] = P(0, 1.45); wheel(px, pz, 0.24, 'x', ry); [px, pz] = P(-0.62, -0.75); wheel(px, pz, 0.26, 'x', ry); [px, pz] = P(0.62, -0.75); wheel(px, pz, 0.26, 'x', ry);
+    kit.addColliderBox(x, 0, z, 2.2, 1.8, 2.2);
+  };
+  rickshaw(4, -8.3, Math.PI / 2, 0x2f7d7a); rickshaw(9.5, -9.6, -Math.PI / 2 + 0.1, 0xe39b2d);
+  const car = (x, z, ry, col) => {
+    const c = Math.cos(ry), s = Math.sin(ry); const P = (lx, lz) => [x + lx * c + lz * s, z - lx * s + lz * c];
+    let [px, pz] = P(0, 0); metal.box(1.7, 0.65, 3.9, px, 0.3, pz, C(col), ry); [px, pz] = P(0, -0.2); metal.box(1.5, 0.55, 2.0, px, 0.95, pz, C(col), ry); glass.box(1.45, 0.45, 1.9, px, 1.0, pz, 0xffffff, ry);
+    for (const [lx, lz] of [[-0.82, 1.25], [0.82, 1.25], [-0.82, -1.25], [0.82, -1.25]]) { [px, pz] = P(lx, lz); wheel(px, pz, 0.32, 'x', ry); }
+    kit.addColliderBox(x, 0, z, 3.4, 1.4, 3.4);
+  };
+  car(-13, -9.2, Math.PI / 2, 0x8f1d2c); car(-9.4, -7.6, Math.PI / 2 + 0.55, 0xd8d0c2);
+  for (let k = 0; k < 18; k++) glass.box(0.08 + rng.random() * 0.1, 0.01, 0.06 + rng.random() * 0.08, -11 + rng.uniform(-0.8, 0.8), 0.01, -8.2 + rng.uniform(-0.6, 0.6), 0xffffff, rng.random() * 3);
+  for (const [x, z] of [[-14.8, -6.8], [-7.6, -6.6]]) { fabric.cone(0.2, 0.7, x, 0, z, C(0xe36a2d), 10); fabric.box(0.42, 0.04, 0.42, x, 0, z, C(0x2b2a2e)); }
+  lab('Misinformation junction · staged minor collision (simulated)\nHow fast were the cars going when they ___ each other?', -11.2, 2.5, -5.6, 0, { size: 0.18, maxWidth: 5 });
+  metal.box(0.1, 2.0, 0.1, -11.2, 0, -5.7, PAL.charcoal);
+  kit.addInteractable({ id: 'misinformation', pos: [-11.2, 1.6, -4.4], radius: 2.4, label: 'Misinformation — eyewitness memory (run)', onUse: () => act.run('misinformation') });
+  kit.addInteractable({ id: 'eyewitness_panel', pos: [-8, 1.6, -4.4], radius: 1.4, label: 'Eyewitness Room (panel)', onUse: () => act.panel('eyewitness') });
+
+  /* ============================================================ BUS STOP + staged emergency */
+  { const bx = 13.5, bz = -4.4;
+    for (const [lx, lz] of [[-2, -0.7], [2, -0.7], [-2, 0.7], [2, 0.7]]) metal.box(0.08, 2.6, 0.08, bx + lx, 0, bz + lz, PAL.charcoal);
+    metal.boxC(4.4, 0.08, 1.8, bx, 2.65, bz, C(0x26346b), 0.08, 0, 0); glass.box(4.0, 1.8, 0.04, bx, 0.6, bz + 0.72, 0xffffff);
+    wood.box(3.2, 0.06, 0.45, bx, 0.45, bz + 0.45, PAL.wood); for (const lx of [-1.4, 1.4]) metal.box(0.05, 0.45, 0.4, bx + lx, 0, bz + 0.45, PAL.charcoal);
+    metal.box(0.08, 3, 0.08, bx + 2.6, 0, bz - 0.8, PAL.charcoal);
+    kit.addCollider([bx - 2.1, 0, bz + 0.6], [bx + 2.1, 2.6, bz + 0.8]); kit.addColliderBox(bx, 0, bz + 0.45, 3.2, 0.5, 0.45);
+    lab('Bus Stop · بس اسٹاپ\nRoute 7 — simulated', bx + 2.6, 2.75, bz - 0.75, 0, { size: 0.16, maxWidth: 1.6, bg: 'rgba(38,52,107,0.95)' });
+    U.figure(D, { abstract: true, color: 0x6b8e23, x: bx - 0.8, z: bz + 0.35, ry: Math.PI, pose: 'idle', name: 'Commuter' });
+    U.figure(D, { abstract: true, color: 0x7a2e3a, x: bx + 1.0, z: bz - 0.1, ry: Math.PI - 0.4, pose: 'idle', name: 'Commuter' });
+    const victim = U.figure(D, { abstract: true, x: 10.6, y: 0.2, z: -2.6, color: PAL.teal, accent: PAL.cream }); victim.obj.rotation.set(0, 0.3, Math.PI / 2);
+    U.figure(D, { abstract: true, color: 0x26346b, x: 9.3, z: -1.6, ry: -2.2, pose: 'point', name: 'Bystander' });
+    lab('Staged emergency · bystander demo (simulated)\nWho helps when many people are present?', 10.6, 1.6, -1.0, 0, { size: 0.15, maxWidth: 3.2 });
+    kit.addInteractable({ id: 'bystander', pos: [10.6, 1.4, -0.6], radius: 2.4, label: 'Bystander effect — staged emergency (Social Psychology)', onUse: () => act.panel('social') });
+  }
+
+  /* ============================================================ CHAI DHABA */
+  { const x0 = 11.5, x1 = 19.3, z0 = 4.5, z1 = 12;
+    brick.box(0.3, 3.4, z1 - z0, x1, 0, (z0 + z1) / 2, 0xffffff); brick.box(x1 - x0, 3.4, 0.3, (x0 + x1) / 2, 0, z0, 0xffffff);
+    metal.boxC(x1 - x0 + 0.6, 0.06, z1 - z0 + 0.6, (x0 + x1) / 2, 3.35, (z0 + z1) / 2, C(0x7a8088), 0, 0, 0.12);
+    for (const [x, z] of [[x0, z1], [x0, z0 + 3.5]]) wood.box(0.15, 3.0, 0.15, x, 0, z, PAL.woodDark);
+    wood.box(1.0, 1.0, 4.2, x1 - 1.0, 0, 7.6, PAL.wood); metal.sphere(0.28, x1 - 1.0, 1.28, 6.6, C(0xb8bcc2), 14, 0.8); metal.rod([x1 - 1.25, 1.28, 6.6], [x1 - 1.6, 1.45, 6.6], 0.03, C(0xb8bcc2));
+    dark.cyl(0.22, 0.25, 0.25, x1 - 1.0, 1.0, 6.6, C(0x2b2a2e), 12);
+    for (let k = 0; k < 6; k++) glass.cyl(0.035, 0.03, 0.08, x1 - 1.1 + (k % 3) * 0.12, 1.0, 8.4 + Math.floor(k / 3) * 0.12, 0xffffff, 8);
+    kit.addCollider([x1 - 0.2, 0, z0], [x1 + 0.2, 3, z1]); kit.addCollider([x0, 0, z0 - 0.2], [x1, 3, z0 + 0.2]); kit.addColliderBox(x1 - 1.0, 0, 7.6, 1.0, 1.1, 4.2);
+    const charpai = (x, z, ry) => { const c = Math.cos(ry), s = Math.sin(ry); wood.box(1.0, 0.08, 1.9, x, 0.38, z, PAL.woodDark, ry); fabric.box(0.9, 0.03, 1.8, x, 0.45, z, C(0xd9c7a0), ry); for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const lx = sx * 0.45, lz = sz * 0.9; wood.cyl(0.04, 0.05, 0.42, x + lx * c + lz * s, 0, z - lx * s + lz * c, PAL.woodDark, 8); } kit.addColliderBox(x, 0, z, 1.6, 0.5, 1.6); };
+    charpai(13, 7, 0); charpai(15.2, 10.3, Math.PI / 2); charpai(9.4, 9.2, 0.2);
+    for (const [x, z] of [[11.4, 6.5], [11.2, 10.8]]) { wood.cyl(0.3, 0.3, 0.04, x, 0.6, z, PAL.wood, 14); wood.cyl(0.04, 0.04, 0.6, x, 0, z, PAL.woodDark, 8); glass.cyl(0.035, 0.03, 0.08, x, 0.64, z, 0xffffff, 8); }
+    U.figure(D, { lookIndex: 11, x: x1 - 1.9, z: 7.2, ry: -Math.PI / 2, pose: 'talk', name: 'Chai-wala' });
+    lab('Chai Dhaba · چائے ڈھابہ', (x0 + x1) / 2, 3.05, z1 + 0.35, 0, { size: 0.32, maxWidth: 5, bg: 'rgba(143,29,44,0.95)', border: '#f3e7cf' });
+  }
+
+  /* ============================================================ MARKET STALLS + fruit crates */
+  const fruit = [];
+  const FRUITC = [[0xf2a51a, 0.065], [0xe36a2d, 0.055], [0xc0392b, 0.045], [0x7cb342, 0.04], [0x7e3b6b, 0.045], [0xf1d04b, 0.05]];
+  [[-9.5, 1.6, 0x8f1d2c], [-5.2, 1.6, 0x2f7d7a], [-0.9, 1.6, 0xe39b2d]].forEach(([x, z, col], si) => {
+    for (const [lx, lz] of [[-1.6, -0.9], [1.6, -0.9], [-1.6, 0.9], [1.6, 0.9]]) wood.box(0.08, 2.5, 0.08, x + lx, 0, z + lz, PAL.woodDark);
+    for (let k = 0; k < 5; k++) fabric.boxC(0.66, 0.04, 2.2, x - 1.32 + k * 0.66, 2.55, z + 0.1, C(k % 2 ? PAL.cream : col), -0.14, 0, 0);
+    wood.box(3.2, 0.06, 1.4, x, 0.8, z, PAL.wood); wood.box(3.0, 0.8, 0.05, x, 0, z - 0.65, PAL.woodDark);
+    kit.addColliderBox(x, 0, z, 3.4, 0.9, 1.9);
+    for (let c = 0; c < 4; c++) {
+      const cx = x - 1.15 + c * 0.77, cz = z + 0.1; const [fc, fr] = FRUITC[(si * 2 + c) % FRUITC.length];
+      wood.box(0.66, 0.22, 0.5, cx, 0.86, cz, C(0xb08a5a)); for (let k = 0; k < 3; k++) wood.box(0.66, 0.02, 0.02, cx, 0.9 + k * 0.07, cz + 0.25, C(0x8a6a40));
+      for (let i = 0; i < 18; i++) fruit.push([cx + rng.uniform(-0.27, 0.27), 1.04 + rng.uniform(0, 0.07), cz + rng.uniform(-0.2, 0.2), fr * rng.uniform(0.85, 1.15), fc]);
+    }
+  });
+  if (fruit.length) {
+    const fm = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 10, 8), U.track(new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.55 })), fruit.length);
+    const M = new THREE.Matrix4(), Q = new THREE.Quaternion();
+    fruit.forEach((f, i) => { M.compose(new V3(f[0], f[1], f[2]), Q, new V3(f[3], f[3] * 0.92, f[3])); fm.setMatrixAt(i, M); fm.setColorAt(i, C(f[4]).offsetHSL(rng.uniform(-0.02, 0.02), 0, rng.uniform(-0.05, 0.05))); });
+    fm.castShadow = true; fm.computeBoundingSphere(); D.add(fm);
+  }
+  lab('Bazaar · بازار', -5.2, 3.2, 2.7, 0, { size: 0.28 });
+
+  /* ============================================================ ASCH ROOM */
+  { const x0 = -19.6, x1 = -12.6, z0 = 4, z1 = 12.5, h = 3.6, dz0 = 7.6, dz1 = 9.0;
+    plaster.box(x1 - x0, h, 0.25, (x0 + x1) / 2, 0, z0, C(0xbcd3cf)); plaster.box(x1 - x0, h, 0.25, (x0 + x1) / 2, 0, z1, C(0xbcd3cf));
+    plaster.box(0.25, h, dz0 - z0, x1, 0, (z0 + dz0) / 2, C(0xbcd3cf)); plaster.box(0.25, h, z1 - dz1, x1, 0, (dz1 + z1) / 2, C(0xbcd3cf)); plaster.box(0.25, h - 2.4, dz1 - dz0, x1, 2.4, (dz0 + dz1) / 2, C(0xbcd3cf));
+    plaster.box(x1 - x0 + 0.4, 0.25, z1 - z0 + 0.4, (x0 + x1) / 2, h, (z0 + z1) / 2, C(0xf3ece0));
+    kit.addCollider([x0, 0, z0 - 0.15], [x1, 3, z0 + 0.15]); kit.addCollider([x0, 0, z1 - 0.15], [x1, 3, z1 + 0.15]);
+    kit.addCollider([x1 - 0.15, 0, z0], [x1 + 0.15, 3, dz0]); kit.addCollider([x1 - 0.15, 0, dz1], [x1 + 0.15, 3, z1]);
+    const tx = -16.6, tz = 8.25; wood.box(1.2, 0.06, 3.6, tx, 0.74, tz, PAL.wood); for (const sx of [-1, 1]) for (const sz of [-1, 1]) metal.box(0.05, 0.74, 0.05, tx + sx * 0.5, 0, tz + sz * 1.7, PAL.charcoal);
+    kit.addColliderBox(tx, 0, tz, 1.2, 0.8, 3.6);
+    for (let k = 0; k < 7; k++) { const side = k < 4 ? -1 : 1; const zz = tz - 1.4 + (k % 4) * 0.93 + (side > 0 ? 0.45 : 0); const cx = tx + side * 0.95; fabric.box(0.44, 0.08, 0.44, cx, 0.45, zz, PAL.indigo); fabric.box(0.06, 0.5, 0.44, cx + side * 0.2, 0.5, zz, PAL.indigo); metal.box(0.04, 0.45, 0.04, cx, 0, zz, PAL.charcoal); }
+    const aschTex = U.canvasTex(1024, 512, (c) => { c.fillStyle = '#f6eedd'; c.fillRect(0, 0, 1024, 512); c.fillStyle = '#2b2a2e'; c.fillRect(470, 0, 8, 512); c.fillRect(170, 120, 14, 300); [[620, 260], [760, 300], [900, 210]].forEach(([x, hh], i) => { c.fillRect(x, 420 - hh, 14, hh); c.font = '700 48px Arial'; c.textAlign = 'center'; c.fillText('ABC'[i], x + 7, 480); }); c.font = '700 40px Arial'; c.textAlign = 'center'; c.fillText('Standard', 177, 480); });
+    const board = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 1.3), U.track(new THREE.MeshStandardMaterial({ map: aschTex, roughness: 0.8 }))); board.position.set(x0 + 0.16, 1.75, tz); board.rotation.y = Math.PI / 2; D.add(board);
+    lab('Asch Room · conformity (debriefed)\nآش کمرہ', x1 + 0.15, 2.95, (dz0 + dz1) / 2, Math.PI / 2, { size: 0.2, maxWidth: 3 });
+    kit.addInteractable({ id: 'asch', pos: [x1 + 0.9, 1.6, (dz0 + dz1) / 2], radius: 2, label: 'Asch-style conformity (run, debriefed)', onUse: () => act.run('asch') });
+    kit.anchor('asch', [tx, 1.4, tz]);
+  }
+
+  /* ============================================================ PRISONER'S DILEMMA TABLE */
+  { const x = 4.5, z = 13.5; wood.box(1.4, 0.06, 0.9, x, 0.74, z, PAL.wood); for (const sx of [-1, 1]) wood.box(0.08, 0.74, 0.8, x + sx * 0.6, 0, z, PAL.woodDark); fabric.box(0.04, 0.5, 0.9, x, 0.8, z, PAL.indigo);
+    for (const sx of [-1, 1]) { fabric.box(0.44, 0.08, 0.44, x + sx * 1.05, 0.45, z, PAL.crimson); fabric.box(0.06, 0.5, 0.44, x + sx * 1.25, 0.5, z, PAL.crimson); }
+    kit.addColliderBox(x, 0, z, 1.4, 0.8, 0.9);
+    lab("Prisoner's Dilemma table\nCooperate or defect?", x, 1.75, z, 0, { size: 0.16, maxWidth: 2.4, doubleSide: true });
+    kit.addInteractable({ id: 'prisoners_dilemma', pos: [x, 1.4, z + 1.3], radius: 1.8, label: "Prisoner's dilemma tournament (run)", onUse: () => act.run('prisoners_dilemma') });
+  }
+
+  /* ============================================================ INATTENTIONAL-BLINDNESS STAGING */
+  const ibC = new V3(-4, 0, 10.5), ibR = 2.3; const players = [];
+  for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2; const white = i % 2 === 0; const f = U.figure(D, { abstract: true, x: ibC.x + Math.sin(a) * ibR, z: ibC.z + Math.cos(a) * ibR, ry: a + Math.PI, color: white ? 0xf3f0ea : 0x1f1f24, accent: white ? PAL.crimson : PAL.saffron, legs: 0x3a3a40 }); players.push(f.obj); }
+  const ballMat = U.track(new THREE.MeshStandardMaterial({ color: 0xe36a2d, roughness: 0.6 }));
+  const ball = new THREE.Mesh(new THREE.SphereGeometry(0.12, 14, 10), ballMat); ball.castShadow = true; D.add(ball);
+  // mascot (original costumed figure, no real character)
+  const mg = new GB(); const fur = C(0x3b3b3b), face = C(0x6b6b6b);
+  mg.cyl(0.32, 0.38, 0.9, 0, 0.75, 0, fur, 14); mg.sphere(0.4, 0, 1.55, 0, fur, 14, 0.9); mg.sphere(0.28, 0, 1.95, 0.05, fur, 14); mg.sphere(0.16, 0, 1.9, 0.22, face, 12, 0.8);
+  mg.sphere(0.08, -0.2, 2.18, 0, fur, 8); mg.sphere(0.08, 0.2, 2.18, 0, fur, 8);
+  for (const sx of [-1, 1]) { mg.rod([sx * 0.38, 1.6, 0], [sx * 0.55, 0.95, 0.1], 0.12, fur, 10); mg.cyl(0.13, 0.15, 0.78, sx * 0.17, 0, 0, fur, 10); }
+  const mascot = new THREE.Group(); const mm = mg.mesh(U.vc('fabric', { color: 0xffffff, roughness: 1 })); mascot.add(mm); mascot.visible = false; D.add(mascot);
+  const ibPath = [new V3(-14, 0, 12.2), new V3(ibC.x, 0, ibC.z), new V3(8, 0, 9.4)];
+  let ib = null; // {t}
+  const startCrossing = () => { ib = { t: 0 }; mascot.visible = true; };
+  updaters.push((dt, t) => {
+    const ok = act.motionOK();
+    // ball passes between white-shirt players (0,2,4)
+    const seg = ok ? (t * 0.8) % 3 : 0, k = Math.floor(seg), f = seg - k; const a = players[(k * 2) % 6].position, b = players[((k + 1) * 2) % 6].position;
+    ball.position.set(a.x + (b.x - a.x) * f, 1.2 + Math.sin(f * Math.PI) * 0.8, a.z + (b.z - a.z) * f);
+    if (ib) {
+      ib.t += dt; const T = 11;
+      if (!ok) { mascot.position.copy(ibPath[1]); mascot.rotation.y = 0; if (ib.t > 5) { ib = null; mascot.visible = false; } return; }
+      let p; if (ib.t < 4.5) p = ibPath[0].clone().lerp(ibPath[1], ib.t / 4.5); else if (ib.t < 6.5) p = ibPath[1].clone(); else p = ibPath[1].clone().lerp(ibPath[2], Math.min(1, (ib.t - 6.5) / 4.5));
+      mascot.position.copy(p); mascot.position.y = ib.t < 4.5 || ib.t > 6.5 ? Math.abs(Math.sin(ib.t * 6)) * 0.05 : 0;
+      mascot.rotation.y = ib.t > 4.5 && ib.t < 6.5 ? Math.sin(ib.t * 4) * 0.4 : Math.PI / 2 - 0.1;
+      if (ib.t > T) { ib = null; mascot.visible = false; }
+    }
+  });
+  lab('Count the passes made by the WHITE team\nInattentional-blindness demo (simulated)', ibC.x, 2.8, ibC.z + ibR + 1.2, 0, { size: 0.18, maxWidth: 4 });
+  kit.addInteractable({ id: 'inattentional_blindness', pos: [ibC.x, 1.6, ibC.z + ibR + 2.4], radius: 2.6, label: 'Count the passes — inattentional blindness (run)', onUse: () => { startCrossing(); act.run('inattentional_blindness'); } });
+  if (sim && sim.bus && sim.bus.on) for (const ev of ['mohalla:ib:start', 'ib:cross']) offs.push(sim.bus.on(ev, startCrossing));
+
+  /* ============================================================ STRING LIGHTS */
+  const bulbs = []; const xs = [-14, -7, 0, 7, 14];
+  for (const x of xs) {
+    for (const z of [-5.4, 18.2]) { metal.cyl(0.06, 0.09, 5.6, x, 0, z, PAL.charcoal, 8); kit.addColliderBox(x, 0, z, 0.25, 3, 0.25); }
+    const A = new V3(x, 5.5, -5.4), B = new V3(x + (x === 0 ? 0 : 0), 5.5, 18.2), n = 26; let prevP = A;
+    for (let i = 1; i <= n; i++) { const tt = i / n; const p = A.clone().lerp(B, tt); p.y -= Math.sin(tt * Math.PI) * 1.1; metal.rod(prevP, p, 0.008, PAL.charcoal, 4); if (i < n) bulbs.push([p.x, p.y - 0.08, p.z, [0xffd27a, 0xff8a65, 0xfff1d6, 0x9fd3ff][i % 4]]); prevP = p; }
+  }
+  const bulbMat = U.track(new THREE.MeshBasicMaterial({ color: 0xffffff, toneMapped: false }));
+  const bulbMesh = new THREE.InstancedMesh(new THREE.SphereGeometry(0.06, 8, 6), bulbMat, bulbs.length);
+  { const M = new THREE.Matrix4(); bulbs.forEach((b, i) => { M.makeTranslation(b[0], b[1], b[2]); bulbMesh.setMatrixAt(i, M); bulbMesh.setColorAt(i, C(b[3])); }); bulbMesh.computeBoundingSphere(); D.add(bulbMesh); }
+  const setTimeOfDay = (tod) => { bulbMat.color.setScalar(tod === 'night' ? 3 : tod === 'dusk' ? 1.8 : 0.85); };
+  setTimeOfDay((sim && sim.state && sim.state.timeOfDay) || 'day');
+
+  /* ============================================================ ambient crowd */
+  const crowdMod = kit.crowd;
+  if (crowdMod && typeof crowdMod.createCrowd === 'function') {
+    try {
+      const count = { low: 10, medium: 18, high: 28, ultra: 36 }[kit.tier] || 18;
+      crowd = crowdMod.createCrowd(THREE, { count, bounds: { minX: -16, maxX: 16, minZ: -5.2, maxZ: -3.0 }, paths: [[[-16, -4.2], [16, -4.2]], [[-12, 17], [9, 17]], [[8.5, -3], [8.5, 17]], [[-11.5, -3], [-11.5, 17]]], seed: 1408, tier: kit.tier });
+      const obj = crowd && (crowd.group || crowd.mesh || crowd.object); if (obj) D.add(obj);
+    } catch (e) { crowd = null; }
+  }
+
+  /* ---- meshes */
+  add(pave, U.vc('tiles'), g, { cast: false }); add(road, U.vc('metal', { color: 0xffffff, metalness: 0, roughness: 0.92 }), g, { cast: false });
+  add(brick, U.vc('brick')); add(plaster, U.vc('plaster')); add(wood, U.vc('wood')); add(metal, U.vc('metal', { color: 0xffffff, metalness: 0.5, roughness: 0.45 }));
+  add(fabric, U.vc('fabric', { color: 0xffffff, side: THREE.DoubleSide })); add(dark, U.vc('metal', { color: 0xffffff, metalness: 0.1, roughness: 0.7 }));
+  add(jaali, U.vc('jaali')); add(glass, U.vc('glass'), g, { cast: false });
+
+  lab('Social Psychology Plaza — Mohalla · محلہ', 0, 4.2, 18.25, 0, { size: 0.34, maxWidth: 9, bg: 'rgba(38,52,107,0.95)' });
+  kit.addInteractable({ id: 'social_panel', pos: [0, 1.6, 17.2], radius: 2.4, label: 'Social Psychology (panel)', onUse: () => act.panel('social') });
+  kit.anchor('inside', [-4, 1.4, 10.5]); kit.anchor('insideCam', [6, 2.4, 16]); kit.anchor('exhibit', [-4, 1.4, 10.5]); kit.anchor('exhibitCam', [-4, 2.4, 16.5]);
+  kit.anchor('bystander', [10.6, 0.5, -2.6]); kit.anchor('junction', [-11, 1, -8.4]); kit.anchor('dhaba', [14, 1.4, 8]);
+
+  return {
+    alwaysUpdate: false,
+    update(dt, t) { for (const u of updaters) u(dt, t); if (crowd && crowd.update) crowd.update(dt, t); },
+    setTimeOfDay, startCrossing,
+    get crowd() { return crowd; },
+    dispose() { for (const off of offs) if (typeof off === 'function') off(); if (crowd && crowd.dispose) crowd.dispose(); crowd = null; },
+  };
+}
+
+module.exports = { id, build };
 
 });
 /* ===== src/world/zones/neuro.js ===== */
@@ -108293,7 +108769,7 @@ module.exports = { id, build };
 
 });
 
-window.__ZEHN_BUILD__ = {"built":"2026-11-15T14:42:41.606Z","modules":93};
+window.__ZEHN_BUILD__ = {"built":"2026-11-15T14:49:32.772Z","modules":95};
 __require('', 'src/main.js');
 })();
 </script>

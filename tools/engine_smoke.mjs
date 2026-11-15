@@ -93,7 +93,10 @@ for (const tier of TIERS) {
     for (const m of ['director', 'neuro', 'photo', 'drone', 'tour', 'clinic', 'walk']) { controls.setMode(m); await wait(150); }
     out.extra.modeOK = sim.state.mode === 'walk';
     await controls.flyTo([0, 8, 20], [0, 0, 0], 0.3); out.extra.flyTo = true;
-    controls.teleport({ pos: [0, 1.65, 3], yaw: 0 }); out.extra.lookTarget = !!controls.lookTarget();
+    controls.teleport({ pos: [0, 1.65, 1], yaw: 0 }); out.extra.lookTarget = !!controls.lookTarget();
+    const sd = engine.sky.sunDir; controls.teleport({ pos: [0, 1.65, 20], yaw: Math.atan2(-sd.x, -sd.z), pitch: Math.asin(sd.y) - 0.15 }); await wait(1200);
+    out.extra.sunPasses = engine.stats.passes.filter((p) => p === 'godrays' || p === 'lensflare');
+    controls.teleport({ pos: [0, 1.65, 9], yaw: 0, pitch: -0.05 });
     engine.setExperimentMode(true); const f0 = engine.frame; await wait(300); out.extra.expPaused = engine.frame === f0; engine.setExperimentMode(false);
     sim.settings.reducedMotion = true; await wait(300); out.extra.reducedNoMB = !engine.stats.passes.includes('motionBlur'); sim.settings.reducedMotion = false;
     const t0 = engine.frame, ts = performance.now(); await wait(3000); out.fps = +((engine.frame - t0) / ((performance.now() - ts) / 1000)).toFixed(1);
@@ -109,6 +112,8 @@ for (const tier of TIERS) {
   const active = Object.entries(r.toggles).filter(([, v]) => v.onHas).map(([k]) => k);
   console.log(`\n[${tier}] fps=${r.fps} hdr=${r.stats.hdr} gpu="${r.stats.gpu}" draws=${r.stats.drawCalls} tris=${r.stats.triangles} frame mean/var=${r.frame0.mean}/${r.frame0.var}`);
   console.log(`  passes: ${r.finalStats.passes.join(',')}`);
+  if (tier !== 'low' && r.extra.sunPasses.length < 2) problems.push('sun passes missing: ' + r.extra.sunPasses);
+  console.log(`  sun-facing passes: ${r.extra.sunPasses}`);
   console.log(`  toggles active at tier: ${active.join(',')}  dof=${r.extra.dofPasses}  dusk/night var=${r.extra.dusk.var}/${r.extra.night.var}`);
   console.log(problems.length ? '  FAIL: ' + problems.join('\n        ') : '  OK');
   if (problems.length) failed++;
