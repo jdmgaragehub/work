@@ -428,7 +428,7 @@ function makeHelpers(kit, zoneId) {
     const meta = (L.ZONES && L.ZONES[zoneId]) || { name: zoneId, ur: '' };
     // floor + porch
     box(W + 0.7, 0.1, D + 0.7, 0, -0.045, 0, o.floor || M.terrazzo(), { shadow: false, uvScale: 0.25 });
-    box(doorW + 5, 0.14, 3.6, 0, -0.04, hd + 2, M.stone(), { shadow: false });
+    box(doorW + 5, 0.14, 3.0, 0, -0.04, hd + 1.6, M.stone(), { shadow: false });
     // walls: outer brick (with door gap) + inner plaster skin; clerestory band
     const band = H - 1.1;
     const outer = o.outerMat || M.brick(), inner = o.innerMat || M.plaster();
@@ -461,10 +461,10 @@ function makeHelpers(kit, zoneId) {
     const fm = M.metal();
     box(0.14, doorH, 0.5, -doorW / 2, doorH / 2, hd, fm); box(0.14, doorH, 0.5, doorW / 2, doorH / 2, hd, fm); box(doorW + 0.28, 0.14, 0.5, 0, doorH, hd, fm);
     // canopy + columns + sign
-    const cz = hd + 1.9;
-    box(doorW + 4.2, 0.22, 3.6, 0, doorH + 0.7, cz, dark);
-    box(doorW + 4.3, 0.08, 3.7, 0, doorH + 0.58, cz, saff, { shadow: false });
-    for (const sx of [-1, 1]) cyl(0.14, 0.16, doorH + 0.6, sx * (doorW / 2 + 1.6), (doorH + 0.6) / 2, hd + 3.4, fm, { collide: true, seg: 14 });
+    const cz = hd + 1.55;
+    box(doorW + 4.2, 0.22, 3.0, 0, doorH + 0.7, cz, dark);
+    box(doorW + 4.3, 0.08, 3.1, 0, doorH + 0.58, cz, saff, { shadow: false });
+    for (const sx of [-1, 1]) cyl(0.14, 0.16, doorH + 0.6, sx * (doorW / 2 + 1.6), (doorH + 0.6) / 2, hd + 2.8, fm, { collide: true, seg: 14 });
     lamp(0, doorH + 0.57, cz, 2.2, 0.5, 0xffe2b0);
     sign([{ t: meta.name, size: 0.34, weight: 700 }, { t: meta.ur || '', size: 0.26, color: '#FCD34D', dir: 'rtl' }], 7.5, 1.25,
       { pos: [0, doorH + 1.35, hd + 0.27], top: 0.1, glow: 0.6, px: 180 });
@@ -515,7 +515,7 @@ const { march, sd } = require('../marching.js');
 const ZONE = 'neuro';
 const BRAIN_C = [0, 3.9, -4.5];      // local centre of the sculpture
 const SHELL_T = 0.6;                  // cortex shell thickness (m) — the inside is a walkable hollow
-const RES = { low: 56, medium: 78, high: 98, ultra: 118 };
+const RES = { low: 56, medium: 78, high: 94, ultra: 108 };
 const BRAIN_CACHE = {};               // res → { positions, normals, indices, region, inner }
 
 // region ids (labels follow glossary.json vocabulary)

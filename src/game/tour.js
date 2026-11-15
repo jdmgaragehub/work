@@ -18,7 +18,7 @@ const layout = require('../world/layout.js');
 const { injectCSS } = require('./scoring.js');
 
 const CSS = `
-.zg-tour{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);width:min(680px,calc(100vw - 32px));z-index:60;background:var(--glass,rgba(20,18,50,.88));border:1px solid var(--line,#444);border-radius:14px;padding:12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.4);backdrop-filter:blur(8px)}
+.zg-tour{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);width:min(680px,calc(100vw - 32px));z-index:60;background:var(--glass,rgba(20,18,50,.88));border:1px solid var(--line,#444);border-radius:14px;padding:12px 16px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
 .zg-tour h3{margin:2px 0 6px;font-size:1.1em;color:#fde68a}
 .zg-tour p{margin:4px 0 8px;line-height:1.5}
 .zg-tour .meta{font-size:.75em;color:var(--muted,#aaa);display:flex;gap:8px;flex-wrap:wrap}

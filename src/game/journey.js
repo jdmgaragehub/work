@@ -25,7 +25,7 @@ const MEASURES = { stroop_ms: ['Stroop interference', 'ms'], search_slope: ['Con
 const INKS = [['RED', '#C8312B'], ['GREEN', '#1E8E3E'], ['BLUE', '#1F5FBF'], ['YELLOW', '#D4A106']];
 
 const CSS = `
-.zg-jhud{position:fixed;left:84px;top:64px;z-index:58;width:250px;background:var(--glass,rgba(20,18,50,.88));border:1px solid var(--line,#444);border-radius:12px;padding:8px 10px;font-size:.78em;backdrop-filter:blur(8px)}
+.zg-jhud{position:fixed;left:84px;top:64px;z-index:58;width:250px;background:var(--glass,rgba(20,18,50,.88));border:1px solid var(--line,#444);border-radius:12px;padding:8px 10px;font-size:.78em}
 .zg-jhud h4{margin:0 0 4px;color:#fde68a;font-size:1em}
 .zg-jhud ol{margin:0;padding-left:20px}.zg-jhud li{margin:2px 0;opacity:.6}
 .zg-jhud li.cur{opacity:1;font-weight:700;color:#fde68a}.zg-jhud li.done{opacity:.9}.zg-jhud li.done::marker{color:#34d399}

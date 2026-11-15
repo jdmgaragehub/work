@@ -20,7 +20,7 @@ const log = (...a) => console.log('[e2e]', ...a);
 const section = (name, data) => { report.sections[name] = data; fs.writeFileSync(path.join(OUT, 'report.json'), JSON.stringify(report, null, 1)); };
 
 const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--autoplay-policy=no-user-gesture-required'] });
-const context = await browser.newContext({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: 1, acceptDownloads: true });
+const context = await browser.newContext({ viewport: { width: 1280, height: 720 }, deviceScaleFactor: 1, acceptDownloads: true });
 // G8: offline — block every non-file request
 await context.route('**/*', (route) => { const u = route.request().url(); if (u.startsWith('file:') || u.startsWith('data:') || u.startsWith('blob:')) return route.continue(); report.network.push(u); return route.abort(); });
 const page = await context.newPage();
@@ -49,7 +49,7 @@ async function settle(max = 12) {
     await page.waitForTimeout(120);
   }
 }
-const shot = (name) => page.screenshot({ path: path.join(OUT, name + '.png') });
+const shot = (name) => page.screenshot({ path: path.join(OUT, name + '.png'), timeout: 120000 }).catch((e) => log('shot failed', name, e.message.split('\n')[0]));
 
 log('loading', FILE);
 const t0 = Date.now();

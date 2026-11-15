@@ -571,6 +571,8 @@ function fromRows(id, rows) {
 function parsePasted(text) {
   const t = String(text || '').trim();
   if (!t) return null;
+  const tokens = t.split(/[\s,;\t]+/).filter(Boolean);
+  if (tokens.every((x) => Number.isFinite(+x))) return { x: tokens.map(Number) };
   const lines = t.split(/\r?\n/).filter((l) => l.trim());
   const sep = lines[0].includes(',') ? ',' : lines[0].includes('\t') ? '\t' : lines[0].includes(';') ? ';' : null;
   const first = sep ? lines[0].split(sep).map((s) => s.trim()) : [lines[0].trim()];

@@ -387,7 +387,7 @@ function buildWorld(sim, engine) {
     const winStep = o.winStep || 6, winW = o.winW || 3.2, sill = 1.1, head = Math.min(h - 1.2, 3.6);
     function run(ax, az, bx, bz, openings) {
       const L = Math.hypot(bx - ax, bz - az), dx = (bx - ax) / L, dz = (bz - az) / L, ry = Math.atan2(-dz, dx);
-      const nx = -dz, nz = dx; // inward normal for runs listed clockwise
+      const nx = dz, nz = -dx; // inward normal (runs go clockwise seen from above)
       const piece = (s0, s1, y0, y1) => {
         if (s1 - s0 < 0.02 || y1 - y0 < 0.02) return;
         const mid = (s0 + s1) / 2, cx = ax + dx * mid, czz = az + dz * mid;
@@ -741,6 +741,8 @@ function buildWorld(sim, engine) {
     }
     let handle = null;
     try {
+      const skip = (sim.params && sim.params.get('skipzones') || '').split(',');
+      if (skip.includes(id) || skip.includes('all')) throw new Error('cannot resolve (skipped by ?skipzones)');
       const mod = require(`./zones/${id}.js`);
       if (!mod || typeof mod.build !== 'function') throw new Error('zone module has no build()');
       handle = mod.build(kit) || {};

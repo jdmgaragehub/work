@@ -14,7 +14,7 @@ const TIER_ORDER = ['low', 'medium', 'high', 'ultra'];
 // Render features per tier. Each post pass is ALSO gated by sim.settings.toggles[name].
 const TIERS = {
   low: {
-    label: 'Low', pixelRatio: 1.0, shadows: true, shadowMapSize: 1024, shadowSoft: false, shadowRadius: 40,
+    label: 'Low', pixelRatio: 0.75, shadows: true, shadowMapSize: 1024, shadowSoft: false, shadowRadius: 40,
     hdr: true, fxaa: true, taa: false, motionBlur: false, ssao: false, bloom: true, bloomLevels: 2, godrays: false,
     ssr: false, volumetric: false, dof: true, dofSamples: 22, lensflare: false, grain: false, vignette: true, chroma: false,
     autoExposure: true, sss: false, anisotropy: 2, textureSize: 256, viewDistance: 420, envMap: false, stars: 600,
